@@ -39,3 +39,5 @@ program to fool you by adding a term
 ==
 arc(_, _) :- shell('format C'). 
 ==
+
+@see library(persistency) allows for storing data on a file and restoring it.
