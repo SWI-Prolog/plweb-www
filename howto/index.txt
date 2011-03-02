@@ -3,5 +3,4 @@
   * [[How to deal with namespaces in RDF?][UseRdfMeta.txt]]
   * [[How to create a web-service easily?][<http/>]]
 
-Please contribute to this HOWTO.  Ideally, pages must be written in the
-PlDoc wiki-format (see *|Wiki notation|* in the [[PlDoc manual][</pldoc/package/pldoc.html>]]).
+Please contribute to this HOWTO.   This website is now a [[wiki][</wiki/>]]!
