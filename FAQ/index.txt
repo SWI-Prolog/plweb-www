@@ -19,6 +19,7 @@
     * [[ERROR: (file:line): Undefined procedure: pce_begin_class/2][NoXPCE.txt]]
     * [[ERROR: I/O error in write on stream XXX (Encoding cannot represent character)][CharEncoding.txt]]
     * [[FATAL ERROR: Could not find system resources][FindResources.txt]]
+    * [[Library not loaded: /usr/X11/lib/libX11.6.dylib][MacOSX11.txt]]
 
   * *|Customising SWI-Prolog|*
     * [[Site and personal initialisation][PlInitialisation.txt]]
