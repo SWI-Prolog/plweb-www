@@ -14,7 +14,7 @@
   * *|Common error messages and what to do|*
     * [[ERROR: No permission to modify static_procedure][DynamicCode.txt]]
     * [[ERROR: Undefined procedure: name/arity][UndefinedCode.txt]]
-    * [[ERROR: Undefined procedure: (:-)/1|(:-)/2|(?-)/1][ToplevelMode.txt]]
+    * [[ERROR: toplevel: Undefined procedure: (:-)/1|(:-)/2|(?-)/1][ToplevelMode.txt]]
     * [[Warning: Clauses of (-)/2 are not together in the source-file][MinusInHead.txt]]
     * [[Warning: (file:line) Singleton variables: List][SingletonVar.txt]]
     * [[ERROR: (file:line): Undefined procedure: pce_begin_class/2][NoXPCE.txt]]
