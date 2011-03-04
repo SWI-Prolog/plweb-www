@@ -76,15 +76,24 @@ valid Prolog syntax.  For example: =|?- ['myfile.txt'].|=.
 
 ==
 ?- [myfile].
-== 
+==
+
+Note that you can easily update your rules by editing the file and typing
+the command below.  The make/0 predicate reloads all files that have been
+modified, _replacing_ old rules loaded from that file with the current
+content of the file.
+
+==
+?- make.
+==
 
 ---++ Can I put queries in files?
 
 Yes.  As we have seen above, there are _directives_ for the compiler that
 are written as =|:- Term.|=.  Here, Term must be recognized as a valid
 directive by the compiler (SWI-Prolog doesn't enforce this, but some other
-Prolog implementations do).  You can specify arbitrary Prolog codes that
-are executed _after_ loading the file using e.g.,
+Prolog implementations do).  You can specify arbitrary Prolog code that
+is executed _after_ loading the file using e.g.,
 
 ==
 :- initialization
