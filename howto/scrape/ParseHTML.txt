@@ -8,10 +8,7 @@ invalid.  Worse, it is sometimes in fact XHTML, while documents that claim
 to be XHTML often contain HTML features, such as missing close-tags, use
 of uppercase, etc.
 
-SWI-Prolog's [[SGML/SML parser][<pldoc/package/sgml.html>]] can produce results that are often good enough for scraping.   The best option set depends  a little
-on the nature of the document.  Notable different _encoding_ or sites using
-strict and proper XML may ask for different options.   Below is some code to
-get started.  It silently ignores all errors.  This is often what you want
+SWI-Prolog's [[SGML/SML parser][</pldoc/package/sgml.html>]] can produce results that are often good enough for scraping.   The best option set depends  a little on the nature of the document.  Notable different _encoding_ or sites using strict and proper XML may ask for different options.   Below is some code to get started.  It silently ignores all errors.  This is often what you want
 for real scraping, but viewing the messages may be helpful if you get weird
 output.
 
