@@ -30,3 +30,9 @@ http_load_html(URL, DOM) :-
                            ),
                            close(In)).
 ==
+
+@see http_open/3 for opening web-pages.  If you need to handle cookies,
+     SWI-Prolog 5.10.3/5.11.16 provide library(http/http_cookie).
+@see setup_call_cleanup/3 is your friend to avoid loosing file handles
+     in case of failure or errors.
+@see load_structure/3 processes many more options.
