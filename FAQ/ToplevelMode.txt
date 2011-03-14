@@ -1,4 +1,4 @@
----+ ERROR: toplevel: Undefined procedure: (:-)/1 | (:-)/2 | (?-)/1
+---+ ERROR: Undefined procedure: (:-)/1 | (:-)/2 | (?-)/1
 
 These messages are caused by common misunderstanding of the Prolog interactive toplevel.  Both (:-)/1 and (?-)/1 are used to specify _queries_.  If some
 text reads
