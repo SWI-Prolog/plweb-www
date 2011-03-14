@@ -12,7 +12,9 @@ prompt results in:
 
   ==
   ?- ?- prove(X).
-  ERROR: toplevel: Undefined procedure: (?-)/1 (DWIM could not correct goal)
+  ERROR: Undefined procedure: (?-)/1
+  ERROR:   ?- is the Prolog prompt
+  ERROR:   See FAQ at http://www.swi-prolog.org/FAQ/ToplevelMode.txt
   ==
 
 Terms that you enter at the *toplevel* are processes as _queries_, while terms
@@ -30,7 +32,9 @@ arguments.
 
   ==
   ?- carnivore(X) :- animal(X), eats_meat(X).
-  ERROR: toplevel: Undefined procedure: (:-)/2 (DWIM could not correct goal)
+  ERROR: Undefined procedure: (:-)/2
+  ERROR:   Rules must be loaded from a file
+  ERROR:   See FAQ at http://www.swi-prolog.org/FAQ/ToplevelMode.txt
   ==
 
 Isn't this stupid?  Well, no.  Suppose we have a term =|eats_meat(rataplan)|=.
