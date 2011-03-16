@@ -14,7 +14,9 @@ output.
 
 ==
 http_load_html(URL, DOM) :-
-        setup_call_cleanup(http_open(URL, In, []),
+        setup_call_cleanup(http_open(URL, In,
+                           [ timeout(60)
+                           ]),
                            (   dtd(html, DTD),
                                load_structure(stream(In),
                                               DOM,
@@ -26,6 +28,25 @@ http_load_html(URL, DOM) :-
                                               ])
                            ),
                            close(In)).
+==
+
+Note that the use of setup_call_cleanup/3 guarantees that the opened
+connection will eventually be closed.  However, it does *not* stop exceptions and errors are a normal part of processing web-documents.  Often, the scraper
+will use a control structure as below to process a URL and just ignore it if
+it is not possible to retrieve data from the URL.  Note that we give this as
+example code instead of libraries because the demands for an actual scraper
+can vary a lot.  E.g., it might be unacceptable to give up and if there is
+an error you may want to wait and retry, or your decision may depend on the
+error returned, etc.
+
+==
+scrape_no_error(URL) :-
+	catch(http_load_html(URL, DOM), Error,
+	      (	  print_message(warning, Error),
+		  fail
+	      )), !,
+	process_dom(DOM).
+scrape_no_error(_).
 ==
 
 @see http_open/3 for opening web-pages.  If you need to handle cookies,
