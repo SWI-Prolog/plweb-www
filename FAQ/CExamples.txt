@@ -1,15 +1,20 @@
 ---+ Where do I find examples mixing C and Prolog?
 
-You can download the source and check the sources of one or more of the
-packages. There is a complicated example in the form of an TeX tokeniser
-in the ltx2htm subdirectory of the sources. There are a couple of
-examples in the src/win32/ subtree of the sources for handling Windows
-API. Finally, there is the SWI-Prolog source-code itself that uses the
-foreign interface for realising many of the build-in predicates. The
-function is normally called pl_<predicate-name>. See pl-ext.c for the
-function-names of all predicates. Note however that the system itself
-sometimes uses more low-level constructs to manipulate Prolog data.
-Never use functions that have no prototype in SWI-Prolog.h or
-SWI-Stream.h.
+The best source of examples are the sources of the _packages_.  They vary from very simple to highly complicated.  You can examine the packages through the
+[[GIT web interface][</git>]].  Good examples packages are:
 
-@tbd	Update: there are much better packages to look into
+  $ nlp :
+  Rather basic usage of the foreign interface.
+
+  $ clib :
+  Both simple and more complicated code to access OS primitives.
+
+  $ zlib :
+  Extensive example of using the stream interface to define IO filters.
+
+You may also want to look at the Prolog source itself.  Many of the
+foreign predicates use the public interface.  Some use more low-level
+primitives and the code uses a different mechanism to register foreign
+predicates.
+
+@see Please also check out the [[C++ interface][</pldoc/package/pl2cpp.html>]]

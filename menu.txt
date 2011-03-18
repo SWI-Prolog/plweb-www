@@ -1,5 +1,6 @@
   * [[Home][index.txt]]
-  * *|Download.txt|* | ([[Browse GIT][</git>]])
+  * *|Download.txt|*
+  * [[Browse GIT][</git>]]
   * [[Contrib][</contrib/>]]
 --
   * *|[[FAQ][</FAQ/>]]|* | *|[[HOWTO][</howto/>]]|*
@@ -16,3 +17,5 @@
   * Publications.txt
   * Contributors.txt
   * [[License][license.txt]]
+--
+  * [[Wiki (edit)][</wiki/>]]
