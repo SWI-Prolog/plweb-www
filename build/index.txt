@@ -12,3 +12,5 @@ portable and building is much easier.
     * [[Building on MacOS][macos.txt]] (Leopard & Snow Leopard)
     * [[Building on MS-Windows][windows.txt]]
 
+@see [[Information for Linux distributions][LinuxDistro.txt]]
+
