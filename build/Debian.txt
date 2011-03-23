@@ -1,4 +1,4 @@
----+ SWI-Prolog on Debian Linux
+---+ SWI-Prolog on Debian and Ubuntu Linux
 
 | Debian release | Squeeze (6.0) |
 | Ubuntu release | Maverick Meerkat (10,10) |
