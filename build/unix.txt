@@ -106,3 +106,5 @@ If =configure= fails, try using =|bash configure|=. If =make= fails, try
 using GNU-make and gcc.
 
 If all fails, have a look at the ../Support.txt page.
+
+@see LinuxDistro.txt for comments on various Linux distributions
