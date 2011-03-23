@@ -1,0 +1,33 @@
+---+ SWI-Prolog on Debian Linux
+
+| Debian release | Squeeze (6.0) |
+| Ubuntu release | Maverick Meerkat (10,10) |
+| SWI-Prolog release | 5.10.1 |
+| Package page | http://packages.debian.org/swi-prolog |
+| Maintainer | Chris Lamb |
+
+
+---++ Status
+
+Debian Squeeze and derived distributions come with a properly 
+packaged SWI-Prolog.  We advice to compile the sources on older
+releases.
+
+---++ Dependencies
+
+Use the following commands to obtain all dependencies for a full build
+from source.
+
+==
+sudo apt-get install \
+        binutils coreutils gcc grep chrpath \
+        libc6-dev libncursesw5-dev libreadline5-dev \
+        libgmp3-dev \
+        make sed autoconf curl \
+        libxext-dev libice-dev libjpeg62-dev libxinerama-dev libxft-dev \
+        libxpm-dev libxt-dev pkg-config \
+        libssl-dev \
+        unixodbc-dev \
+        openjdk-6-jdk \
+        zlib1g-dev
+==
