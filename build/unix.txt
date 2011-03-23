@@ -107,4 +107,4 @@ using GNU-make and gcc.
 
 If all fails, have a look at the ../Support.txt page.
 
-@see LinuxDistro.txt for comments on various Linux distributions
+@see [[Comments on various Linux distributions][LinuxDistro.txt]]
