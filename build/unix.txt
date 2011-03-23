@@ -2,7 +2,7 @@
 
 Installing SWI-Prolog from the sources (Unix/Linux/MacOS X) Getting the
 prerequisites This step differs from system to system. See
-*|README.debian|* in the toplevel directory of the archive for a
+*|README.linux|* in the toplevel directory of the archive for a
 complete list of required packages. On *MacOSX* install
 [[MacPorts][<macports:>]] after which you get all dependencies and the
 latest version committed to the Macport projects using *|port install
