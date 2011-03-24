@@ -14,5 +14,4 @@
 ---++ Read more about
 
     * Available SWI-Prolog [[versions][versions.txt]]
-    * Information on [[Linux packages and building on Linux]
-    [build/LinuxDistro.txt]]
+    * Information on [[Linux packages and building on Linux][build/LinuxDistro.txt]]
