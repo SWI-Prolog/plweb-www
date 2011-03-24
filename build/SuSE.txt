@@ -2,7 +2,7 @@
 
 | SuSE Release | 11.4 |
 | SWI-Prolog release | 5.10.2 |
-| Package page | <https://build.opensuse.org/package/show?package=swipl&>project=openSUSE%3A11.4> |
+| Package page | <https://build.opensuse.org/package/show?package=swipl&project=openSUSE%3A11.4> |
 
 ---++ Status
 
