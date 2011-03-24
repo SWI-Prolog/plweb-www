@@ -1,0 +1,17 @@
+---+ SWI-Prolog on Redhat (fedora)
+
+| Fedora release | 15 |
+| SWI-Prolog release | 5.10.2 |
+| Package page | <http://koji.fedoraproject.org/koji/buildinfo?buildID=227929> |
+| Maintainer | Petr Pisar |
+
+---++ Status
+
+Fedora release 15 is upcoming.  We have not yet evaluated this release against the guidelines.txt.  Current Fedora releases either do not have SWI-Prolog or
+a very old version (5.7.x).
+
+---++ Dependencies
+
+See the patched RPM spec file linked below.
+
+@see [[Patched RPM spec file by Joachim Katzer][<https://lists.iai.uni-bonn.de/pipermail/swi-prolog/attachments/20110321/7c855b10/attachment.ksh>]]
