@@ -20,10 +20,9 @@ from source.
 
 ==
 sudo apt-get install \
-        binutils coreutils gcc grep chrpath \
+        build-essential autoconf curl chrpath \
         libc6-dev libncursesw5-dev libreadline5-dev \
         libgmp3-dev \
-        make sed autoconf curl \
         libxext-dev libice-dev libjpeg62-dev libxinerama-dev libxft-dev \
         libxpm-dev libxt-dev pkg-config \
         libssl-dev \
