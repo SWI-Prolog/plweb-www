@@ -23,5 +23,5 @@ new window with the built-in Emacs clone.
 ---++ Distributions
 
   * [[Debian and Ubuntu][Debian.txt]]
-  * Redhat.txt
+  * [[Redhat (Fedora)][Redhat.txt]]
   * SuSE.txt
