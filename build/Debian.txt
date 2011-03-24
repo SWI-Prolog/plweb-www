@@ -21,7 +21,7 @@ from source.
 ==
 sudo apt-get install \
         build-essential autoconf curl chrpath \
-        libc6-dev libncursesw5-dev libreadline5-dev \
+        libncursesw5-dev libreadline5-dev \
         libgmp3-dev \
         libxext-dev libice-dev libjpeg62-dev libxinerama-dev libxft-dev \
         libxpm-dev libxt-dev pkg-config \
