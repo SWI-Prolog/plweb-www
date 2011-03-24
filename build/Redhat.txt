@@ -15,3 +15,4 @@ a very old version (5.7.x).
 See the patched RPM spec file linked below.
 
 @see [[Patched RPM spec file by Joachim Katzer][<https://lists.iai.uni-bonn.de/pipermail/swi-prolog/attachments/20110321/7c855b10/attachment.ksh>]]
+@see LinuxDistro.txt
