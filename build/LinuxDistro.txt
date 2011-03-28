@@ -23,7 +23,7 @@ new window with the built-in Emacs clone.
 ---++ Distributions
 
   * [[Debian and Ubuntu][Debian.txt]]
-  * [[Redhat (Fedora)][Redhat.txt]]
+  * [[Redhat (Fedora, RHEL, CentOS)][Redhat.txt]]
   * SuSE.txt
 
 @see http://pkgs.org/package/swi-prolog
