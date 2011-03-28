@@ -45,8 +45,9 @@ yum install \
 
 ---++ Building the RPM
 
-  1. Setup RPM build environment (according to http://fedoraproject.org/wiki/PackageMaintainers/CreatingPackageHowTo)
-  
+  1. Setup RPM build environment (according to
+  [[CreatingPackageHowTo][http://fedoraproject.org/wiki/PackageMaintainers/CreatingPackageHowTo]])
+
     ==
     % sudo yum groupinstall "Development Tools"
     % sudo yum install rpmdevtools
@@ -57,8 +58,7 @@ yum install \
      [[Project page][http://koji.fedoraproject.org/koji/packageinfo?packageID=3471]]
 
     ==
-    % rpm -ihv --nomd5
-http://download.fedora.redhat.com/pub/fedora/linux/development/15/source/SRPMS/pl-5.10.2-3.fc15.src.rpm
+    % rpm -ihv --nomd5 http://download.fedora.redhat.com/pub/fedora/linux/development/15/source/SRPMS/pl-5.10.2-3.fc15.src.rpm
     ==
 
   3. Install development libraries needed to compile SWI-Prolog:
