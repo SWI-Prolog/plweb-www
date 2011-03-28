@@ -1,6 +1,8 @@
----+ SWI-Prolog on Redhat (fedora)
+---+ SWI-Prolog on Redhat (Fedora, RHEL, CentOS)
 
 | Fedora release | 15 |
+| RHEL | 5 and 6 |
+| CentOS | 5 |
 | SWI-Prolog release | 5.10.2 |
 | Package page | <http://koji.fedoraproject.org/koji/buildinfo?buildID=227929> |
 | Maintainer | Petr Pisar |
@@ -12,7 +14,78 @@ a very old version (5.7.x).
 
 ---++ Dependencies
 
-See the patched RPM spec file linked below.
+Use the following commands to obtain all dependencies for a full build from source. 
+
+==
+yum install \
+  autoconf \
+  freetype-devel \
+  gmp-devel \
+  java-1.6.0-openjdk-devel \
+  jpackage-utils \
+  libICE-devel \
+  libjpeg-devel \
+  libSM-devel \
+  libX11-devel \
+  libXaw-devel \
+  libXext-devel \
+  libXft-devel \
+  libXinerama-devel \
+  libXmu-devel \
+  libXpm-devel \
+  libXrender-devel \
+  libXt-devel \
+  ncurses-devel \
+  openssl-devel \
+  pkgconfig \
+  readline-devel \
+  unixODBC-devel \
+  zlib-devel
+==
+
+---++ Building the RPM
+
+In the samples below, #-marked lines must be executed as _root_, $-marked
+lines as a normal user.
+
+  1. Setup RPM build environment (according to http://fedoraproject.org/wiki/PackageMaintainers/CreatingPackageHowTo)
+  
+    ==
+    # yum groupinstall "Development Tools"
+    # yum install rpmdevtools
+    $ rpmdev-setuptree
+    ==
+
+  2. Download and unpack Source RPM from below or the
+     [[Project page][http://koji.fedoraproject.org/koji/packageinfo?packageID=3471]]
+
+    ==
+    $ rpm -ihv --nomd5
+http://download.fedora.redhat.com/pub/fedora/linux/development/15/source/SRPMS/pl-5.10.2-3.fc15.src.rpm
+    ==
+
+  3. Install development libraries needed to compile SWI-Prolog:
+
+    ==
+    $ cd ~/rpmbuild
+    $ su
+    # yum install java-1.6.0-openjdk-devel
+    # yum install `grep ^BuildRequires SPECS/pl.spec | awk 'NF==2 {print $2}'`
+    ==
+
+  4. Build SWI-Prolog
+
+    ==
+    $ rpmbuild -ba SPECS/pl.spec
+    ==
+    or
+    ==
+    $ rpmbuild -ba SPECS/swipl-5.10.2-3.spec
+    ==
+
+On RHEL 5 it may become necessary to disable SELinux temporarily to
+build the RPM because the built library libswipl.so requires text
+relocation.
 
 @see [[Patched RPM spec file by Joachim Katzer][<https://lists.iai.uni-bonn.de/pipermail/swi-prolog/attachments/20110321/7c855b10/attachment.ksh>]]
 @see LinuxDistro.txt
