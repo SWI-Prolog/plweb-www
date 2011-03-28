@@ -45,42 +45,39 @@ yum install \
 
 ---++ Building the RPM
 
-In the samples below, #-marked lines must be executed as _root_, $-marked
-lines as a normal user.
-
   1. Setup RPM build environment (according to http://fedoraproject.org/wiki/PackageMaintainers/CreatingPackageHowTo)
   
     ==
-    # yum groupinstall "Development Tools"
-    # yum install rpmdevtools
-    $ rpmdev-setuptree
+    % sudo yum groupinstall "Development Tools"
+    % sudo yum install rpmdevtools
+    % rpmdev-setuptree
     ==
 
   2. Download and unpack Source RPM from below or the
      [[Project page][http://koji.fedoraproject.org/koji/packageinfo?packageID=3471]]
 
     ==
-    $ rpm -ihv --nomd5
+    % rpm -ihv --nomd5
 http://download.fedora.redhat.com/pub/fedora/linux/development/15/source/SRPMS/pl-5.10.2-3.fc15.src.rpm
     ==
 
   3. Install development libraries needed to compile SWI-Prolog:
 
     ==
-    $ cd ~/rpmbuild
-    $ su
-    # yum install java-1.6.0-openjdk-devel
-    # yum install `grep ^BuildRequires SPECS/pl.spec | awk 'NF==2 {print $2}'`
+    % cd ~/rpmbuild
+    % su
+    % sudo yum install java-1.6.0-openjdk-devel
+    % sudo yum install `grep ^BuildRequires SPECS/pl.spec | awk 'NF==2 {print $2}'`
     ==
 
   4. Build SWI-Prolog
 
     ==
-    $ rpmbuild -ba SPECS/pl.spec
+    % rpmbuild -ba SPECS/pl.spec
     ==
     or
     ==
-    $ rpmbuild -ba SPECS/swipl-5.10.2-3.spec
+    % rpmbuild -ba SPECS/swipl-5.10.2-3.spec
     ==
 
 On RHEL 5 it may become necessary to disable SELinux temporarily to
