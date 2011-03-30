@@ -1,0 +1,4 @@
+---+ C-Stack avoidance workplan
+
+| function/predicate | time |
+| term_hash/2 | 4 |
