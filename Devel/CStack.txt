@@ -1,0 +1,164 @@
+---+ Avoiding using the C-stack for traversing terms
+
+SWI-Prolog (like many other Prolog systems) uses C recursive functions
+to traverse terms.  This is problematic because
+
+  1. There is no good portable way to catch stack overflow and recover
+     the status before traversing the term started.
+  2. The C-stack is often quite limited in size.  Even if this is not
+     the case, each _thread_ needs to reserve the stack in the virtual
+     address space.  This is painful for many-threaded applications on
+     32-bit hardware.
+
+The table below lists Prolog predicates whose C implementation contains
+recursive functions operating on terms. There are two classes of
+functions.
+
+  * The functions in *bold* describe fully recursive C-functions
+  * The other functions are functions that perform Last Argument
+  Optimization (LAO): they do not create a new stack frame
+  for processing the last argument. This implies they pose no limit on
+  structures nested on the last argument. Lists is the common example of
+  such terms.
+
+This table is created using the tools in =|src/tools|= in the source
+distribution.  These tools require a recent Linux system and GCC.
+
+
+| $absolute_file_name/2 | do_unify, unify_with_occurs_check |
+| $add_directive_wic/1 | do_number_vars, *do_save_qlf_term* |
+| $attvars_after_choicepoint/2 | do_unify, unify_with_occurs_check |
+| $btree_find_node/4 | do_unify, unify_with_occurs_check |
+| $clause_term_position/3 | *find_if_then_end* |
+| $collect_findall_bag/3 | copy_record, do_unify, scanAtomsRecord, unify_with_occurs_check |
+| $complete_atom/3 | do_unify, unify_with_occurs_check |
+| $current_prolog_flag/5 | copy_record, do_unify, unify_with_occurs_check |
+| $destroy_findall_bag/1 | scanAtomsRecord |
+| $e_free_variables/2 | do_unify, free_variables_loop, unify_with_occurs_check |
+| $eval_when_condition/2 | do_unify, unify_with_occurs_check |
+| $factorize_term/2 | do_unify, unify_with_occurs_check |
+| $raw_read/1 | do_unify, unify_with_occurs_check |
+| $raw_read/2 | do_unify, unify_with_occurs_check |
+| $record_clause/2 | analyseVariables2, compileArgument, *compileBody* |
+| $record_clause/3 | analyseVariables2, compileArgument, *compileBody* |
+| $skip_list/3 | do_unify, unify_with_occurs_check |
+| </2 | *eval_expression* |
+| =/2 | do_unify, unify_with_occurs_check |
+| =../2 | do_unify, unify_with_occurs_check |
+| =:=/2 | *eval_expression* |
+| =</2 | *eval_expression* |
+| =\=/2 | *eval_expression* |
+| >/2 | *eval_expression* |
+| >=/2 | *eval_expression* |
+| ?=/2 | do_unify, unify_with_occurs_check |
+| \=/2 | do_unify, unify_with_occurs_check |
+| acyclic_term/1 | ph1_is_acyclic, ph2_is_acyclic |
+| arg/3 | do_unify, unify_with_occurs_check |
+| asserta/1 | analyseVariables2, compileArgument, *compileBody* |
+| asserta/2 | analyseVariables2, compileArgument, *compileBody* |
+| assertz/1 | analyseVariables2, compileArgument, *compileBody* |
+| assertz/2 | analyseVariables2, compileArgument, *compileBody* |
+| atom_chars/2 | do_unify, unify_with_occurs_check |
+| atom_codes/2 | do_unify, unify_with_occurs_check |
+| atom_concat/3 | do_unify, unify_with_occurs_check |
+| atom_to_term/3 | do_unify, unify_with_occurs_check, *complex_term*, *writeTerm* |
+| atomic_concat/3 | do_unify, unify_with_occurs_check |
+| atomic_list_concat/2 | do_unify, unify_with_occurs_check |
+| atomic_list_concat/3 | do_unify, unify_with_occurs_check |
+| b_getval/2 | do_unify, unify_with_occurs_check |
+| between/3 | do_unify, unify_with_occurs_check |
+| collation_key/2 | do_unify, unify_with_occurs_check |
+| copy_term/2 | do_unify, unify_with_occurs_check, *do_copy_term* |
+| copy_term_nat/2 | do_unify, unify_with_occurs_check, *do_copy_term* |
+| create_prolog_flag/3 | ph_ground, scanAtomsRecord |
+| current_predicate/1 | do_unify, unify_with_occurs_check |
+| current_prolog_flag/2 | copy_record, do_unify, unify_with_occurs_check |
+| cyclic_term/1 | ph1_is_acyclic, ph2_is_acyclic |
+| directory_files/2 | do_unify, unify_with_occurs_check |
+| downcase_atom/2 | do_unify, unify_with_occurs_check |
+| duplicate_term/2 | do_unify, unify_with_occurs_check, *do_copy_term* |
+| erase/1 | scanAtomsRecord |
+| expand_file_name/2 | do_unify, unify_with_occurs_check |
+| file_base_name/2 | do_unify, unify_with_occurs_check |
+| file_directory_name/2 | do_unify, unify_with_occurs_check |
+| file_name_extension/3 | do_unify, unify_with_occurs_check |
+| flag/3 | *eval_expression* |
+| format/2 | do_unify, unify_with_occurs_check, *eval_expression*, *writeTerm* |
+| format/3 | do_unify, unify_with_occurs_check, *eval_expression*, *writeTerm* |
+| format_time/3 | do_unify, unify_with_occurs_check |
+| format_time/4 | do_unify, unify_with_occurs_check |
+| functor/3 | do_unify, unify_with_occurs_check |
+| garbage_collect_atoms/0 | scanAtomsRecord |
+| get_attr/3 | do_unify, unify_with_occurs_check |
+| get_attrs/2 | do_unify, unify_with_occurs_check |
+| getenv/2 | do_unify, unify_with_occurs_check |
+| ground/1 | ph_ground |
+| hash/1 | do_unify, unify_with_occurs_check |
+| instance/2 | copy_record, do_unify, unify_with_occurs_check, *decompileBody* |
+| is/2 | *eval_expression* |
+| keysort/2 | do_unify, unify_with_occurs_check |
+| memberchk/2 | do_unify, unify_with_occurs_check |
+| message_queue_destroy/1 | scanAtomsRecord |
+| message_queue_property/2 | scanAtomsRecord |
+| msort/2 | do_unify, unify_with_occurs_check |
+| name/2 | do_unify, unify_with_occurs_check |
+| nb_current/2 | do_unify, unify_with_occurs_check |
+| nb_getval/2 | do_unify, unify_with_occurs_check |
+| nb_linkarg/3 | do_unify, unify_with_occurs_check, *do_copy_term* |
+| nb_setarg/3 | do_unify, unify_with_occurs_check, *do_copy_term* |
+| normalize_space/2 | do_unify, unify_with_occurs_check |
+| number_chars/2 | do_unify, unify_with_occurs_check |
+| number_codes/2 | do_unify, unify_with_occurs_check |
+| numbervars/4 | do_number_vars, ph1_is_acyclic, ph2_is_acyclic |
+| print/1 | *writeTerm* |
+| print/2 | *writeTerm* |
+| prolog_frame_attribute/3 | do_unify, unify_with_occurs_check |
+| prolog_to_os_filename/2 | do_unify, unify_with_occurs_check |
+| read/1 | do_unify, unify_with_occurs_check, *complex_term* |
+| read/2 | do_unify, unify_with_occurs_check, *complex_term* |
+| read_clause/1 | do_unify, unify_with_occurs_check, *complex_term* |
+| read_clause/2 | do_unify, unify_with_occurs_check, *complex_term* |
+| read_pending_input/3 | do_unify, unify_with_occurs_check |
+| read_term/2 | do_unify, unify_with_occurs_check, *complex_term* |
+| read_term/3 | do_unify, unify_with_occurs_check, *complex_term* |
+| retractall/1 | do_unify, unify_with_occurs_check |
+| set_prolog_flag/2 | ph_ground, scanAtomsRecord |
+| setarg/3 | do_unify, unify_with_occurs_check, *do_copy_term* |
+| setlocale/3 | do_unify, unify_with_occurs_check |
+| sort/2 | do_unify, unify_with_occurs_check |
+| string_concat/3 | do_unify, unify_with_occurs_check |
+| string_to_atom/2 | do_unify, unify_with_occurs_check |
+| string_to_list/2 | do_unify, unify_with_occurs_check |
+| strip_module/3 | do_unify, unify_with_occurs_check |
+| sub_atom/5 | do_unify, unify_with_occurs_check |
+| sub_string/5 | do_unify, unify_with_occurs_check |
+| subsumes_term/2 | do_unify, unify_with_occurs_check |
+| tab/1 | *eval_expression* |
+| tab/2 | *eval_expression* |
+| term_attvars/2 | do_unify, unify_with_occurs_check |
+| term_hash/2 | *termHashValue* |
+| term_hash/4 | *termHashValue* |
+| term_to_atom/2 | do_unify, unify_with_occurs_check, *complex_term*, *writeTerm* |
+| term_variables/2 | do_unify, unify_with_occurs_check |
+| term_variables/3 | do_unify, unify_with_occurs_check |
+| thread_get_message/1 | copy_record, do_unify, scanAtomsRecord, unify_with_occurs_check |
+| thread_get_message/2 | copy_record, do_unify, scanAtomsRecord, unify_with_occurs_check |
+| thread_join/2 | copy_record |
+| thread_peek_message/1 | copy_record, do_unify, unify_with_occurs_check |
+| thread_peek_message/2 | copy_record, do_unify, scanAtomsRecord, unify_with_occurs_check |
+| thread_send_message/2 | scanAtomsRecord |
+| unifiable/3 | do_unify, unify_with_occurs_check, var_occurs_in |
+| unify_with_occurs_check/2 | unify_with_occurs_check |
+| upcase_atom/2 | do_unify, unify_with_occurs_check |
+| variant_sha1/2 | do_unify, unify_with_occurs_check |
+| wait_for_input/3 | do_unify, unify_with_occurs_check |
+| with_output_to/2 | do_unify, unify_with_occurs_check |
+| working_directory/2 | do_unify, unify_with_occurs_check |
+| write/1 | *writeTerm* |
+| write/2 | *writeTerm* |
+| write_canonical/1 | do_number_vars, *writeTerm* |
+| write_canonical/2 | do_number_vars, *writeTerm* |
+| write_term/2 | *writeTerm* |
+| write_term/3 | *writeTerm* |
+| writeq/1 | *writeTerm* |
+| writeq/2 | *writeTerm* |
