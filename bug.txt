@@ -1,0 +1,37 @@
+---+ What is a bug?
+
+That is not so easy to define, but roughly these are bugs:
+
+  * Inconsistencies between standards (both ISO and de-facto) and
+    system behavior.
+  * Inconsistency between documentation and system behavior (which
+    might be a bug in the documentation).
+  * Crashes.  Basically, any reproducible crash is worth reporting
+    unless it is flagged as a bug in the documentation or can be
+    explained by C-stack overflow.  We made an [[analysis][Devel/CStack.txt]]
+    of predicates that are sensitive to this issue.
+
+Non-experienced users are often surprised by how Prolog behaves.  In the
+vast majority of cases this is not a bug.  Use the mailinglist to find 
+answers.
+
+---++ What do I include in the bug-report?
+
+Typically, a report must include the parts below to be meaningful.  This
+is just a guideline, but if any of these parts are missing it is very likely that your report will not be answered at all or by additional questions.
+
+  1. The version of SWI-Prolog you use and the operating system.
+  2. A clear description on how to reproduce the issue.  Typically,
+  this consists of:
+     - A _complete_ program.  Please do not send merely a fragment
+     because (1) it costs us a lot of time to complete and (2), we
+     typically complete it differently and the problem doesn't reproduce.
+     Small programs are better, but it isn't always worthwhile to spend
+     effort in creating a small program.  If the program is big, do not
+     include it in the first message, but merely describe that it is
+     available and what it would take to obtain and run it.
+  3. The behavior you observe.  If there are warnings or error messages,
+  include at least the first couple of them _literally_.
+  4. The behavior you expected.
+
+
