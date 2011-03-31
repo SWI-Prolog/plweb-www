@@ -1,4 +1,5 @@
 ---+ C-Stack avoidance workplan
 
-| function/predicate | time |
+| function/predicate | time | Notes |
 | term_hash/2 | 4 |
+| Standard unification | 4 | incl. Performance enhancements to term-agenda code |
