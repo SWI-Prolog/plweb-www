@@ -3,3 +3,4 @@
 | function/predicate | time | Notes |
 | term_hash/2 | 4 |
 | Standard unification | 4 | incl. Performance enhancements to term-agenda code |
+| ground/1 | 2 | More term-agenda enhancements |
