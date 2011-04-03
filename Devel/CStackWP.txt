@@ -4,3 +4,5 @@
 | term_hash/2 | 4 |
 | Standard unification | 4 | incl. Performance enhancements to term-agenda code |
 | ground/1 | 2 | More term-agenda enhancements |
+| unify_with_occurs_check/2 | 2 |
+| numbervars | 1 |
