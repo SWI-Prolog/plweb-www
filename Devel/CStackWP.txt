@@ -6,3 +6,4 @@
 | ground/1 | 2 | More term-agenda enhancements |
 | unify_with_occurs_check/2 | 2 |
 | numbervars | 1 |
+| bagof/setof | 3 | incl. speedup of template analysis. |
