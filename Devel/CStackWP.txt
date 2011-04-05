@@ -7,3 +7,5 @@
 | unify_with_occurs_check/2 | 2 |
 | numbervars | 1 |
 | bagof/setof | 3 | incl. speedup of template analysis. |
+| markAtomsRecord() | 1 |
+| copy_record() | 1 |
