@@ -24,12 +24,10 @@ functions.
 This table is created using the tools in =|src/tools|= in the source
 distribution.  These tools require a recent Linux system and GCC.
 
+Last updated for version: 5.11.18-70-g9b75644
+
 | $add_directive_wic/1 | *do_save_qlf_term* |
 | $clause_term_position/3 | *find_if_then_end* |
-| $collect_findall_bag/3 | copy_record, scanAtomsRecord |
-| $current_prolog_flag/5 | copy_record |
-| $destroy_findall_bag/1 | scanAtomsRecord |
-| $e_free_variables/2 | free_variables_loop |
 | $record_clause/2 | analyseVariables2, compileArgument, *compileBody* |
 | $record_clause/3 | analyseVariables2, compileArgument, *compileBody* |
 | </2 | *eval_expression* |
@@ -46,19 +44,13 @@ distribution.  These tools require a recent Linux system and GCC.
 | atom_to_term/3 | *complex_term*, *writeTerm* |
 | copy_term/2 | *do_copy_term* |
 | copy_term_nat/2 | *do_copy_term* |
-| create_prolog_flag/3 | scanAtomsRecord |
-| current_prolog_flag/2 | copy_record |
 | cyclic_term/1 | ph1_is_acyclic, ph2_is_acyclic |
 | duplicate_term/2 | *do_copy_term* |
-| erase/1 | scanAtomsRecord |
 | flag/3 | *eval_expression* |
 | format/2 | *eval_expression*, *writeTerm* |
 | format/3 | *eval_expression*, *writeTerm* |
-| garbage_collect_atoms/0 | scanAtomsRecord |
-| instance/2 | copy_record, *decompileBody* |
+| instance/2 | *decompileBody* |
 | is/2 | *eval_expression* |
-| message_queue_destroy/1 | scanAtomsRecord |
-| message_queue_property/2 | scanAtomsRecord |
 | nb_linkarg/3 | *do_copy_term* |
 | nb_setarg/3 | *do_copy_term* |
 | numbervars/4 | ph1_is_acyclic, ph2_is_acyclic |
@@ -70,19 +62,12 @@ distribution.  These tools require a recent Linux system and GCC.
 | read_clause/2 | *complex_term* |
 | read_term/2 | *complex_term* |
 | read_term/3 | *complex_term* |
-| set_prolog_flag/2 | scanAtomsRecord |
 | setarg/3 | *do_copy_term* |
 | tab/1 | *eval_expression* |
 | tab/2 | *eval_expression* |
 | term_hash/2 | *termHashValue* |
 | term_hash/4 | *termHashValue* |
 | term_to_atom/2 | *complex_term*, *writeTerm* |
-| thread_get_message/1 | copy_record, scanAtomsRecord |
-| thread_get_message/2 | copy_record, scanAtomsRecord |
-| thread_join/2 | copy_record |
-| thread_peek_message/1 | copy_record |
-| thread_peek_message/2 | copy_record, scanAtomsRecord |
-| thread_send_message/2 | scanAtomsRecord |
 | write/1 | *writeTerm* |
 | write/2 | *writeTerm* |
 | write_canonical/1 | *writeTerm* |
@@ -91,3 +76,4 @@ distribution.  These tools require a recent Linux system and GCC.
 | write_term/3 | *writeTerm* |
 | writeq/1 | *writeTerm* |
 | writeq/2 | *writeTerm* |
+
