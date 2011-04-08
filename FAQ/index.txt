@@ -42,6 +42,7 @@
 
   * *|Using SWI-Prolog on MS-Windows|*
     * [[Cut/copy/paste from the plwin.exe console][WinCopy.txt]]
+    * [[Visual C runtime issues][VCRuntime.txt]]
 
   * *|Using SWI-Prolog with C/C++|*
     * [[Where are SWI-Prolog.h, libpl.{lib,dll,a,so}?][LibAndInclude.txt]]
