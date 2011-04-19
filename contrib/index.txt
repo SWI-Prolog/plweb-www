@@ -1,8 +1,5 @@
 ---+ Contributed libraries and interfaces
 
-This page contains material from the old [[SWI-Prolog
-wiki][http://gollem.science.uva.nl/twiki/pl/bin/view/Main/WebHome]]
-
 ---++ Interfaces to other programming environments
 
 These are interfaces to other programming environments that are not
