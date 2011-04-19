@@ -11,7 +11,7 @@ People are listed in alphabetical order.
   * Anjo Anjewierden (initial developer of XPCE, the SWI-Prolog native graphics system)
   * Jan Wielemaker (main developer and maintainer)
   * Jan van der Steen (SSL interface)
-  * Jeff Rosenwald (TIPC interface)
+  * Jeff Rosenwald (TIPC interface, Google protocl buffers)
   * Keri Harris (testing, patches)
   * Leslie de Koninck (CLP(QR) port)
   * Markus Triska (CLP(FD) and other (constraint) libraries)
@@ -29,6 +29,8 @@ People are listed in alphabetical order.
   * Samer Abdallah ([[OSC, MIDI, Random and Matlab
   interfaces][</contrib/SamerAbdallah/>]])
   * Degski ([[FANN][http://leenissen.dk/]], Windows porting)
+  * Giorgos Stoilos (isub/4: fuzzy string matching)
+  * Kuniaki Mukai (implementationg =@=/2 (variant/2)
 
 ---++ Other _Contributors_
 
@@ -42,7 +44,6 @@ People are listed in alphabetical order.
   * Steve Moyle (funding of PlUnit and PlDoc)
 
 ---++ _|Open Source|_ projects used by SWI-Prolog
-
 
   * AVL library by [[Brad Appleton][http://www.cmcrossroads.com/bradapp/]] used in Semweb package
   * [[dtoa.c][http://www.netlib.org/fp/dtoa.c]] (Float <-> text conversion by David M. Gay).
