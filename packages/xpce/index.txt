@@ -57,7 +57,7 @@ summarise using the points below.
 For starters as well as for more experienced users who want to know how
 particular tasks are tackled using XPCE/Prolog, there is the [[XPCE
 UserGuide][</download/xpce/doc/userguide/userguide.pdf>]]. The manual is
-also available a [[HTML-tar-archive][]</download/xpce/doc/userguide/userguide.html.tgz>].
+also available a [[HTML-tar-archive][</download/xpce/doc/userguide/userguide.html.tgz>]].
 
 The reference documentation is available using a hypertext system
 defined in XPCE/Prolog. This tool exploits the XPCE-class descriptions
