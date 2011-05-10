@@ -106,6 +106,22 @@ Now, there are some options that may apply.
     % git branch -D tmp
     ==
 
+---+++ Do's and Don'ts
+
+  $ Use small commits :
+  Do not put multiple changes into the same commit.  The ideal commit
+  establishes exactly one fix or addition.
+
+  $ Amend commits :
+  Often, you'll find that the commit you just created is wrong or
+  incomplete.  As long as your commit is only known locally, use
+  the command below to fix the last commit rather than creating
+  two commits.
+
+  ==
+  % git commit -a --amend
+  ==
+
 ---++ As simple git patches (2nd option)
 
 Just checkout the version using git and use the command below to create
