@@ -1,0 +1,108 @@
+---+ How to submit patches?
+
+This page describes how to submit patches if you find a bug or missing functionality.  There are several options, which are described in decreasing
+preference.
+
+---++ Submit as GIT patch-sets
+
+Download the system as described in [[Accessing SWI-Prolog source via GIT][</git>]].  First we describe patches to the core system.  Patches
+to packages that are distributed as git submodules are described below.
+
+  1. Make sure git knows who you are.  You only need to do this once
+  for your machine.
+
+  ==
+  % git config user.name "The Great Fixer"
+  % git config user.email fixer@bugs.com
+  ==
+
+  2. Switch to a branch.  This makes it easy to distinguish between the
+  central version and yours.
+
+  ==
+  % git checkout -b fixes
+  ==
+
+  3. Edit your files, making the necessary changes.  Test your changes.
+  Make sure you changed nothing unwanted using
+
+  ==
+  % git diff
+  ==
+
+  If you are happy, commit them using the command below.  Please add a
+  sensible story that explains what has been added, fixed, ....  If you
+  want the change to appear in the release notes, make the comment start
+  with a word in capitals, followed by a colon (:).  Typically, this is
+  =|ADDED:|=, =|FIXED:|=, =|PORT:|=.  The set is not fixed, but try to
+  reuse old keywords.
+
+  ==
+  % git commit -a
+  ==
+
+  4. Create a patch-set.  The command below creates a file for each commit
+  between the master branch and your fixes branch.  It creates files 0001-*,
+  0002-*, etc.  Send these files to bugs@swi-prolog.org, *one* file per
+  mail.  The commit comment is part of these files, which should be enough
+  to explain what you did why.
+
+  ==
+  % git format-patch master
+  ==
+
+---+++ How about submitting patches to a package?
+
+This is slightly more complicated because packages are git submodules and
+submodules are `not on a branch'.  Therefore, you need some more preparation.
+Go to the directory holding the package you want to patch.  Then use these
+commands to turn this into a normal repository.  After that you can follow
+the same steps as above.
+
+  ==
+  % git checkout master
+  % git pull
+  ==
+
+---+++ Synchronizing
+
+At some point you may want to synchronize   with the upstream version.  You
+do this by switching branches, and update as usual:
+
+  ==
+  % git checkout master
+  % git pull
+  % ./prepare
+  ==
+
+Now, there are some options that may apply.
+
+  $ All changes were accepted :
+  Simply discard your fixes branch using
+
+    ==
+    % git branch -D fixes
+    ==
+
+  $ No changes are applied upstream (yet) :
+  Go to your fixes branch and _rebase_ it:
+
+    ==
+    % git checkout fixes
+    % git rebase master
+    ==
+
+  $ Some changes were accepted, others not and you want to keep using them :
+  Move your branch, recreate it and selectively pick the commits you want
+  to keep.  You can find the hashes of the commits using =|git log|=.
+  The sequence is:
+
+    ==
+    % git branch -m fixes tmp
+    % git checkout -b fixes
+    % git cherry-pick <hash1>
+    % git cherry-pick <hash2>
+    % ...
+    % git branch -D tmp
+    ==
+  
