@@ -4,4 +4,8 @@
   * [[How to create a web-service easily?][<http/>]]
   * [[How to scrape web-pages?][<scrape/>]]
 
+Development
+
+  * [[How to submit patches][SubmitPatch.txt]]
+
 Please contribute to this HOWTO.   This website is now a [[wiki][</wiki/>]]!
