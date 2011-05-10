@@ -3,7 +3,7 @@
 This page describes how to submit patches if you find a bug or missing functionality.  There are several options, which are described in decreasing
 preference.
 
----++ Submit as GIT patch-sets
+---++ Submit as GIT patch-sets (preferred)
 
 Download the system as described in [[Accessing SWI-Prolog source via GIT][</git>]].  First we describe patches to the core system.  Patches
 to packages that are distributed as git submodules are described below.
@@ -105,4 +105,46 @@ Now, there are some options that may apply.
     % ...
     % git branch -D tmp
     ==
+
+---++ As simple git patches (2nd option)
+
+Just checkout the version using git and use the command below to create
+a patch file.
+
+  ==
+  % git diff > my-patches
+  ==
+
+This is less ideal because:
+
+  1. There is no author in the GIT log.  It can be very useful to
+  know who did what when and you claim your work.
+
+  2. There is no comment.  Please add a comment to the mail about
+  why and what.
+
+---++ As classical patches (3th option)
+
+You can also keep a copy and use the diff command to produce a classical
+patch file as below.  diff should be available on virtually any Unix system
+and there are many ports for Windows.  Use the unified (=|-u|=) style to
+include context.
   
+  ==
+  % cp somefile somefile.orig
+  <edit, test, etc>
+  % diff -u somefile.orig somefile > my-patches
+  ==
+  
+This is worse than using =|git diff|= because git diff includes information
+on the exact version that is patches, which can help us if there are other
+conflicting patches.  In addition to comments on the why and what, please
+indicate the version you patched.
+
+
+---++ Send complete new files (please don't)
+
+Please do not send complete files.  They are hard to integrate.  If you
+really must, at least accompany them with a clear description of what you
+changed and which version of the file you changed.  Change as little as
+possible.
