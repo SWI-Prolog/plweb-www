@@ -139,7 +139,7 @@ This is less ideal because:
   2. There is no comment.  Please add a comment to the mail about
   why and what.
 
----++ As classical patches (3th option)
+---++ As classical patches (3rd option)
 
 You can also keep a copy and use the diff command to produce a classical
 patch file as below.  diff should be available on virtually any Unix system
