@@ -9,3 +9,4 @@
 | bagof/setof | 3 | incl. speedup of template analysis. |
 | markAtomsRecord() | 1 |
 | copy_record() | 1 |
+| copy_term/2 and friends | 32 |
