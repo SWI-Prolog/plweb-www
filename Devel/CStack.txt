@@ -24,7 +24,7 @@ functions.
 This table is created using the tools in =|src/tools|= in the source
 distribution.  These tools require a recent Linux system and GCC.
 
-Last updated for version: 5.11.18-70-g9b75644
+Last updated for version: V5.11.21-19-g8df346e
 
 | $add_directive_wic/1 | *do_save_qlf_term* |
 | $clause_term_position/3 | *find_if_then_end* |
@@ -42,17 +42,12 @@ Last updated for version: 5.11.18-70-g9b75644
 | assertz/1 | analyseVariables2, compileArgument, *compileBody* |
 | assertz/2 | analyseVariables2, compileArgument, *compileBody* |
 | atom_to_term/3 | *complex_term*, *writeTerm* |
-| copy_term/2 | *do_copy_term* |
-| copy_term_nat/2 | *do_copy_term* |
 | cyclic_term/1 | ph1_is_acyclic, ph2_is_acyclic |
-| duplicate_term/2 | *do_copy_term* |
 | flag/3 | *eval_expression* |
 | format/2 | *eval_expression*, *writeTerm* |
 | format/3 | *eval_expression*, *writeTerm* |
 | instance/2 | *decompileBody* |
 | is/2 | *eval_expression* |
-| nb_linkarg/3 | *do_copy_term* |
-| nb_setarg/3 | *do_copy_term* |
 | numbervars/4 | ph1_is_acyclic, ph2_is_acyclic |
 | print/1 | *writeTerm* |
 | print/2 | *writeTerm* |
@@ -62,7 +57,6 @@ Last updated for version: 5.11.18-70-g9b75644
 | read_clause/2 | *complex_term* |
 | read_term/2 | *complex_term* |
 | read_term/3 | *complex_term* |
-| setarg/3 | *do_copy_term* |
 | tab/1 | *eval_expression* |
 | tab/2 | *eval_expression* |
 | term_hash/2 | *termHashValue* |
