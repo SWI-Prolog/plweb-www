@@ -74,27 +74,15 @@ This example introduces two new primitives:
 
 Although this type of coding is popular, it is not ideal because the
 location of =|/list_module|= is hard-coded. We do not care about the
-HTTP location, we want to *|call list_module(+Request)!|* The HTTP
-infrastructure can tell us this location, so we can use the code below
-(current GIT-version provides href/3 in library(http/http_dispatch) as
-http_link_to_id/3).
+HTTP location, we want to *|call list_module(+Request)|*! The HTTP
+infrastructure can tell us this location and provides the predicate
+http_link_to_id/3 to compute a link based on the identifier of the
+handler (by default the predicate name) and additional parameters.
 
 ==
 module_link(H) -->
-	{ href(list_module, [name=H], HREF) },
+	{ http_link_to_id(list_module, [name=H], HREF) },
 	html(a(href(HREF), H)).
-
-%%	href(+HandleID, +Query, -HREF)
-%
-%	HREF is a link to a handler with HandleID and the given
-%	list of Name=Value parameters.
-
-href(HandleID, Query, HREF) :-
-	http_location_by_id(HandleID, Location),
-	uri_data(path, Components, Location),
-	uri_query_components(String, Query),
-	uri_data(search, Components, String),
-	uri_components(HREF, Components).
 ==
 
 Note that by using the URI encoding and decoding library(uri), we are
