@@ -24,18 +24,18 @@ functions.
 This table is created using the tools in =|src/tools|= in the source
 distribution.  These tools require a recent Linux system and GCC.
 
-Last updated for version: V5.11.21-19-g8df346e
+Last updated for version: V5.11.22-44-gc860545
 
 | $add_directive_wic/1 | *do_save_qlf_term* |
 | $clause_term_position/3 | *find_if_then_end* |
 | $record_clause/2 | analyseVariables2, compileArgument, *compileBody* |
 | $record_clause/3 | analyseVariables2, compileArgument, *compileBody* |
-| </2 | *eval_expression* |
-| =:=/2 | *eval_expression* |
-| =</2 | *eval_expression* |
-| =\=/2 | *eval_expression* |
-| >/2 | *eval_expression* |
-| >=/2 | *eval_expression* |
+| </2 | ph1_is_acyclic, ph2_is_acyclic |
+| =:=/2 | ph1_is_acyclic, ph2_is_acyclic |
+| =</2 | ph1_is_acyclic, ph2_is_acyclic |
+| =\=/2 | ph1_is_acyclic, ph2_is_acyclic |
+| >/2 | ph1_is_acyclic, ph2_is_acyclic |
+| >=/2 | ph1_is_acyclic, ph2_is_acyclic |
 | acyclic_term/1 | ph1_is_acyclic, ph2_is_acyclic |
 | asserta/1 | analyseVariables2, compileArgument, *compileBody* |
 | asserta/2 | analyseVariables2, compileArgument, *compileBody* |
@@ -43,11 +43,11 @@ Last updated for version: V5.11.21-19-g8df346e
 | assertz/2 | analyseVariables2, compileArgument, *compileBody* |
 | atom_to_term/3 | *complex_term*, *writeTerm* |
 | cyclic_term/1 | ph1_is_acyclic, ph2_is_acyclic |
-| flag/3 | *eval_expression* |
-| format/2 | *eval_expression*, *writeTerm* |
-| format/3 | *eval_expression*, *writeTerm* |
+| flag/3 | ph1_is_acyclic, ph2_is_acyclic |
+| format/2 | ph1_is_acyclic, ph2_is_acyclic, *writeTerm* |
+| format/3 | ph1_is_acyclic, ph2_is_acyclic, *writeTerm* |
 | instance/2 | *decompileBody* |
-| is/2 | *eval_expression* |
+| is/2 | ph1_is_acyclic, ph2_is_acyclic |
 | numbervars/4 | ph1_is_acyclic, ph2_is_acyclic |
 | print/1 | *writeTerm* |
 | print/2 | *writeTerm* |
@@ -57,8 +57,8 @@ Last updated for version: V5.11.21-19-g8df346e
 | read_clause/2 | *complex_term* |
 | read_term/2 | *complex_term* |
 | read_term/3 | *complex_term* |
-| tab/1 | *eval_expression* |
-| tab/2 | *eval_expression* |
+| tab/1 | ph1_is_acyclic, ph2_is_acyclic |
+| tab/2 | ph1_is_acyclic, ph2_is_acyclic |
 | term_hash/2 | *termHashValue* |
 | term_hash/4 | *termHashValue* |
 | term_to_atom/2 | *complex_term*, *writeTerm* |
@@ -70,4 +70,3 @@ Last updated for version: V5.11.21-19-g8df346e
 | write_term/3 | *writeTerm* |
 | writeq/1 | *writeTerm* |
 | writeq/2 | *writeTerm* |
-
