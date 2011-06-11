@@ -4,7 +4,7 @@ GIT is a fast version control system developed by Linus Torvalds and
 currently maintained by Junio C Hamano. Here is our
 [[motivation][whygit.txt]] for choosing GIT for managing the SWI-Prolog
 sources. You should use the GIT version if you want to stay
-*|up-to-date|* and/or you want to [[*contribute*][<howto/SubmitPatch.html>]] to the project. Many professional users opt for this route.
+*|up-to-date|* and/or you want to [[contribute][<howto/SubmitPatch.html>]] to the project. Many professional users opt for this route.
 
 First install [[GIT][<git:>]] for your platform. You need at least
 version 1.6.0 because the SWI-Prolog repository uses the GIT submodule
