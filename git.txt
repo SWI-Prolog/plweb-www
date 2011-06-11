@@ -1,6 +1,6 @@
----+ Accessing SWI-Prolog source via [[GIT][<git:>]]
+---+ Accessing SWI-Prolog source via GIT
 
-GIT is a fast version control system developed by Linus Torvalds and
+[[GIT][<git:>]] is a fast version control system developed by Linus Torvalds and
 currently maintained by Junio C Hamano. Here is our
 [[motivation][whygit.txt]] for choosing GIT for managing the SWI-Prolog
 sources. You should use the GIT version if you want to stay
