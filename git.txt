@@ -22,8 +22,9 @@ firewall denies direct internet access to the git port (9418).
     * http://www.swi-prolog.org/home/pl/git/pl.git
     * git://www.swi-prolog.org/home/pl/git/pl.git [[star.gif]]
 
-The development branch is kept in its own repository at
+The development version is kept in its own repository at
 
+    * http://www.swi-prolog.org/home/pl/git/pl-devel.git
     * git://www.swi-prolog.org/home/pl/git/pl-devel.git [[star.gif]]
 
 Initial checkout is achieved using the command below, which creates a
