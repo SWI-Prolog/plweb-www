@@ -35,22 +35,6 @@ that runs http://www.swi-prolog.org, which can be downloaded through
 targets semantic web (RDF) applications, it is also useful as a starting
 point for general purpose web-servers.
 
-Here is a very incomplete selection of functionality that you can find
-in these servers:
-
-    * http://www.swi-prolog.org
-	- Call CGI scripts (http_cgi.pl)
-	- Autocompletion (autocomplete.pl)
-	- PlDoc based wiki processing (wiki.pl, wiki_edit.pl)
-	- Stress testing (directory stress)
-	- Logfile handling (directory logs)
-    * http://cliopatria.swi-prolog.org
-	- User management, OpenID
-	- Extension packs (CPACK)
-	- Modular server configuration
-	- Server statistics
-	- Handle messages from Prolog
-	- Lots of RDF stuff
 
 
 ---++ Plans (todo)
