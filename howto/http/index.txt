@@ -24,6 +24,35 @@ This is work in progress!   If you want to contribute or comment,
 send mail to [[me][<mailto:jan@swi-prolog.org>]] or to the
 [[mailinglist][</Mailinglist.html>]]
 
+
+---++ Example code
+
+We have two servers available with complete source. One is the server
+that runs http://www.swi-prolog.org, which can be downloaded through
+[[GIT][</git.html>]] from the repository
+[[plweb.git][</git/plweb.git>]]. The other is
+[[ClioPatria][http://cliopatria.swi-prolog.org/]]. Although ClioPatria
+targets semantic web (RDF) applications, it is also useful as a starting
+point for general purpose web-servers.
+
+Here is a very incomplete selection of functionality that you can find
+in these servers:
+
+    * SWI-Prolog.org
+	- Call CGI scripts (http_cgi.pl)
+	- Autocompletion (autocomplete.pl)
+	- PlDoc based wiki processing (wiki.pl, wiki_edit.pl)
+	- Stress testing (directory stress)
+	- Logfile handling (directory logs)
+    * ClioPatria
+	- User management, OpenID
+	- Extension packs (CPACK)
+	- Modular server configuration
+	- Server statistics
+	- Handle messages from Prolog
+	- Lots of RDF stuff
+
+
 ---++ Plans (todo)
 
     * AJAX interaction (YUI, simple table, tree, N-Queens code?)

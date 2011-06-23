@@ -11,3 +11,4 @@
 | copy_record() | 1 |
 | copy_term/2 and friends | 32 |
 | eval_expression | 10 |
+| (a)cyclic_term | 16 |
