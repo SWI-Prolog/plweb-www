@@ -18,13 +18,13 @@ summarise using the points below.
     Prolog-defined methods can receive arguments in native Prolog data,
     native Prolog data may be associated with XPCE instance-variables
     and XPCE errors are (selectively) mapped to Prolog exceptions. These
-    features make XPCE a natural extension to your Prolog program. 
+    features make XPCE a natural extension to your Prolog program.
 
     $ High level of abstraction :
     XPCE's graphical layer provides a high abstraction level, hiding
     details on event-handling, redraw-management and layout management
     from the application programmer, while still providing access to the
-    primitives to deal with exceptional cases. 
+    primitives to deal with exceptional cases.
 
     $ Exploit rapid Prolog development cycle :
 
@@ -32,7 +32,7 @@ summarise using the points below.
     naturally in Prolog. This implies you can easily cross the border
     between your application and the GUI-code inside the tracer. It also
     implies you can modify source-code and recompile while your
-    application is running. 
+    application is running.
 
     $ Platform independent programs :
     XPCE/Prolog code is fully platform-independent, making it feasible
@@ -41,7 +41,7 @@ summarise using the points below.
     manchine-independent, applications can be delivered as a
     saved-state. Such states can be executed transparently using the
     development-environment to facilitate debugging or the runtime
-    emulator for better speed and space-efficiency. 
+    emulator for better speed and space-efficiency.
 
 ---++ Links about motivation and impressions
 
@@ -50,14 +50,16 @@ summarise using the points below.
     * [[Some code fragments to get an impression][examples.txt]]
     * [[Some screen dumps of applications][screens.txt]]
     * [[The design of the XPCE/Prolog interface][<pub:wlpe-02.pdf>]]
-    (Publication in Workshop on Logic Programming Environments, 2002) 
+    (Publication in Workshop on Logic Programming Environments, 2002)
 
 ---++ Documentation
 
 For starters as well as for more experienced users who want to know how
 particular tasks are tackled using XPCE/Prolog, there is the [[XPCE
 UserGuide][</download/xpce/doc/userguide/userguide.pdf>]]. The manual is
-also available a [[HTML-tar-archive][</download/xpce/doc/userguide/userguide.html.tgz>]].
+also available a
+[[HTML-tar-archive][</download/xpce/doc/userguide/userguide.html.tgz>]]
+and can be [[viewed online][<UserGuide/>]].
 
 The reference documentation is available using a hypertext system
 defined in XPCE/Prolog. This tool exploits the XPCE-class descriptions
@@ -74,4 +76,4 @@ examples. Just browse through them and then use the Visual Hierarchy
 Tool to locate the relevant source-code.
 
 On Unix installations, the manpages xpce.1 and xpce-client.1 provide
-documentation on the command-line options of these commands. 
+documentation on the command-line options of these commands.
