@@ -64,4 +64,5 @@ version. The site also contains some demo material.
 
 ---++ Eclipse based
 
+  * [[Prolog Development Tool - PDT][http://sewiki.iai.uni-bonn.de/research/pdt/]]
   * [[Prolog Development Tools - ProDT][http://prodevtools.sourceforge.net/]]
