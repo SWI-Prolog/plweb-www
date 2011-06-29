@@ -12,3 +12,4 @@
 | copy_term/2 and friends | 32 |
 | eval_expression | 10 |
 | (a)cyclic_term | 16 |
+| Read/Write | 16 | Simplified, reduced stack usage of read to 1/3th |
