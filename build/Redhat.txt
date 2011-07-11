@@ -19,6 +19,8 @@ Use the following commands to obtain all dependencies for a full build from sour
 ==
 yum install \
   autoconf \
+  chrpath \
+  libunwind \
   freetype-devel \
   gmp-devel \
   java-1.6.0-openjdk-devel \
