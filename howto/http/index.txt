@@ -10,6 +10,7 @@ fully operational source-code.
     * [[Rule definition facilities (html//1 rules)][HTMLRules.txt]]
     * [[Processing HTTP-parameters][HTMLParams.txt]]
     * [[Adding style (CSS and simple JavaScript) to your pages][HTMLStyle.txt]]
+    * [[Serving plain files][HTTPFile.txt]]
     * [[Making your web-server scalable][HTTPScale.txt]]
 
 Deploying Prolog-based web-servers

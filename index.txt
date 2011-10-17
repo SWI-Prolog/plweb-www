@@ -31,6 +31,10 @@ statistics][</logs/dl-statistics.html>]].
     atom-length, term-arity or integer values. No performance
     degradation on predicates with many (indexed) facts.
 
+    * *|Just-In-Time|* indexing of both static and dynamic code on any
+    argument greatly simplifies handling multi-moded relations with
+    many predicates. [[new.gif]] (version 5.11.29)
+
     * *|Unbounded integer|* and *rational* number arithmetic
     based on [[GMP library][<gmp:>]].
 
@@ -76,8 +80,10 @@ statistics][</logs/dl-statistics.html>]].
     pre-emptively scheduled prolog engines on the same database.
 
     * *|attributed variables|*, coroutining (freeze/2, when/2, dif/2),
-    global variables, cyclic terms. Flag-controlled handling of
-    occurs-check (on/off/error) see current_prolog_flag/2.
+    global variables, cyclic terms.
+
+    * Flag-controlled handling of *|occurs-check|* (false/true/error)
+    see current_prolog_flag/2.
 
     * *Constraint* Logic Programming, providing libraries for
     *|[[CHR][</man/chr.html>]]|* (Constraint Handling
