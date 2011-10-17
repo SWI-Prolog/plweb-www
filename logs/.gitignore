@@ -1,5 +1,3 @@
-*.png
 *.html
-webalizer*
-dns_cache
-swi-prolog-downloads.jpeg
+*.png
+*.db
