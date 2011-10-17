@@ -33,7 +33,7 @@ statistics][</logs/dl-statistics.html>]].
 
     * *|Just-In-Time|* indexing of both static and dynamic code on any
     argument greatly simplifies handling multi-moded relations with
-    many predicates.
+    many predicates. [[new.gif]] (version 5.11.29)
 
     * *|Unbounded integer|* and *rational* number arithmetic
     based on [[GMP library][<gmp:>]].
