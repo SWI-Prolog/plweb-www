@@ -67,9 +67,8 @@ The  predicate  http_reply_file/3  (by  default)    deals  with  caching
 Bigger servers often have lots of static files that contain images, CSS,
 JavaScript,  etc.  A   good   way   to    facilitate   this   is   using
 serve_files_in_directory/2  from  library(http/http_server_files).  This
-predicate assumes corresponding aliases for  searching files (see above)
-and    for    specifying    HTTP     locations      as     defined    by
-library(http/http_path).
+predicate assumes aliases for  searching  files   (see  above)  and  for
+specifying HTTP locations as defined by library(http/http_path).
 
 In  the  next  example,  we  create  a   serve  that  serves  images  on
 =|/images/...|= from a directory   =|/srv/htdocs/icons/...|=.  Note that
