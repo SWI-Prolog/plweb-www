@@ -50,7 +50,7 @@ be typed in the console.
 
 Sometimes you have a fully  dynamic  server   that  needs  to serve, for
 example, a few images or CSS files.   You  can solve this directly using
-http_serve_file/3. The example below serves   =|/favicon.ico|=  from the
+http_reply_file/3. The example below serves   =|/favicon.ico|=  from the
 local file =|favicon.ico|=.
 
   ==
