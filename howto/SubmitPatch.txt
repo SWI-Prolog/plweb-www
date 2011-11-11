@@ -12,8 +12,8 @@ to packages that are distributed as git submodules are described below.
   for your machine.
 
   ==
-  % git config user.name "The Great Fixer"
-  % git config user.email fixer@bugs.com
+  % git config --global user.name "The Great Fixer"
+  % git config --global user.email fixer@bugs.com
   ==
 
   2. Switch to a branch.  This makes it easy to distinguish between the
@@ -153,7 +153,7 @@ include context.
   ==
   
 This is worse than using =|git diff|= because git diff includes information
-on the exact version that is patches, which can help us if there are other
+on the exact version that is patched, which can help us if there are other
 conflicting patches.  In addition to comments on the why and what, please
 indicate the version you patched.
 
