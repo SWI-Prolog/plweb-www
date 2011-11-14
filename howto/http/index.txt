@@ -9,7 +9,7 @@ fully operational source-code.
     * [[Hello World in HTML][HelloHTML.txt]]
     * [[Rule definition facilities (html//1 rules)][HTMLRules.txt]]
     * [[Processing HTTP-parameters][HTMLParams.txt]]
-    * [[Uploading a file][FileUpload.txt]]
+    * [[How do I upload a file, preserving the file-name?][FileUpload.txt]]
     * [[Adding style (CSS and simple JavaScript) to your pages][HTMLStyle.txt]]
     * [[Serving plain files][HTTPFile.txt]]
     * [[Making your web-server scalable][HTTPScale.txt]]
