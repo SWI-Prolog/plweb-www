@@ -1,5 +1,8 @@
 ---+ How do I upload a file, preserving the file-name?
 
+NOTE: This example required SWI-Prolog 5.11.32 or 5.10.6 or the current
+GIT version of library(http/http_mime_plugin).
+
 The way to preserve the user-entered file-name is to use a form with
 =enctype= =|multipart/form-data|= and =input= element of type =file=.
 This causes a browser to formulate a MIME encoded POST request that
@@ -89,3 +92,6 @@ prolog:message(bad_file_upload) -->
 ==
 
 @see  You can download the complete code from load.pl.
+@see  [[GIT version of HTTP MIME plugin][http://www.swi-prolog.org/git/packages/http.git/blob/HEAD:/http_mime_plugin.pl]].
+      Must be dropped into the Prolog library to use this functionality
+      on versions before 5.11.32 or 5.10.6.
