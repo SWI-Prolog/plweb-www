@@ -29,9 +29,9 @@ upload_form(_Request) :-
 	    ]).
 
 upload(Request) :-
-	memberchk(method(post), Request),
-	http_read_data(Request, Parts, [form_data(mime)]),
-	(   member(mime(Attributes, Data, []), Parts),
+	(   memberchk(method(post), Request),
+	    http_read_data(Request, Parts, [form_data(mime)]),
+	    member(mime(Attributes, Data, []), Parts),
 	    memberchk(name(file), Attributes),
 	    memberchk(filename(Target), Attributes)
 	->  % process file here; this demo just prints the info gathered
