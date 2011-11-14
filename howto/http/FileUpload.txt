@@ -91,7 +91,7 @@ prolog:message(bad_file_upload) -->
 	].
 ==
 
-@see  You can download the complete code from load.pl.
+@see  You can download the complete code from demo_upload_file.pl.
 @see  [[GIT version of HTTP MIME plugin][http://www.swi-prolog.org/git/packages/http.git/blob/HEAD:/http_mime_plugin.pl]].
       Must be dropped into the Prolog library to use this functionality
       on versions before 5.11.32 or 5.10.6.
