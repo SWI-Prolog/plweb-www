@@ -9,14 +9,17 @@
 
 ---++ Status
 
-Debian Squeeze and derived distributions come with a properly 
+Debian Squeeze and derived distributions come with a properly
 packaged SWI-Prolog.  We advice to compile the sources on older
 releases.
 
 ---++ Dependencies
 
 Use the following commands to obtain all dependencies for a full build
-from source.
+from source. Note that there are no known version dependencies on any of
+these packages.  If your (debian-based) distribution is lacking any of
+these package use =|apt-cache search <name>|= to find an alternative,
+where <name> is e.g., =libunwind= (e.i., remove version and details).
 
 ==
 sudo apt-get install \
