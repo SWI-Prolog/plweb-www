@@ -16,7 +16,7 @@
     * [[ERROR: Undefined procedure: name/arity][UndefinedCode.txt]]
     * [[ERROR: Undefined procedure: (:-)/1|(:-)/2|(?-)/1][ToplevelMode.txt]]
     * [[Warning: Clauses of (-)/2 are not together in the source-file][MinusInHead.txt]]
-    * [[][Multifile.txt]]
+    * [[Warning: (file:line) Redefined static procedure: name/arity][Multifile.txt]]
     * [[Warning: (file:line) Singleton variables: List][SingletonVar.txt]]
     * [[ERROR: (file:line): Undefined procedure: pce_begin_class/2][NoXPCE.txt]]
     * [[ERROR: I/O error in write on stream XXX (Encoding cannot represent character)][CharEncoding.txt]]
