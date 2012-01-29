@@ -3,7 +3,8 @@
   * [[Browse GIT][</git>]]
   * [[Contrib][</contrib/>]]
 --
-  * *|[[FAQ][</FAQ/>]]|* | *|[[HOWTO][</howto/>]]|*
+  * *|[[HOWTO][</howto/>]]|*
+  * *|[[FAQ][</FAQ/>]]|*
   * *|[[Manual][</pldoc/index.html>]]|*
   * Mailinglist.txt
   * Support.txt
