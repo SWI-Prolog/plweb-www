@@ -1,11 +1,14 @@
 ---+ SWI-Prolog Versions
 
 SWI-Prolog is distributed as platform specific package for some popular
-platforms (currently MS-Windows, Linux and MacOS X, contact me if you
-want to produce binaries for other platforms). The source package
-provides NMAKE files for MS-Windows and the GNU autoconf/make suite for
-all other systems. It builds flawlessly on a wide range of 32 and 64 bit
-platforms with an ANSI C compiler.
+platforms (currently MS-Windows and MacOS X). The source package
+provides the GNU autoconf/make suite to configure and build fully
+automatically on many platforms. It builds on a wide range of 32 and 64
+bit systems with an ANSI C compiler. The MS-Windows version is built
+using the native Microsoft compiler suite, driven by NMAKE makefiles.
+Alternatively, the Windows version can be built using
+[[MinGW][http://mingw.org/]], although this path is not very well
+tested.
 
 As of major version 5, we create stable releases with even minor version
 number (5.0.x, 5.2.x, 5.4.x, ...) and beta releases with odd minor
