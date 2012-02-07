@@ -3,6 +3,7 @@
   * [[How to deal with namespaces in RDF?][UseRdfMeta.txt]]
   * [[How to create a web-service easily?][<http/>]]
   * [[How to scrape web-pages?][<scrape/>]]
+  * [[How to use the dynamic database?][database.txt]]
 
 Development
 
