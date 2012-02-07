@@ -63,7 +63,7 @@ one can use library(aggregate) for such problems:
 
   ==
   average_age(Average) :-
-	aggregate(r(count,max(Age)),
+	aggregate(r(count,sum(Age)),
 		  (   person(Person),
 		      age(Person, Age)
 		  ),
@@ -73,7 +73,7 @@ one can use library(aggregate) for such problems:
   ==
 
 
----++ I using dynamic predicates anyway
+---++ I want to use dynamic predicates anyway!
 
 Ok.  You need to take care of some things
 
