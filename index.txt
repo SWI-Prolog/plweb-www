@@ -116,8 +116,7 @@ statistics][</logs/dl-statistics.html>]].
     * *|Unit testing|* support through
     *|[[PlUnit][</pldoc/package/plunit.html>]]|*.
 
-    * Regular *|binary distributions|* for most popular platforms (Windows
-    (32/64 bits), Linux (32 bits) and MacOS X (32 bits)).
+    * Regular *|binary distributions|* for Windows (32/64 bits) and MacOS X (64 bits)).
 
     * Regular distribution of the *|full source|* packages. The sources are
     also accesible through [[GIT][</git.html>]].
