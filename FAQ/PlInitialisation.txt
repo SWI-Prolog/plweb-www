@@ -8,8 +8,8 @@ initialisation).
 The site-initialisation file is located in the SWI-Prolog home
 directory. Its name is deduced from the commandname by taking the
 leading alphanumerical characters, followed by the extension =|.rc|=.
-Using default installation this implies *|pl.rc|* for the Unix version
-and *|plwin.rc|* for the Windows version.
+Using default installation this implies *|swipl.rc|* for the Unix version
+and *|swipl-win.rc|* for the Windows GUI version.
 
 If XPCE is installed, it is activated through the above named system
 default file.
