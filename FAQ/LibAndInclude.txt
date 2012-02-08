@@ -5,7 +5,7 @@ distribution is normally installed in C:\Program Files\pl on Windows and
 /usr/local/lib/swipl-<version> on Unix.
 
 On Unix, by default only the library for static linking libswipl.a is
-installed in the =lib/<arch> subdirectory of the installation. On
+installed in the =|lib/<arch>|= subdirectory of the installation. On
 Windows, the import library swipl.lib is in the lib subfolder and
 swipl.dll is in the bin subfolder.
 
