@@ -19,6 +19,10 @@ errors are found that affect many users. GIT access to the development
 is provided. All releases are tagged as VMajor.Minor.Patch Release
 milestones
 
+  $ 6.0.x: Stable branch created from 5.11.37.  Notably provides just-in-time
+  indexing on multiple arguments and supports the PDT Eclipse IDE out of the
+  box.
+  
   $ 5.11.x: External requirements have forced the release of 5.10.x
   before the wishlist of new functionality was complete. Notably
   generational GC remains on the wishlist.
