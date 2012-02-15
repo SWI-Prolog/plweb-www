@@ -3,8 +3,8 @@
 ---++ Available versions
 
     * [[Stable release][</download/stable>]]
-    Sources and executables for MS-Windows, Linux and MacOS X
-    version *|5.10.x|*
+    Sources and executables for MS-Windows and MacOS X
+    version *|6.0.x|*
     * [[Development release][</download/devel>]]
     Sources and executables for MS-Windows and MacOS X
     version *|5.11.x|*
