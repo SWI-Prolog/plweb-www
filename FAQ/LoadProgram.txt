@@ -35,7 +35,7 @@ Alternatively, you may wish to use
 ?-
 ==
 
-On *Windows*, the =|.pl|= extension is associated with =|plwin.exe|= and most
+On *Windows*, the =|.pl|= extension is associated with =|swipl-win.exe|= and most
 comfortable way is to *|double-click|* the =|.pl|= file you want to load in the
 explorer. This will start SWI-Prolog, which changes directory to the
 directory holding the file and then loads the clicked file.
