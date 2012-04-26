@@ -21,6 +21,10 @@ these packages.  If your (debian-based) distribution is lacking any of
 these package use =|apt-cache search <name>|= to find an alternative,
 where <name> is e.g., =libunwind= (e.i., remove version and details).
 
+It is possible to use =iodbc= instead of =unixodbc= for ODBC connectivity.
+The SWI-Prolog Java interface (JPL) works with most Java development kits,
+not only =|openjdk-7-jdk|=.
+
 ==
 sudo apt-get install \
         build-essential autoconf curl chrpath \
