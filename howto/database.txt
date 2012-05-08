@@ -9,7 +9,7 @@ of Prolog is that is searches for set of variable bindings that makes a
 query true. It does this using depth-first search, binding variables to
 values. If an inconsist variable binding is detected, the system
 backtracks: it finds the last choice it took, reverts all actions done
-since and continues with the next alternative. This is the core powers
+since and continues with the next alternative. This is the core power
 of Prolog and gives it its logical basis.
 
 Even if you cannot be bothered by logic, consider what this does for
