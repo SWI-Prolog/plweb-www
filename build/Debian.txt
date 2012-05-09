@@ -23,7 +23,7 @@ where <name> is e.g., =libunwind= (e.i., remove version and details).
 
 It is possible to use =iodbc= instead of =unixodbc= for ODBC connectivity.
 The SWI-Prolog Java interface (JPL) works with most Java development kits,
-not only =|openjdk-7-jdk|=.
+not only =|openjdk-7-jdk|=.  =|libarchive-dev|= is needed as of 6.1.4.
 
 ==
 sudo apt-get install \
@@ -35,5 +35,5 @@ sudo apt-get install \
         libssl-dev \
         unixodbc-dev \
         openjdk-7-jdk junit \
-        zlib1g-dev
+        zlib1g-dev libarchive-dev
 ==
