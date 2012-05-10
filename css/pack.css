@@ -1,0 +1,97 @@
+		 /*******************************
+		 *	       TABLES		*
+		 *******************************/
+
+table.packlist
+{ border-width: 1px;
+  border-style: solid;
+  border-collapse: collapse;
+  margin-left: 1cm;
+  margin-top: 1em;
+}
+
+table.packlist tr.even th
+{ background-color: #e0e0e0;
+}
+
+table.packlist tr.skip th
+{ color:white;
+  background-color: blue;
+  text-align: center;
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+}
+
+table.packlist td, table.packlist th
+{ border-width: 0 1px 0 1px;
+  border-style: solid;
+  padding: 0 2px;
+}
+
+tr.even td
+{ background-color: #e0e0e0;
+}
+
+td.int
+{ text-align:right;
+  padding-right:5px;
+}
+
+td.empty, td.int_c
+{ text-align:center;
+}
+
+tr.even td.buttons
+{ background-color: #fff;
+}
+
+table.packlist td.total
+{ border-width: 1px 0 0 0;
+  font-weight: bold;
+}
+
+table.packlist th, tr.header th
+{ background:  url("../icons/th.png") left top;
+  border: 1px solid #444;
+}
+
+table.packlist th.total
+{ text-align: right;
+  padding-right: 7px;
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  color:black;
+  background: transparent;
+}
+
+table.packlist a.resort
+{ color: #000;
+  text-decoration: none;
+}
+
+table.packlist a.resort:hover
+{ color: #00f;
+  text-decoration: underline;
+}
+
+table.packlist a.sorted
+{ color: #000;
+  text-decoration: underline;
+}
+
+table.packlist th.p_name
+{ text-align: right;
+  background: transparent;
+  border-width: 0 1px 0 1px;
+}
+
+/* Package information table */
+
+table.pack
+{ margin-left: 1cm;
+}
+
+table.pack th
+{ text-align: right;
+  padding-right: 1ex;
+}
