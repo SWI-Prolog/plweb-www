@@ -2,6 +2,7 @@
   * *|Download.txt|*
   * [[Browse GIT][</git>]]
   * [[Contrib][</contrib/>]]
+  * [[Packs][</pack/list>]]
 --
   * *|[[HOWTO][</howto/>]]|*
   * *|[[FAQ][</FAQ/>]]|*
