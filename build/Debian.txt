@@ -1,8 +1,8 @@
 ---+ SWI-Prolog on Debian and Ubuntu Linux
 
 | Debian release | Squeeze (6.0) |
-| Ubuntu release | Maverick Meerkat (10.10) |
-| SWI-Prolog release | 5.10.1 |
+| Ubuntu release | 12.04  |
+| SWI-Prolog release | 6.1.3 |
 | Package page | http://packages.debian.org/swi-prolog |
 | Maintainer | Chris Lamb |
 
@@ -21,15 +21,19 @@ these packages.  If your (debian-based) distribution is lacking any of
 these package use =|apt-cache search <name>|= to find an alternative,
 where <name> is e.g., =libunwind= (e.i., remove version and details).
 
+It is possible to use =iodbc= instead of =unixodbc= for ODBC connectivity.
+The SWI-Prolog Java interface (JPL) works with most Java development kits,
+not only =|openjdk-7-jdk|=.  =|libarchive-dev|= is needed as of 6.1.4.
+
 ==
 sudo apt-get install \
         build-essential autoconf curl chrpath \
-        libncursesw5-dev libreadline-dev libunwind7-dev \
-        libgmp3-dev \
-        libxext-dev libice-dev libjpeg62-dev libxinerama-dev libxft-dev \
+        ncurses-dev libreadline-dev libunwind7-dev \
+        libgmp-dev \
+        libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \
         libxpm-dev libxt-dev pkg-config \
         libssl-dev \
         unixodbc-dev \
-        openjdk-6-jdk junit \
-        zlib1g-dev
+        openjdk-7-jdk junit \
+        zlib1g-dev libarchive-dev
 ==
