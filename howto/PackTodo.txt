@@ -24,7 +24,7 @@ for installing from GIT repositories.  What needs to be done is:
 ---+++ Support foreign packages
 
 Currently, packages installation only supports pure Prolog packages. The
-core system already adds <bin>/<arch> to the =foreign= search path if
+core system already adds <lib>/<arch> to the =foreign= search path if
 this directory appears in the pack. Future versions will allow for
 building foreign packages. The idea is to support several different
 build scenarios. The build tools will be called from Prolog, providing
