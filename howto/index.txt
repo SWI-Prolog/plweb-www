@@ -7,6 +7,7 @@
 
 Development
 
+  * [[How to create and submit a package][Pack.txt]]
   * [[How to submit patches][SubmitPatch.txt]]
 
 Please contribute to this HOWTO.   This website is now a [[wiki][</wiki/>]]!
