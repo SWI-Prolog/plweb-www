@@ -81,3 +81,5 @@ of some rules:
     =|pack.pl|= matches the version encoded in the archive name.
 
 @see PackInfo.txt for a description of =|pack.pl|=
+@see [[list of submitted packages][</pack/list>]] 
+@see library(prolog_pack) for predicates to query, install and remove packs
