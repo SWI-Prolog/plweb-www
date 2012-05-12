@@ -79,3 +79,5 @@ of some rules:
     are compared by turning the version id into a list of integers that
     is compared using compare/3.  Make sure that the version in
     =|pack.pl|= matches the version encoded in the archive name.
+
+@see PackInfo.txt for a description of =|pack.pl|=
