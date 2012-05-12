@@ -90,6 +90,9 @@ of some rules:
     is compared using compare/3.  Make sure that the version in
     =|pack.pl|= matches the version encoded in the archive name.
 
+PackTodo.txt
+
 @see PackInfo.txt for a description of =|pack.pl|=
 @see [[list of submitted packages][</pack/list>]]
 @see library(prolog_pack) for predicates to query, install and remove packs
+@see PackTodo.txt
