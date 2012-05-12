@@ -1,0 +1,81 @@
+---+ Creating and submitting extension packages for SWI-Prolog
+
+---++ What is a pack?
+
+A pack is an archive (.zip or .tgz) file that (minimally) contains,
+two items:
+
+  $ A subdirectory =prolog= :
+  If the pack is installed, this directory is added to the Prolog
+  library.  This directory contains Prolog files using the extension
+  =|.pl|=.
+
+  $ A file =|pack.pl|= :
+  This file provides [[meta-data][PackInfo.txt]] for the pack.
+
+---++ Creating a pack
+
+A pack is created by creating the a directory with the name of the pack
+and filling it with the content described above. Next, create an
+archive, which is either a _|gzipped tar|_ file or a _zip_ file from the
+file that must be named <pack>-<version>.tgz or <pack>-<version>.zip,
+where version is a list of digits, separated by dots (.).  For example:
+
+  ==
+  % tar zcvf mypack-1.0.tgz mypack
+  ==
+
+or
+
+  ==
+  % zip -r mypack-1.0.zip mypack
+  ==
+
+---++ Test the pack
+
+The pack may be installed using pack_install/1 as illustrated below.
+
+  ==
+  ?- pack_install('mypack-1.0.tgz').
+  ==
+
+---++ Make the pack available
+
+To make the pack available, it must be downloadable from a publicably
+available HTTP server. To support package upgrading, the HTTP server
+must have enabled fetching an index of the directory. I.e., if the pack
+is located at http://www.exmmple.com/swi-prolog/pack/mypack-1.0.tgz,
+fetching http://www.exmmple.com/swi-prolog/pack/ must return an HTML
+document with links to available package files.
+
+After uploaded the package to e.g.,
+http://www.exmmple.com/swi-prolog/pack/mypack-1.0.tgz, it is made
+available to other users simply by installing it yourself:
+
+  ==
+  ?- pack_install('http://www.exmmple.com/swi-prolog/pack/mypack-1.0.tgz').
+  ==
+
+After this, other people can install your package simply using
+
+  ==
+  ?- pack_install(mypack).
+  ==
+
+---++ Do's and Don'ts
+
+To make packages work smoothly, package submitters need to take care
+of some rules:
+
+  - Use a meaningful name for your package that is not likely to
+    conflict.  Check http://www.swi-prolog.org/pack/list to verify
+    there is no name conflict.
+
+  - All files in the =prolog= directory *must* be Prolog module files.
+    Use names for the module files that are not likely to conflict with
+    others.
+
+  - Use consistent version numbers (e.g. 0.1, 0.2 ..., 1.0).  Versions
+    are compared by turning the version id into a list of integers that
+    is compared using compare/3.  Make sure that the version in
+    =|pack.pl|= matches the version encoded in the archive name.
