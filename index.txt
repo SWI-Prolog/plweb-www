@@ -9,8 +9,6 @@ applications|*. These days SWI-Prolog is widely used in research and
 education as well as for commercial applications. See our [[download
 statistics][</logs/dl-statistics.html>]].
 
-[[new.gif]] *|Help with a [[new logo][</logos>]] for SWI-Prolog!|*
-
 ---++ SWI-Prolog's most important features are
 
     * Kernel licensed under the [[LGPL][<lgpl:>]]. Prolog libraries are
