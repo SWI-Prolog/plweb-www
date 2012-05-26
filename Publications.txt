@@ -9,8 +9,7 @@ publiciations, please consider citing one of these papers.
     Jan Wielemaker and Vitor Santos Costa. PADL-11. Updated version of
     CICLOPS-10 paper with the same title. [[BibTeX][<swipub:padl-porting.bib>]]
     * [[SWI-Prolog][http://arxiv.org/abs/1011.5332]] Jan Wielemaker, Tom
-    Schrijvers, Markus Triska, Torbjörn Lager. Accepted for publication
-    in TPLP.
+    Schrijvers, Markus Triska, Torbjörn Lager. TPLP.  [[BibTeX][<swipub:tplp-swipl.bib>]]
     * [[Coding Guidelines for Prolog][http://arxiv.org/abs/0911.2899]]
     Michael A. Covington, Roberto Bagnara, Richard A. O'Keefe, Jan
     Wielemaker, Simon Price.  Submitted to TPLP.
