@@ -17,21 +17,21 @@ technical requirements for designing and implementing a GUI.
 
     A GUI-Builder provides lists of available controls, menus for
     configuring these controls and direct-manipulation editors for
-    placing them on the window. 
+    placing them on the window.
 
     $ Non-standard controls :
     Using standard controls is not always a good solution. For some
     applications, it is feasible to design graphical representations
     that render the information naturally. Using such representations
     and conrolling the application through direct-manipulation of the
-    representation results in a better interface. 
+    representation results in a better interface.
 
     $ Specification of interface dynamics :
     Most applications do not consist of a single window with statically
     placed controls. Windows for different sub-tasks are presented to
-    the user. The content of a window is dynamically build, based on the
-    current context of the application and possibly user-modelling or
-    dynamic planning of (sub-)tasks. 
+    the user. The content of a window is dynamically built, based on
+    the current context of the application and possibly user-modelling
+    or dynamic planning of (sub-)tasks.
 
     $ Relating the interface to the application :
     The GUI controls need to call application code and the application
@@ -39,14 +39,14 @@ technical requirements for designing and implementing a GUI.
     mechanisms, both using a GUI-Builder and otherwise exist to deal
     with this. Roughly speaking there are two alternatives. One relates
     controls to call-back procedures in the application and the other
-    enforces the model-view model for separating application and GUI. 
+    enforces the model-view model for separating application and GUI.
 
     $ Abstraction :
     In GUI-Applications we can often identify reuse of controls,
     combinations of controls and behaviour. This should be encouraged
     because it makes the application easier to understand for the user.
-    Ideally, this this reuse should be reflected in the code to improve
-    maintainability. 
+    Ideally, this reuse should be reflected in the code to improve
+    maintainability.
 
 ---++ So, what does the GUI-Builder do for us?
 
@@ -96,4 +96,4 @@ and the strong support for *|symbolic layout|* management of XPCE.
 
 The learning curve for designing applications this way is certainly
 longer. Once on steam however, you will see your productivity rise
-sky-high while your programs are clear and easy to maintain! 
+sky-high while your programs are clear and easy to maintain!
