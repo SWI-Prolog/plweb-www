@@ -3,7 +3,7 @@
 Most of the time I managed to stick with writing code and documentation.
 At rare weak moments I am pursuaded to write articles about aspects of
 SWI-Prolog or its libraries. If you use SWI-Prolog and write academic
-publiciations, please consider citing one of these papers.  The TPLP
+publications, please consider citing one of these papers.  The TPLP
 paper _|SWI-Prolog|_ is the preferred `general purpose reference'
 [[BibTeX][<swipub:tplp-swipl.bib>]].
 
