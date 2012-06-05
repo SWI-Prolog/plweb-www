@@ -1,15 +1,5 @@
 ---+ Creating and submitting extension packages for SWI-Prolog
 
-[[alert.gif]] There is a typo in the server address of the package
-server in SWI-Prolog 6.1.4.  To fix this, edit library(prolog_pack),
-line 81 and replace =|www.prolog.org|= with =|www.swi-prolog.org|=.
-You can edit this file using
-
-  ==
-  ?- edit(library(prolog_pack)).
-  ==
-
-
 ---++ What is a pack?
 
 A pack is an archive (.zip or .tgz) file that (minimally) contains,
