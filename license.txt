@@ -10,14 +10,15 @@ The license aims at:
     * Allow for easy integration of contributions.
     * Free software can build on SWI-Prolog without limitations.
     * Non-free (open or proprietary) software can be produced using
-    SWI-Prolog, although contributed pure GPL components cannot be used. 
+    SWI-Prolog, although contributed pure GPL components cannot be used.
 
 To achieve this, different parts of the system have different licenses.
 SWI-Prolog programs consists of a mixture of `native' code (source
 compiled to machine instructions) and `virtual machine' code (Prolog
 source compiled to SWI-Prolog virtual machine instructions, covering
-both compiled SWI-Prolog libraries and your compiled application). The
-SWI-Prolog kernel and foreign libraries
+both compiled SWI-Prolog libraries and your compiled application).
+
+---+++ The SWI-Prolog kernel and foreign libraries
 
 The SWI-Prolog kernel and our foreign libraries are distributed under
 the Lesser GNU Public License, also called the LGPL. A Prolog executable
@@ -30,12 +31,16 @@ Under the LGPL SWI-Prolog can be linked to code distributed under
 arbitrary licenses, provided a number of requirements are fullfilled.
 The most important requirement is that, if an application relies on a
 modified version of SWI-Prolog, the modified sources must be made
-available. Contributed foreign libraries
+available.
+
+---+++ Contributed foreign libraries
 
 Foreign libraries contributed to the SWI-Prolog project must have
 license conditions that are compatible to the LGPL or the GPL.
 Applications using SWI-Prolog must satisfy the license restrictions of
-all modules. The SWI-Prolog Prolog libraries
+all modules.
+
+---+++ The SWI-Prolog Prolog libraries
 
 Lacking a satisfactory technical solution to handle article 6 of the
 LGPL, this license cannot be used for the Prolog source code that is
@@ -50,7 +55,7 @@ compiled with a Free Software compiler, to produce an executable, this
 library does not by itself cause the resulting executable to be covered
 by the GNU General Public License. This exception does not however
 invalidate any other reasons why the executable file might be covered by
-the GNU General Public License. 
+the GNU General Public License.
 
 ---++ Keeping it free, open and practical
 
@@ -83,4 +88,4 @@ contributed modules.
 
 As a rule of thumb it is advised to use the above licenses whenever
 possible and only use a strict GPL compliant license only if the module
-contains other code under strict GPL compliant licenses. 
+contains other code under strict GPL compliant licenses.
