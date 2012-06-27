@@ -1,0 +1,9 @@
+---+ Building SWI-Prolog on MS-Windows
+
+As of version 6.1.7, there are two options for building SWI-Prolog for
+MS-Windows.  The distributed binaries are compiled using MinGW.  To be
+precise, they are generated using the MinGW cross-compiler on a Linux
+system.
+
+  * [[Build using MinGW][MinGW.txt]]
+  * [[Build using MSVC][msvc.txt]]
