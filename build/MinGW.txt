@@ -1,0 +1,25 @@
+---+ Building SWI-Prolog for MS-Windows using MinGW
+
+The [[MinGW][http://www.mingw.org]] compiler suite is a port of GCC that
+targets the Windows platform. Unlike Cygwin which comes with an
+extensive POSIX runtime emulation, MinGW targets the native Windows API
+including MSVCRT (The MSVC runtime library that provides some POSIX
+capabilities).
+
+MinGW is distributed as a cross-compiler for many Linux distributions
+and can be used under MSYS, _|"a collection of GNU utilities such as
+bash, make, gawk and grep to allow building of applications and programs
+which depend on traditionally UNIX tools to be present. It is intended
+to supplement MinGW and the deficiencies of the cmd shell."|_.
+
+The details for building SWI-Prolog for MS-Windows under Linux are
+documented in the executable readme file =|README.mingw32|= of the
+source distribution. These scripts have been tested on 64-bit
+[[Ubuntu][http://www.ubuntu.com/]] 12.04.
+
+We currently do not have experience building SWI-Prolog using MinGW/MSYS
+on Windows. It is probably possible using the instructions in the above
+mentioned =|README.mingw32|= file. Please send comment and or fixes if
+you try this. Note that cross compiling is much faster because
+SWI-Prolog depends on an extensive =configure= script that executes slow
+on the MSYS bash implementation.

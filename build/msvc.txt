@@ -119,3 +119,5 @@ equally be created.
 Place the libraries and/or header files in the appropriate include or
 lib folder. These versions will now override the ones in the download
 package.
+
+@see [[Build using MinGW][MinGW.txt]]
