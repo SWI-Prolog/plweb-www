@@ -1,6 +1,15 @@
 ---+ Interface to OpenGL
 
-_|Copying from a message on the mailinglist|_
+There are multiple interfaces to OpenGL.
+
+---++ plOpenGL by Jan Tatham
+
+  | Home      | http://www.sebity.com		   |
+  | Download  | https://github.com/sebity/plOpenGL |
+  | License   | LGPL			           |
+  | Platforms | MacOS, Linux, Windows		   |
+
+---++ Copying from a message on the mailinglist
 
 If anyone is interested, I have some dormant/old code for an OpenGL
 binding to SWI.
@@ -19,8 +28,6 @@ Alternatively, if anyone wants to offer help / take over, feel free to
 grab the source which is here:
 
     * http://www.ecs.soton.ac.uk/~pjt/Prolog/Prolog_OpenGL.tar.gz
-
----++ Mirror download
 
 The file below is a copy of the link above after removing the platform
 specific (.so) file.
