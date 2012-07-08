@@ -95,3 +95,18 @@ table.pack th
 { text-align: right;
   padding-right: 1ex;
 }
+
+span.title
+{ font-style: italic;
+}
+
+/* File info table */
+
+span.hash
+{ font-family: courier;
+}
+
+td.count
+{ text-align: right;
+  padding-right: 1ex;
+}
