@@ -13,6 +13,8 @@ two items:
   $ A file =|pack.pl|= :
   This file provides [[meta-data][PackInfo.txt]] for the pack.
 
+Creating a pack that uses C or C++ code is [[described here][ForeignPack.txt]]
+
 ---++ Creating a pack
 
 A pack is created by creating the a directory with the name of the pack
@@ -81,6 +83,7 @@ of some rules:
     =|pack.pl|= matches the version encoded in the archive name.
 
 @see PackInfo.txt for a description of =|pack.pl|=
+@see ForeignPack.txt for creating packs with C or C++ code
 @see [[list of submitted packages][</pack/list>]]
 @see library(prolog_pack) for predicates to query, install and remove packs
 @see [[Status and TODO][PackTodo.txt]]
