@@ -109,8 +109,9 @@ information provided through the environment (see below).
        - make check
        - make install
 
-If there is a suitable binary for the platform, pack_install/1 does not
-try to rebuild it.  Rebuilding may be forced using pack_rebuild/1.
+*Note* Ideally, if there is a suitable binary for the platform,
+pack_install/1 should not try to rebuild it. It is not clear how to
+verify this.
 
 
 ---+++ Build environment
