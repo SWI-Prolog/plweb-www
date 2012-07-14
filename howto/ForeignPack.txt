@@ -158,3 +158,17 @@ The environment can be changed by   providing  clauses for the multifile
 predicate  prolog_pack:environment/2.  Answers  of  this  predicate  may
 provided  additional  environment  variables.  Answers   for  the  above
 mentioned variables replace the above described value.
+
+
+---+++ Windows MinGW builds
+
+The infrastructure assumes using [[MinGW][http://www.mingw.org]] and
+MSYS for building foreign packages on Windows. In pack_install/1 detects
+an a foreign pack on Windows, it performs the following steps to prepare
+MinGW:
+
+  1. If gcc.exe and make.exe are in %PATH%, use them.
+  2. Else, try to find <drive>:/MinGW, where <drive> is first the
+     drive on which Prolog is installed, followed by *C* and *D*.
+  3. If (2) succeeded, add /msys/<version>/bin to %PATH% to make
+     make.exe available.
