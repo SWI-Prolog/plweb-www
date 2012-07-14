@@ -151,6 +151,8 @@ and provide the following environment variables:
   $ SOEXT :
   File name extension to use for extensions.  Does _not_ include the
   "=|.|=".
+  $ TMP, TEMP, HOME, USER :
+  The variables are passed from the environment if they exist
 
 The environment can be changed by   providing  clauses for the multifile
 predicate  prolog_pack:environment/2.  Answers  of  this  predicate  may
