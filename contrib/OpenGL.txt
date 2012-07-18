@@ -8,6 +8,7 @@ There are multiple interfaces to OpenGL.
   | Download  | https://github.com/sebity/plOpenGL |
   | License   | LGPL			           |
   | Platforms | MacOS, Linux, Windows		   |
+  | Version    | 0.2.3		   |
 
 ---++ Copying from a message on the mailinglist
 
@@ -35,4 +36,3 @@ specific (.so) file.
     * [[Prolog_OpenGL.tgz][<Prolog_OpenGL.tgz>]] (copied: Jul 8, 2009)
 
 @author Phillip J Turner
-
