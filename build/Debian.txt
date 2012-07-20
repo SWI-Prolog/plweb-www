@@ -37,3 +37,17 @@ sudo apt-get install \
         openjdk-7-jdk junit \
         zlib1g-dev libarchive-dev
 ==
+
+---+++ Dependencies to build the documentation
+
+The generated documentation is included the source archives and downloaded by the =prepare= script when installing from the git source.  To rebuild the documentation, the following packages are needed.  Check =|man/README|= for
+further instructions.
+
+==
+sudo apt-get install \
+	texlive-latex-extra \
+	texlive-fonts-extra \
+	texlive-fonts-extra-doc \
+	texlive-fonts-recommended \
+	texlive-fonts-recommended-doc
+==
