@@ -4,7 +4,7 @@
 
     * [[Stable release][</download/stable>]]
     Sources and executables for MS-Windows and MacOS X
-    version *|6.0.x|*
+    version *|6.2.x|*
     * [[Development release][</download/devel>]]
     Sources and executables for MS-Windows and MacOS X
     version *|6.1.x|*
