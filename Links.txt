@@ -30,6 +30,7 @@ SWI-Prolog [[packages][</packages/>]]
     * [[More Prolog Reading material from the FAQ][</FAQ/PrologReading.html>]]
     * [[Some Coding Guidelines for Prolog][http://arxiv.org/abs/0911.2899]] started by Michael A. Covington; now `et all'.
     * [[An Introduction to Language Processing with Perl and Prolog][http://www.cs.lth.se/home/Pierre_Nugues/ilppp/sample.html]] by Pierre Nugues
+    * [[Creating Web Applications in SWI-Prolog][http://www.pathwayslms.com/swipltuts/html/index.html]] by Anne Ogborn.
 
   * *|General Prolog libraries|*
 
