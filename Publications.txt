@@ -53,6 +53,14 @@ applications.  [[BibTeX][<swipub:jan-phd.bib>]]
 ---++ Talks
 
     * _|Enabling serendipitous search on the Web of Data using Prolog|_
-      Invited tutorial, ICPL-09, Pasadena.
+      Invited tutorial, ICPL-09, Pasadena.  Discusses using Prolog for
+      RDF handling and using Prolog as a webserver.
       [[OpenOffice][<swipub:ICLP09-Tutorial.odp>]]
       [[PowerPoint][<swipub:ICLP09-Tutorial.ppt>]]
+    * _|25 years of SWI-Prolog|_
+      Special event, ICPL-12, Budapest.
+      Provides a historical overview of SWI-Prolog, the state of Prolog
+      in general and models for sharing interfaces, design and code
+      within the Prolog community.
+      [[OpenOffice][<swipub:ICLP12-SWI25.odp>]]
+      [[PowerPoint][<swipub:ICLP12-SWI25.ppt>]]
