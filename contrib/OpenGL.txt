@@ -8,7 +8,7 @@ There are multiple interfaces to OpenGL.
   | Download  | https://github.com/sebity/plOpenGL |
   | License   | LGPL			           |
   | Platforms | MacOS, Linux, Windows		   |
-  | Version    | 0.3.2		   |
+  | Version    | 0.4.0		   |
 
 ---++ Copying from a message on the mailinglist
 
