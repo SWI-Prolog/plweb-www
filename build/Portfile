@@ -39,11 +39,12 @@ depends_build   \
 depends_lib		\
 	port:readline		\
 	port:ncurses		\
-	port:ncursesw		\
 	port:jpeg		\
 	port:libmcrypt		\
 	port:gmp		\
 	port:zlib		\
+	port:libarchive		\
+	port:ossp-uuid		\
 	port:xorg-libs
 
 use_parallel_build	no
@@ -55,7 +56,7 @@ platform darwin 9 {
 distname	pl-${version}
 
 configure.env	\
-	LIBRARY_PATH=/usr/lib:${prefix}/lib 	\
+	LIBRARY_PATH=/usr/lib:${prefix}/lib	\
 	CPATH=/usr/include:${prefix}/include	\
 	JUNIT=${prefix}/share/java/junit.jar
 
