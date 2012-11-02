@@ -35,7 +35,8 @@ sudo apt-get install \
         libssl-dev \
         unixodbc-dev \
         openjdk-7-jdk junit \
-        zlib1g-dev libarchive-dev
+        zlib1g-dev libarchive-dev \
+	libossp-uuid-dev
 ==
 
 ---+++ Dependencies to build the documentation
