@@ -42,7 +42,8 @@ yum install \
   pkgconfig \
   readline-devel \
   unixODBC-devel \
-  zlib-devel
+  zlib-devel \
+  uuid-devel
 ==
 
 ---++ Building the RPM
