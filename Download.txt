@@ -16,3 +16,9 @@
 
     * Available SWI-Prolog [[versions][versions.txt]]
     * Information on [[Linux packages and building on Linux][build/LinuxDistro.txt]]
+
+---++ Get the manual on paper
+
+The full SWI-Prolog manual is also available as a print-on-demand book.
+
+[[swibook.jpeg][http://books.google.nl/books/about/SWI_Prolog_Reference_Manual_6_2_2.html?id=q6R3Q3B-VC4C&redir_esc=y]]
