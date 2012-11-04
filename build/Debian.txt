@@ -40,7 +40,7 @@ sudo apt-get install \
 	libossp-uuid-dev
 ==
 
-Ubuntu 12.10 ships with =|libunwind8-dev|= instead of
+*|Ubuntu 12.10|* ships with =|libunwind8-dev|= instead of
 =|libunwind7-dev|=. Ubuntu 12.10 uses *|gcc 4.7|*, which miscompiles the
 semweb (RDF) libraries.  The current pl-devel git version contains a
 [[work around][http://www.swi-prolog.org/git/packages/semweb.git/commit/af7fb1bb50ec30295bc2e1a7473bbe36ee0c03bf]] for this.
