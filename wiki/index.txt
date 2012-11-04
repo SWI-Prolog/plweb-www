@@ -5,13 +5,8 @@ The underlying datastructure of this website consists mostly of
 Mar 2, 2011, these pages can be edited through a web-interface.  Editing
 is still quite immature.  This page describes the process.
 
-First of all, you need an *account*.  You can get this by sending a mail
-to [[Jan Wielemaker][<mailto:J.Wielemaker@cs.vu.nl>]].  Please provide
-
-  1. The desired account-name
-  2. A Unix/apache hash of your password
-  3. Your real-name
-  4. The E-mail you want to appear on the git log messages
+First of all, you need an *account*.  You can get this by filling out
+the [[registration form][</register>]].
 
 With an account, click the [[edit.gif;height="15px"][<>]] button to open
 the page in edit-mode. Make your changes, add a commit summary message
@@ -23,10 +18,8 @@ To create a *|new file|*, reference a =|.txt|= file and click the
 created link. The link colors red and becomes underlined if the
 pointer is positioned on the link.
 
-@tbd	Make a form to apply for an account
 @tbd	Provide a preview mode
 @tbd	Detect possible edit conflicts and resolve them
-@tbd	Allow ammending a recent commit
 @tbd	Allow attaching a file and updating an attached file
 @tbd	Allow creating directories
 
