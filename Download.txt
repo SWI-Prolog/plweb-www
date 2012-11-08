@@ -19,6 +19,15 @@
 
 ---++ Get the manual on paper
 
+[[swibook.jpeg;align="left",alt="book"][http://books.google.nl/books/about/SWI_Prolog_Reference_Manual_6_2_2.html?id=q6R3Q3B-VC4C&redir_esc=y]]
 The full SWI-Prolog manual is also available as a print-on-demand book.
+This *|comprehensive manual|* gives an overview of the system and how to
+set-up programming projects with it, it describes the built-in
+predicates, module system, coroutining, threads, the Constraint Handling
+Rules library, the foreign language interface and how to generate
+runtime applications.
 
-[[swibook.jpeg][http://books.google.nl/books/about/SWI_Prolog_Reference_Manual_6_2_2.html?id=q6R3Q3B-VC4C&redir_esc=y]]
+Clicking the cover page at the left brings you to google books, which
+shows the places where you can order the book.
+
+
