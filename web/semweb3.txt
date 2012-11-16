@@ -27,3 +27,5 @@ works with the old version as well.
 [[Section 13][http://www.swi-prolog.org/download/doc/semweb.html#sec:13]]
 documents the (few and minor) implications for upgrading applications.
 
+*|Version 2|* has been given the GIT branch =version2=.
+
