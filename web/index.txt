@@ -24,6 +24,9 @@ processing.
     hardware and 300M triples on a 64-bit machine with 64-Gb memory.
     Also provides simple RDFS and OWL support.
 
+    [[new.gif]] The GIT version in the development tree has been updated
+    to [[version 3][semweb3.txt]].
+
     $ [[Spatial indexing library][</pldoc/package/space.html>]] :
     SWI-Prolog interface to Spatial Index and GEOS libraries, providing
     spatial indexing of URIs. Supports import and export to GML, KML,
