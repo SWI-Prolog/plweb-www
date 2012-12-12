@@ -17,7 +17,7 @@
     * Available SWI-Prolog [[versions][versions.txt]]
     * Information on [[Linux packages and building on Linux][build/LinuxDistro.txt]]
 
----++ Get the manual on paper
+---+++ Get the manual on paper
 
 [[swibook.jpeg;align="left",alt="book"][http://books.google.nl/books/about/SWI_Prolog_Reference_Manual_6_2_2.html?id=q6R3Q3B-VC4C&redir_esc=y]]
 The full SWI-Prolog manual is also available as a print-on-demand book.
@@ -30,4 +30,7 @@ runtime applications.
 Clicking the cover page at the left brings you to google books, which
 shows the places where you can order the book.
 
+---+++ More gadgets
 
+[[mug.jpeg;align="left",alt="mug"][http://www.cafepress.com/swiprologshop]]
+Buy SWI-Prolog gadgets!
