@@ -38,7 +38,7 @@ summarise using the points below.
     XPCE/Prolog code is fully platform-independent, making it feasible
     to develop on your platform of choice and deliver on the platform of
     choice of your users. As SWI-Prolog saved-states are
-    manchine-independent, applications can be delivered as a
+    machine-independent, applications can be delivered as a
     saved-state. Such states can be executed transparently using the
     development-environment to facilitate debugging or the runtime
     emulator for better speed and space-efficiency.
