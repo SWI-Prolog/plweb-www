@@ -31,6 +31,8 @@ management, etc., we advice to use the multi-threaded server.
 
       ==
       % sudo tee /etc/xinetd.d/demo_swi_srv << EOF
+      service demo_swi_srv
+      {
       port                    = 8080
       socket_type             = stream
       protocol                = tcp
@@ -39,6 +41,7 @@ management, etc., we advice to use the multi-threaded server.
       server                  = /srv/www/html/srv_demo/demo_inetd
       log_on_failure  += USERID
       log_on_success  += PID HOST EXIT
+      }
       EOF
       ==
 
