@@ -20,10 +20,11 @@ page discusses a web-application with CSS-styling.
 
 ---++ The demo: A Simple Linked Open Data browser
 
-*|NOTE: This demo is written for SWI-Prolog 5.9.6.  It runs on older
-  versions thanks to a compatibility patch in lod_crawler.pl (see end
-  of the file), but older versions of rdf_load/2 query HTTP locations
-  three times instead of one, which severely harms performance.
+*|NOTE: Sindice currently (Jan 17, 2013) serves RDF/XML using the
+invalid =|Content-Type: text/xml|=. [[This
+patch][http://www.swi-prolog.org/git/packages/semweb.git/commit/2ce4e9dff66a14fdc2de0f6378b4938c1d692cd3]]
+provides a work around for this issue.  It will appear in SWI-Prolog
+6.2.7/6.3.9.
 |*
 
 Now that we covered the basics, it is time for a bit more sexy demo:
@@ -97,7 +98,7 @@ home(_Request) :-
 search_form -->
 	{ http_link_to_id(search, [], Ref) },
 	html([ \html_requires(css('sindice.css')),	% new
- 	       form([id(search), action(Ref)],
+	       form([id(search), action(Ref)],
 		    [ input(name(q)),
 		      input([type(submit), value('Search')])
 		    ])
