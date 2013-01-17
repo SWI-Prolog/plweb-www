@@ -15,6 +15,10 @@
 
 http:location(css, root(css), []).
 
+%%	server(?Port)
+%
+%	Start the HTTP server, listening to Port.
+
 server(Port) :-
 	http_server(http_dispatch, [port(Port)]).
 
@@ -76,7 +80,7 @@ resource(Request) :-
 	catch(lod_load(URI), E, true),
 	(   var(E)
 	->  resource_page(URI)
-	;   subsumes_chk(error(domain_error(content_type, _), _), E)
+	;   subsumes_term(error(domain_error(content_type, _), _), E)
 	->  throw(http_reply(moved_temporary(URI)))
 	;   throw(E)
 	).
@@ -154,29 +158,3 @@ body(Content) -->			% add header with search-form
 	html([ div(class(top), \search_form)
 	     | Content
 	     ]).
-
-
-		 /*******************************
-		 *	   COMPATIBILITY	*
-		 *******************************/
-
-% http_link_to_id/3 is provided in the SWI-Prolog 5.9.6 of library
-% http/http_dispatch.  We provide a local definition here to accomodate
-% older versions of SWI-Prolog.  Note that recent changes in library
-% semweb/rdf_db make crawling LOD much more efficient.  So, please use
-% SWI-Prolog 5.9.6 or later for this program.
-
-:- if(\+current_predicate(http_link_to_id/3)).
-:- use_module(library(uri)).
-%%	http_link_to_id(+HandleID, +Parameters, -HREF)
-%
-%	HREF is a link on the local server to a handler with given ID,
-%	passing the given Parameters.
-
-http_link_to_id(HandleID, Parameters, HREF) :-
-	http_location_by_id(HandleID, Location),
-	uri_data(path, Components, Location),
-	uri_query_components(String, Parameters),
-	uri_data(search, Components, String),
-	uri_components(HREF, Components).
-:- endif.

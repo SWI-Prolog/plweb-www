@@ -75,7 +75,7 @@ sindice_query(Query, Page, QueryURL) :-
 	uri_components(QueryURL, Components).
 
 sindice_host('api.sindice.com').
-sindice_path('/v2/search').
+sindice_path('/v3/search').
 
 
 %%	uri_label(+URI, -Label:atom) is det.
