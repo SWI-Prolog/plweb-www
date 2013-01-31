@@ -17,18 +17,18 @@ statistics][</logs/dl-statistics.html>]].
     found on the license.txt page.
 
     * *fast* compilation. E.g., loads 140,000 lines of code spread
-    over 500 source-files in 2.3 seconds on an AMD 5400+ system.
+    over 500 source files in 2.3 seconds on an AMD 5400+ system.
 
     * *Robust* and *|free of memory leaks|*.  In use for several
-    servers that run 24x7 (including this web-service).
+    servers that run 24x7 (including this web service).
 
     * *Small*. The full development environment, including graphics,
-    libraries and many interface packages requires approx. 40MB
-    harddisk. The non-graphical kernel is about 650Kb, the graphics
-    library adds about 1.2Mb to the image.
+    libraries and many interface packages, requires approx. 40MB
+    hard disk. The non-graphical kernel is about 650KB, the graphics
+    library adds about 1.2MB to the image.
 
     * *Scales* well for large applications. No limits on program size,
-    atom-length, term-arity or integer values. No performance
+    atom length, term arity or integer values. No performance
     degradation on predicates with many (indexed) facts.
 
     * *|Just-In-Time|* indexing of both static and dynamic code on any
@@ -43,14 +43,14 @@ statistics][</logs/dl-statistics.html>]].
     important parts of Quintus and SICStus Prolog. Fair
     compatibility to Ciao, YAP and GNU-Prolog.
 
-    * Flexible and fast interface to the *|C-|* and *|C++-Language|*.
-    The interface allows for calling both-ways, handling of
+    * Flexible and fast interface to the *|C-|* and *|C++-language|*.
+    The interface allows for calling both ways, handling of
     non-determinism both ways and *embedding* of the SWI-Prolog kernel
     in C/C++ projects.
 
     * The goodies: *modules* (upward compatible to Quintus and SICStus),
     *|garbage-collection|* (transparent to C/C++-code, including *atom*
-    garbage collection), *|last-call|* optimisation, Dynamic expansion
+    garbage collection), *|last-call|* optimisation, dynamic expansion
     of the runtime stacks, *|ISO exception-handling|* (including C/C++
     interface for catching and throwing exceptions).
 
@@ -66,11 +66,11 @@ statistics][</logs/dl-statistics.html>]].
     * *Portable* to many platforms, including almost all *|Unix/Linux|*
     platforms, *Windows* (NT/2000/XP/Vista, including *|64-bit|*
     editions), *|MacOS X|* (using X11 for graphics) and many more. Both
-    32-bits and *|64-bits|* hardware is supported. Sources are plain
+    32-bit and *|64-bit|* hardware is supported. Sources are plain
     C99, configured automatically using GNU autoconf (configure, make,
     make install).
 
-    * *UNICODE* character set handling internal. Ideal for web- and
+    * *UNICODE* character set handling internal. Ideal for web and
     international applications.
 
     * Machine-independent *|saved-states|* (save on one platform, run
@@ -106,7 +106,7 @@ statistics][</logs/dl-statistics.html>]].
     *|[[parsing][</pldoc/package/rdf2pl.html>]]|* *RDF*,
     *|[[store and query][</pldoc/package/semweb.html>]]|* the RDF
     _|triple model|_. A graphical editor for RDF/RDFS and OWL models
-    called Triple20 is distributed seperately.
+    called Triple20 is distributed separately.
 
     * *|Literate programming|* support through
     *|[[PlDoc][</pldoc/package/pldoc.html>]]|*. Provides integrated view
@@ -119,4 +119,4 @@ statistics][</logs/dl-statistics.html>]].
     * Regular *|binary distributions|* for Windows (32/64 bits) and MacOS X (64 bits)).
 
     * Regular distribution of the *|full source|* packages. The sources are
-    also accesible through [[GIT][</git.html>]].
+    also accessible through [[GIT][</git.html>]].
