@@ -4,16 +4,16 @@
 
 SWI-Prolog licensing aims at a large audience, combining ideas from the
 Free Software Foundation and the less principal Open Source Initiative.
-The license aims at:
+The license aims at the following:
 
-    * Make SWI-Prolog itself and its libraries are `As free as possible'.
+    * Make SWI-Prolog itself and its libraries `As free as possible'.
     * Allow for easy integration of contributions.
     * Free software can build on SWI-Prolog without limitations.
     * Non-free (open or proprietary) software can be produced using
     SWI-Prolog, although contributed pure GPL components cannot be used.
 
 To achieve this, different parts of the system have different licenses.
-SWI-Prolog programs consists of a mixture of `native' code (source
+SWI-Prolog programs consist of a mixture of `native' code (source
 compiled to machine instructions) and `virtual machine' code (Prolog
 source compiled to SWI-Prolog virtual machine instructions, covering
 both compiled SWI-Prolog libraries and your compiled application).
@@ -28,15 +28,15 @@ disassembling and re-assembling these parts, a process satisfying
 article 6b of the LGPL.
 
 Under the LGPL SWI-Prolog can be linked to code distributed under
-arbitrary licenses, provided a number of requirements are fullfilled.
-The most important requirement is that, if an application relies on a
+arbitrary licenses, provided a number of requirements are fulfilled.
+The most important requirement is that if an application relies on a
 modified version of SWI-Prolog, the modified sources must be made
 available.
 
 ---+++ Contributed foreign libraries
 
 Foreign libraries contributed to the SWI-Prolog project must have
-license conditions that are compatible to the LGPL or the GPL.
+license conditions that are compatible with the LGPL or the GPL.
 Applications using SWI-Prolog must satisfy the license restrictions of
 all modules.
 
@@ -50,10 +50,10 @@ C-compiler. Therefore, we use the same proven license terms as this
 library. The libgcc license is the GPL, accompanied with a special
 exception. Below we rephrased this exception adjusted to our needs:
 
-As a special exception, if you link this library with other files,
-compiled with a Free Software compiler, to produce an executable, this
+As a special exception, if you link this library with other files
+compiled with a Free Software compiler to produce an executable, this
 library does not by itself cause the resulting executable to be covered
-by the GNU General Public License. This exception does not however
+by the GNU General Public License. This exception does not, however,
 invalidate any other reasons why the executable file might be covered by
 the GNU General Public License.
 
@@ -82,10 +82,10 @@ Foreign language modules can declare their license conditions using:
 ---++ Contributing to the SWI-Prolog project
 
 To achieve maximal coherence using SWI-Prolog for Free and Non-Free
-software we advice the use of the LGPL for contributed foreign code and
-the use of the GPL with SWI-Prolog exception for Prolog code for
+software we advise using the LGPL for contributed foreign code and
+using the GPL with SWI-Prolog exception for Prolog code for
 contributed modules.
 
 As a rule of thumb it is advised to use the above licenses whenever
-possible and only use a strict GPL compliant license only if the module
+possible and only use a strict GPL compliant license if the module
 contains other code under strict GPL compliant licenses.
