@@ -6,37 +6,37 @@ debugging. This is supported by the fast incremental SWI-Prolog
 compiler, the debugger that is capable of debugging compiled code and
 GNU-readline based command-line editor.
 
-Tracing Prolog programs using a traditional 4-port debugger in a
+Tracing Prolog programs using a traditional 4-port debugger on a
 terminal is difficult. Large Prolog terms make the trace hard to read,
-it is difficult to understand determinism and backtracking and hard to
+difficult to understand determinism and backtracking, and hard to
 examine the running clauses. That is why SWI-Prolog provides a
 source-level debugger.
 
 ---++ The graphical tracer
 
-The XPCE based graphical tracer is the cornerstone of the IDE
+The XPCE-based graphical tracer is the cornerstone of the IDE
 environment and probably the most useful tool for experts as well as for
 beginners. It provides three simultaneous views on the status of the
 environment:
 
     $ Source code :
-    The current location in the source-code is displayed in a window
-    displaying the actual source-code or, if the clause is asserted, in
+    The current location in the source code is displayed in a window
+    displaying the actual source code or, if the clause is asserted, in
     a window displaying the decompiled predicate. Colours are used to
-    indicate the status. Green meaning normal forwards calling, red
+    indicate the status, green meaning normal forward calling, red
     failure, yellow redo and purple exception.
 
     $ Bindings :
-    The bindings window displayes the binding of the local variables of
+    The bindings window displays the binding of the local variables of
     the selected frame. Variables are indicated by their true name. A
-    concise display, clearly indicating which variable share the same
-    value and removing unbound variables is provided. Values can be
+    concise display, clearly indicating which variables share the same
+    value and removing unbound variables, is provided. Values can be
     examined by double-clicking.
 
     $ Stack :
     The stack-view not only provides the call-stack, but also the
     choice-point chain. The latter is notably useful to detect
-    (undesired) non-determinism
+    (undesired) non-determinism.
 
 			[[guitracer.gif]]
 
