@@ -51,7 +51,7 @@ table.packlist td.total
 }
 
 table.packlist th, tr.header th
-{ background:  url("../icons/th.png") left top;
+{ background:  url("../icons/th_high.png") left top;
   border: 1px solid #444;
 }
 
