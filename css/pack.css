@@ -110,3 +110,7 @@ td.count
 { text-align: right;
   padding-right: 1ex;
 }
+
+div.pack-files
+{ margin-left: 5ex;
+}
