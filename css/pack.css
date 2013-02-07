@@ -111,6 +111,14 @@ td.count
   padding-right: 1ex;
 }
 
+/* Hierarchical overview of files in a pack */
+
 div.pack-files
 { margin-left: 5ex;
+}
+
+span.file-tree-info
+{ font-size: -1;
+  color: #888;
+  margin-left: 1ex;
 }
