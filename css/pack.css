@@ -122,3 +122,7 @@ span.file-tree-info
   color: #888;
   margin-left: 1ex;
 }
+
+.warning
+{ color: red;
+}
