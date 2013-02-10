@@ -43,7 +43,8 @@ yum install \
   readline-devel \
   unixODBC-devel \
   zlib-devel \
-  uuid-devel
+  uuid-devel \
+  libarchive-devel
 ==
 
 ---++ Building the RPM
