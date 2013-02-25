@@ -34,3 +34,9 @@ shows the places where you can order the book.
 
 [[mug.jpeg;align="left",alt="mug"][http://www.cafepress.com/swiprologshop]]
 Buy SWI-Prolog gadgets!
+
+For *European* citizens, it might be wiser to order with the
+[[UK branch of cafe press][http://www.cafepress.co.uk/dd/74209076]].  This
+site also provides links to other national branches of cafe press.  It appears
+that the various national sites offer a different selection of items, notably
+see the [[Spanish][http://www.cafepress.es/dd/73935314]] shop.
