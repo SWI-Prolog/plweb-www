@@ -5,7 +5,8 @@ There are multiple interfaces to OpenGL.
 ---++ plOpenGL by Jan Tatham
 
   | Home      | http://www.sebity.com		   |
-  | Download  | https://github.com/sebity/plOpenGL |
+  | Binaries  | http://www.sebity.com/downloads.html |
+  | Source  | https://github.com/sebity/plOpenGL |
   | License   | LGPL			           |
   | Platforms | MacOS, Linux, Windows		   |
   | Version    | 0.4.2		   |
