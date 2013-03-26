@@ -2,6 +2,7 @@
 
 | Debian release | Squeeze (6.0) |
 | Ubuntu release | 12.04, 12.10  |
+| Mint | 14 |
 | SWI-Prolog release | 6.3.3 |
 | Package page | http://packages.debian.org/swi-prolog |
 | (Debian) Maintainer | Eugeniy Meshcheryakov |
@@ -40,10 +41,8 @@ sudo apt-get install \
 	libossp-uuid-dev
 ==
 
-*|Ubuntu 12.10|* ships with =|libunwind8-dev|= instead of
-=|libunwind7-dev|=. Ubuntu 12.10 uses *|gcc 4.7|*, which miscompiles the
-semweb (RDF) libraries.  The current pl-devel git version contains a
-[[work around][http://www.swi-prolog.org/git/packages/semweb.git/commit/af7fb1bb50ec30295bc2e1a7473bbe36ee0c03bf]] for this.
+*|Ubuntu 12.10|* and *|Mint 14|* ship with =|libunwind8-dev|= instead of
+=|libunwind7-dev|=.
 
 
 ---+++ Dependencies to build the documentation
