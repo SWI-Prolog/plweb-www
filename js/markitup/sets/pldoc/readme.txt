@@ -1,8 +1,8 @@
-Markup language: 
-Markdown
+Markup language:
+PlDoc
 
 Description:
-A basic Markdown markup set with Headings, Bold, Italic, Picture, Link, List, Quotes, Code, Preview button.
+SWI-Prolog's PlDoc markup language
 
 Install:
 - Download the zip file

@@ -10,8 +10,8 @@
 // -------------------------------------------------------------------
 // Feel free to add more tags
 // -------------------------------------------------------------------
-markdown_settings = {
-	previewParserPath:	'/markitup/preview/markdown',
+pldoc_settings = {
+	previewParserPath:	'/markitup/preview/pldoc',
 	onShiftEnter:		{keepDefault:false, openWith:'\n\n'},
 	markupSet: [
 		{name:'First Level Heading', key:'1', placeHolder:'Your title here...', closeWith:function(markItUp) { return miu.markdownTitle(markItUp, '=') } },
