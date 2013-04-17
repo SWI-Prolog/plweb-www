@@ -1,9 +1,9 @@
 ---+ SWI-Prolog on Debian and Ubuntu Linux
 
-| Debian release | Squeeze (6.0) |
-| Ubuntu release | 12.04, 12.10  |
+| Debian release | Wheezy(7.0)  |
+| Ubuntu release | 12.04, 12.10 |
 | Mint | 14 |
-| SWI-Prolog release | 6.3.3 |
+| SWI-Prolog release | 6.3.14 |
 | Package page | http://packages.debian.org/swi-prolog |
 | (Debian) Maintainer | Eugeniy Meshcheryakov |
 
@@ -20,17 +20,22 @@ Use the following commands to obtain all dependencies for a full build
 from source. Note that there are no known version dependencies on any of
 these packages.  If your (debian-based) distribution is lacking any of
 these package use =|apt-cache search <name>|= to find an alternative,
-where <name> is e.g., =libunwind= (e.i., remove version and details).
+where <name> is e.g., =libunwind= (i.e., remove version and details).
+Some remarks:
 
-It is possible to use =iodbc= instead of =unixodbc= for ODBC connectivity.
-The SWI-Prolog Java interface (JPL) works with most Java development kits,
-not only =|openjdk-7-jdk|=.  =|libarchive-dev|= is needed as of 6.1.4.
-=|libossp-uuid-dev|= is needed as of 6.3.4.
+  - It is possible to use =iodbc= instead of =unixodbc= for ODBC
+    connectivity.
+  - The SWI-Prolog Java interface (JPL) works with many Java development
+    kits, not only =|openjdk-7-jdk|=.
+  - The package =|libarchive-dev|= is needed as of 6.1.4 for libarchive,
+    which is needed by pack_install/1.
+  - The package =|libossp-uuid-dev|= is needed as of 6.3.4 for
+    library(uuid), which is needed for ClioPatria's SPARQL engine.
 
 ==
 sudo apt-get install \
         build-essential autoconf curl chrpath \
-        ncurses-dev libreadline-dev libunwind7-dev \
+        ncurses-dev libreadline-dev libunwind8-dev \
         libgmp-dev \
         libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \
         libxpm-dev libxt-dev pkg-config \
@@ -41,8 +46,9 @@ sudo apt-get install \
 	libossp-uuid-dev
 ==
 
-*|Ubuntu 12.10|* and *|Mint 14|* ship with =|libunwind8-dev|= instead of
-=|libunwind7-dev|=.
+Note that older Debian based distributions, including the Debian
+stable *|(Squeeze (6.0))|* ship with =|libunwind7-dev|= instead of
+=|libunwind8-dev|=.
 
 
 ---+++ Dependencies to build the documentation
