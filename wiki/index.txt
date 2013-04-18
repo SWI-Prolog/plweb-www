@@ -1,7 +1,7 @@
 ---+ SWI-Prolog Wiki facilities
 
 The underlying datastructure of this website consists mostly of
-[[PlDoc][</pldoc/package/pldoc.html>]] Wiki documentation pages. Since
+[[PlDoc][</pldoc/package/pldoc.html>]] Wiki documentation pages. The PlDoc wiki format largely based on the _markdown_ dialect used by [Doxygen](http://www.stack.nl/~dimitri/doxygen/manual/markdown.html). Since
 Mar 2, 2011, these pages can be edited through a web-interface.  Editing
 is still quite immature.  This page describes the process.
 
