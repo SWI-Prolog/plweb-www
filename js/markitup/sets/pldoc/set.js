@@ -14,9 +14,9 @@ pldoc_settings = {
 	previewParserPath:	'/markitup/preview/pldoc',
 	onShiftEnter:		{keepDefault:false, openWith:'\n\n'},
 	markupSet: [
-		{name:'Heading 1', key:'1', openWith:'---+ ', placeHolder:'Your title here...' },
-		{name:'Heading 2', key:'2', openWith:'---++ ', placeHolder:'Your title here...' },
-		{name:'Heading 3', key:'3', openWith:'---+++ ', placeHolder:'Your title here...' },
+		{name:'Heading 1', key:'1', openWith:'# ', placeHolder:'Your title here...' },
+		{name:'Heading 2', key:'2', openWith:'## ', placeHolder:'Your title here...' },
+		{name:'Heading 3', key:'3', openWith:'### ', placeHolder:'Your title here...' },
 		{separator:'---------------' },
 		{name:'Bold',   key:'B', openWith:'*', closeWith:'*'},
 		{name:'Italic', key:'I', openWith:'_', closeWith:'_'},
@@ -27,10 +27,10 @@ pldoc_settings = {
 			return "  "+markItUp.line+'. ';
 		}},
 		{separator:'---------------' },
-		{name:'Picture', key:'P', replaceWith:'![[![Alternative text]!]]([![Url:!:http://]!] "[![Title]!]")'},
-		{name:'Link', key:'L', openWith:'[', closeWith:']([![Url:!:http://]!] "[![Title]!]")', placeHolder:'Your text to link here...' },
+//		{name:'Picture', key:'P', replaceWith:'![[![Alternative text]!]]([![Url:!:http://]!] "[![Title]!]")'},
+		{name:'Link', key:'L', openWith:'[', closeWith:']([![Url:!:http://]!])', placeHolder:'Your text to link here...' },
 		{separator:'---------------'},
-		{name:'Code Block', openBlockWith:'  ==\n', closeBlockWith:'\n  ==', openWith:'  '},
+		{name:'Code Block', openBlockWith:'  ~~~~\n', closeBlockWith:'\n  ~~~~', openWith:'  '},
 		{separator:'---------------'},
 		{name:'Preview', call:'preview', className:"preview"}
 	]
