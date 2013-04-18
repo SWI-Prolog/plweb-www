@@ -12,7 +12,8 @@
   * Links.txt
   * Contact.txt
 --
-  * IDE.txt (developing)
+  * [Development tools](IDE.txt)
+  * [PlDoc Documentation](PlDoc.txt)
   * Graphics.txt
   * [[(Semantic) Web][web/index.txt]]
 --
