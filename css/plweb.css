@@ -131,3 +131,30 @@ table.wiki_edit td.label
   font-weight: bold;
   font-size: 80%;
 }
+
+/* Reviews, comments and ratings */
+
+div.rated
+{ display: inline-block;
+  background-color: #888;
+}
+
+div.rated .jRatingColor
+{ background-color: red;
+}
+
+div.review div.comment
+{ background-color: white;
+  color: black;
+  margin-top: 1ex;
+  margin-bottom: 0ex;
+  padding: 0px;
+  border: 1px dotted;
+}
+
+div.review div.update
+{ text-align: right;
+  font-size: 60%;
+  font-style: italic;
+  padding-right: 2px;
+}
