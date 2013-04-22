@@ -69,6 +69,10 @@ table.packlist a.resort
   text-decoration: none;
 }
 
+table.packlist span.grey
+{ color: #888;
+}
+
 table.packlist a.resort:hover
 { color: #00f;
   text-decoration: underline;
