@@ -32,18 +32,16 @@ pldoc_settings = {
 		{separator:'---------------'},
 		{name:'Code Block', openBlockWith:'  ~~~~\n', closeBlockWith:'\n  ~~~~', openWith:'  '},
 		{separator:'---------------'},
-		{name:'Preview', call:'preview', className:"preview"}
+		{name:'Preview', call:'preview', className:"preview"},
+		{ name:'Hide Preview',
+		  className:"hidepreview",
+		  call:function(markitUp){ miu.hidepreview(); }
+		}
 	]
 }
 
 // mIu nameSpace to avoid conflict.
-miu = {
-	markdownTitle: function(markItUp, char) {
-		heading = '';
-		n = $.trim(markItUp.selection||markItUp.placeHolder).length;
-		for(i = 0; i < n; i++) {
-			heading += char;
-		}
-		return '\n'+heading;
+miu = {	hidepreview : function() {
+		$('.markItUpPreviewFrame').remove();
 	}
 }
