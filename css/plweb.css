@@ -146,6 +146,8 @@ div.rated .jRatingColor
 div.review div.comment
 { background-color: white;
   color: black;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   margin-top: 1ex;
   margin-bottom: 0ex;
   padding: 0px;
