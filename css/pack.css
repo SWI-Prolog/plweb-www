@@ -69,8 +69,18 @@ table.packlist a.resort
   text-decoration: none;
 }
 
-table.packlist span.grey
+table.packlist span.annot
 { color: #888;
+  font-size: 80%;
+  position: relative; top: -0.7ex;
+}
+
+table.packlist span.annot:before { content: "("; }
+table.packlist span.annot:after  { content: ")"; }
+
+table.packlist span.votes
+{ color: #888;
+  font-size: 80%;
 }
 
 table.packlist a.resort:hover
@@ -87,6 +97,12 @@ table.packlist th.p_name
 { text-align: right;
   background: transparent;
   border-width: 0 1px 0 1px;
+}
+
+table.packlist div.sth
+{ font-size: 75%;
+  font-weight: normal;
+  color: #888;
 }
 
 /* Package information table */
