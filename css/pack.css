@@ -146,3 +146,55 @@ span.file-tree-info
 .warning
 { color: red;
 }
+
+
+/* Reviews, comments and ratings */
+
+div.rated
+{ display: inline-block;
+  background-color: #888;
+}
+
+div.rated .jRatingColor
+{ background-color: red;
+}
+
+div.review div.comment
+{ background-color: white;
+  color: black;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 1ex;
+  margin-bottom: 0ex;
+  padding: 0px;
+  border: 1px dotted;
+}
+
+div.review div.reviewer
+{ font-size: 80%;
+  font-style: italic;
+  color: #666;
+  text-align: right;
+  margin-right: 1.5em;
+}
+
+div.review div.rating
+{ margin-left: 1.5em;
+}
+
+div.review div.update
+{ text-align: right;
+  font-size: 60%;
+  font-style: italic;
+  padding-right: 2px;
+}
+
+form.review th
+{ text-align:right;
+  mrgin-right:1ex;
+}
+
+form.review a.update
+{ font-size: 80%;
+  margin-left: 1ex;
+}
