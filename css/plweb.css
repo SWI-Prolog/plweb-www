@@ -161,3 +161,13 @@ div.smallprint
   font-size: 80%;
   color: #888;
 }
+
+div.private-profile
+{ margin-left: 1.5em;
+}
+
+div.private-profile th
+{ text-align: right;
+  color: #888;
+  font-size: 80%;
+}
