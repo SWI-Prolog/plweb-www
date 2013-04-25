@@ -154,11 +154,10 @@ table.wiki_edit td.label
 
 /* Logon */
 
-div.openid-explanation
-{ border-top: 1px solid;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  margin-top: 4em;
+div.smallprint
+{ margin-top: 2ex;
+  border-top: 1pt solid;
+  text-align: right;
   font-size: 80%;
-  color: #444;
+  color: #888;
 }

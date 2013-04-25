@@ -199,10 +199,11 @@ form.review a.update
   margin-left: 1ex;
 }
 
-div.smallprint
-{ margin-top: 2ex;
-  border-top: 1pt solid;
-  text-align: right;
-  font-size: 80%;
+div.edit-profile
+{ margin-top: 1ex;
+  border-bottom: 1px solid;
   color: #888;
+  font-size: 80%;
+  font-style: italic;
+  text-align:right;
 }
