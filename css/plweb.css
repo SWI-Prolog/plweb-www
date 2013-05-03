@@ -155,7 +155,8 @@ table.wiki_edit td.label
 /* Logon */
 
 div.smallprint
-{ margin-top: 2ex;
+{ margin-left: 30%;
+  margin-top: 2ex;
   border-top: 1pt solid;
   text-align: right;
   font-size: 80%;
@@ -170,4 +171,8 @@ div.private-profile th
 { text-align: right;
   color: #888;
   font-size: 80%;
+}
+
+span.openid-url-pattern
+{ color: #000;
 }
