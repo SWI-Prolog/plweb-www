@@ -176,3 +176,13 @@ div.private-profile th
 span.openid-url-pattern
 { color: #000;
 }
+
+.warning
+{ color: red;
+}
+
+.error
+{ color: red;
+  font-weight: bold;
+}
+
