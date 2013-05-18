@@ -31,6 +31,8 @@ SWI-Prolog [[packages][</packages/>]]
     * [[Some Coding Guidelines for Prolog][http://arxiv.org/abs/0911.2899]] started by Michael A. Covington; now `et all'.
     * [[An Introduction to Language Processing with Perl and Prolog][http://www.cs.lth.se/home/Pierre_Nugues/ilppp/sample.html]] by Pierre Nugues
     * [[Creating Web Applications in SWI-Prolog][http://www.pathwayslms.com/swipltuts/html/index.html]] by Anne Ogborn.
+    * [[Using Definite Clause Grammars in SWI-Prolog][http://www.pathwayslms.com/swipltuts/dcg/]] by Anne Ogborn
+    * [[Documenting SWI-Prolog Projects with PlDoc][http://www.pathwayslms.com/swipltuts/pldoc/index.html]] by Michael Richter
 
   * *|General Prolog libraries|*
 
@@ -58,4 +60,3 @@ SWI-Prolog [[packages][</packages/>]]
     * [[Why Use Prolog?][http://www.j-paine.org/why_prolog.html]] by Jocelyn Paine
     * [[Tom's Declarative Languages Blog
     ][http://tomschrijvers.blogspot.com/]] by Tom Schrijvers
-
