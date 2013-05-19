@@ -17,17 +17,17 @@ SWI-Prolog is available in Mageia 3 repositories. The packages are:
 
 The packages for complete swi-prolog build in Mageia are:
 
-  - ncurses-devel
-  - readline-devel
-  - jpeg-devel
-  - xpm-devel
-  - X11-devel
-  - unixODBC-devel
-  - db4-devel
-  - openssl-devel
-  - libncursesw-devel
-  - gmp-devel
-  - java-rpmbuild
+ * =ncurses-devel=
+ * =readline-devel=
+ * =jpeg-devel=
+ * =xpm-devel=
+ * =X11-devel=
+ * =unixODBC-devel=
+ * =db4-devel=
+ * =openssl-devel=
+ * =libncursesw-devel=
+ * =gmp-devel=
+ * =java-rpmbuild=
 
 To install all dependencies run the command bellow:
 
