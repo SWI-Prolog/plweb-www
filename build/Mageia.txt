@@ -12,3 +12,34 @@ SWI-Prolog is available in Mageia 3 repositories. The packages are:
 * =swi-prolog= - Prolog interpreter and compiler
 * =swi-prolog-jpl= - Java interface for swi-prolog
 * =swi-prolog-xpce= - swi-prolog native GUI library
+
+---++ Dependencies
+
+The packages for complete swi-prolog build in Mageia are:
+
+  - ncurses-devel
+  - readline-devel
+  - jpeg-devel
+  - xpm-devel
+  - X11-devel
+  - unixODBC-devel
+  - db4-devel
+  - openssl-devel
+  - libncursesw-devel
+  - gmp-devel
+  - java-rpmbuild
+
+To install all dependencies run the command bellow:
+
+==
+sudo urpmi ncurses-devel readline-devel jpeg-devel xpm-devel X11-devel unixODBC-devel db4-devel openssl-devel
+libncursesw-devel gmp-devel java-rpmbuild
+==
+
+Alternatively you can use =urpmq= to install the dependencies:
+
+==
+sudo urpmq http://mageia.c3sl.ufpr.br/distrib/3/SRPMS/core/release/swi-prolog-6.2.6-1.mga3.src.rpm
+==
+
+The spec file to SWI-Prolog in Mageia 3 is [[here][http://mageia.c3sl.ufpr.br/distrib/3/SRPMS/core/release/swi-prolog-6.2.6-1.mga3.src.rpm]].
