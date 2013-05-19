@@ -1,0 +1,14 @@
+---+ SWI-Prolog on Mageia
+
+| Mageia release | 3  |
+| SWI-Prolog release | 6.2.26 |
+| Package page | http://mageia.madb.org/package/list/t_search/swi-prolog/application/0 |
+| Maintainer | Filipe Saraiva |
+
+---++ Status
+
+SWI-Prolog is available in Mageia 3 repositories. The packages are:
+
+* =swi-prolog= - Prolog interpreter and compiler
+* =swi-prolog-jpl= - Java interface for swi-prolog
+* =swi-prolog-xpce= - swi-prolog native GUI library
