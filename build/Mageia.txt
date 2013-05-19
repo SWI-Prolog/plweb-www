@@ -36,10 +36,10 @@ sudo urpmi ncurses-devel readline-devel jpeg-devel xpm-devel X11-devel unixODBC-
 libncursesw-devel gmp-devel java-rpmbuild
 ==
 
-Alternatively you can use =urpmq= to install the dependencies:
+Alternatively you can use =urpmi= with =buildrequires= option to install the dependencies:
 
 ==
-sudo urpmq http://mageia.c3sl.ufpr.br/distrib/3/SRPMS/core/release/swi-prolog-6.2.6-1.mga3.src.rpm
+sudo urpmi --buildrequires http://mageia.c3sl.ufpr.br/distrib/3/SRPMS/core/release/swi-prolog-6.2.6-1.mga3.src.rpm
 ==
 
 The spec file to SWI-Prolog in Mageia 3 is [[here][http://mageia.c3sl.ufpr.br/distrib/3/SRPMS/core/release/swi-prolog-6.2.6-1.mga3.src.rpm]].
