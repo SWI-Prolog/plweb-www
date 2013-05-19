@@ -14,7 +14,6 @@ SWI-Prolog [[packages][</packages/>]]
   * *|General Prolog resources on the WEB|*
 
     * [[The World Wide Web Virtual Library: Logic Programming.][http://www.fmi.uni-sofia.bg/fmi/logic/skordev/ln/lp/logic-prog.html]]
-    * [[Cetus links on Prolog.  Points to many Prolog resources.][http://www.cetus-links.org/oo_prolog.html]]
     * [[`Official' Prolog faq as posted to comp.lang.prolog][http://www.logic.at/prolog/faq/]]
     * [[Information on the ISO Prolog standard][http://pauillac.inria.fr/~deransar/prolog/]]
     * [[Prolog comparison, discussion group, chat, etc.][http://www.fraber.de/university/prolog/]]
