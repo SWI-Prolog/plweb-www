@@ -129,11 +129,9 @@ span.acmatch
 { background-color: #bbf;
 }
 
-#ac_predicate_complete .yui-ac-content
-{ max-height:30em;
-  overflow:auto;
-  overflow-x:hidden; /* set scrolling */
-  _height:30em; /* ie6 */
+.ui-menu li.ui-menu-item a	/* Make list more compact */
+{ padding-top: 0;
+  line-height: 1;
 }
 
 /* Wiki editing */
