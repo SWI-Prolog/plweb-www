@@ -134,6 +134,35 @@ span.acmatch
   line-height: 1;
 }
 
+.ui-menu-item a.tag		/* Style auto-completion hits */
+{ font-style: italic;
+}
+
+.ui-menu-item a.iso
+{ color: blue;
+}
+
+.ui-menu-item a i
+{ font-size: 80%;
+  color: #888;
+  float: right;
+}
+
+/* Tagging */
+
+div.user-annotations
+{ font-size: 80%;
+}
+
+div.user-annotations ul.tagit li.tagit-choice
+{ padding-top: 0pt;
+  padding-bottom: 1pt;
+}
+
+div.user-annotations ul.tagit li.tagit-new
+{ padding-top: 0pt;
+}
+
 /* Wiki editing */
 
 table.wiki_edit .git_msg
