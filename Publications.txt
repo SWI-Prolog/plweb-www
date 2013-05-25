@@ -7,6 +7,8 @@ publications, please consider citing one of these papers.  The TPLP
 paper _|SWI-Prolog|_ is the preferred `general purpose reference'
 [[BibTeX][<swipub:tplp-swipl.bib>]].
 
+    * [[Syntactic integration of external languages in Prolog][<swipub:multilang.pdf>]]
+    Jan Wielemaker and Nicos Angelopoulos WLPE-12. [[BibTeX][<swipub:multilang.bib>]]
     * [[Portability of Prolog programs: theory and case-studies][http://dx.doi.org/10.1007/978-3-642-18378-2_8]]
     Jan Wielemaker and Vitor Santos Costa. PADL-11. Updated version of
     CICLOPS-10 paper with the same title. [[BibTeX][<swipub:padl-porting.bib>]]
