@@ -10,9 +10,20 @@
 
 ---++ Status
 
-Debian Squeeze and derived distributions come with a properly
-packaged SWI-Prolog.  We advice to compile the sources on older
-releases.
+Debian Squeeze and derived distributions come with a properly packaged but old (version 5.10.4) SWI-Prolog.  We advice to compile the sources on older Debian derived distros or you need a fairly recent version.
+
+---++ PPA (Ubuntu Personal Package Archive)
+
+There is [SWI-Prolog PPA](https://launchpad.net/~swi-prolog/+archive/devel) based on the official Debian packaging structure and the SWI-Prolog development releases.  This PPA version can be installed using the commands below in
+Ubuntu 12.04 and 13.04:
+
+  ==
+  % sudo apt-add-repository ppa:swi-prolog/devel
+  % sudo apt-get update
+  % sudo apt-get install swi-prolog
+  ==
+
+We plan to updates this PPA with every new development release.  Thanks to Yves Raimond for setting up the PPA snd Eugeniy Meshcheryakov for creating the Debian configuration.
 
 ---++ Dependencies
 
