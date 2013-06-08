@@ -154,6 +154,17 @@ div.user-annotations
 { font-size: 80%;
 }
 
+div.user-annotations div.login-keeps-profile
+{ margin-left: 30%;
+  text-align: right;
+  font-size: 80%;
+  color: #888;
+}
+
+ul.tagit
+{ margin-bottom: 2px;
+}
+
 div.user-annotations ul.tagit li.tagit-choice
 { padding-top: 0pt;
   padding-bottom: 1pt;
