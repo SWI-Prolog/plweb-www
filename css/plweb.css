@@ -229,6 +229,12 @@ div.comment-action
   color: #666;
 }
 
+div.explain-comment
+{ margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
 div.comment-summary span
 { margin-left: 2em;
   font-size: 80%;
