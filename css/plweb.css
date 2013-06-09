@@ -229,6 +229,12 @@ div.comment-action
   color: #666;
 }
 
+div.comment-summary span
+{ margin-left: 2em;
+  font-size: 80%;
+  color: #666;
+}
+
 /* Wiki editing */
 
 table.wiki_edit .git_msg
