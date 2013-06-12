@@ -123,7 +123,11 @@ pre.error
 { color: #ff0000;
 }
 
-/* Auto-complete */
+/* Search and Auto-complete */
+
+#search-container
+{ padding-right: 0.5em;
+}
 
 span.acmatch
 { background-color: #bbf;
