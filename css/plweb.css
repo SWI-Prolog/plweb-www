@@ -129,6 +129,11 @@ pre.error
 { padding-right: 0.5em;
 }
 
+li.ui-menu-item
+{ font-size: initial;
+  font-family: initial;
+}
+
 span.acmatch
 { background-color: #bbf;
 }
