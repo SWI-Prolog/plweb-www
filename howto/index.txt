@@ -11,3 +11,5 @@ Development
   * [[How to submit patches][SubmitPatch.txt]]
 
 Please contribute to this HOWTO.   This website is now a [[wiki][</wiki/>]]!
+
+@see [Links](</Links.txt>), in particular "_SWI-Prolog tutorials_"
