@@ -103,10 +103,6 @@ td.dl_file p
 
 /* Messages */
 
-div.informational
-{ background-color: #b0ffb0;
-}
-
 div.silent
 { display: none;
 }
@@ -289,6 +285,10 @@ div.private-profile th
 
 span.openid-url-pattern
 { color: #000;
+}
+
+.informational
+{ color: #080;
 }
 
 .warning
