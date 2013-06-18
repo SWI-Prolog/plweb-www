@@ -29,12 +29,7 @@ a.signin:hover
   color: blue;
 }
 
-body.wiki div.navhdr
-{ margin-left: 180px;
-  padding-left: 5px;
-}
-
-div.content
+div.righthand
 { margin-left: 180px;
   padding-left: 5px;
   border-style: solid;
@@ -157,6 +152,7 @@ span.acmatch
 
 div.user-annotations
 { font-size: 80%;
+  clear: both;
 }
 
 div.user-annotations div.tag-notes
