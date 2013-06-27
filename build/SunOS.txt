@@ -1,0 +1,35 @@
+# Building SWI-Prolog on SunOS/SPARC (Solaris)
+
+These are additional remarks to [the general build instructions](unix.txt) for SunOS. Test environment:
+
+  | SWI-Prolog version | V6.3.17-69-g4ebcc88 |
+  | OS                 | SunOS 5.11 sparc    |
+  | GCC                | 4.5.2               |
+
+## Special settings
+
+edit =build= (copied from =build.templ= and edit the following variables to the values given below:
+
+  ==
+  MAKE=gmake
+  export COFLAGS="-O0"
+  export CMFLAGS="-D_POSIX_PTHREAD_SEMANTICS"
+  ==
+
+## Notes
+
+  - =|-O0|= is needed to avoid a bus error in term-agenda management.  It is unclear
+    whether this is due to a bug in GCC or a bug in SWI-Prolog.  SWI-Prolog compiles
+    fine on Debian/SPARC.  Unfortunately, gdb was broken on the machine, which makes
+    it hard to investigate the issue.
+  
+    Quite likely, only some files need to be compiled using =|-O0|=.  If you have
+    a different GCC version, you probably want to try the default optimization
+    first.  Please report success/failure.
+
+  - =|-D_POSIX_PTHREAD_SEMANTICS|= is need for getpwnam_r(), etc, which have 
+    different calling conventions on SunOS without this flag.
+
+## Thanks
+
+Petra Kaempfer from Humboldt University, Berlin for providing access to their machines.
