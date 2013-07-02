@@ -2,9 +2,9 @@
 
 These are additional remarks to [the general build instructions](unix.txt) for SunOS. Test environment:
 
-  | SWI-Prolog version | V6.3.17-69-g4ebcc88 |
+  | SWI-Prolog version | V6.3.18-26-ge58219b |
   | OS                 | SunOS 5.11 sparc    |
-  | GCC                | 4.5.2               |
+  | GCC                | 4.8.0               |
 
 ## Special settings
 
@@ -12,23 +12,20 @@ edit =build= (copied from =build.templ= and edit the following variables to the 
 
   ==
   MAKE=gmake
-  export COFLAGS="-O0"
   export CMFLAGS="-D_POSIX_PTHREAD_SEMANTICS"
   ==
 
 ## Notes
 
-  - =|-O0|= is needed to avoid a bus error in term-agenda management.  It is unclear
-    whether this is due to a bug in GCC or a bug in SWI-Prolog.  SWI-Prolog compiles
-    fine on Debian/SPARC.  Unfortunately, gdb was broken on the machine, which makes
-    it hard to investigate the issue.
-  
-    Quite likely, only some files need to be compiled using =|-O0|=.  If you have
-    a different GCC version, you probably want to try the default optimization
-    first.  Please report success/failure.
-
   - =|-D_POSIX_PTHREAD_SEMANTICS|= is need for getpwnam_r(), etc, which have 
     different calling conventions on SunOS without this flag.
+  - Compiled with gcc 4.8.0, SWI-Prolog passes all tests. 
+    *gcc 4.5.2 miscompiles* SWI-Prolog when using optimization.
+    It compiles the system fine when adding the following to the =build= script.
+
+    ==
+    export COFLAGS=-O0
+    ==
 
 ## Thanks
 
