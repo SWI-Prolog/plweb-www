@@ -193,6 +193,11 @@ ul.user-tags a.tag
   border-radius: 6px 6px 6px 6px;
 }
 
+span.separator
+{ margin-left: 1ex;
+  margin-right: 1ex;
+}
+
 /* Comments */
 
 div.comments
