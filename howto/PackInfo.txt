@@ -40,6 +40,10 @@ are obligatory.
   package.  Patterns are used by pack_upgrade/1 to query available
   package versions.
 
+  * branch(Name)
+  If the pack is installed from a GIT URL, checkout the named _branch_.
+  Default is determined by =|git clone|=.
+
   * provides(Token)
   Package provides _Token_. A token is an atom, describing some property
   of the package. A package always provides its own package name. A pack
@@ -49,7 +53,7 @@ are obligatory.
   Package requires the presence of another package that is named Token
   or provides Token.
 
-  * conflicts(Token).
+  * conflicts(Token)
   Package cannot be used together with Token.  Currently unused.
 
   * replaces(Pack)
