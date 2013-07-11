@@ -5,14 +5,15 @@ The underlying datastructure of this website consists mostly of
 Mar 2, 2011, these pages can be edited through a web-interface.  Editing
 is still quite immature.  This page describes the process.
 
-First of all, you need an *account*.  You can get this by filling out
-the [[registration form][</register>]].
+To edit the wiki pages, you need to login to the site using your Google, Yahoo
+or other OpenID account.  Please using the _login_ link in the top-left corner
+of this page.  Next, you can ask for permission to edit the wiki pages using
+[this link](</register>).
 
-With an account, click the [[edit.gif;height="15px"][<>]] button to open
+After being granted permission to edit the wiki pages, click the [[edit.gif;height="15px"][<>]] button to open
 the page in edit-mode. Make your changes, add a commit summary message
 and optionally a more extensive comment.  Please respect the
-[[wiki
-notation][</pldoc/doc_for?object=section(2,'7',swi('/doc/packages/pldoc.html'))>]].
+[wiki notation](</pldoc/man?section=wiki>).
 
 To create a *|new file|*, reference a =|.txt|= file and click the
 created link. The link colors red and becomes underlined if the
