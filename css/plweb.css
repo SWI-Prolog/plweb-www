@@ -179,11 +179,7 @@ ul.tagit li.tagit-new input[type="text"]
 { width: 50ex;
 }
 
-ul.user-tags li
-{ margin: 7px 0px;
-}
-
-ul.user-tags a.tag
+table.user-tags a.tag
 { background: none repeat scroll 0 0 #DEE7F8;
   text-decoration: none;
   color: black;
@@ -241,9 +237,12 @@ div.explain-comment
   color: #666;
 }
 
-div.comment-summary span
-{ margin-left: 2em;
-  font-size: 80%;
+table.user-tags, table.user-comments
+{ margin-left: 1cm;
+}
+
+td.comment-summary
+{ font-size: 90%;
   color: #666;
 }
 
