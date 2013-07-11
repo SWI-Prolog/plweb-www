@@ -47,7 +47,7 @@ paper _|SWI-Prolog|_ is the preferred `general purpose reference'
     * [[An Architecture for Making Object-Oriented Systems Available from Prolog][<pub:wlpe-02.pdf>]],
     WLPE-02 [[BibTeX][<pub:wlpe-02.bib>]]
 
-[[new.gif]] My PhD thesis, titled [[Logic programming for
+My PhD thesis, titled [[Logic programming for
 knowledge-intensive interactive
 applications][<swipub:jan-phd.pdf>]] (4.4MB) contains
 revised versions of most of the above papers supplemented with a broader
