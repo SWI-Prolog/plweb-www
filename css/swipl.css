@@ -16,10 +16,19 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-image: url("bluegrad.png");
+    background-image: url("/icons/bluegrad.png");
     background-repeat: repeat-x;
     color:  #FFF;
     height: 38px;
+}
+
+.colored {
+    color: #F0F;
+}
+
+#upper-header a {
+    color: #FFF;
+    text-decoration: none;
 }
 
 #upper-header form {
@@ -35,6 +44,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 8px 0px;
+    margin-top: 4px;
 }
 
 #upper-header input {
@@ -97,8 +107,7 @@ span.tagline {
 }
 
 .menubar {
-  /*  border: 1px solid #d47618; */
-    background-image: url("menubkgnd.png");
+    background-image: url("/icons/menubkgnd.png");
     background-repeat: repeat-x;
     height: 36px;
     border-radius: 3px;
