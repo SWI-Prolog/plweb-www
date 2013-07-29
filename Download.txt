@@ -7,7 +7,7 @@
     version *|6.4.x|*
     * [[Development release][</download/devel>]]
     Sources and executables for MS-Windows and MacOS X
-    version *|6.3.x|*
+    version *|6.5.x|*
     * [[Daily builds for Windows][</download/daily/bin>]] [[new.gif]]
     * Some popular [[old versions][</download/old?show=all>]]
     * [[GIT access][git.txt]], browse GIT [[repository][</git/>]]
