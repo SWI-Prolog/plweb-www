@@ -22,7 +22,7 @@ new window with the built-in Emacs clone.
 
 ---++ Distributions
 
-  * [[Debian and Ubuntu][Debian.txt]]
+  * [[Debian and Ubuntu][Debian.txt]] (including PPA for Ubuntu)
   * [[Redhat (Fedora, RHEL, CentOS)][Redhat.txt]]
   * SuSE.txt
   * [[Mageia][Mageia.txt]]

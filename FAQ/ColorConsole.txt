@@ -1,18 +1,20 @@
----+ Get colored output on the command line
+---+ Controlling colored output on the terminal
 
-Currently, SWI-Prolog support colored messages on the command line by loading
-library(ansi_term).  This requires a terminal devices that understand ANSI
-color escape sequences (\e[...m).  Almost all modern terminal emulators
-support this.  It is also supported by the Windows console application
-(swipl.exe).  The feature is activated simply by loading the mentioned
-library.  You may add the following snippit to your personal init file:
+By default, SWI-Prolog will use colored output on the commandline based on
+library(ansi_term) if `current_output` is connected to a terminal.  This is
+detected by the `tty` property of streams (see stream_property/2).  Coloring
+can be controlled in two ways
 
-  ==
-  :- (   stream_property(user_output, tty(true))
-     ->  load_files(library(ansi_term), [silent(true)])
-     ;   true
-     ).
-  ==
+  - It can be disabled using this in your personal initialization file (see
+    below).
 
-@bug The Windows GUI console (swipl-win.exe) does not yet support color.
+    ==
+    :- set_prolog_flag(color_term, false).
+    ==
+
+  - Colors can be changed by message type (see print_message/2) using the
+    hook message_property/2.
+
+
+
 @see PlInitialisation.txt for editing your personal init file.

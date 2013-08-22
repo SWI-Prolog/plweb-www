@@ -19,8 +19,12 @@ errors are found that affect many users. GIT access to the development
 is provided. All releases are tagged as VMajor.Minor.Patch Release
 milestones
 
-  $ 6.3.x: Current development branch.
- 
+  $ 6.5.x: Current development branch.
+
+  $ 6.4.x: RDF database version 3, quasi quotations, many enhancements to
+  HTTP and HTML environment, many enhancements to the development tools,
+  bug fixes.
+
   $ 6.2.x: The _pack_ package installer, better =|:- include(file).|=
   support, many enhancements to debugger and environment.  Windows version
   built using MinGW (about 20% faster then MSVC2005 version).

@@ -12,7 +12,7 @@ People are listed in alphabetical order.
   * Jan Wielemaker (main developer and maintainer)
   * Jan van der Steen (SSL interface)
   * Jeff Rosenwald (TIPC interface, Google protocl buffers)
-  * Keri Harris (testing, patches)
+  * Keri Harris (testing, patches, MinGW port)
   * Leslie de Koninck (CLP(QR) port)
   * Markus Triska (CLP(FD) and other (constraint) libraries)
   * Matt Lilley (testing, patches)
@@ -33,6 +33,8 @@ People are listed in alphabetical order.
   * Kuniaki Mukai (implementation of =@=/2 (variant/2)
   * Marcus Uneson (library(optparse))
   * Randy Sharp (fixing many typos in the documentation; ongoing work)
+  * Roberto Bagnara and Abramo Bagnara (MinGW port, helped fixing many bugs)
+  * Carlo Capelli (Qt-based console)
 
 ---++ Other _Contributors_
 
