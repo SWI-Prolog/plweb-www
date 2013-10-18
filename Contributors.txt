@@ -68,4 +68,4 @@ People are listed in alphabetical order.
   * [[utf8proc][http://www.public-software-group.org/utf8proc]] (unicode normalization)
   * [[X.org][http://www.x.org/]] (Graphics on Unix)
   * [[Zlib][http://www.zlib.net/]] (compression)
-
+  * [[Qt][http://www.digia.qt.com]] GUI console
