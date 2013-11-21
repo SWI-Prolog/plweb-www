@@ -1,9 +1,5 @@
 ---+ SWI-Prolog's home
 
-[[new.gif]] *Anne Ogborn*, Prolog web enthusiast and SWI-Prolog contributor, will be giving a workshop on [Real World Development in SWI-Prolog](https://thestrangeloop.com/sessions/real-development-boot-camp-in-swi-prolog) at the Strangeloop conference on Sept. 18.
-
----
-
 [[coolstar.gif;align="right",alt="Open directory cool site"][<dmoz_pl:>]]
 SWI-Prolog offers a comprehensive [[Free Software][<fsf:>]] Prolog
 environment, licensed under the Lesser GNU Public License. Together with
