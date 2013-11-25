@@ -23,7 +23,7 @@ SWI-Prolog [[packages][</packages/>]]
     * [[Creating Web Applications in SWI-Prolog][http://www.pathwayslms.com/swipltuts/html/index.html]] by Anne Ogborn.
     * [[Using Definite Clause Grammars in SWI-Prolog][http://www.pathwayslms.com/swipltuts/dcg/]] by Anne Ogborn
     * [[Documenting SWI-Prolog Projects with PlDoc][http://www.pathwayslms.com/swipltuts/pldoc/index.html]] by Michael Richter
-    * [[Using SWI-Prolog’s Modules][https://chiselapp.com/user/ttmrichter/repository/swiplmodtut/doc/v1.2/staging/tutorial.html]] by Michael Richter
+    * [[Using SWI-Prolog’s Modules][http://michael.richter.name/swi-prolog-modules-tutorial]] by Michael Richter
 
   * *|General Prolog tutorials, guides, etc|*
 
