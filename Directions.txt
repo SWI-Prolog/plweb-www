@@ -17,7 +17,7 @@ With SWI-Prolog, we want to provide a language that satisfies the needs
 of academic and industrial *application programmers*. SWI-Prolog is a
 dialect of Prolog because we believe that the logic foundation provides
 a good basis for many relatively simple reasoning tasks seen in
-applications. Its reflexive capabilities as well as its `program is
+applications. Its reflective capabilities as well as its `program is
 data' view makes it an ideal platform for _domain specific languages_
 (DSLs) or _micro languages_, which allows for concise description of
 application knowledge and separation of this knowledge from how it is
@@ -35,7 +35,7 @@ numbers and strings, as well as extended runtime detection of Prolog
 data types that allows for a natural representation of dynamic data
 while being able to distinguish a string from a list and the empty list
 from an identifier without additional type information in the form of
-declarations or wrapping data in terms.
+declarations or wrapping data into terms.
 
 With SWI-Prolog we want to maintain a _living language_. That means that
 we will try to make the language evolve with insights and trends in the
@@ -48,7 +48,7 @@ this leads to the following priorities:
   memory leaks.  This is more or less satisfied.  The second is
   to ensure that broken programs and development interaction
   (debugging, reloading, etc.) does not crash the system.  There
-  is still work to do here.
+  is still work to be done here.
 
   $ (Backward) compatibility :
   We try to make as few as possible changes that break backward
@@ -123,8 +123,8 @@ this counterproductive for the following reasons:
     exact behaviour on invalid input.  It also does not _allow_ for
     introducing exceptions in places where failure was prescribed
     because the costs of generating an exception was deemed to be
-    to high by the ISO committee.  It even disallows systems to reject goals
-    like `Len is A+B, length(Len, List)` based on static analysis.
+    too high by the ISO committee. It even disallows systems to reject
+    goals like `Len is A+B, length(Len, List)` based on static analysis.
 
 In the long run, we expect that SWI-Prolog will become a partially typed
 language. Type systems have to choose between decidability and
@@ -181,7 +181,7 @@ string representations suggest a choice, but in reality this choice
 needs to be made for the whole application and is therefore not a real
 choice.
 
-The SWI-Prolog [extensions](</pldoc/man? fix some of
+The SWI-Prolog [extensions](</pldoc/man?section=extensions>) fix some of
 these problems by reviving a string type as there was in the BSI Prolog
 standard and which survived in several implementations (e.g., ECLiPSe,
 Amzi!). We expect that YAP will follow. The primitives will be
@@ -246,7 +246,7 @@ YAP and SICStus and at somewhat larger distance Ciao, ECLiPSe and XSB),
 while adding extensions to the system that supports our
 [guiding principles](<#guides>)). In practice, this means that an
 application programmer who experiences problems running the same source
-on another Prolog system while this is not a priory impossible (for
+on another Prolog system while this is not a priori impossible (for
 example because of completely different feature sets, such as the
 (un)availability of attributed variables) and there is no sensible
 work-around will be taken seriously.
