@@ -14,7 +14,7 @@ suggestions, etc.
 
 ---++ PGP signature
 
-In cases where PGP signing or encryption is required, here is our PGP
-public key, signed by Jan Wielemaker <jan@swi-prolog.org>. See also our
-PGP page. When in doubt on the authenticity of the key, please contact
-us using the above address.
+In cases where PGP signing or encryption is required,
+[here](<swi-prolog-key.asc>) is our PGP public key, signed by Jan
+Wielemaker <jan@swi-prolog.org>. When in doubt on the authenticity of
+the key, please contact us using the above address.
