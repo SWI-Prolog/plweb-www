@@ -19,7 +19,14 @@ errors are found that affect many users. GIT access to the development
 is provided. All releases are tagged as VMajor.Minor.Patch Release
 milestones
 
-  $ 6.5.x: Current development branch.
+  $ 7.1.x: Current development branch.  Introduces syntactic extensions,
+  gives a prominent place to strings and adds _dicts_ as a primary
+  citizen.  See [extensions](</pldoc/man?section=extensions>).
+
+  $ 6.6.x: Mostly a stability release. 6.6.x comes with some
+  modification, notably to processing commandline arguments. It has been
+  stabalised rather quickly because the 7.1.x branch introduces many and
+  partially incompatible changes.
 
   $ 6.4.x: RDF database version 3, quasi quotations, many enhancements to
   HTTP and HTML environment, many enhancements to the development tools,
@@ -28,11 +35,11 @@ milestones
   $ 6.2.x: The _pack_ package installer, better =|:- include(file).|=
   support, many enhancements to debugger and environment.  Windows version
   built using MinGW (about 20% faster then MSVC2005 version).
- 
+
   $ 6.0.x: Stable branch created from 5.11.37.  Notably provides just-in-time
   indexing on multiple arguments and supports the PDT Eclipse IDE out of the
   box.
-  
+
   $ 5.11.x: External requirements have forced the release of 5.10.x
   before the wishlist of new functionality was complete. Notably
   generational GC remains on the wishlist.
