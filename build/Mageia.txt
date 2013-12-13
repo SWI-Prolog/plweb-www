@@ -1,14 +1,9 @@
 ---+ SWI-Prolog on Mageia
 
-| Mageia release | Cauldron  |
-| SWI-Prolog release | 6.6.0 |
-| Package page | [[Package link][http://mageia.madb.org/package/list/release/cauldron/application/0/t_search/swi-prolog]] |
-| Maintainer | Filipe Saraiva |
-
-| Mageia release | 3  |
-| SWI-Prolog release | 6.2.26 |
-| Package page | [[Package link][http://mageia.madb.org/package/list/t_search/swi-prolog/release/3/application/0]] |
-| Maintainer | Filipe Saraiva |
+| Mageia release | Cauldron  | 3 |
+| SWI-Prolog release | 6.6.0 | 6.2.26 |
+| Package page | [[Package link][http://mageia.madb.org/package/list/release/cauldron/application/0/t_search/swi-prolog]] | [[Package link][http://mageia.madb.org/package/list/t_search/swi-prolog/release/3/application/0]] |
+| Maintainer | Filipe Saraiva | Filipe Saraiva |
 
 ---++ Status
 
