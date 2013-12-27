@@ -300,3 +300,7 @@ span.openid-url-pattern
   font-weight: bold;
 }
 
+.menu-item {
+  text-transform:uppercase;
+}
+
