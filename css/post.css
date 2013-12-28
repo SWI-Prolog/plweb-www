@@ -24,7 +24,7 @@ a:hover, a:focus {
 .post-category {
   background: none repeat scroll 0 0 #999999;
   color: #FFFFFF;
-  font-size: 80%;
+  <!--font-size: 80%;-->
   margin: 0 0.1em;
   padding: 0.3em 1em;
 }
@@ -33,9 +33,9 @@ a:hover, a:focus {
   background: none repeat scroll 0 0 #1F085E;
 }
 
-.post-description {
+.content {
   color: #444444;
-  font-family: Georgia,"Cambria",serif;
+  <!--font-family: Georgia,"Cambria",serif;-->
   line-height: 1.8em;
 }
 
@@ -49,5 +49,16 @@ a:hover, a:focus {
   color: #222222;
   font-size: 2em;
   margin-bottom: 0.2em;
+}
+
+
+
+.annotation>.content {
+  background: none repeat scroll 0 0 #FFFFFF;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 0 0 20px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
 }
 
