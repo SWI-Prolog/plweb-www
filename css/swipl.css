@@ -22,15 +22,6 @@ body {
     height: 38px;
 }
 
-.colored {
-    color: #F0F;
-}
-
-#upper-header a {
-    color: #FFF;
-    text-decoration: none;
-}
-
 #upper-header form {
     display: inline;
 }
@@ -44,7 +35,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 8px 0px;
-    margin-top: 4px;
 }
 
 #upper-header input {
@@ -85,7 +75,7 @@ body {
     height: 112px;
 }
 
-#header-line-area img {
+#header-line-area img.owl {
     margin-left: 104px;
     margin-right: 47px;
     margin-top: 30px;
@@ -96,11 +86,6 @@ body {
 
 #for {
     width: 200px;
-}
-
-.tagline {
-     font-family: Source Sans Pro, sans;
-     font-size: 22pt;
 }
 
 .primary-header {
@@ -115,6 +100,11 @@ span.primary-header {
     position: absolute;
     margin-top: 40px;
     margin-left:  0;
+}
+
+.tagline {
+     font-family: Source Sans Pro, sans;
+     font-size: 22pt;
 }
 
 span.tagline {
@@ -142,6 +132,7 @@ span.tagline {
 }
 
 .menubar {
+  /*  border: 1px solid #d47618; */
     background-image: url("/icons/menubkgnd.png");
     background-repeat: repeat-x;
     height: 36px;
@@ -208,7 +199,7 @@ span.tagline {
 
 /* any dropdown box item */
 .menubar-container > li ul li {
-    min-width: 199px;   
+    min-width: 199px;
     padding-left: 8px;
 }
 
@@ -235,7 +226,7 @@ span.tagline {
     color: #d47618;
     font-size: 14pt;
     font-weight: 400;
-    text-decoration: none;  
+    text-decoration: none;
     line-height: 27px;
 }
 
@@ -267,7 +258,7 @@ span.tagline {
     width: 960px;
 }
 
-#contents > div {
+#contents div {
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 45px;
@@ -356,14 +347,178 @@ text-align: center;
 }
 
 .user-annotations {
+    margin-left: 14em;
+    margin-right: 5%;
     background-color: #d8d8ce;
 }
 
 /* remove div.footer from plweb.css */
 .footer.newstyle {
+    clear: both;
     background-color: #d8d8ce;
     border: none;
     border-width: 0px;
-    margin: 0px;
+	margin: 0;
+	padding: 12px 0 12px 58px;
+	font-size: 14px;
+	font-weight: plain;
+	color: #0a3d6c;
+}
+
+.footer.newstyle a.powered {
+	text-decoration: none;
+	color: #0a3d6c;
+}
+
+.footer.newstyle a.powered:hover {
+	text-decoration: underline;
+}
+
+.footer.newstyle a.powered:active {
+	text-decoration: underline;
+}
+
+.footer.newstyle div.current-user {
+        display: inline;
+	text-decoration: none;
+	color: #0a3d6c;
+	float: right;
+	margin-right: 58px;
+}
+
+div.current-user > a:hover {
+	text-decoration: underline;
+}
+
+div.current-user > a.login:active {
+	text-decoration: underline;
+}
+
+.tagit-new {
+	list-style-type: none;
+}
+
+.tag-notes {
+	padding-top: 18px;
+	padding-bottom: 4px;
+	text-align: right;
+	margin-right: 58px;
+	margin-top: 32px;
+	font-family: Source Sans Pro, sans;
+	font-size: 14px;
+	font-weight: plain;
+	color: #0a3d6c;
+}
+
+.tag-notes b {
+	font-weight: bold;
+}
+
+div.tags > div
+{ vertical-align: top;
+}
+
+#tag-area-tags
+{ margin-left: 103px;
+  margin-right: 58px;
+  background-color: #fff;
+}
+
+#tag-warnings
+{ margin-left: 103px;
+}
+
+#tags
+{ margin: 0px;
+}
+
+#tag-area-label
+{ float: left;
+  width: 98px;
+  margin-right: 5px;
+  text-align: right;
+  font-family: Source Sans Pro, sans;
+  font-size: 18px;
+  position: relative;
+  top: 0.7ex;
+  color: #0a3d6c;
+}
+
+.annotation {
+	margin-top: 20px;
+	padding-bottom: 8px;
+}
+
+.annotation  .comment {
+	margin-left: 103px;
+	margin-right: 58px;
+	margin-top: 3px;
+	margin-bottom: 8px;
+	border: 1px solid #0a3d6c;
+	min-height: 60px;
+	font-size: 14px;
+	color: #000;
+	font-weight: plain;
+}
+
+.annotation .commenter {
+	margin-left: 103px;
+	font-family: Source Sans Pro, sans;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0a3d6c;
+}
+
+.annotation .commenter a:link {
+	text-decoration: none;
+	font-weight: inherit;
+	color: #0a3d6c;
+}
+
+.annotation .commenter a:unvisited {
+	text-decoration: none;
+	font-weight: inherit;
+	color: #0a3d6c;
+}
+
+.annotation .commenter a:hover {
+	text-decoration: underline;
+	font-weight: inherit;
+	color: #0a3d6c;
+}
+
+.annotation .commenter a:active {
+	text-decoration: underline;
+	font-weight: inherit;
+	color: #0a3d6c;
+}
+
+.annotation span.editlink  {
+	float: right;
+	margin-right: 58px;
+}
+
+.annotation span.editlink  a:link {
+	text-decoration: none;
+	color: #0a3d6c;
+	font-weight: normal;
+}
+
+.annotation span.editlink  a:visited {
+	text-decoration: none;
+	color: #0a3d6c;
+	font-weight: normal;
+}
+
+.annotation span.editlink  a:hover {
+	text-decoration: underline;
+	color: #0a3d6c;
+	font-weight: normal;
+}
+
+.annotation span.editlink  a:active {
+	text-decoration: underline;
+	color: #0a3d6c;
+	font-weight: bold;
 }
 
