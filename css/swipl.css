@@ -443,6 +443,11 @@ div.tags > div
   color: #0a3d6c;
 }
 
+div.edit-anotations
+{ margin-top: 20px;
+  margin-left: 103px;
+}
+
 .annotation {
 	margin-top: 20px;
 	padding-bottom: 8px;
