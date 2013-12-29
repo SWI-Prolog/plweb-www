@@ -347,9 +347,8 @@ text-align: center;
 }
 
 .user-annotations {
-    margin-left: 14em;
-    margin-right: 5%;
     background-color: #d8d8ce;
+    clear: both;
 }
 
 /* remove div.footer from plweb.css */
