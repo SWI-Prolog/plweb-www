@@ -96,11 +96,32 @@ span.acmatch
 { background-color: #bbf;
 }
 
-#ac_predicate_complete .yui-ac-content
-{ max-height:30em;
-  overflow:auto;
-  overflow-x:hidden; /* set scrolling */
-  _height:30em; /* ie6 */
+#search-container
+{ padding-right: 0.5em;
+}
+
+li.ui-menu-item
+{ font-size: initial;
+  font-family: initial;
+}
+
+.ui-menu li.ui-menu-item a     /* Make list more compact */
+{ padding-top: 0;
+  line-height: 1;
+}
+
+.ui-menu-item a.tag            /* Style auto-completion hits */
+{ font-style: italic;
+}
+
+.ui-menu-item a.builtin
+{ color: blue;
+}
+
+.ui-menu-item a i
+{ font-size: 80%;
+  color: #888;
+  float: right;
 }
 
 /* Wiki editing */
