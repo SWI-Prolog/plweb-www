@@ -265,8 +265,8 @@ span.tagline {
     margin-bottom: 45px;
     background-color: #FFF;
     padding: 25px 27px;
-    <!--font-size: 20pt;-->
-    <!--font-style: italic;-->
+    font-size: 20pt;
+    font-style: italic;
 }
 
 #blurb {
