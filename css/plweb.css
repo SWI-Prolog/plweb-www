@@ -141,6 +141,10 @@ table.wiki_edit td.label
 
 /* Logon */
 
+div.openid-title
+{ display: none;
+}
+
 div.smallprint
 { margin-left: 30%;
   margin-top: 2ex;
