@@ -1,0 +1,1 @@
+# Using SWI-Prolog for commercial applications
