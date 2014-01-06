@@ -252,7 +252,8 @@ span.tagline {
     display: block !important;
 }
 
-.contents.wiki, .contents.user, .contents.search, contents.news
+.contents.wiki, .contents.user, .contents.search,
+.contents.news, .contents.pack, .contents.tags
 { margin-left: auto;
   margin-right: auto;
   width: 960px;
