@@ -1,1 +1,3 @@
 # SWI-Prolog and research
+
+@see [Publications](</Publications.html>)
