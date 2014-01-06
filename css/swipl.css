@@ -349,40 +349,6 @@ text-align: center;
     clear: both;
 }
 
-/* remove div.footer from plweb.css */
-.footer.newstyle {
-    clear: both;
-    background-color: #d8d8ce;
-    border: none;
-    border-width: 0px;
-	margin: 0;
-	padding: 12px 0 12px 58px;
-	font-size: 14px;
-	font-weight: plain;
-	color: #0a3d6c;
-}
-
-.footer.newstyle a.powered {
-	text-decoration: none;
-	color: #0a3d6c;
-}
-
-.footer.newstyle a.powered:hover {
-	text-decoration: underline;
-}
-
-.footer.newstyle a.powered:active {
-	text-decoration: underline;
-}
-
-.footer.newstyle div.current-user {
-        display: inline;
-	text-decoration: none;
-	color: #0a3d6c;
-	float: right;
-	margin-right: 58px;
-}
-
 div.current-user > a:hover {
 	text-decoration: underline;
 }
@@ -391,64 +357,9 @@ div.current-user > a.login:active {
 	text-decoration: underline;
 }
 
-.tagit-new {
-	list-style-type: none;
-}
-
-.tag-notes {
-	padding-top: 18px;
-	padding-bottom: 4px;
-	text-align: right;
-	margin-right: 58px;
-	margin-top: 32px;
-	font-family: Source Sans Pro, sans;
-	font-size: 14px;
-	font-weight: plain;
-	color: #0a3d6c;
-}
-
-.tag-notes b {
-	font-weight: bold;
-}
-
-div.tags > div
-{ vertical-align: top;
-}
-
-#tag-area-tags
-{ margin-left: 103px;
-  margin-right: 58px;
-  background-color: #fff;
-}
-
-#tag-warnings
-{ margin-left: 103px;
-}
-
-#tags
-{ margin: 0px;
-}
-
-#tag-area-label
-{ float: left;
-  width: 98px;
-  margin-right: 5px;
-  text-align: right;
-  font-family: Source Sans Pro, sans;
-  font-size: 18px;
-  position: relative;
-  top: 0.7ex;
-  color: #0a3d6c;
-}
-
 div.edit-anotations
 { margin-top: 20px;
   margin-left: 103px;
-}
-
-.annotation {
-	margin-top: 20px;
-	padding-bottom: 8px;
 }
 
 .annotation  .comment {

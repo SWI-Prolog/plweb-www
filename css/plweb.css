@@ -4,6 +4,10 @@
    <http://www.htmldog.com/guides/cssbeginner/selectors/>
 */
 
+#dyknow a {
+  color: #FFFFFF;
+}
+
 div.sidebar
 { float: left;
   width: 180px;
@@ -26,8 +30,6 @@ div.logo
 div.menu
 { background-color: #f0f0f0;
 }
-
-/* removed div.footer */
 
 div.menu ul
 { list-style-type: none;
@@ -68,10 +70,6 @@ td.dl_file p
 }
 
 /* Messages */
-
-div.informational
-{ background-color: #b0ffb0;
-}
 
 div.silent
 { display: none;
