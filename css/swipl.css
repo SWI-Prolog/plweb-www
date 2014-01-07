@@ -305,6 +305,14 @@ span.tagline {
     color: #0a3c6c;
 }
 
+#cta-container a
+{ text-decoration: none;
+}
+
+#cta-container a:hover
+{ text-decoration: underline;
+}
+
 #enhanced-search-container {
     clear: both;
     width: 100%;
