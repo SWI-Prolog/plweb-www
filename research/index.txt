@@ -1,3 +1,22 @@
 # SWI-Prolog and research
 
+SWI-Prolog is in use for many research projects. As SWI-Prolog itself is
+mainly being developed and maintained in an academic research
+environment, please consider helping us (and yourself):
+
+  - Link to SWI-Prolog web site and [publications](</Publications.html>)
+
+  - Get your project listed on this page. Register at the site and add a
+    post to this page that links to your project.
+
+  - Sometimes there are opportunities to extend SWI-Prolog in the
+    context of your research program.
+
+    - Implementing additional generic infrastructure that makes the
+      rest of your research easier allows you to contribute this
+      infrastructure to SWI-Prolog.  This makes your code more
+      sustainable and your code will reach a wider audience.
+
+    - You may contact us for cooperation opportunities.
+
 @see [Publications](</Publications.html>)
