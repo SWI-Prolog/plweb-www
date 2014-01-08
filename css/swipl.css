@@ -51,6 +51,14 @@ body {
     font-weight: 700;
 }
 
+#dyknow a
+{ text-decoration: none;
+}
+
+#dyknow a:hover
+{ text-decoration: underline;
+}
+
 #search-form input {
     display: inline;
 }
