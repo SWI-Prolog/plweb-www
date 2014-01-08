@@ -260,20 +260,27 @@ span.tagline {
     display: block !important;
 }
 
-.contents.wiki, .contents.user, .contents.search,
-.contents.news, .contents.pack, .contents.tags
+.inner-contents
 { margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-.contents.wiki div.wiki
+.contents
 { margin-left: 30px;
   margin-right: 30px;
   margin-top: 45px;
   margin-bottom: 45px;
   background-color: #f6f5ee;
   padding: 25px 27px;
+}
+
+/* overrule above.  This is handled by PlDoc itself */
+
+.contents.pldoc
+{ margin: 0;
+  padding: 0;
+  background-color: inherit;
 }
 
 #blurb {
