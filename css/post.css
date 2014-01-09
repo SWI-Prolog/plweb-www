@@ -1,3 +1,7 @@
+article {
+  clear: both;
+}
+
 .post-category {
   background: none repeat scroll 0 0 #999999;
   color: #FFFFFF;
@@ -44,6 +48,10 @@ section {
 }
 #add-post-cancel {
   float: right;
+}
+
+.edit-post-links {
+  margin-bottom: 30px;
 }
 
 .edit-post-submit {
