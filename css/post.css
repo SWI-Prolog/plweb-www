@@ -25,14 +25,10 @@
   text-decoration: none;
 }
 
-.post-links {
+.post-links-and-votes {
   float: right;
   margin-right: 75px;
   text-align: right;
-}
-.post-vote {
-  float: right;
-  margin-right: 10px;
 }
 
 section {
@@ -57,6 +53,10 @@ section {
   float: right;
 }
 
+#add-post-links {
+  margin-bottom: 40px;
+}
+
 
 
 /**
@@ -66,9 +66,8 @@ section {
 
 .read-post {
   background-color: #FFFFFF;
-  color: black;
-  padding-left: 10px;
   border: 1px solid #0a3d6c;
+  color: black;
   font-size: 14px;
   font-weight: plain;
   margin-bottom: 8px;
@@ -77,7 +76,6 @@ section {
   min-height: 60px;
   padding: 5px 10px;
 }
-
 
 
 /**
