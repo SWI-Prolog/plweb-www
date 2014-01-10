@@ -226,10 +226,17 @@ span.tagline {
     color: #FFF !important;
     background-color: #d57719;
 }
-.arrow {
+.arrow, .ext-link {
     float: right;
     margin-right: 8px;
 }
+.ext-link {
+    margin-top: 6px;
+}
+.mouseovermenuitem .ext-link {
+    background-color: inherit;
+}
+
 .menubar-container > li * {
     color: #d47618;
     font-size: 14pt;
