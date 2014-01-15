@@ -122,7 +122,7 @@ function prepare_post(URL, About)
   $(".markItUp").markItUp(pldoc_settings);
 
   // Clicking this removes an existing post.
-  $(".remove-post-link").click(function(e)
+  $(".delete-post-link").click(function(e)
   { e.preventDefault();
     var id = $(this).parents(".post").attr("id");
     $.ajax(URL+id,
