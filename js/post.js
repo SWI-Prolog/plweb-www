@@ -39,9 +39,33 @@ function http_post(url, about, form, method)
 	   }),
 	   "dataType": "json",
 	   "success": function() {location.reload();},
+	   "error": function(xhr, textStatus, errorThrown)
+		    { alert(xhr.responseText);
+		    },
 	   "type": method
           });
 }
+
+
+// FIXME: Use a proper alert
+
+function vote(URL, id, vote)
+{ $.ajax(URL,
+	 { "contentType": "application/json; charset=utf-8",
+	   "dataType": "json",
+	   "data": JSON.stringify({ "id": id,
+	                            "vote": 1
+				  }),
+	   "success": function()
+		      { location.reload();
+		      },
+	   "error": function(xhr, textStatus, errorThrown)
+		    { alert(xhr.responseText);
+		    },
+	   "type": "POST"
+	 });
+}
+
 
 function prepare_post(RESTURL, VoteURL, About)
 { // Clicking this removes the UI for entering a new post.
@@ -118,30 +142,15 @@ function prepare_post(RESTURL, VoteURL, About)
   $(".post-vote-up").click(function(e)
   { e.preventDefault();
     var id = $(this).parents(".post").attr("id");
-    console.log(VoteURL);
-    $.ajax(VoteURL,
-	   { "contentType": "application/json; charset=utf-8",
-	     "dataType": "json",
-	     "data": JSON.stringify({ "id": id,
-				      "vote": 1
-				    }),
-	     "success": function() {location.reload();},
-	     "type": "POST"
-	   });
+
+    vote(VoteURL, id, 1);
   });
 
   // Clicking this decreases the number of votes by one.
   $(".post-vote-down").click(function(e)
   { e.preventDefault();
     var id = $(this).parents(".post").attr("id");
-    $.ajax(VoteURL,
-	   { "contentType": "application/json; charset=utf-8",
-	     "dataType": "json",
-	     "data": JSON.stringify({ "id": id,
-				      "vote": -1
-				    }),
-	     "success": function() {location.reload();},
-	     "type": "POST"
-	   });
+
+    vote(VoteURL, id, -1);
   });
 }
