@@ -85,7 +85,7 @@ function prepare_post(URL, About)
   });
 
   // Clicking this removes the UI for editing an existing post.
-  $(".edit-post-cancel").click(function(e)
+  $(".save-post-cancel").click(function(e)
   { e.preventDefault();
     var article = $(this).closest("article");
     article.children(".edit-post-links").css("display","none");
@@ -104,17 +104,17 @@ function prepare_post(URL, About)
     article.children("section").css("display","none");
     article.children("form").css("display","block");
     article.find("textarea").css("display","block");
-    article.children(".edit-post-links").css("display","block");
+    article.find(".save-post-links").css("display","block");
   });
 
   // Clicking this submits the current changes to a post.
-  $(".edit-post-submit").click(function(e)
+  $(".save-post-submit").click(function(e)
   { e.preventDefault();
     var id = $(this).closest(".post").attr("id");
     http_post(
 	URL+id,
 	About,
-	$(this).closest(".edit-post-links").siblings(".edit-post-content"),
+	$(this).closest(".edit-post-content"),
 	"PUT");
   });
 
