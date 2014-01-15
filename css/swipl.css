@@ -127,10 +127,7 @@ span.tagline {
 }
 
 .breadcrumb {
-    margin-top: 30px;
-    margin-left: 200px;
-    margin-bottom: 20px;
-    margin-right: 0px;
+    margin: 20px 0 20px 200px;
 }
 
 .fixed-width {
@@ -274,12 +271,9 @@ span.tagline {
 }
 
 .contents
-{ margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 45px;
-  margin-bottom: 45px;
+{ margin: 20px 30px 45px 30px;
   background-color: #f6f5ee;
-  padding: 25px 27px;
+  padding: 20px 27px;
 }
 
 /* overrule above.  This is handled by PlDoc itself */
