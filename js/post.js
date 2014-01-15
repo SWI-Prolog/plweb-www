@@ -2,17 +2,6 @@
 
 */
 
-function votes(form, updown)
-{ var votes = parseInt(form.siblings("header")
-		           .find(".post-vote-"+updown)
-		           .children("img").attr("title"));
-  if ( isNaN(votes) )
-    votes = 0;
-
-  return votes;
-}
-
-
 /* http_post(url, about, form, method)
 
 @param url    is the url to post to (/news/)
@@ -22,9 +11,7 @@ function votes(form, updown)
 */
 
 function http_post(url, about, form, method)
-{ var down   = votes(form, "down");
-  var up     = votes(form, "up");
-  var title1 = form.find(".title").val();
+{ var title1 = form.find(".title").val();
   var title2;
 
   if (title1 === undefined)
@@ -45,12 +32,7 @@ function http_post(url, about, form, method)
 		     parseInt(form.find(".freshness-lifetime").val(), 10),
                   "type": "time"
                 },
-                "type": "meta",
-                "votes": {
-                  "down": down,
-                  "type": "votes",
-                  "up": up
-                }
+                "type": "meta"
               },
 	     "title": title2,
 	     "type": "post"
@@ -61,7 +43,7 @@ function http_post(url, about, form, method)
           });
 }
 
-function prepare_post(URL, About)
+function prepare_post(RESTURL, VoteURL, About)
 { // Clicking this removes the UI for entering a new post.
   $("#add-post-cancel").click(function(e)
   { e.preventDefault();
@@ -81,7 +63,7 @@ function prepare_post(URL, About)
   // Clicking this submits the current content as a new post.
   $("#add-post-submit").click(function(e)
   { e.preventDefault();
-    http_post(URL, About, $("#add-post-content"), "POST");
+    http_post(RESTURL, About, $("#add-post-content"), "POST");
   });
 
   // Clicking this removes the UI for editing an existing post.
@@ -111,11 +93,10 @@ function prepare_post(URL, About)
   $(".save-post-submit").click(function(e)
   { e.preventDefault();
     var id = $(this).closest(".post").attr("id");
-    http_post(
-	URL+id,
-	About,
-	$(this).closest(".edit-post-content"),
-	"PUT");
+    http_post(RESTURL+id,
+	      About,
+	      $(this).closest(".edit-post-content"),
+	      "PUT");
   });
 
   // Mark-it-up support for entering post content.
@@ -125,7 +106,7 @@ function prepare_post(URL, About)
   $(".delete-post-link").click(function(e)
   { e.preventDefault();
     var id = $(this).parents(".post").attr("id");
-    $.ajax(URL+id,
+    $.ajax(RESTURL+id,
 	   { "contentType": "application/json; charset=utf-8",
 	     "dataType": "json",
 	     "success": function() {location.reload();},
@@ -133,30 +114,34 @@ function prepare_post(URL, About)
 	   });
   });
 
-  // Clicking this decreases the number of votes by one.
-  $(".post-vote-down").click(function(e)
-  { e.preventDefault();
-    $(this)
-       .children("img")
-       .attr("title", parseInt($(this).children("img").attr("title")) + 1);
-
-    http_post(URL+$(this).parents(".post").attr("id"),
-	      About,
-	      $(this).closest("header").siblings("form"),
-	      "PUT"
-	     );
-  });
-
   // Clicking this increases the number of votes by one.
   $(".post-vote-up").click(function(e)
   { e.preventDefault();
-    $(this)
-	.children("img")
-	.attr("title", parseInt($(this).children("img").attr("title")) + 1);
+    var id = $(this).parents(".post").attr("id");
+    console.log(VoteURL);
+    $.ajax(VoteURL,
+	   { "contentType": "application/json; charset=utf-8",
+	     "dataType": "json",
+	     "data": JSON.stringify({ "id": id,
+				      "vote": 1
+				    }),
+	     "success": function() {location.reload();},
+	     "type": "POST"
+	   });
+  });
 
-    http_post(URL+$(this).parents(".post").attr("id"),
-	      About,
-	      $(this).closest("header").siblings("form"),
-	      "PUT");
+  // Clicking this decreases the number of votes by one.
+  $(".post-vote-down").click(function(e)
+  { e.preventDefault();
+    var id = $(this).parents(".post").attr("id");
+    $.ajax(VoteURL,
+	   { "contentType": "application/json; charset=utf-8",
+	     "dataType": "json",
+	     "data": JSON.stringify({ "id": id,
+				      "vote": -1
+				    }),
+	     "success": function() {location.reload();},
+	     "type": "POST"
+	   });
   });
 }
