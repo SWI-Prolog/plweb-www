@@ -10,6 +10,11 @@
 @param method is the HTTP REST method to use
 */
 
+function error(text)
+{ $("#dialog").html(text);
+  $("#dialog").dialog();
+}
+
 function http_post(url, about, form, method)
 { var title1 = form.find(".title").val();
   var title2;
@@ -40,14 +45,12 @@ function http_post(url, about, form, method)
 	   "dataType": "json",
 	   "success": function() {location.reload();},
 	   "error": function(xhr, textStatus, errorThrown)
-		    { alert(xhr.responseText);
+		    { error(xhr.responseText);
 		    },
 	   "type": method
           });
 }
 
-
-// FIXME: Use a proper alert
 
 function vote(URL, id, vote)
 { $.ajax(URL,
@@ -60,7 +63,7 @@ function vote(URL, id, vote)
 		      { location.reload();
 		      },
 	   "error": function(xhr, textStatus, errorThrown)
-		    { alert(xhr.responseText);
+		    { error(xhr.responseText);
 		    },
 	   "type": "POST"
 	 });
