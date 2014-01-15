@@ -103,6 +103,21 @@ body {
      color:  #333333;
 }
 
+div.file-buttons {
+    position: relative;
+    top: -20px;
+    margin-bottom: -20px;
+    text-align: right;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.file-buttons img {
+    width: 32px;
+    height: 32px;
+}
+
 span.primary-header {
     vertical-align: middle;
     position: absolute;
