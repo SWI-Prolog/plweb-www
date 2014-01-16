@@ -59,6 +59,10 @@ body {
 { text-decoration: underline;
 }
 
+#dyknow a:visited
+{ color: #fff;
+}
+
 #search-form input {
     display: inline;
 }
