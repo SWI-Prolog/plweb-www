@@ -53,7 +53,9 @@ to deal with the site's requirements. Examples are the CGI facilities
 and HTTP authorization, including [OpenID](http://openid.net/) support.
 This website was a strong motivation to add [quasi
 quotations](</pldoc/man?section=quasiquotations>) for embedding long
-HTML and JavaScript fragments.
+HTML and JavaScript fragments.  The news and annotation facilities are
+the first components that use the new [dict](</pldoc/man?section=dicts>)
+datatype.
 
 ## Contributers
 
@@ -62,5 +64,7 @@ Ogborn took the initiative to redesign the site. She analysed the
 structure and log data to redesign the contents of the home page, the
 menu, navigation aids, _did you know_ and download page. [Jessica
 Chan](http://jessicachanstudios.com/) did the visual design of the
-current website. [Wouter Beek](http://wouterbeek.com/) implemented
-the news facility.
+current website. She did not yet approve all details, so blame Jan
+Wielemaker for everything that looks out-of-place, ugly or both. [Wouter
+Beek](http://wouterbeek.com/) implemented the news and new annotation
+facility.
