@@ -160,6 +160,14 @@ div.private-profile
 { margin-left: 1.5em;
 }
 
+a.list-other-users:visited { color:#fff; }
+a.list-other-users
+{ font-size:60%;
+  font-style:italic;
+  font-weight:normal;
+  color: #fff;
+}
+
 div.private-profile th
 { text-align: right;
   color: #888;
