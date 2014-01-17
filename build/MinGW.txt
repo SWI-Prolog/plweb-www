@@ -13,13 +13,16 @@ which depend on traditionally UNIX tools to be present. It is intended
 to supplement MinGW and the deficiencies of the cmd shell."|_.
 
 The details for building SWI-Prolog for MS-Windows under Linux are
-documented in the executable readme file =|README.mingw32|= of the
-source distribution. These scripts have been tested on 64-bit
-[[Ubuntu][http://www.ubuntu.com/]] 12.04.
+documented in the executable readme file =|README.mingw|= of the
+source distribution. These scripts have been developed on 64-bit
+[[Ubuntu][http://www.ubuntu.com/]] 12.04 and are currently used
+for building the binary releases on Ubuntu 13.10.
 
 We currently do not have experience building SWI-Prolog using MinGW/MSYS
 on Windows. It is probably possible using the instructions in the above
-mentioned =|README.mingw32|= file. Please send comment and or fixes if
+mentioned =|README.mingw|= file. Please send comment and or fixes if
 you try this. Note that cross compiling is much faster because
 SWI-Prolog depends on an extensive =configure= script that executes slow
 on the MSYS bash implementation.
+
+@see [Daily builds](</download/daily/bin/>)
