@@ -6,4 +6,4 @@ precise, they are generated using the MinGW cross-compiler on a Linux
 system.
 
   * [[Build using MinGW][MinGW.txt]]
-  * [[Build using MSVC][msvc.txt]]
+  * [[Build using MSVC][msvc.txt]] (no longer supported)
