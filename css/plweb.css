@@ -99,7 +99,11 @@ span.acmatch
 
 li.ui-menu-item
 { font-size: initial;
-  font-family: initial;
+  font-family: Source Sans Pro, sans;
+}
+
+#forenhanced
+{ font-size: 18px;
 }
 
 .ui-menu li.ui-menu-item a     /* Make list more compact */
