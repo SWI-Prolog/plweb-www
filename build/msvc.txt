@@ -1,5 +1,11 @@
 ---+ Building SWI-Prolog on MS-Windows
 
+*The build instructions here are outdated.  The MSVC make files and 
+ resources are not maintained any longer.  See the [MinGW](<MinGW.html>) build instructions*
+
+--
+*Old stuff*
+
 There are only a few cases where you would like to build the Windows
 version from source:
 
