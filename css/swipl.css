@@ -206,12 +206,14 @@ span.tagline {
     display: block;
     position: absolute;
     float: left;
+    z-index: 10;
 }
 
 .menubar-container > li > ul.activemenu {
     display: block;
     position: absolute;
     float: left;
+    z-index: 10;
 }
 
 /* any dropdown box */
