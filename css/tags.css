@@ -18,6 +18,12 @@
   margin-top: 3px;
 }
 
+/* FIXME: Should flush to the width of the containing <li>
+*/
+
+#tags input[type="text"] {
+  width: 700px;
+}
 
 
 /**
