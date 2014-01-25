@@ -63,6 +63,10 @@ body {
 { color: #fff;
 }
 
+#dyknow a span.colored
+{ color: #f0f;
+}
+
 #search-form input {
     display: inline;
 }
