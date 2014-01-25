@@ -8,7 +8,7 @@ documentation system on steroids'. This site replaced a classical
 documentation pages, a [Twiki](http://twiki.org/) based wiki and
 [Bugzilla](http://www.bugzilla.org/). The site re-implemented as a
 SWI-Prolog based HTTP server that extends PlDoc for the following
-reason:
+reasons:
 
   1. PlDoc unites the core [reference
   manual](</pldoc/doc_for?object=manual>) with the [package
@@ -25,7 +25,7 @@ reason:
   Prolog community that they are a vital piece of the infrastructure
   and we trust them.  The server
 
-    - Welcomes about 4,000 visiters each day, viewing about
+    - Welcomes about 4,000 visitors each day, viewing about
       30,000 pages (120,000 _hits_) (2013)
     - Serves about 350 Gb data per month
     - Provides these services
@@ -57,7 +57,7 @@ HTML and JavaScript fragments.  The news and annotation facilities are
 the first components that use the new [dict](</pldoc/man?section=dicts>)
 datatype.
 
-## Contributers
+## Contributors
 
 The website was originally developed by Jan Wielemaker. In 2012, Anne
 Ogborn took the initiative to redesign the site. She analysed the
