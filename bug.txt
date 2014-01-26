@@ -34,4 +34,8 @@ is just a guideline, but if any of these parts are missing it is very likely tha
   include at least the first couple of them _literally_.
   4. The behavior you expected.
 
+@see [Report a bug with Bugzilla](</bugzilla/>)
+@see [Submit a patch](</howto/SubmitPatch.html>)
+@see ["How to Report Bugs Effectively"](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html) _by Simon Tatham, professional and free-software programmer_
+
 
