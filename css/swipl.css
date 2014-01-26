@@ -343,11 +343,12 @@ span.tagline {
     padding-left: 25px;
     padding-right: 25px;
     float: left;
-    color: #0a3c6c;
+    color: #0a3d6c;
 }
 
 #cta-container a
 { text-decoration: none;
+  color: #0a3d6c;
 }
 
 #cta-container a:hover
