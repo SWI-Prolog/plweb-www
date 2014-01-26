@@ -13,4 +13,4 @@ encoding it gives this error message.
 There is no easy answer on what to do. Understanding international
 character encoding issues is really hard. The first things to know are
 in the SWI-Prolog Reference Manual, section [[Wide character
-support][</man/widechars.html>]].
+support][</pldoc/man?section=widechars>]].
