@@ -34,7 +34,7 @@ appropriate path into the environment before calling PL_initialise().
 
 ==
 	...;
-	putenv("SWI_HOME_DIR=C:\\Program Files\\pl");
+	putenv("SWI_HOME_DIR=C:\\Program Files\\swipl");
 	if ( PL_initialise(argc, argv) )
 	  PL_halt(1);
 	...
