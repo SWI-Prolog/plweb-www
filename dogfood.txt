@@ -1,4 +1,4 @@
-# Eat your own dog food
+# Eat Your Own Dog Food
 
 This page presents a brief history of hosting and developing
 http://www.swi-prolog.org. The website runs SWI-Prolog and is basically
