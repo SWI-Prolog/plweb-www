@@ -1,5 +1,7 @@
 ---+ Accessing SWI-Prolog source via GIT
 
+---++ If you need GIT
+
 [[GIT][<git:>]] is a fast version control system developed by Linus Torvalds and
 currently maintained by Junio C Hamano. Here is our
 [[motivation][whygit.txt]] for choosing GIT for managing the SWI-Prolog
@@ -15,6 +17,8 @@ except for being much slower than its Unix counterpart appears to do the
 job flawlessly. If you want graphical tools on Windows, please check out
 [[TortoiseGit][<tortoisegit:>]].
 
+---++ Getting the sources
+
 With GIT installed, you can clone the repository from one of the
 addresses below. The HTTP gateway provides you with access if a proxy or
 firewall denies direct internet access to the git port (9418).
@@ -27,12 +31,10 @@ The development version is kept in its own repository at
     * http://www.swi-prolog.org/home/pl/git/pl-devel.git
     * git://www.swi-prolog.org/home/pl/git/pl-devel.git [[star.gif]]
 
-Initial checkout is achieved using the command below, which creates a
-directory =|pl-devel|= below the current directory. The download does not
-contain generated documentation and configuration files, neither the
-required stand-alone submodules. Use the *|./prepare|* script to fetch
-these. This script also runs on Windows using the bash-shell that comes
-with =msysGit=. 
+Use these commands to clone to a new directory =|./pl-devel|= 
+
+The *|./prepare|* script will fetch some required submodules.
+
 
 ==
 % git clone git://www.swi-prolog.org/home/pl/git/pl-devel.git
@@ -40,8 +42,15 @@ with =msysGit=.
 % ./prepare
 ==
 
+This script also runs on Windows using the bash-shell that comes
+with =msysGit=. 
+
+
 Next, consult the file INSTALL for further instructions for installing
-SWI-Prolog from source. You can update to the latest version using the
+SWI-Prolog from source. 
+
+
+You can update to the latest version using the
 following commands from the toplevel directory:
 
 ==
