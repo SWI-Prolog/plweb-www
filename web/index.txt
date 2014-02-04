@@ -1,11 +1,10 @@
 ---+ SWI-Prolog for the (semantic) web
 
 The (semantic) web is one of the most promising application areas for
-SWI-Prolog. Prolog handles the semantic web RDF model naturally, where
+SWI-Prolog. Prolog handles the semantic web Resource Description Framework (RDF) model naturally, where
 RDF provides a stable model for knowledge representation with shared
-semantics. It turns out that Prolog is also quite capable of providing
-web-services (HTTP), especially where it comes to dynamic generation of
-HTML pages and providing data for Javascript web-applications using the
+semantics. Prolog is also quite capable of providing
+web services (HTTP), especially where it comes to generating HTML pages dynamically and providing data for Javascript web applications using the
 [[JSON][<json:>]] serialisation.
 
 ---++ Standard packages
@@ -15,13 +14,13 @@ processing.
 
     $ [[Web-server and client library][</pldoc/package/http.html>]] :
     Core web package. Provides an HTTP server and client, session
-    handling, authorization, logging, etc.  Libraries for generating
-    HTML pages and JSON.
+    handling, authorization, logging, etc.  Libraries are also included for generating
+    HTML pages and JSON (JavaScript Object Notation).
 
     $ [[RDF storage and query library][</pldoc/package/semweb.html>]] :
     Load/save RDF and query it.  The library loads and saves XML/RDF
     and Turtle.  Its database scales to approx. 20M triples on 32-bit
-    hardware and 300M triples on a 64-bit machine with 64-Gb memory.
+    hardware and 300M triples on a 64-bit machine with 64 Gb memory.
     Also provides simple RDFS and OWL support.
 
     [[new.gif]] The GIT version in the development tree has been updated
@@ -43,9 +42,9 @@ processing.
 Some packages are distributed separately.
 
 
-    $ [[The ClioPatria semantic search web-server][http://cliopatria.swi-prolog.org]] :
-    This library provides a ready-to-run web-server that includes a
-    SPARQL endpoint, user-right management and RDF development tools.
+    $ [[The ClioPatria semantic search web server][http://cliopatria.swi-prolog.org]] :
+    This library provides a ready-to-run web server that includes a
+    SPARQL endpoint, user rights management and RDF development tools.
     ClioPatria is an RDF-application development framework.
 
     $ [[Thea, an OWL library for SWI-Prolog][<thea:>]] :
