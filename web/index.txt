@@ -12,7 +12,7 @@ web services (HTTP), especially where it comes to generating HTML pages dynamica
 Below are the most vital packages for programming web services and RDF
 processing.
 
-    $ [[Web-server and client library][</pldoc/package/http.html>]] :
+    $ [[Web server and client library][</pldoc/package/http.html>]] :
     Core web package. Provides an HTTP server and client, session
     handling, authorization, logging, etc.  Libraries are also included for generating
     HTML pages and JSON (JavaScript Object Notation).
