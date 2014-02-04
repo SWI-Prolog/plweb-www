@@ -16,7 +16,7 @@ Options (FIXME: elaborate)
 ## Customization
 
 If you use a centrally installed copy of SWI-Prolog, you can customize
-it by editing =swipl.rc= and/or =swipl-win.rc= which can be found in the
+it by editing =swipl.rc= and/or =swipl-win.rc=, which can be found in the
 root directory of the installation. Students may add these to their
 personal initialization file, which can be installed and edited using
 the built-in editor by first running emacs/0 as below and then using
@@ -40,11 +40,11 @@ Below are some useful settings:
     ==
 
   $ :- set_prolog_stack(local, limit(4000000)). :
-  Using an only 4Mb local (environment) stack, unbounded recursion
+  By limiting the local (environment) stack to 4 Mb, unbounded recursion
   will quickly terminate with a resource error.
 
   $ :- load_files(library(clpfd), [silent(true)]). :
   This makes library(clpfd) available to your students, which allows
   for transparent monotonic arithmetic.  With this, students can learn
-  to appreciate declarative programming which performs much more
+  to appreciate declarative programming to perform more
   realistic tasks.
