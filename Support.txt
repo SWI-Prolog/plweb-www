@@ -5,7 +5,7 @@ can go for help from the community:
 
     * The [[FAQ][</FAQ/>]].
 
-    * The Mailinglist.txt and its archive or search the internet. Tip:
+    * The Mailinglist.txt and its archive, or search the internet. Tip:
     include =SWIPL= to search the mailinglist archives.
 
     * If you encountered a bug.txt, please report it using the
@@ -13,8 +13,8 @@ can go for help from the community:
 
     * Debian Linux also has a [[bug tracking
     system][http://bugs.debian.org/cgi-bin/pkgreport.cgi?pkg=swi-prolog]]
-    for SWI-Prolog informing the Debian maintainer Michael Piefel.
-    Please use this for packaging or other very Debian specific
+    for SWI-Prolog which informs the Debian maintainer Michael Piefel.
+    Please use this for packaging or other Debian-specific
     problems.
 
     * There are a lot of resources such as libraries, interfaces, ports
@@ -24,5 +24,5 @@ can go for help from the community:
     internet.
 
 If you find things that can be of interest for other SWI-Prolog users,
-please E-mail them to the Mailinglist.txt.
+please e-mail them to the Mailinglist.txt.
 
