@@ -1,8 +1,8 @@
 ---+ How to deal with namespaces in RDF?
 
 The SWI-Prolog RDF library allows you to write explicit resources using
-prefix-abbreviation, e.g., =|rdf:subClassOf|= or =|rdfs:'Class'|=. The
-prefix-abbreviations are known through rdf_current_ns/2.  New prefixes
+prefix abbreviations, e.g., =|rdf:subClassOf|= or =|rdfs:'Class'|=. The
+prefix abbreviations are known through rdf_current_ns/2.  New prefixes
 can be added using rdf_register_ns/2, as in
 
     ==
@@ -12,13 +12,13 @@ can be added using rdf_register_ns/2, as in
     ?- rdf_register_ns(ex,   'http://example.com/person/').
     ==
 
-Now, I can assert new facts using the above abbreviations:
+Now we can assert new facts using the above abbreviations:
 
     ==
     ?- rdf_assert(ex:bob, rdf:type, foaf:'Person').
     ==
 
-If I query the database, we can see that the actually stored resources
+If we query the database, we can see that the actual stored resources
 are full URIs represented by atoms:
 
     ==
@@ -43,7 +43,7 @@ a human-readable way:
 
 ---++ Using prefixes in your program
 
-Remember, _|internally all resources are atoms|_. The transformations
+Remember: _|Internally, all resources are atoms|_. The transformations
 above are realised at *|compile-time|* using rules for goal_expansion/2
 provided by the rdf_db library. If we want to use prefixes in programs,
 we have to ensure two things:
@@ -66,7 +66,7 @@ we have to ensure two things:
     * If you want to use the namespace abbreviation to pass arguments to
     your own predicates (e.g., person/1 above), you must declare these
     with rdf_meta/1 as below.  The argument *r* means that the predicate
-    expects a resource.  Other argument-indicators are described with
+    expects a resource.  Other argument indicators are described with
     rdf_meta/1.
 
 	==
@@ -75,7 +75,7 @@ we have to ensure two things:
 	==
 
     Now, we can ask the query below.  Without the rdf_meta/1 declaration
-    above, the query below results in a type-error.
+    above, the query below results in a type error.
 
         ==
 	?- person(ex:bob).
@@ -88,9 +88,9 @@ we have to ensure two things:
 
 ---+++ Using prefixes in the heads of clauses
 
-Sometimes, one wishes to write clauses where head-arguments must match a
-resource. E.g., suppose we want to state which predicates specify a
-`label'.  Here too, we can use the rdf_meta/1 declaration:
+Sometimes, one wishes to write clauses where head arguments must match a
+resource. For example, suppose we want to state which predicates specify a
+`label'.  Here, too, we can use the rdf_meta/1 declaration:
 
 ==
 :- use_module(library(semweb/rdf_db)).
@@ -103,6 +103,6 @@ label_predicate(skos:prefLabel).
 label_predicate(skos:altLabel).
 ==
 
-*|Note:|* Expansion of clause-heads was added to the GIT at May 7, 2010.
-It will become part of SWI-Prolog 5.11.1.
+*|Note:|* Expansion of clause heads was added to the GIT on May 7, 2010.
+It became part of SWI-Prolog 5.11.1.
 
