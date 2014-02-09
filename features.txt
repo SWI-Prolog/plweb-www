@@ -22,7 +22,7 @@
 
     * *|Just-In-Time|* indexing of both static and dynamic code on any
     argument greatly simplifies handling multi-moded relations with
-    many clauses. ([[new.gif]] version 5.11.29)
+    many clauses.
 
     * *|Unbounded integer|* and *rational* number arithmetic
     based on [[GMP library][<gmp:>]].
@@ -46,14 +46,14 @@
     * [[Source-level debugger][<gtrace.html>]] on all platforms that
     supports graphics through XPCE (Windows, Unix/Linux, MacOSX).
 
-    * Execution *|profiler.txt|* (time and call statistics) for Linux,
-    most Unix platforms and Windows NT/2000/XP/Vista.
+    * Execution *|profiler.txt|* (time and call statistics) for all
+    major platforms (Windows, Linux, MacOSX).
 
     * *|[[Cross-Referencer][gxref.txt]]|*. gxref/0 provides a graphical
     front-end for the extensible Prolog cross-referencer (xref).
 
     * *Portable* to many platforms, including almost all *|Unix/Linux|*
-    platforms, *Windows* (NT/2000/XP/Vista, including *|64-bit|*
+    platforms, *Windows* (XP, Vista, 7, 8, including *|64-bit|*
     editions), *|MacOS X|* (using X11 for graphics) and many more. Both
     32-bit and *|64-bit|* hardware is supported. Sources are plain
     C99, configured automatically using GNU autoconf (configure, make,
@@ -105,7 +105,8 @@
     * *|Unit testing|* support through
     *|[[PlUnit][</pldoc/package/plunit.html>]]|*.
 
-    * Regular *|binary distributions|* for Windows (32/64 bits) and MacOS X (64 bits)).
+    * Regular *|binary distributions|* for Windows (32/64 bits) and
+    MacOS X (64 bits)) and [PPAs for Ubuntu](https://launchpad.net/~swi-prolog/+archive/stable).
 
-    * Regular distribution of the *|full source|* packages. The sources are
+    * Regular distribution of the *full source* packages. The sources are
     also accessible through [[GIT][</git.html>]].
