@@ -83,3 +83,8 @@ div.cpack span.pi,span.token
 { font-weight: bold;
   font-size: 90%;
 }
+
+div.git-comment
+{ font-size: 16pt;
+  margin-bottom: 1.5em;
+}
