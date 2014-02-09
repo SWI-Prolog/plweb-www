@@ -42,6 +42,9 @@
     * [[Read Prolog case data from a file?][ReadDynamicFromFile.txt]]
     * [[Can I make an executable?][MakeExecutable.txt]]
 
+  * *|Using SWI-Prolog for web services|*
+    * [Can I replace a LAMP stack with SWI-Prolog](PrologLAMP.txt)
+
   * *|Using SWI-Prolog on MS-Windows|*
     * [[Cut/copy/paste from the plwin.exe console][WinCopy.txt]]
     * [[Visual C runtime issues][VCRuntime.txt]]
