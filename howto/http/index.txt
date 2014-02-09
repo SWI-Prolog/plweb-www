@@ -1,20 +1,20 @@
----+ How to create a web-service easily?
+---+ How to create a web service easily?
 
-Creating web-services with SWI-Prolog is a breeze. This howto is
+Creating web services with SWI-Prolog is a breeze. This how-to is
 intended as your first bluffer's guide.  All examples come with
-fully operational source-code.
+fully operational source code.
 
     * [[Hello World][HelloText.txt]]
-    * [[Development support for web-servers][Developing.txt]]
+    * [[Development support for web servers][Developing.txt]]
     * [[Hello World in HTML][HelloHTML.txt]]
     * [[Rule definition facilities (html//1 rules)][HTMLRules.txt]]
-    * [[Processing HTTP-parameters][HTMLParams.txt]]
-    * [[How do I upload a file, preserving the file-name?][FileUpload.txt]]
+    * [[Processing HTTP parameters][HTMLParams.txt]]
+    * [[How do I upload a file, preserving the filename?][FileUpload.txt]]
     * [[Adding style (CSS and simple JavaScript) to your pages][HTMLStyle.txt]]
     * [[Serving plain files][HTTPFile.txt]]
-    * [[Making your web-server scalable][HTTPScale.txt]]
+    * [[Making your web server scalable][HTTPScale.txt]]
 
-Deploying Prolog-based web-servers
+Deploying Prolog-based web servers
 
     * [[Making the server accessible at port 80][Access80.txt]]
     * [[Running the server under VNC][ServerVNC.txt]]
@@ -23,10 +23,10 @@ Deploying Prolog-based web-servers
 
 
 This is work in progress!   If you want to contribute or comment,
-send mail to [[me][<mailto:jan@swi-prolog.org>]] or to the
-[[mailinglist][</Mailinglist.html>]]
+send an e-mail to [[me][<mailto:jan@swi-prolog.org>]] or to the
+[[mailinglist][</Mailinglist.html>]].
 
-[[new.gif]] [[Here][http://www.pathwayslms.com/swipltuts/html/index.html]] is a tutorial with excercises by Anne Ogborn.
+[[new.gif]] [[Here][http://www.pathwayslms.com/swipltuts/html/index.html]] is a tutorial with exercises by Anne Ogborn.
 
 
 ---++ Example code
@@ -37,7 +37,7 @@ that runs http://www.swi-prolog.org, which can be downloaded through
 [[plweb.git][</git/plweb.git>]]. The other is
 [[ClioPatria][http://cliopatria.swi-prolog.org/]]. Although ClioPatria
 targets semantic web (RDF) applications, it is also useful as a starting
-point for general purpose web-servers.
+point for general purpose web servers.
 
 Here is a very incomplete selection of functionality that you can find
 in these servers:
