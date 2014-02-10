@@ -25,7 +25,7 @@ People are listed in alphabetical order.
   * Uwe Lesta (interface to C#)
   * Vitor Santos Costa (various libraries copied from [[YAP][http://www.dcc.fc.up.pt/~vsc/Yap/]])
   * Willem Robert van Hage (space package: multi-dimensional indexing)
-  * Torbjörn Lager (SWAPP)
+  * Torbjörn Lager (SWAPP, [Pengines](</pldoc/package/pengines.html>))
   * Samer Abdallah ([[OSC, MIDI, Random and Matlab
   interfaces][</contrib/SamerAbdallah/>]])
   * Degski ([[FANN][http://leenissen.dk/]], Windows porting)
