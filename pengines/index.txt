@@ -3,4 +3,5 @@
 The wiki pages are intended to collect best practices about using the
 [Pengines](</pldoc/package/pengines.html>) package.  Topics:
 
+  - [[Understanding the Pengine concept][PengineConcept.txt]]
   - [[Adding application logic to a pengine server][AppLogic.txt]]
