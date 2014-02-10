@@ -127,11 +127,7 @@ li.ui-menu-item
 
 /* Wiki editing */
 
-table.wiki_edit .git_msg
-{ width: 100%;
-}
-
-table.wiki_edit .git_comment
+#git_msg, #git_comment
 { width: 100%;
 }
 
