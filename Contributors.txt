@@ -50,7 +50,6 @@ People are listed in alphabetical order.
 
 ---++ _|Open Source|_ projects used by SWI-Prolog
 
-  * AVL library by [[Brad Appleton][http://www.cmcrossroads.com/bradapp/]] used in Semweb package
   * [[dtoa.c][http://www.netlib.org/fp/dtoa.c]] (Float <-> text conversion by David M. Gay).
   * [[GEOS][http://trac.osgeo.org/geos/]] (Geometry Engine, Open Source)
   * [[GMP][http://gmplib.org/]] (Unbounded and rational arithmetic)
