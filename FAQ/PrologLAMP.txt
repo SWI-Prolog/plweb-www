@@ -41,7 +41,7 @@ The core web services are provided by the following libraries
   - library(http/http_authenticate) -- Basic HTTP authentication
   - library(http/http_openid)       -- OpenID based authentication
   - library(http/http_session)      -- Session management
-  - library(http/http_ssl_plugin)   -- Provide SSL functionality
+  - library(http/http_ssl_plugin)   -- Provide SSL functionality (HTTPS)
   - library(http/http_cors)         -- CORS management
   - library(http/http_dispatch)	    -- Bind HTTP locations to actions
   - library(http/http_files)	    -- Serve plain files from the OS
