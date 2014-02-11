@@ -152,7 +152,7 @@ LAMP, Tomcat, Django, Ruby-on-rails, etc.?
      data stored in imperative languages. See also the [ClioPatria
      whitepaper](http://cliopatria.swi-prolog.org/help/source/doc/home/vnc/prolog/src/ClioPatria/web/help/whitepaper.txt).
      The library(pengines) provides any application with a clean
-     modula API that is more elegant than SQL or SPARQL in a few lines
+     modular API that is more elegant than SQL or SPARQL in a few lines
      of code.
 
   2. Stop _string programming_. [STRINGS ARE
