@@ -5,8 +5,8 @@ understand? This is how I believe you can think about it in very
 simple terms: Suppose you are sitting in front of two computers A and
 B, both running a terminal/shell. You can start Prolog in A by
 executing swipl in a shell. You can also start Prolog in B by
-executing swipl in a shell on that computer. That is akin to running
-pengine_create([name('B')]). In a sense, you have created two Prolog
+executing swipl in a shell on that computer. That is akin to running. 
+In a sense, you have created two Prolog
 engines, waiting for your next command.
 
 Now you can ask A a query, or start some kind of other process, and
@@ -20,7 +20,7 @@ You can run pengine_create([name('A')]) and
 pengine_create([name('B')]) in the same shell. Better yet, it doesnt
 even have to be you doing the programming! Instead, you can write a
 program that based on what comes back from A and/or B sends the next
-command (or whatever needs to be done).
+command (or whatever needs to be done) to A and/or to B.
 
 When writing a web application, you may want to write your
 "controller" in JavaScript instead. That's fine, and a perfectly good
@@ -39,14 +39,14 @@ of a nice GUI, rather than a behaviour in terms of what is read from
 or written to a CLI.
 
 Another way to program with Pengines is to call a goal on B if your
-are on A. That's what you do with pengine_rpc/{2,3}. This should be
+are on A. That's what you do with pengine_rpc/3. This should be
 even easier to grasp than the rest, since you can think of it as a
 kind of call/1 that calls its (possibly non-deterministic) goal not
 locally but remotely, and in the Prolog context of the remote pengine
 server (perhaps also in union with code (if any) that you to sent
 along).
 
-pengine_rpc/{2,3} is defined in terms of the other (core) pengine
+pengine_rpc/3 is defined in terms of the other (core) pengine
 predicates.
 
 That is also kind of nice, I think.
