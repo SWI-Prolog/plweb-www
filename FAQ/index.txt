@@ -26,7 +26,6 @@
   * *|Customising SWI-Prolog|*
     * [[Site and personal initialisation][PlInitialisation.txt]]
     * [[How do I enlarge the default stacks?][StackSizes.txt]]
-    * [[Syntax error messages with character index?][SyntaxErrorMessage.txt]]
     * [[Controlling colored output on the terminal][ColorConsole.txt]]
     * [[How do I change the fonts in PceEmacs and the debugger?][PceFonts.txt]]
     * [[I want normal ^X, ^C, ^V, ^S, ^P, etc.][WindowsAccelerators.txt]]
