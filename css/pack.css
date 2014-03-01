@@ -6,7 +6,7 @@ table.packlist
 { border-width: 1px;
   border-style: solid;
   border-collapse: collapse;
-  margin-left: 1cm;
+  margin-left: 0.5cm;
   margin-top: 1em;
 }
 
@@ -51,8 +51,11 @@ table.packlist td.total
 }
 
 table.packlist th, tr.header th
-{ background:  url("../icons/th_high.png") left top;
-  border: 1px solid #444;
+{ background-color: #0c3d6e;
+  color:  #FFF;
+  border: 1px solid #ccc;
+  font-size: 16pt;
+  vertical-align: top;
 }
 
 table.packlist th.total
@@ -65,7 +68,7 @@ table.packlist th.total
 }
 
 table.packlist a.resort
-{ color: #000;
+{ color: #fff;
   text-decoration: none;
 }
 
@@ -84,13 +87,12 @@ table.packlist span.votes
 }
 
 table.packlist a.resort:hover
-{ color: #00f;
+{ color: #fff;
   text-decoration: underline;
 }
 
-table.packlist a.sorted
-{ color: #000;
-  text-decoration: underline;
+table.packlist i.sorted
+{ text-decoration: underline;
 }
 
 table.packlist th.p_name
@@ -102,7 +104,25 @@ table.packlist th.p_name
 table.packlist div.sth
 { font-size: 75%;
   font-weight: normal;
-  color: #888;
+  color: #ccc;
+}
+
+table.packlist span.rating
+{ white-space: nowrap;
+}
+
+table.packlist td.pack-title
+{ max-width: 50ex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+table.packlist td.pack-version
+{ padding-left: 2ex;
+}
+
+table.packlist td.pack-downloads
+{ padding-left: 5ex;
 }
 
 /* Package information table */
