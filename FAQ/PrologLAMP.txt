@@ -13,8 +13,8 @@ for the following open source components to realise a web server:
 In this picture, [Linux](http://www.linux.org/) provides the OS,
 [Apache](http://httpd.apache.org/) the web server,
 [MySQL](http://www.mysql.com/) the database and [PHP](http://php.net/)
-server-side scripting facilities. In fact, most of these componets can
-be replaced. One can replace Linux for almost any other OS, Apache with
+server-side scripting facilities. In fact, most of these components can
+be replaced. One can replace Linux with almost any other OS, Apache with
 [Nginx](http://nginx.com/), MySQL with
 [PostgreSQL](http://www.postgresql.org/). PHP is similar to ASP.
 
@@ -28,7 +28,7 @@ picture into which SWI-Prolog fits.
 ## The SWI-Prolog web framework
 
 The SWI-Prolog web framework (obviously) does not replace the OS. It
-does replace Apache, PHP and to some extend MySQL. We could refer to the
+does replace Apache, PHP and to some extent MySQL. We could refer to the
 stack as _LP_ (Linux Prolog). Below, we point at the various libraries
 that make up the stack and relate them to the LAMP components they
 replace.
@@ -41,7 +41,7 @@ The core web services are provided by the following libraries
   - library(http/http_authenticate) -- Basic HTTP authentication
   - library(http/http_openid)       -- OpenID based authentication
   - library(http/http_session)      -- Session management
-  - library(http/http_ssl_plugin)   -- Provide SSL functionality
+  - library(http/http_ssl_plugin)   -- Provide SSL functionality (HTTPS)
   - library(http/http_cors)         -- CORS management
   - library(http/http_dispatch)	    -- Bind HTTP locations to actions
   - library(http/http_files)	    -- Serve plain files from the OS
@@ -89,9 +89,9 @@ There are several replacements for MySQL, depending on
 The alternatives are
 
   1. *Using the session (Prolog) database* This database associates
-     Prolog terms to the current session.  This is generally suitable
+     Prolog terms with the current session.  This is generally suitable
      for keeping track of the status of the dialogue with the user.
-     Restarting the server looses the data.
+     Restarting the server loses the data.
   2. *Using the dynamic Prolog database*
      Any Prolog programmer should know this.  Data stored in dynamic
      predicates is accessible across sessions.  The data can be
@@ -117,11 +117,11 @@ The alternatives are
 Services can be developed simply by running your application on your
 laptop or desktop and directing your browser to http://localhost:<port>
 as long as you use relative HTTP locations, preferably computed by
-http_link_to_id/3 which computes a HREF based on the referenced
+http_link_to_id/3 which computes an HREF based on the referenced
 predicate on the local server and parameters. When ready for testing,
 you can run the web server in a terminal and use an Apache proxy to make
 it publically accessible from port 80. If problems occur, you can insert
-debugging statement, trace the program, fix it and reload the source
+debugging statements, trace the program, fix it and reload the source
 without shutting down the server.  If all runs cleanly, there is this
 library and accompanying (Debian) Linux init script for production:
 
@@ -152,7 +152,7 @@ LAMP, Tomcat, Django, Ruby-on-rails, etc.?
      data stored in imperative languages. See also the [ClioPatria
      whitepaper](http://cliopatria.swi-prolog.org/help/source/doc/home/vnc/prolog/src/ClioPatria/web/help/whitepaper.txt).
      The library(pengines) provides any application with a clean
-     modula API that is more elegant than SQL or SPARQL in a few lines
+     modular API that is more elegant than SQL or SPARQL in a few lines
      of code.
 
   2. Stop _string programming_. [STRINGS ARE

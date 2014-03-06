@@ -9,32 +9,33 @@ People are listed in alphabetical order.
 ---++ _Authors_ are people who contributed new code or (many) patches
 
   * Anjo Anjewierden (initial developer of XPCE, the SWI-Prolog native graphics system)
+  * Anne Ogborn (website, tutorials, lots of comments)
+  * Carlo Capelli (Qt-based console)
+  * Degski ([[FANN][http://leenissen.dk/]], Windows porting)
+  * Giorgos Stoilos (isub/4: fuzzy string matching)
   * Jan Wielemaker (main developer and maintainer)
   * Jan van der Steen (SSL interface)
   * Jeff Rosenwald (TIPC interface, Google protocl buffers)
   * Keri Harris (testing, patches, MinGW port)
+  * Kuniaki Mukai (implementation of =@=/2 (variant/2)
   * Leslie de Koninck (CLP(QR) port)
+  * Marcus Uneson (library(optparse))
   * Markus Triska (CLP(FD) and other (constraint) libraries)
   * Matt Lilley (testing, patches)
   * Nicos Angelopoulos ([[R][http://www.r-project.org/]]-interface)
   * Paul Singleton (JPL, interface to Java)
+  * Randy Sharp (fixing many typos in the documentation; ongoing work)
   * Richard O'Keefe (libraries, extensive comments)
+  * Roberto Bagnara and Abramo Bagnara (MinGW port, helped fixing many bugs)
+  * Samer Abdallah ([[OSC, MIDI, Random and Matlab interfaces][</contrib/SamerAbdallah/>]])
   * Sergey Tikhonov (testing multi-threading, patches)
   * Tom Schrijvers (CHR, initial constraint libraries)
+  * Torbjörn Lager (SWAPP, [Pengines](</pldoc/package/pengines.html>))
   * Ulrich Neumerkel (testing, `purification', patches)
   * Uwe Lesta (interface to C#)
   * Vitor Santos Costa (various libraries copied from [[YAP][http://www.dcc.fc.up.pt/~vsc/Yap/]])
   * Willem Robert van Hage (space package: multi-dimensional indexing)
-  * Torbjörn Lager (SWAPP)
-  * Samer Abdallah ([[OSC, MIDI, Random and Matlab
-  interfaces][</contrib/SamerAbdallah/>]])
-  * Degski ([[FANN][http://leenissen.dk/]], Windows porting)
-  * Giorgos Stoilos (isub/4: fuzzy string matching)
-  * Kuniaki Mukai (implementation of =@=/2 (variant/2)
-  * Marcus Uneson (library(optparse))
-  * Randy Sharp (fixing many typos in the documentation; ongoing work)
-  * Roberto Bagnara and Abramo Bagnara (MinGW port, helped fixing many bugs)
-  * Carlo Capelli (Qt-based console)
+  * Wouter Beek (website)
 
 ---++ Other _Contributors_
 
@@ -47,10 +48,10 @@ People are listed in alphabetical order.
     [[Logtalk][http://logtalk.org/]] available)
   * Steve Moyle (funding of PlUnit and PlDoc)
   * [[Steve Reeves][http://www.pixelmagic.co.nz/]] (design of the logo)
+  * [Jessica Chan](http://jessicachanstudios.com/) (design of new website)
 
 ---++ _|Open Source|_ projects used by SWI-Prolog
 
-  * AVL library by [[Brad Appleton][http://www.cmcrossroads.com/bradapp/]] used in Semweb package
   * [[dtoa.c][http://www.netlib.org/fp/dtoa.c]] (Float <-> text conversion by David M. Gay).
   * [[GEOS][http://trac.osgeo.org/geos/]] (Geometry Engine, Open Source)
   * [[GMP][http://gmplib.org/]] (Unbounded and rational arithmetic)
@@ -68,4 +69,4 @@ People are listed in alphabetical order.
   * [[utf8proc][http://www.public-software-group.org/utf8proc]] (unicode normalization)
   * [[X.org][http://www.x.org/]] (Graphics on Unix)
   * [[Zlib][http://www.zlib.net/]] (compression)
-  * [[Qt][http://qt-project.org/]] GUI console 
+  * [[Qt][http://qt-project.org/]] GUI console

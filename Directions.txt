@@ -290,14 +290,13 @@ this purpose.  There are two issues that might require some attention.
     ==
 
   $ Lists can no longer be displayed using `.(A, .(B, []))` :
-  The list functor was changed to `'$cons'` (might change
-  to `'[|]'`).  This can be made visible using e.g. =../2,
+  The list functor was changed to `'[|]'`.  This can be made visible using e.g. =../2,
   but no longer using display/1 or write_canonical/1 which
   always use the list syntax.
 
     ==
     ?- [H|T] =.. L.
-    L = ['$cons', H, T].
+    L = ['[|]', H, T].
     ==
 
 In the long run we would like to establish comprehensive tutorial

@@ -2,14 +2,14 @@
 
 The SWI-Prolog RDF library allows you to write explicit resources using
 prefix abbreviations, e.g., =|rdf:subClassOf|= or =|rdfs:'Class'|=. The
-prefix abbreviations are known through rdf_current_ns/2.  New prefixes
-can be added using rdf_register_ns/2, as in
+prefix abbreviations are known through rdf_current_prefix/2.  New prefixes
+can be added using rdf_register_prefix/2, as in
 
     ==
     ?- use_module(library(semweb/rdf_db)).
 
-    ?- rdf_register_ns(foaf, 'http://xmlns.com/foaf/0.1/').
-    ?- rdf_register_ns(ex,   'http://example.com/person/').
+    ?- rdf_register_prefix(foaf, 'http://xmlns.com/foaf/0.1/').
+    ?- rdf_register_prefix(ex,   'http://example.com/person/').
     ==
 
 Now we can assert new facts using the above abbreviations:
@@ -49,7 +49,7 @@ provided by the rdf_db library. If we want to use prefixes in programs,
 we have to ensure two things:
 
     * All prefixes must be declared (using a directive with
-    rdf_register_ns/2) _before_ loading any code that refers to them.
+    rdf_register_prefix/2) _before_ loading any code that refers to them.
     E.g.:
 
 	==
@@ -57,7 +57,7 @@ we have to ensure two things:
 	:- use_module(library(semweb/rdfs)).
 	:- rdf_load(library(semweb/rdfs)).
 
-	:- rdf_register_ns(foaf, 'http://xmlns.com/foaf/0.1/').
+	:- rdf_register_prefix(foaf, 'http://xmlns.com/foaf/0.1/').
 
 	person(X) :-
 	    rdfs_individual_of(X, foaf:'Person').
@@ -103,6 +103,4 @@ label_predicate(skos:prefLabel).
 label_predicate(skos:altLabel).
 ==
 
-*|Note:|* Expansion of clause heads was added to the GIT on May 7, 2010.
-It became part of SWI-Prolog 5.11.1.
 
