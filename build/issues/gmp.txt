@@ -1,14 +1,23 @@
 # Issues with gmp
 
-This [wiki page](</wiki>) is a stub for collecting issues with the named
-library or feature.
-
 ## Consequences
 
-Describe consequences of missing this library. For example ``The
-development tools require this library''.
+If SWI-Prolog is not compiled with GMP support, it does not support
+
+  1. Unbounded integers
+  2. Rational numbers
+  3. Various random number and cryptographic features
+
+Affected libraries
+
+  - library(http/http_openid)
 
 ## Solutions
 
-Describe ways to solve the problem. For example, add a subsection about
-MacOS X and write ``Install the latest version of XQuartz''.
+  - If a binary distribution starts, but check_installation/0 reports GMP as missing,
+    you should contact the packager of the distribution and point at this page.
+  - The binary installations for MacOS and Windows provided by us bundle the GMP
+    library.  If there are issues, report them.
+  - If you built from *source*, make sure the GMP development libraries are installed.
+    Perform a fully new build afterwards and re-check.
+    
