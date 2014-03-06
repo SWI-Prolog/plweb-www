@@ -1,14 +1,11 @@
 # Issues with library(jpl)
 
-This [wiki page](</wiki>) is a stub for collecting issues with the named
-library or feature.
-
 ## Consequences
 
-Describe consequences of missing this library. For example ``The
-development tools require this library''.
+The library(jpl) is used for calling Java from Prolog or embedding Prolog in a
+Java program.  SWI-Prolog has no dependencies on this library, so if you do not
+intend to mix Java and Prolog in one program there is no reason to take action.
 
 ## Solutions
 
-Describe ways to solve the problem. For example, add a subsection about
-MacOS X and write ``Install the latest version of XQuartz''.
+@tbd Create per-os checklist
