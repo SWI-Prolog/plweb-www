@@ -1,4 +1,4 @@
-# Rebuild Prolog from source after adding a development library
+# Fix incomplete installation due to missing dependencies
 
 Sometimes SWI-Prolog is lacks features or packages because the required
 dependencies were not available while compiling the system from source.
