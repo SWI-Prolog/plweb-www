@@ -1,14 +1,15 @@
 # Issues with library(archive)
 
-This [wiki page](</wiki>) is a stub for collecting issues with the named
-library or feature.
-
 ## Consequences
 
-Describe consequences of missing this library. For example ``The
-development tools require this library''.
+The library(archive) is used to access encoded and archived data (compressed,
+data, zip archives, tar archives, etc).  It is internally used by
+
+  - pack_install/1 for installing [add-ons](</pack/list>)
 
 ## Solutions
 
-Describe ways to solve the problem. For example, add a subsection about
-MacOS X and write ``Install the latest version of XQuartz''.
+  - For binary installations, contact the packager and point to this page.
+  - For source installations, make sure that the development libraries for
+    [libarchive](http://www.libarchive.org/) are installed and
+    [re-build](<RebuildAfterDevLib.txt>).
