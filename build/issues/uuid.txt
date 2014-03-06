@@ -1,14 +1,15 @@
 # Issues with library(uuid)
 
-This [wiki page](</wiki>) is a stub for collecting issues with the named
-library or feature.
-
 ## Consequences
 
-Describe consequences of missing this library. For example ``The
-development tools require this library''.
+The library(uuid) is used to generate unique identifiers. It is used by
+various of the HTTP and RDF support libraries.
 
 ## Solutions
 
-Describe ways to solve the problem. For example, add a subsection about
-MacOS X and write ``Install the latest version of XQuartz''.
+The UUID library depends on [OSSP
+uuid](http://www.ossp.org/pkg/lib/uuid/). Be careful here, as there are
+many UUID libraries around, even with similar names and interfaces, but
+all just a bit too different from each other to allow for the wrong one.
+
+@see RebuildAfterDevLib.txt
