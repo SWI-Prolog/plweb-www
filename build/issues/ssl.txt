@@ -1,14 +1,16 @@
 # Issues with library(ssl)
 
-This [wiki page](</wiki>) is a stub for collecting issues with the named
-library or feature.
+The library(ssl) provides stream wrappers to use SSL.  The implementation
+is based on [OpenSSL](https://www.openssl.org/).
 
 ## Consequences
 
-Describe consequences of missing this library. For example ``The
-development tools require this library''.
+The ssl library is used by the HTTP server and client libraries to provide
+HTTPS services and connect to them.  The add-on installer uses this library
+if the package is hosted on an https server.
 
 ## Solutions
 
-Describe ways to solve the problem. For example, add a subsection about
-MacOS X and write ``Install the latest version of XQuartz''.
+The library(ssl) should be provided and functional with all binary
+distributions.  When installing from source, building the ssl package
+is disabled if the OpenSSL libraries or headers could not be found.
