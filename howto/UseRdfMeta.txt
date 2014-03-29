@@ -1,4 +1,4 @@
----+ How to deal with namespaces in RDF?
+---+ How to deal with prefixes in RDF?
 
 The SWI-Prolog RDF library allows you to write explicit resources using
 prefix abbreviations, e.g., =|rdf:subClassOf|= or =|rdfs:'Class'|=. The
