@@ -4,6 +4,7 @@
   * [[How to create a web-service easily?][<http/>]]
   * [[How to scrape web-pages?][<scrape/>]]
   * [[How to use the dynamic database?][database.txt]]
+  * [[How to compile/link/use C++ code written with the C++ interface (for GNU/Linux)?][<cpp-compiling.html>]]
 
 Development
 
