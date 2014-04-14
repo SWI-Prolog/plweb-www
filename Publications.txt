@@ -14,7 +14,7 @@ _|SWI-Prolog|_ is the preferred `general purpose reference'
     Systems](http://www.logic.at/prolog/drt.pdf) Markus Triska. PhD
     thesis explaining CLP(FD) as bundled with SWI-Prolog.
     [BibTeX](http://www.logic.at/prolog/drt.bib)
-    * [Why It's Nice to be Quoted: Quasiquoting for Prolog](<swipub:quasiquoting.pdf>) Jan Wielemaker and Michael Hendricks, accepted for WLPE-2013
+    * [Why It's Nice to be Quoted: Quasiquoting for Prolog](<swipub:quasiquoting.pdf>) Jan Wielemaker and Michael Hendricks, accepted for WLPE-2013 [[BibTeX][<swipub:quasiq.bib>]]
     * [Extending the logical update view with transaction support](http://arxiv.org/abs/1301.7669) Jan Wielemaker CICLOPS-12 [[BibTeX][<swipub:transactions.bib>]]
     * [[Syntactic integration of external languages in Prolog][<swipub:multilang.pdf>]]
     Jan Wielemaker and Nicos Angelopoulos WLPE-12. [[BibTeX][<swipub:multilang.bib>]]
