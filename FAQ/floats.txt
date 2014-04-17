@@ -19,3 +19,18 @@ A = 3.141592653589793.
 Floating point numbers are not exact. If you want exact arthmetic,
 please check out SWI-Prolog's support for rational numbers in the
 [[manual][</man/arith.html>]].
+
+Quoting Richard O'Keefe:
+
+SWI Prolog uses exactly the same floating point arithmetic
+as C.  This is normally provided by your hardware, and
+can be expected to conform to the IEEE 754 standard.  This
+is BINARY FLOATING-POINT arithmetic, not arithmetic on the
+mathematical real numbers.  If you think you have found a
+mistake in Prolog's arithmetic, you are almost certainly
+wrong, and should make sure that you *understand why, for
+example*,
+
+    0.3*3 is not exactly equal to 0.9,
+
+*before you report the "bug"*.
