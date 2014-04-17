@@ -34,3 +34,5 @@ example*,
     0.3*3 is not exactly equal to 0.9,
 
 *before you report the "bug"*.
+
+@see [What Every Computer Scientist Should Know About Floating-Point Arithmetic](http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
