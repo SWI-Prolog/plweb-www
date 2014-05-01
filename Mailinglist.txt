@@ -1,21 +1,37 @@
----+ Mailing list
+# Mailing list
 
-There is a mailing list for SWI-Prolog specific issues. This list is
-used for announcements as well as questions and discussion amoung
-users. On average, traffic is 5-10 messages per day.
+The mailing list for SWI-Prolog specific issues is a [Google
+group](http://groups.google.com/). This list is used for announcements
+as well as questions and discussion amoung users. On average, traffic is
+5-10 messages per day. Useful info:
 
-The mailinglist is kindly hosted by the University of Bonn using the
-[[Mailman][<mailman:>]] list software. You can manage your subscription
-using [[this web-page][<maillist:>]]. To post new messages, send mail to
-<mailto:swi-prolog@lists.iai.uni-bonn.de>. The list is
-[[archived][<https://lists.iai.uni-bonn.de/pipermail/swi-prolog>]].
+  - The connected forum can be viewed [here](</forum>) or at
+    [google](http://groups.google.com/group/swi-prolog).
 
----++ Related mailinglists
+  - If you have a Google account, you can subscribe through the
+    [forum](http://groups.google.com/group/swi-prolog).
+
+  - If you have *no* Google account, you can subscribe by sending a
+    mail to
+
+    ==
+    swi-prolog+subscribe@googlegroups.com
+    ==
+
+## Old mailing list
+
+Before being moved to a Google group (May 1, 2014), the mailing list was
+kindly hosted by the University of Bonn. The archives of this list are
+still available
+[here](<https://lists.iai.uni-bonn.de/pipermail/swi-prolog>).
+
+
+## Related mailinglists
 
     * [[mailinglist for CHR][<chr_mail:>]]
     * [[mailinglist for ClioPatria][http://mailman.few.vu.nl/mailman/listinfo/cliopatria-list]]
 
----++ The Bugzilla bugtracking system
+## The Bugzilla bugtracking system
 
 Bugs are best reported to and tracked through the [[Bugzilla
 system][<bugzilla:>]]. This internet based tool provides a structured
