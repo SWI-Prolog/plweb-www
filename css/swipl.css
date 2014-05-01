@@ -301,6 +301,14 @@ span.tagline {
   padding: 20px 27px;
 }
 
+#forum_embed
+{ display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  height: 1000px;
+}
+
 /* overrule above.  This is handled by PlDoc itself */
 
 .contents.pldoc
