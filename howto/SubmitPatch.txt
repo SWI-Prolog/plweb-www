@@ -1,9 +1,21 @@
 ---+ How to submit patches?
 
-This page describes how to submit patches if you find a bug or missing functionality.  There are several options, which are described in decreasing
-preference.
+This page describes how to submit patches if you find a bug or missing
+functionality. There are several options, which are described in
+decreasing preference.
 
----++ Submit as GIT patch-sets (preferred)
+---++ Using GitHub pull requests (new, preferred)
+
+As of May 1, 2014, the primary repository of SWI-Prolog is at
+[GitHub](https://github.com/SWI-Prolog).  GitHub has a
+[good description](https://help.github.com/articles/using-pull-requests)
+of submitting patches using _pull requests_.
+
+Note that quite a few of the remarks below also apply to using GitHub, notably
+those about dealing with packages that are represented as _git submodules_.
+
+
+---++ Submit as GIT patch-sets (old, still good)
 
 Download the system as described in [[Accessing SWI-Prolog source via GIT][</git.html>]].  First we describe patches to the core system.  Patches
 to packages that are distributed as git submodules are described below.
@@ -145,13 +157,13 @@ You can also keep a copy and use the diff command to produce a classical
 patch file as below.  diff should be available on virtually any Unix system
 and there are many ports for Windows.  Use the unified (=|-u|=) style to
 include context.
-  
+
   ==
   % cp somefile somefile.orig
   <edit, test, etc>
   % diff -u somefile.orig somefile > my-patches
   ==
-  
+
 This is worse than using =|git diff|= because git diff includes information
 on the exact version that is patched, which can help us if there are other
 conflicting patches.  In addition to comments on the why and what, please
