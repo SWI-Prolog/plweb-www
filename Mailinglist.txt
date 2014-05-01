@@ -33,11 +33,10 @@ still available
 
 ## The Bugzilla bugtracking system
 
-Bugs are best reported to and tracked through the [[Bugzilla
-system][<bugzilla:>]]. This internet based tool provides a structured
-way to enter, track and find bugs and their patches.
+Bugs are best reported to and tracked through the [GitHub issue tracker](https://github.com/SWI-Prolog/issues/issues)
 
 @see Prolog is discussed on
 the Usenet group [[comp.lang.prolog][<news:comp.lang.prolog>]]
+@see [stackoverflow](http://stackoverflow.com/questions/tagged/swi-prolog)
 
 
