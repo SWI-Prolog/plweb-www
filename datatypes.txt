@@ -42,7 +42,7 @@ are 64-bit IEEE doubles on all relevant platforms we are aware of.
 Prolog atoms are unique handles to a string of Unicode characters. There
 is no length limit and all Unicode   code points, including zero (0) are
 allowed. The maximum number of  atoms  that   can  be  accommodated in a
-single Prolog process is 2**25 (33554432)  on 32-bits machines (2**57 on
+single Prolog process is 2^25 (33554432)   on  32-bits machines (2^57 on
 64-bit machines).
 
 *Windows*: Unicode atoms are stored using the C-type `wchar_t`, which is
@@ -56,7 +56,7 @@ members of the pair count as distinct characters to atom_codes/2, etc.
 Compound terms consist of a name  (atom),   and  _N_  arguments, each of
 which may be an arbitrary Prolog data   item. In standard Prolog, _N_ is
 at least one. In SWI-Prolog, _N_ can be zero. The number of arguments is
-limited to 2**32,  which  implies  limited   by  memory  only  on 32-bit
+limited to 2^32,  which  implies  limited   by  memory  only  on  32-bit
 hardware, but limited on 64-bit hardware. Note   that  this limit can be
 lifted fairly easily if the need arises.
 
@@ -94,14 +94,14 @@ defined blob types.
 As atoms, strings are sequences of Unicode   code  points. They have the
 same limits as atoms, except for the  maximum length. As strings live on
 the global stack, their lenght is limited  by the available stack space.
-In addition, the size  of  a  string   in  memory  is  limited  to 2**25
-(33554432) on 32-bits machines or 2**57   on  64-bit machines. Note that
+In addition, the  size  of  a  string   in  memory  is  limited  to 2^25
+(33554432) on 32-bits machines or  2^57   on  64-bit machines. Note that
 ISO-Latin-1 strings require one byte per   character and unicode strings
 require 4 (2 on Windows, see _Atoms_ above) bytes per character.
 
 ### Nil ([], empty list)
 
-In SWI-Prolog version 7, `[]` *is not an  atom*. It is a unqiue constant
+In SWI-Prolog version 7, `[]` *is not an  atom*. It is a unique constant
 that is only equivalent  to  itself.   The  foreign  interface  provides
 dedicated  functions  to  deal  with    the   empty  list  (PL_is_nil(),
 PL_unify_nil(), etc.)
@@ -109,7 +109,7 @@ PL_unify_nil(), etc.)
 ### List cons-cell
 
 In  SWI-Prolog  version   7,   the   list    _cons-cell_   is   a   term
-`'[|]'(Head,Tail)` rather than `.(Head,Tail).
+`'[|]'(Head,Tail)` rather than `.(Head,Tail).`
 
 ### Dictionaries
 
