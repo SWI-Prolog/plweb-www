@@ -19,7 +19,7 @@
 
 ---+++ Get the manual on paper
 
-[[swibook.jpeg;align="left",alt="book"][http://books.google.nl/books/about/SWI_Prolog_Reference_Manual_6_2_2.html?id=q6R3Q3B-VC4C&redir_esc=y]]
+[[swibook.jpeg;align="left",alt="book"][http://books.google.de/books?id=7AeiAwAAQBAJ&hl=en]]
 The full SWI-Prolog manual is also available as a print-on-demand book.
 This *|comprehensive manual|* gives an overview of the system and how to
 set-up programming projects with it, it describes the built-in
