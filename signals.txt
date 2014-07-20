@@ -2,7 +2,7 @@
 
 SWI-Prolog requires two signals on Unix like systems (basically any
 supported platform except MS-Windows).  It processes the signals
-listed below.  The signal number of these signals is fixes, but it
+listed below.  The signal number of these signals is fixed, but it
 would be quite trivial to allow changing these.
 
   $ SIGUSR1 :
@@ -21,7 +21,8 @@ In addition, the common error signals such as SIGSEGV, SIGBUS, SIGFPE,
 etc. are by default caught.  Upon receiving one of these signals, the
 system tries to print useful information for debugging (depending on
 the platform), performs its normal shutdown cleanup and stop.  Handling
-these signals can be stopped using the =--no-signals= commandline flags.
+these signals can be stopped using the =|--no-signals|= commandline
+flags.
 
 Finally, signal handlers may be installed using on_signal/3.
 
