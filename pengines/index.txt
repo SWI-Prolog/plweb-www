@@ -5,5 +5,5 @@ The wiki pages are intended to collect best practices about using the
 
   - [[Understanding the Pengines concept][PengineConcept.txt]]
   - [[Adding application logic to a pengine server][AppLogic.txt]]
-  - [[The Genealogist Part 1: Your first real Pengines application ][Genealogist.txt]]
+  - [[The Genealogist Part 1: Your first real Pengines application][Genealogist.txt]]
 
