@@ -1,2 +1,71 @@
 # Genealogist Part 1: Your first "real" Pengines application
 
+  ~~~~
+  :- module(genealogist, 
+	[  ancestor_decendant/2,
+	   parent_child/2,
+	   father_child/2,
+	   mother_child/2
+	]).
+
+
+  % Rules
+
+  ancestor_decendant(X, Y) :- 
+      parent_child(X, Y).
+  ancestor_decendant(X, Z) :- 
+      parent_child(X, Y), 
+      ancestor_decendant(Y, Z).
+
+  parent_child(X, Y) :- mother_child(X, Y).
+  parent_child(X, Y) :- father_child(X, Y).
+
+  % Facts
+
+  mother_child(trude, sally).
+
+  father_child(tom, sally).
+  father_child(tom, erica).
+  father_child(mike, tom).
+  ~~~~
+First, we create a new directory named 'genealogist' under =./apps=.
+We then place the above module file in =./apps/genealogist=.
+
+We insert the following declarations in the file =./load.pl=:
+
+:- pengine_application(genealogist).
+:- use_module(genealogist:'/apps/genealogist/genealogist.pl').
+
+The first declaration merely names your application, and I thought "genealogist" was an approapriate name. (There is no need to give the application the same name as the directory, but it makes some sense to do so.)
+
+The second declaration imports the predicates exported by the module genealogist into the application module (which happens to have the same name her too, but nor is this required).
+
+Restart the Pengines server.
+
+To test:
+
+From the SWI-Prolog shell, perhaps running on another machine:
+
+  ~~~~
+  ?- use_module(library(pengines)).
+true.
+
+?- pengine_rpc('http://localhost:3030', ancestor_decendant(X, Y), [application(genealogist)]).
+X = trude,
+Y = sally ;
+X = tom,
+Y = sally ;
+X = tom,
+Y = erica ;
+X = mike,
+Y = tom ;
+X = mike,
+Y = sally ;
+X = mike,
+Y = erica ;
+false.
+
+?- 
+  ~~~~
+
+As you can see 
