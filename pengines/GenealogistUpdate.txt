@@ -61,4 +61,4 @@ false.
 ?-
   ~~~~
 
-In part 4 of this tutorial we are going to revise our HTML in order to build the necessary GUI parts for supporting updating. In fact, we are are going to revise the whole Genealogist application quite substantially, by for example splitting it up into separate files for HTML, CSS and JavaScript, in the way that is usually recommended for doing web development.
+In [part 4 of this tutorial](http://www.swi-prolog.org/pengines/GenealogistMoreGUI.html) we are going to revise our HTML in order to build the necessary GUI parts for supporting updating. In fact, we are are going to revise the whole Genealogist application quite substantially, by for example splitting it up into separate files for HTML, CSS and JavaScript, in the way that is usually recommended for doing web development.

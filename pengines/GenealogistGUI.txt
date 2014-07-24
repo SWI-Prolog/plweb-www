@@ -64,15 +64,17 @@ We then need to make this HTML file available to the server. It can be placed an
 
   ~~~~
   apps/
-   genealogist/
-      genealogist.pl
-      index.html
-   swish\
-   scratchpad\
+     genealogist/
+        genealogist.pl
+        index.html
+     swish\
+     scratchpad\
   ~~~~
 
-The application can now be tested. We don't even have to restart the server. All we need need to know is the URL pointing to the application. It is:
+The application can now be tested. We don't even have to restart the server. All we need need to know is the URL pointing to the application. If you are running your Pengines installation as the default =|localhost:3030|= that would be:
 
   ~~~~
   http://localhost:3030/apps/genealogist/index.html
   ~~~~
+
+In [the next part of the tutorial](http://www.swi-prolog.org/pengines/GenealogistUpdate.html) we are going to implement support for updating the database of parent-child relationships.
