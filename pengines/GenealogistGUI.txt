@@ -60,7 +60,7 @@ Here is the HTML we shall work with:
     </body>
 </html>
   ~~~~
-We then need to make this HTML file available to the server. It can be placed anywhere from where it can be retrieved and served to an external browser, but we think that it sits most comfortably in the =|./apps/genealogist|= directory, along with the prolog file.
+We then need to make this HTML file available to the server. It can be placed anywhere from where it can be retrieved and served to an external browser, but we think that it sits most comfortably in the =|./apps/genealogist|= directory, along with the Prolog file.
 
   ~~~~
   apps/
