@@ -1,7 +1,7 @@
 ---+ SWI-Prolog on Debian and Ubuntu Linux
 
 | Debian release | Wheezy(7.0)  |
-| Ubuntu release | 12.04, 12.10, 13.04, 13.10 |
+| Ubuntu release | 12.04, 14.04 |
 | Mint | 14 |
 | SWI-Prolog release | 6.6.x, 7.1.x |
 | Package page | http://packages.debian.org/swi-prolog |
