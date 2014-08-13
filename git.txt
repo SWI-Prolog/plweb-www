@@ -2,60 +2,57 @@
 
 ---++ If you need GIT
 
-[[GIT][<git:>]] is a fast version control system developed by Linus Torvalds and
-currently maintained by Junio C Hamano. Here is our
+[[GIT][<git:>]] is a fast version control system developed by Linus
+Torvalds and currently maintained by Junio C Hamano. Here is our
 [[motivation][whygit.txt]] for choosing GIT for managing the SWI-Prolog
 sources. You should use the GIT version if you want to stay
-*|up-to-date|* and/or you want to [[contribute][<howto/SubmitPatch.html>]] to the project. Many professional users opt for this route.
+*|up-to-date|* and/or you want to
+[[contribute][<howto/SubmitPatch.html>]] to the project. Many
+professional users opt for this route.
 
-First install [[GIT][<git:>]] for your platform. You need at least
-version 1.6.0 because the SWI-Prolog repository uses the GIT submodule
-features. Many modern Unix versions come with GIT installed. If your
-version is too old, installing a new version from source is simple. On
-MS-Windows we use [[msysGit][<msysgit:>]], which is easily installed and
-except for being much slower than its Unix counterpart appears to do the
-job flawlessly. If you want graphical tools on Windows, please check out
-[[TortoiseGit][<tortoisegit:>]].
+First install [[GIT][<git:>]] for your platform if you have not already
+done so.
+
 
 ---++ Getting the sources
 
 With GIT installed, you can clone the repository from one of the
-addresses below. The HTTP gateway provides you with access if a proxy or
-firewall denies direct internet access to the git port (9418).
+addresses below.
 
-    * http://www.swi-prolog.org/home/pl/git/pl.git
-    * git://www.swi-prolog.org/home/pl/git/pl.git [[star.gif]]
+    * https://github.com/SWI-Prolog/swipl.git
 
 The development version is kept in its own repository at
 
-    * http://www.swi-prolog.org/home/pl/git/pl-devel.git
-    * git://www.swi-prolog.org/home/pl/git/pl-devel.git [[star.gif]]
+    * https://github.com/SWI-Prolog/swipl-devel.git
 
-Use these commands to clone to a new directory =|./pl-devel|= 
+Use these commands to clone to a new directory =|./swipl-devel|=
 
 The *|./prepare|* script will fetch some required submodules.
 
 
 ==
-% git clone git://www.swi-prolog.org/home/pl/git/pl-devel.git
-% cd pl-devel
+% git clone https://github.com/SWI-Prolog/swipl-devel.git
+% cd swipl-devel
 % ./prepare
 ==
 
 This script also runs on Windows using the bash-shell that comes
-with =msysGit=. 
+with =msysGit=.
 
 
 Next, consult the file INSTALL for further instructions for installing
-SWI-Prolog from source. 
+SWI-Prolog from source.
 
 
 You can update to the latest version using the
 following commands from the toplevel directory:
 
 ==
-% make distclean 	(typically you can ignore errors)
+% make distclean	(typically you can ignore errors)
 % git pull
 % ./prepare
 % ./build
 ==
+
+@see [Depoendencies and PPAs for Ubuntu](</build/Debian.txt])
+@see [Daily builds for Windows](</download/daily/bin>)
