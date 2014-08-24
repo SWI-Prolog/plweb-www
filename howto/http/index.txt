@@ -20,7 +20,7 @@ Deploying Prolog-based web servers
     * [[Running the server under VNC][ServerVNC.txt]]
     * [[Running the server from Unix (x)inetd][ServerInetd.txt]]
     * [[Running the server from Unix init][ServerInit.txt]]
-
+    * [[Running the server from Linux upstart][UpStart.txt]]
 
 This is work in progress!   If you want to contribute or comment,
 send an e-mail to [[me][<mailto:jan@swi-prolog.org>]] or to the
