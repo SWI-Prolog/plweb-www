@@ -55,7 +55,7 @@ http://www.exmmple.com/swi-prolog/pack/mypack-1.0.tgz, it is made
 available to other users simply by installing it yourself:
 
   ==
-  ?- pack_install('http://www.exmmple.com/swi-prolog/pack/mypack-1.0.tgz').
+  ?- pack_install('http://www.example.com/swi-prolog/pack/mypack-1.0.tgz').
   ==
 
 After this, other people can install your package simply using
@@ -63,6 +63,41 @@ After this, other people can install your package simply using
   ==
   ?- pack_install(mypack).
   ==
+
+---+++ Using GitHub
+
+Packages can be downloaded from [GitHub](http://github.com) in two
+ways:
+
+  1. Using the GIT protocol.  In this case, the URL looks like below.
+     Be sure to add the =.git= extension.  This is not needed for
+     GIT, but it tells the SWI-Prolog package manager that this is
+     a git repository rather than a file.
+
+     ==
+     https://github.com/<owner>/<pack>.git
+     ==
+
+  2. Using [GitHub](http://github.com) _releases_.  These are created
+     by adding and pushing a _release tag_ or using the GitHub website.
+     The resulting archive can be accessed at the URL below.  Please
+     use the =.zip= because the package manager does *not* understand
+     the double extension =.tar.gz=.  The _tag_ must be dotted version
+     number, optionally preceeded by a =v= or =V=.
+
+     ==
+     https://github.com/<owner>/<pack>/archive/<tag>.zip
+     ==
+
+The advantage of using GitHub releases is that you decide when a new
+version is ready for public use.  Using GitHub releases *requires
+SWI-Prolog 7.1.22 or later*.  Automatic update checking can be enabled
+by setting the =download= attribute of the pack to:
+
+  ==
+  https://github.com/<owner>/<pack>/release/*.zip
+  ==
+
 
 ---++ Do's and Don'ts
 
