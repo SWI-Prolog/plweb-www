@@ -150,10 +150,12 @@ name_mbox(Name, MBox) :-
 Above, we compared querying the triple-store in Prolog with SPARQL. What
 if we compare Prolog to using Sesame/Jena as a library? The marriage
 between Object Oriented systems and relational data in general and RDF
-in particular is discussed in http://eyaloren.org/pubs/jws2008.pdf.
-Roughly, static languages such as Java allow for three approaches.
-Each of these either require setting up an _enumerator_ or dealing
-with _sets_.
+in particular is discussed in [[ActiveRDF: embedding Semantic Web data
+into object-oriented
+languages][http://linkinghub.elsevier.com/retrieve/pii/S1570826808000401]].
+Roughly, static languages such as Java allow for three approaches. Each
+of these either require setting up an _enumerator_ or dealing with
+_sets_.
 
   1. GetStatement(): Query statements based on a pattern. This is
   comparable to what our Prolog based approach does, but in our approach
