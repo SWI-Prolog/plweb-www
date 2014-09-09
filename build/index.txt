@@ -8,6 +8,10 @@ yourself. On the other hand, we generally *encourage* building
 yourself on *|non-windows platforms|* because binaries tend to be less
 portable and building is much easier.
 
+  * Downloading
+    * [Clone from GitHub](</git.html>)
+
+  * Building
     * [[Building on Unix/POSIX][unix.txt]]
     * [[Building on MacOS][macos.txt]]
     * [[Building on MS-Windows][windows.txt]]
