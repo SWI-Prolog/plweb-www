@@ -54,5 +54,5 @@ following commands from the toplevel directory:
 % ./build
 ==
 
-@see [Depoendencies and PPAs for Ubuntu](</build/Debian.txt])
+@see [Depoendencies and PPAs for Ubuntu](</build/Debian.txt>)
 @see [Daily builds for Windows](</download/daily/bin>)
