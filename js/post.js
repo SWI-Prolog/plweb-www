@@ -57,7 +57,7 @@ function vote(URL, id, vote)
 	 { "contentType": "application/json; charset=utf-8",
 	   "dataType": "json",
 	   "data": JSON.stringify({ "id": id,
-	                            "vote": 1
+	                            "vote": vote
 				  }),
 	   "success": function()
 		      { location.reload();
