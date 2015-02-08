@@ -108,7 +108,7 @@ of some rules:
     conflict.  Check http://www.swi-prolog.org/pack/list to verify
     there is no name conflict.
 
-  - All files in the =prolog= directory *must* be Prolog module files.
+  - All files in the =prolog= directory *must* be Prolog *module* files.
     Use names for the module files that are not likely to conflict with
     others.
 
@@ -116,6 +116,10 @@ of some rules:
     are compared by turning the version id into a list of integers that
     is compared using compare/3.  Make sure that the version in
     =|pack.pl|= matches the version encoded in the archive name.
+
+  - If you messed up, fix it and *always increment the version number*.
+    Uploading a new file with the same name/version is interpreted as a
+    possible security breach by the pack system.
 
 @see PackInfo.txt for a description of =|pack.pl|=
 @see ForeignPack.txt for creating packs with C or C++ code
