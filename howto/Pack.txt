@@ -126,3 +126,4 @@ of some rules:
 @see [[list of submitted packages][</pack/list>]]
 @see library(prolog_pack) for predicates to query, install and remove packs
 @see [[Status and TODO][PackTodo.txt]]
+@see http://rlaanemets.com/post/show/prolog-pack-development-experience for some experience and best practices
