@@ -58,16 +58,16 @@ Some remarks:
 
 ==
 sudo apt-get install \
-        build-essential autoconf curl chrpath \
+        build-essential autoconf curl chrpath pkg-config \
         ncurses-dev libreadline-dev libunwind8-dev \
         libgmp-dev \
-        libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \
-        libxpm-dev libxt-dev pkg-config \
         libssl-dev \
         unixodbc-dev \
-        openjdk-7-jdk junit \
         zlib1g-dev libarchive-dev \
-	libossp-uuid-dev
+	libossp-uuid-dev \
+        libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \
+        libxpm-dev libxt-dev \
+        openjdk-7-jdk junit
 ==
 
 Note that older Debian based distributions, including the Debian
