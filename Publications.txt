@@ -10,8 +10,12 @@ citing one of these papers. The [[star.gif]]-ed TPLP paper
 _|SWI-Prolog|_ is the preferred `general purpose reference'
 [[BibTeX][<swipub:tplp-swipl.bib>]].
 
+    * [Pengines: Web Logic Programming Made
+    Easy](http://dx.doi.org/10.1017/S1471068414000192) Torbjörn Lager
+    and Jan Wielemaker, ICLP-2014
+    [[BibTeX][<swipub:ICLP15-Pengines.bib>]]
     * [SWI-Prolog version 7 extensions](<swipub:swi7.pdf>) Jan
-    Wielemaker, accepted for WLPE-2014 [[BibTeX][<swipub:swi7.bib>]]
+    Wielemaker, CICLOPS/WLPE-2014 [[BibTeX][<swipub:swi7.bib>]]
     * [Correctness Considerations in CLP(FD)
     Systems](http://www.logic.at/prolog/drt.pdf) Markus Triska. PhD
     thesis explaining CLP(FD) as bundled with SWI-Prolog.
