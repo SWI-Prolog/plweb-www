@@ -42,15 +42,15 @@ People are listed in alphabetical order.
   * Bart Demoen (advice, notably constraint infrastructure)
   * Bob Wielinga (finding projects to support SWI-Prolog)
   * Guus Schreiber (providing a new home at the VU University, Amsterdam)
-  * ![Alt SecuritEase](/icons/securitease.png) [[SecuritEase][http://www.securitease.co.nz/]] (Mike Elston;
+  * [[securitease.png]] [[SecuritEase][http://www.securitease.co.nz/]] (Mike Elston;
     testing, funding of GMP, SSL and the 5.9.x stack-shifter)
   * Paulo Moura (testing, provides MacOS ports, made
     [[Logtalk][http://logtalk.org/]] available)
   * Steve Moyle (funding of PlUnit and PlDoc)
   * [[Steve Reeves][http://www.pixelmagic.co.nz/]] (design of the logo)
-  * [Jessica Chan][http://jessicachanstudios.com/]] (design of new website)
-  * ![Alt OSUOSL](/icons/osllogo.png) [[Oregon State University Open Source Lab][http://osuosl.org/]] (Donates US server for swi-prolog.org)
-  * ![Alt Fastly](/icons/fastly.png) [[Fastly.com][http://www.fastly.com/]] (Donates content distribution network services)
+  * [[Jessica Chan][http://jessicachanstudios.com/]] (design of new website)
+  * [[osllogo.png]] [[Oregon State University Open Source Lab][http://osuosl.org/]] (Donates US server for swi-prolog.org)
+  * [[fastly.png]] [[Fastly.com][http://www.fastly.com/]] (Donates content distribution network services)
 
 ---++ _|Open Source|_ projects used by SWI-Prolog
 
