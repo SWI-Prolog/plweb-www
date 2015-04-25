@@ -3,6 +3,7 @@
 | Debian release | Wheezy(7.0)  |
 | Ubuntu release | 12.04, 14.04 |
 | Mint | 14 |
+| Raspbian (Raspberry pi) | Wheezy |
 | SWI-Prolog release | 6.6.x, 7.1.x |
 | Package page | http://packages.debian.org/swi-prolog |
 | (Debian) Maintainer | Eugeniy Meshcheryakov |
@@ -55,6 +56,7 @@ Some remarks:
     which is needed by pack_install/1.
   - The package =|libossp-uuid-dev|= is needed as of 6.3.4 for
     library(uuid), which is needed for ClioPatria's SPARQL engine.
+  - =libunwind= only simplifies debugging in case of a system crash.
 
 ==
 sudo apt-get install \
@@ -73,6 +75,28 @@ sudo apt-get install \
 Note that older Debian based distributions, including the Debian
 stable *|(Squeeze (6.0))|* ship with =|libunwind7-dev|= instead of
 =|libunwind8-dev|=.
+
+*Raspbian* does not have =libunwind=. Just leave it out. All other
+packages are available. If you want to reduce resources, the following
+packages are optional:
+
+  $ openjdk-7-jdk junit :
+  Without you do not have Java connectivity (JPL)
+  $ libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev libxpm-dev libxt-dev :
+  If you leave these out, add =xpce= to =DISABLE_PKGS= in =build=. Means
+  you have no graphics, no graphical development tools and no regular
+  expression support.
+  $ unixodbc-dev :
+  Without, you have no ODBC database connectivity (e.g., MySQL)
+  $ libssl-dev :
+  Without, you have no SSL (and HTTPS) support.
+  $ libgmp-dev :
+  Without, you lack unbounded integer support, rational numbers, good
+  random number generators, etc.
+
+Note that including GMP support makes the memory footprint bigger, but
+mostly if you have no other applications depending on GMP. All the other
+optional components are only loaded if you actually use them.
 
 
 ---+++ Dependencies to build the documentation
