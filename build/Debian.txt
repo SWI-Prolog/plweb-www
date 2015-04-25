@@ -77,8 +77,9 @@ stable *|(Squeeze (6.0))|* ship with =|libunwind7-dev|= instead of
 =|libunwind8-dev|=.
 
 *Raspbian* does not have =libunwind=. Just leave it out. All other
-packages are available. If you want to reduce resources, the following
-packages are optional:
+packages are available. Total build time on a Raspberry pi model 2,
+including all packages is 22 minutes. If you want to reduce resources,
+the following packages are optional:
 
   $ openjdk-7-jdk junit :
   Without you do not have Java connectivity (JPL)
