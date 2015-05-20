@@ -4,10 +4,10 @@
 
     * [[Stable release][</download/stable>]]
     Sources and executables for MS-Windows and MacOS X
-    version *|6.6.x|*
+    version *|7.2.x|*
     * [[Development release][</download/devel>]]
     Sources and executables for MS-Windows and MacOS X
-    version *|7.1.x|*
+    version *|7.3.x|*
     * [Daily builds for Windows](</download/daily/bin>)
     * Some popular [[old versions][</download/old?show=all>]]
     * [GIT access](git.txt), browse GIT
