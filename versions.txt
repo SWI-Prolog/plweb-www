@@ -19,9 +19,12 @@ errors are found that affect many users. GIT access to the development
 is provided. All releases are tagged as VMajor.Minor.Patch Release
 milestones
 
-  $ 7.1.x: Current development branch.  Introduces syntactic extensions,
-  gives a prominent place to strings and adds _dicts_ as a primary
-  citizen.  See [extensions](</pldoc/man?section=extensions>).
+  $ 7.3.x: Current development branch.
+
+  $ 7.2.x: Major release, providing native key-value support by means
+  of _dicts_, native _strings_ using "hello world" syntax,
+  web-accessible Prolog engines (Pengines) and a high level SQL library
+  called CQL. See [extensions](</pldoc/man?section=extensions>).
 
   $ 6.6.x: Mostly a stability release. 6.6.x comes with some
   modification, notably to processing commandline arguments. It has been
