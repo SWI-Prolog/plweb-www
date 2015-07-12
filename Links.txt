@@ -53,6 +53,7 @@ SWI-Prolog [[packages][</packages/>]]
     * [[DES -- Datalog Educational System][http://des.sourceforge.net/]] by Fernando Saenz Perez
     * [[Thea: A Prolog library for OWL2][http://www.semanticweb.gr/thea/index.html]]
     * [[leanCoR: An OWL Reasoner][https://github.com/adrianomelo/leancor]]
+    * [[KnowRob: Knowledge processing for robots][http://www.knowrob.org/]]
     * [[plimk -- An SWI-Prolog interface to ImageMagick][http://plimk.sourceforge.net/]]
     * [[A SWI-Prolog interface to Matlab][http://www.elec.qmul.ac.uk/digitalmusic/downloads/index.html#plml]] by Samer Abdallah (Unix (Linux, MacOSX only)
     * [[PySWIP -- a bridge between Python and SWI-Prolog][http://code.google.com/p/pyswip/]] by Yuce Tekol
