@@ -23,10 +23,6 @@ We've only just realized we should have a formal roadmap. Expect this to change 
 
 ---++ Roadmap items
 
-Jan Wielemaker and Anne Ogborn each produced a roadmap recently. We're posting them until we have consensus.
-
----+++ Jan's
-
   * Web based IDE
   * Towards tabling: delimited continuations and tries data structures
   * Sort out proper compilation of last-call optimization in the ZIP
@@ -40,22 +36,3 @@ Jan Wielemaker and Anne Ogborn each produced a roadmap recently. We're posting t
     annotations, hide down voted comments, etc).  Could be a proper
     library.
   
-
----+++ Annie's
-
-1. We are trying to increase our mainstream user base and visibility within mainstream computing. This includes the following steps:
-   * Improve our out-of-box experience. This step has been completed.
-   * Improve the quality of our online documentation through the SWI-Prolog website. This step has been completed, and additionally has resulted in the very nice pldoc literate programming system.
-   * Disseminate knowledge of how to do SWI-Prolog programming in the large by writing an online interactive tutorial system and a book. The code portion of this system is well along in development, but the content is needed.
-   * Increase legitimacy by continuing our efforts to be visible at conferences and by creating a published print book.
-   * Identify and create a 'killer app' similar to the way Rails made Ruby famous and unix made C famous.
-   * Encourage and support an initial set of commercial developers.
-2. Last year Torbjorn Lager developed the pengines system that allows Prolog code to execute remotely with little more ceremony than executing locally, including from a web page. This system dramatically reduces the complexity of web programming, and has positioned us for #3
-3. We have a well liked but aging X windows based IDE. Using #2, we wish to create a new IDE, based entirely within the browser, and which is designed to be collaborative from the start, so programmers can remotely pair program. Additionally, the current IDE's appearance is rather old fashioned, and this discourages newcomers.
-4. Continue to improve our lead in RDF handling.
-5. Improve TCO detection in the ZIP interpreter
-6. Improve usability of HTTP 2.0, SOAP, Oauth, and HTTPS libraries
-7. Social network login plugin (now only Google)
-8. Enhance annotation/discussion on website 
-
-
