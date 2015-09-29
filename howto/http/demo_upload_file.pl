@@ -1,11 +1,11 @@
-:- module(upload, [ run/0]).
+:- module(upload, [run/0]).
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
-:- use_module(library(http/http_parameters)).
-:- use_module(library(http/http_mime_plugin)).
+:- use_module(library(http/http_header)).
+:- use_module(library(http/http_multipart_plugin)).
 :- use_module(library(http/http_client)).
 :- use_module(library(http/html_write)).
-:- use_module(library(lists)).
+:- use_module(library(option)).
 
 :- http_handler(root(.),	upload_form, []).
 :- http_handler(root(upload),	upload,      []).
@@ -29,18 +29,31 @@ upload_form(_Request) :-
 	    ]).
 
 upload(Request) :-
-	(   memberchk(method(post), Request),
-	    http_read_data(Request, Parts, [form_data(mime)]),
-	    member(mime(Attributes, Data, []), Parts),
-	    memberchk(name(file), Attributes),
-	    memberchk(filename(Target), Attributes)
-	->  % process file here; this demo just prints the info gathered
-	    atom_length(Data, Len),
-	    format('Content-type: text/plain~n~n'),
-	    format('Need to store ~D characters into file \'~w\'~n',
-		   [ Len, Target ])
-	;   throw(http_reply(bad_request(bad_file_upload)))
-	).
+	multipart_post_request(Request), !,
+	http_read_data(Request, Parts,
+		       [ on_filename(save_file)
+		       ]),
+	memberchk(file=file(FileName, Saved), Parts),
+	format('Content-type: text/plain~n~n'),
+	format('Saved your file "~w" into "~w"~n', [FileName, Saved]).
+upload(_Request) :-
+	throw(http_reply(bad_request(bad_file_upload))).
+
+multipart_post_request(Request) :-
+	memberchk(method(post), Request),
+	memberchk(content_type(ContentType), Request),
+	http_parse_header_value(
+	    content_type, ContentType,
+	    media(multipart/'form-data', _)).
+
+:- public save_file/3.
+
+save_file(In, file(FileName, File), Options) :-
+	option(filename(FileName), Options),
+	setup_call_cleanup(
+	    tmp_file_stream(octet, File, Out),
+	    copy_stream_data(In, Out),
+	    close(Out)).
 
 :- multifile prolog:message//1.
 
