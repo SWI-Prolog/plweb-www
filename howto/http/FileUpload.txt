@@ -1,24 +1,26 @@
----+ How do I upload a file, preserving the file-name?
+# How do I upload a file, preserving the file-name?
 
-NOTE: This example required SWI-Prolog 5.11.32 or 5.10.6 or the current
-GIT version of library(http/http_mime_plugin).
+*NOTE* This example requires SWI-Prolog 7.2 or later.
 
 The way to preserve the user-entered file-name is to use a form with
 =enctype= =|multipart/form-data|= and =input= element of type =file=.
 This causes a browser to formulate a MIME encoded POST request that
 contains the filename.
 
-First, let us import the required HTTP libraries and create the server:
+First, let us import the required HTTP libraries and create the server.
+Note that we need library(http/http_multipart_plugin) to make this demo
+work.  This library acts as a plugin for library(http/http_client) for
+parsing `multipart/form-data` documents.
 
   ==
-  :- module(upload, [ run/0]).
+  :- module(upload, [run/0]).
   :- use_module(library(http/thread_httpd)).
   :- use_module(library(http/http_dispatch)).
-  :- use_module(library(http/http_parameters)).
-  :- use_module(library(http/http_mime_plugin)).
+  :- use_module(library(http/http_header)).
+  :- use_module(library(http/http_multipart_plugin)).
   :- use_module(library(http/http_client)).
   :- use_module(library(http/html_write)).
-  :- use_module(library(lists)).
+  :- use_module(library(option)).
 
   :- http_handler(root(.),	upload_form, []).
   :- http_handler(root(upload),	upload,      []).
@@ -47,36 +49,53 @@ upload_form/1:
 	      ]).
   ==
 
-Next step, we must defined upload/1. Unfortunately, we cannot use the
+Next step, we must define upload/1. Unfortunately, we cannot use the
 simple http_parameters/2 to obtain the data because this interface only
-provides the name and value of parameters.  Instead, we must use
-http_read_data/3.  First we validate the request to be a POST, because
-otherwise http_read_data/3 is invalid. The http_read_data/3 call
-inherits functionality from library(http/http_mime_plugin) to read
-MIME messages.  By default, it translates =|multipart/form-data|=
-into a list of Name=Value, but using the option form_data(mime) it
-preserves the original representation of mime_parse/2.
+provides the name and value of parameters. Instead, we must use
+http_read_data/3. First we validate the request to be a POST holding the
+proper content using multipart_post_request/1. If this fails, we throw
+the error http_reply(bad_request(Culprit)), where the Culprit is a
+Prolog term describing the problem. This is matched to a clean
+message in the next section.
 
-If anything goes wrong, we throw the error
-http_reply(bad_request(Culprit)), where the Culprit is a Prolog term
-describing the problem.  This will be matched to a clean message in the
-next section.
+Next, we define the hook save_file/3 which is called to process parts
+that provide a `filename` attribute.  The first argument is a stream
+containing the data.  The stream is binary, but may be switched using
+the encoding(Enc) option of set_stream/2.  Its task is to process the
+data in the stream and return a term that represents this _part_ of
+the multipart message.  In the example we save the data in a (temporary)
+file and return a term file(UserFileName, SavedFileName).
+
+After the http_read_data/3 call, we select the part that holds the file
+and print a document holding the details.
 
   ==
   upload(Request) :-
-	  (   memberchk(method(post), Request),
-	      http_read_data(Request, Parts, [form_data(mime)]),
-	      member(mime(Attributes, Data, []), Parts),
-	      memberchk(name(file), Attributes),
-	      memberchk(filename(Target), Attributes)
-	  ->  % process file here; this demo just prints the info gathered
-	      atom_length(Data, Len),
-	      format('Content-type: text/plain~n~n'),
-	      format('Need to store ~D characters into file \'~w\'~n',
-		     [ Len, Target ])
-	  ;   throw(http_reply(bad_request(bad_file_upload)))
-	  ).
+	  multipart_post_request(Request), !,
+	  http_read_data(Request, Parts,
+			 [ on_filename(save_file)
+			 ]),
+	  memberchk(file=file(FileName, Saved), Parts),
+	  format('Content-type: text/plain~n~n'),
+	  format('Saved your file "~w" into "~w"~n', [FileName, Saved]).
+  upload(_Request) :-
+	  throw(http_reply(bad_request(bad_file_upload))).
 
+  multipart_post_request(Request) :-
+	  memberchk(method(post), Request),
+	  memberchk(content_type(ContentType), Request),
+	  http_parse_header_value(
+	      content_type, ContentType,
+	      media(multipart/'form-data', _)).
+
+  :- public save_file/3.
+
+  save_file(In, file(FileName, File), Options) :-
+	  option(filename(FileName), Options),
+	  setup_call_cleanup(
+	      tmp_file_stream(octet, File, Out),
+	      copy_stream_data(In, Out),
+	      close(Out)).
   ==
 
 Finally, we must translate =bad_file_upload= into a clean message.  We
@@ -92,6 +111,3 @@ prolog:message(bad_file_upload) -->
 ==
 
 @see  You can download the complete code from demo_upload_file.pl.
-@see  [[GIT version of HTTP MIME plugin][http://www.swi-prolog.org/git/packages/http.git/blob/HEAD:/http_mime_plugin.pl]].
-      Must be dropped into the Prolog library to use this functionality
-      on versions before 5.11.32 or 5.10.6.
