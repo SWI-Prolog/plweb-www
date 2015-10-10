@@ -1,7 +1,6 @@
 ---+ Using SWI-Prolog with GNU-Emacs
 
-The Prolog mode that comes with Emacs is not that good--in fact it sucks
-if you ask me. A much better one is available though, at
+The Prolog mode that comes with Emacs is not that good. A much better one is available though, at
 http://turing.ubishops.ca/home/bruda/emacs-prolog
 
 The mode plays nicely with, between others, SWI Prolog, and features
