@@ -8,4 +8,4 @@ intend to mix Java and Prolog in one program there is no reason to take action.
 
 ## Solutions
 
-@tbd Create per-os checklist
+@tbd Create per-os checklist=
