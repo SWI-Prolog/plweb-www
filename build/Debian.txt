@@ -63,6 +63,8 @@ Some remarks:
     which is needed by pack_install/1.
   - The package =|libossp-uuid-dev|= is needed as of 6.3.4 for
     library(uuid), which is needed for ClioPatria's SPARQL engine.
+  - The package =|libdb-dev|= is needed as of 7.3.8 for
+    library(bdb), the BerkeleyDB embedded database interface.
   - =libunwind= only simplifies debugging in case of a system crash.
 
 ==
@@ -76,6 +78,7 @@ sudo apt-get install \
 	libossp-uuid-dev \
         libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \
         libxpm-dev libxt-dev \
+	libdb-dev \
         openjdk-7-jdk junit
 ==
 
