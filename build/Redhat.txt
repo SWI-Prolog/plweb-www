@@ -13,7 +13,7 @@ We have not yet evaluated this release against the guidelines.txt.
 
 ---++ Dependencies
 
-Use the following commands to obtain all dependencies for a full build from source. 
+Use the following commands to obtain all dependencies for a full build from source.
 
 ==
 yum install \
@@ -42,7 +42,7 @@ yum install \
   readline-devel \
   unixODBC-devel \
   zlib-devel \
-  uuid-devel \
+  libossp-uuid-devel \
   libarchive-devel
 ==
 
@@ -87,5 +87,4 @@ On RHEL 5 it may become necessary to disable SELinux temporarily to
 build the RPM because the built library libswipl.so requires text
 relocation.
 
-@see [[Patched RPM spec file by Joachim Katzer][<https://lists.iai.uni-bonn.de/pipermail/swi-prolog/attachments/20110321/7c855b10/attachment.ksh>]]
 @see LinuxDistro.txt
