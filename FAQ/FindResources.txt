@@ -49,3 +49,20 @@ appropriate path into the environment before calling PL_initialise().
 In the final version of your application you link the saved-state to the
 executable (using =swipl-ld= or =cat= (Unix)) and comment the putenv()
 call.
+
+---++ Finding the home directory
+
+You can find SWI-Prolog's notion of home from within Prolog using
+
+  ```
+  ?- current_prolog_flag(home, Home).
+  Home = '...'
+  ```
+
+Or from the shell (for scripting/configuration) using the command below,
+which dumps a shell script that sets variables that describe the Prolog
+configuration.
+
+  ```
+  swipl --dump-runtime-variables
+  ```
