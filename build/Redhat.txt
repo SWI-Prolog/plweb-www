@@ -43,7 +43,8 @@ yum install \
   unixODBC-devel \
   zlib-devel \
   libossp-uuid-devel \
-  libarchive-devel
+  libarchive-devel \
+  libdb-devel
 ==
 
 ---++ Building the RPM
