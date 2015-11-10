@@ -1,9 +1,9 @@
 ---+ SWI-Prolog on Redhat (Fedora, RHEL, CentOS)
 
-| Fedora release | 21 |
+| Fedora release | 23 |
 | RHEL | 5 and 6 |
 | CentOS | 5 |
-| SWI-Prolog release | 6.6.1 |
+| SWI-Prolog release | 7.2.3/7.3.11 |
 | Package page | <http://koji.fedoraproject.org/koji/buildinfo?buildID=485155> |
 | Maintainer | Petr Pisar |
 
@@ -22,7 +22,7 @@ yum install \
   libunwind \
   freetype-devel \
   gmp-devel \
-  java-1.6.0-openjdk-devel \
+  java-1.8.0-openjdk-devel \
   jpackage-utils \
   libICE-devel \
   libjpeg-devel \
@@ -42,10 +42,13 @@ yum install \
   readline-devel \
   unixODBC-devel \
   zlib-devel \
-  libossp-uuid-devel \
-  libarchive-devel \
-  libdb-devel
+  uuid-devel \
+  libarchive-devel
 ==
+
+The above is tested on Fedora 23. On Fedora < 23 the library for UUID
+support was called `libossp-uuid-devel`. On Fedora < 21 the library for
+JDT support was called `java-1.7.0-openjdk-devel'.
 
 ---++ Building the RPM
 
