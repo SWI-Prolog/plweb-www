@@ -24,6 +24,7 @@ People are listed in alphabetical order.
   * Matt Lilley (testing, patches)
   * Nicos Angelopoulos ([[R][http://www.r-project.org/]]-interface)
   * Paul Singleton (JPL, interface to Java)
+  * Paulo Moura (provided library(yall))
   * Randy Sharp (fixing many typos in the documentation; ongoing work)
   * Richard O'Keefe (libraries, extensive comments)
   * Roberto Bagnara and Abramo Bagnara (MinGW port, helped fixing many bugs)
@@ -42,15 +43,16 @@ People are listed in alphabetical order.
   * Bart Demoen (advice, notably constraint infrastructure)
   * Bob Wielinga (finding projects to support SWI-Prolog)
   * Guus Schreiber (providing a new home at the VU University, Amsterdam)
-  * [[securitease.png]] [[SecuritEase][http://www.securitease.co.nz/]] (Mike Elston;
-    testing, funding of GMP, SSL and the 5.9.x stack-shifter)
+  * [[securitease.png;title="SecuritEase",align="center"][http://www.securitease.co.nz/]] Mike Elston;
+    testing, funding of GMP, SSL and the 5.9.x stack-shifter
   * Paulo Moura (testing, provides MacOS ports, made
     [[Logtalk][http://logtalk.org/]] available)
   * Steve Moyle (funding of PlUnit and PlDoc)
   * [[Steve Reeves][http://www.pixelmagic.co.nz/]] (design of the logo)
   * [[Jessica Chan][http://jessicachanstudios.com/]] (design of new website)
-  * [[osllogo.png]] [[Oregon State University Open Source Lab][http://osuosl.org/]] (Donates US server for swi-prolog.org)
-  * [[fastly.png]] [[Fastly.com][http://www.fastly.com/]] (Donates content distribution network services)
+  * [[osllogo.png;title="Oregon State University Open Source Lab",align="center"][http://osuosl.org/]] Donates US server for swi-prolog.org
+  * [[fastly.png;title="Fastly .com",align="center"][http://www.fastly.com/]] Donates content distribution network services
+  * [[kyndi.png;title="Kyndi, inc.",align="center"][http://www.kyndi.com/]] Sponsored library(yall)
 
 ---++ _|Open Source|_ projects used by SWI-Prolog
 
