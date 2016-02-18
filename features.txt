@@ -13,7 +13,7 @@
     hard disk. The non-graphical kernel is about 650KB, the graphics
     library adds about 1.2MB to the image.
 
-    * *Scales* well for large applications. No limits on program size,
+    * *Scales* well for large applications. *No limits* on program size,
     atom length, term arity or integer values. No performance
     degradation on predicates with many (indexed) facts.
 
@@ -77,51 +77,65 @@
 
 ## Connectivity
 
-    * Multi-threaded *|[[Web server][</pldoc/package/http.html>]]|*
-    library with comprehensive libraries to generate HTML,
-    HTTP authorization, session management, exchanging JSON (used by
-    many AJAX widgets), etc.
+    * SWI-Prolog provides extensive client and *server* libraries
+    for *HTTP*.  The HTTP server framework deals with generating
+    HTML, exchange of JSON or XML, authentication, sessions, and
+    much more.  Both client and server supports HTTPS.
 
     * Flexible and fast interface to the *|C-|* and *|C++-language|*.
     The interface allows for calling both ways, handling of
     non-determinism both ways and *embedding* of the SWI-Prolog kernel
     in C/C++ projects.
 
-    * Bundled with interface libraries for
-    *|[[Java][</packages/jpl/>]]|* (JPL),
-    *|[[ODBC][</pldoc/package/odbc.html>]]|*, *|TCP/IP|* sockets,
-    *|[[SSL][</pldoc/package/ssl.html>]]|*, *CGI* form handling, etc.
-    Check the packages.
+    * Interfaces to high level languages such as
+    Java using [JPL](</packages/jpl/>), Python and C# are available.
+
+    * Database connectivity is provided by the
+    *|[[ODBC][</pldoc/package/odbc.html>]]|* interface.
+
+    * Low level nerwork support includes _sockets_ (both TCP
+    and UDP), *|[[SSL][</pldoc/package/ssl.html>]]|* and
+    [TIPC](</pldoc/package/tipc.html>).
 
     * Fast and flexible libraries for *|[[parsing
     SGML/XML][</pldoc/package/sgml.html>]]|* (HTML),
     *|[[parsing][</pldoc/package/rdf2pl.html>]]|* *RDF*,
     *|[[store and query][</pldoc/package/semweb.html>]]|* the RDF
-    _|triple model|_. A graphical editor for RDF/RDFS and OWL models
-    called Triple20 is distributed separately.
+    _|triple model|_.
+
 
 ## Portability
 
     * *Portable* to many platforms, including almost all *|Unix/Linux|*
-    platforms, *Windows* (Vista, 7, 8, including *|64-bit|*
-    editions), *|MacOS X|* (using X11 for graphics) and many more. Both
-    32-bit and *|64-bit|* hardware is supported. Sources are plain
-    C99, configured automatically using GNU autoconf (configure, make,
-    make install).
+    platforms, *Windows* (Vista and later, both 32 and 64-bit versions),
+    *|MacOS X|* (using Xquartz for graphics) and many more. Both
+    32-bit and *|64-bit|* hardware is supported. Sources are plain C99,
+    configured automatically using GNU autoconf (configure, make, make
+    install).
 
     * Machine-independent *|saved-states|* (save on one platform, run
     using the virtual machine of another platform).
 
     * Regular *|binary distributions|* for Windows (32/64 bits) and
-    MacOS X (64 bits)) and [PPAs for Ubuntu](https://launchpad.net/~swi-prolog/+archive/stable).
+    MacOS X (64 bits)) and PPAs for
+    [Ubuntu](http://www.ubuntu.com) ([stable](https://launchpad.net/~swi-prolog/+archive/stable)
+    and [development](https://launchpad.net/~swi-prolog/+archive/devel))
 
     * Regular distribution of the *full source* packages. The sources are
     also accessible through [[GIT][</git.html>]].
 
 ## Legal
 
-    * Kernel licensed under the [[LGPL][<lgpl:>]]. Prolog libraries are
-    distributed under the [[GPL][<gpl:>]] with an additional statement
-    that allows for use in proprietary applications. Details can be
-    found on the license.txt page.
+SWI-Prolog's license conditions are about to change. Below we give both
+the current and upcoming conditions.
 
+    * *Current* Kernel licensed under the [[LGPL][<lgpl:>]]. Prolog
+    libraries are distributed under the [[GPL][<gpl:>]] with an
+    additional statement that allows for use in proprietary
+    applications. Details can be found on the license.txt page.
+
+    * *Upcoming* SWI-Prolog will be distributed under the _Simplified
+    BSD license_, also known as the BSD-2 license. Some of the used
+    libraries and extension packages have different license conditions.
+    The licenses applicable to a running configuration can be examined
+    by running eval_license/0.  See license.txt for details.
