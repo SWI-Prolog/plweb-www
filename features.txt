@@ -1,5 +1,57 @@
 # SWI-Prolog's features
 
+SWI-Prolog is a versatile implementation of the Prolog language. Its
+robust multi-threading, extended data types, unbounded arithmetic and
+Unicode representation of text allow for natural representation of
+documents (e.g., XML, JSON, RDF) and exchange of data with other
+programming paradigms. Its comprehensive low-level interface to C is the
+basis for high-level interfaces to C++, Java (bundled), C#, Python, etc
+(externally available). SWI-Prolog is equipped with an extensive web
+server (HTTP) framework that can be used both for providing (REST)
+services and end-user applications based on HTML5+CSS+JavaScript.
+Pengines (Prolog engines) allow clients to run queries against a
+client-provided program on a remote server using a generic API. Such
+programs can be executed in a _sandbox_.
+
+Equipped with rich interfaces, Prolog is an attractive language for
+realising _applications_. Its incremental compilation combined with
+generally local and backtrackable data structures (undo) allows for
+patching the program and keep testing it without restarting. Its
+relational paradigm fits well with tabular data (RDBMS), while it
+recursive strength fits well with tree and graph shaped data. Prolog can
+naturally express simple rule sets required to implement the
+_application logic_.
+
+_Constraints_ and _coroutining_ attach rules to (changing) data.
+Combined with backtracking, this can be used to solve many complicated
+combinatorial problems using a simple declarative specification.
+Classical examples are puzzles and planning problems.
+
+SWI-Prolog offers a variety of _delelopment_ environments, most of which
+may be combined at will. The native system provides an editor written in
+Prolog that is a close clone of Emacs. It provides _semantic_
+highlighting based on real time analysis of the code by the Prolog
+system itself. Complementary tools include a graphical debugger,
+profiler and cross-referencer. Alternatvely, there is a mode for
+GNU-Emacs and an Eclipse plugin, both of which may be combined with the
+native graphical tools. Finally, SWISH provides a web-based environment
+based on the forementioned _Pengines_ that can both be used to provide
+sandboxed access or full access after authentication. SWISH offers
+editing multiple sources using _semantic_ highlighting. SWISH can manage
+plugins for rendering Prolog data using HTML5+CSS+JavaScript. This can
+be used to render data as tables, graphs, charts, etc.
+
+SWI-Prolog provides an add-on distribution and installation mechanism
+calls _packs_. A _pack_ is a directory with some minimal organizational
+conventions and a _control_ file that describes the origin, version,
+dependencies and automatic upgrade support. Packs can be installed from
+an archive, GIT repository or URL using pack_install/1. Packs are used
+to share code in the community. The pack system has grown a couple of
+eco systems for dealing with types, coroutining, etc.
+
+Below is a list of what we consider key features of SWI-Prolog with
+links to the relevant documentation.
+
 ## Engine
 
     * *fast* compilation. E.g., loads 140,000 lines of code spread
