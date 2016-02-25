@@ -145,7 +145,7 @@ links to the relevant documentation.
     * Database connectivity is provided by the
     *|[[ODBC][</pldoc/package/odbc.html>]]|* interface.
 
-    * Low level nerwork support includes _sockets_ (both TCP
+    * Low level network support includes _sockets_ (both TCP
     and UDP), *|[[SSL][</pldoc/package/ssl.html>]]|* and
     [TIPC](</pldoc/package/tipc.html>).
 
