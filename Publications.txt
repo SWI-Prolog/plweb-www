@@ -10,6 +10,9 @@ citing one of these papers. The [[star.gif]]-ed TPLP paper
 _|SWI-Prolog|_ is the preferred `general purpose reference'
 [[BibTeX][<swipub:tplp-swipl.bib>]].
 
+    * [The Boolean Constraint Solver of
+    SWI-Prolog](http://www.metalevel.at/swiclpb.pdf) Markus Triska,
+    FLOPS-2016 [BibTeX](http://www.metalevel.at/swiclpb.bib)
     * [Pengines: Web Logic Programming Made
     Easy](http://dx.doi.org/10.1017/S1471068414000192) Torbjörn Lager
     and Jan Wielemaker, ICLP-2014
@@ -24,6 +27,9 @@ _|SWI-Prolog|_ is the preferred `general purpose reference'
     * [Extending the logical update view with transaction support](http://arxiv.org/abs/1301.7669) Jan Wielemaker CICLOPS-12 [[BibTeX][<swipub:transactions.bib>]]
     * [[Syntactic integration of external languages in Prolog][<swipub:multilang.pdf>]]
     Jan Wielemaker and Nicos Angelopoulos WLPE-12. [[BibTeX][<swipub:multilang.bib>]]
+    * [The Finite Domain Constraint Solver of
+    SWI-Prolog](http://www.metalevel.at/swiclpfd.pdf) Markus Triska,
+    FLOPS-2012 [BibTeX](http://www.metalevel.at/swiclpfd.bib)
     * [[Portability of Prolog programs: theory and case-studies][http://dx.doi.org/10.1007/978-3-642-18378-2_8]]
     Jan Wielemaker and Vitor Santos Costa. PADL-11. Updated version of
     CICLOPS-10 paper with the same title. [[BibTeX][<swipub:padl-porting.bib>]]
