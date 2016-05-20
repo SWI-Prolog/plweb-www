@@ -94,6 +94,10 @@ links to the relevant documentation.
     * *|[[Multi-threading][</man/threads.html>]]|* support: run multiple
     pre-emptively scheduled prolog engines on the same database.
 
+    * [Tabling (SLG resolution)](<pldoc/man?section=tabling>) provides
+    a more robust resolution technique for solving queries over complex
+    interrelated rules.
+
 ## Development tools
 
     * [[Source-level debugger][<gtrace.html>]] on all platforms that
