@@ -17,27 +17,30 @@ the mode's official page too.
 
 ---++ Installation Hints
 
-   1. Download the file prolog.el from http://turing.ubishops.ca/home/bruda/emacs-prolog
-      and save it to the "site-lisp" sub-directory of Emacs,
-      e.g. C:\Programme\Emacs\site-lisp
+   1. Download the file `prolog.el` from
+   http://turing.ubishops.ca/home/bruda/emacs-prolog and save it to the
+   `site-lisp` sub-directory of Emacs, e.g.,
+   =|C:\Programme\Emacs\site-lisp|=.
 
-   2. Byte-compile prolog.el:
-      Load prolog.el into Emacs and select Emacs-Lisp->Byte-compile this file.
+   2. Byte-compile `prolog.el`:
+      Load `prolog.el` into Emacs and select Emacs-Lisp->Byte-compile
+      this file.
 
-   3. Add the following lines to ~/.emacs (~/_emacs on Windows):
+   3. Add the following lines to =|~/.emacs|= (=|~/_emacs|= on Windows):
 
 	==
 	(setq auto-mode-alist
 	  (cons (cons "\\.pl" 'prolog-mode)
 	     auto-mode-alist))
-	==    
+	==
 
       Where is *|~/_emacs|*?
 
       ~ is a shortcut for the home directory, on Windows it is system
-      and language specific. It may be for example C:\ or C:\Dokumente.
-      The best way to find "~" is: select "Files->Open.." and enter "~".
-      Then Emacs prints the directory name and contents.
+      and language specific. It may be for example =|C:\|= or
+      =|C:\Dokumente|=. The best way to find "~" is: select
+      "Files->Open.." and enter "~". Then Emacs prints the directory
+      name and contents.
 
    4. Customize the Prolog mode: Select Help->Customize->Top-level
       Customization Group and then select group
@@ -53,13 +56,13 @@ the mode's official page too.
              (eclipse "eclipse")
              (mercury nil)
              (sicstus "sicstus")
-             (swi "c:/Programme/pl/bin/plcon.exe")
+             (swi "c:/Programme/swipl/bin/swipl.exe")
              (t "prolog"))
-	==                    
+	==
 
       and "Save for future sessions".
 
-   5. (Optional:) CustomizeSyntaxHighlighting 
+   5. (Optional:) CustomizeSyntaxHighlighting
 
 ---++ Ptags: create Prolog tags for Emacs
 
@@ -70,4 +73,4 @@ site][http://www-2.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/lang/prolo
 We have a local copy of the c-code [[here][<ptags.tgz>]].
 
 
- 
+
