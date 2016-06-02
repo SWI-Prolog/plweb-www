@@ -88,6 +88,14 @@ version. The site also contains some demo material.
 
 ## Support in standard editors
 
+The lack of keywords, existence of dynamic operator declarations (see
+op/3), macro expansion and meta-calling make Prolog a difficult language
+for generic editors and IDEs. On the other hand, switching between
+editors is hard and thus most people like using one editor for all their
+tasks. Below are plugins for generic editors that we are aware of.
+Please let us know if you know other plugins.
+
+
 ### Using GNU-Emacs
 
 Unfortunately, standard GNU-Emacs Prolog mode is very weak, especially at
