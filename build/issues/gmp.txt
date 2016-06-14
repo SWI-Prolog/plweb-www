@@ -11,6 +11,8 @@ If SWI-Prolog is not compiled with GMP support, it does not support
 Affected libraries
 
   - library(http/http_openid)
+  - library(clpfd).
+  - library(clpb).
 
 ## Solutions
 
