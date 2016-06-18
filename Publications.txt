@@ -11,8 +11,8 @@ _|SWI-Prolog|_ is the preferred `general purpose reference'
 [[BibTeX][<swipub:tplp-swipl.bib>]].
 
     * [The Boolean Constraint Solver of
-    SWI-Prolog](http://www.metalevel.at/swiclpb.pdf) Markus Triska,
-    FLOPS-2016 [BibTeX](http://www.metalevel.at/swiclpb.bib)
+    SWI-Prolog](https://www.metalevel.at/swiclpb.pdf) Markus Triska,
+    FLOPS-2016 [BibTeX](https://www.metalevel.at/swiclpb.bib)
     * [Pengines: Web Logic Programming Made
     Easy](http://dx.doi.org/10.1017/S1471068414000192) Torbjörn Lager
     and Jan Wielemaker, ICLP-2014
@@ -20,9 +20,9 @@ _|SWI-Prolog|_ is the preferred `general purpose reference'
     * [SWI-Prolog version 7 extensions](<swipub:swi7.pdf>) Jan
     Wielemaker, CICLOPS/WLPE-2014 [[BibTeX][<swipub:swi7.bib>]]
     * [Correctness Considerations in CLP(FD)
-    Systems](http://www.logic.at/prolog/drt.pdf) Markus Triska. PhD
+    Systems](https://www.metalevel.at/drt.pdf) Markus Triska. PhD
     thesis explaining CLP(FD) as bundled with SWI-Prolog.
-    [BibTeX](http://www.logic.at/prolog/drt.bib)
+    [BibTeX](https://www.metalevel.at/drt.bib)
     * [Why It's Nice to be Quoted: Quasiquoting for Prolog](<swipub:quasiquoting.pdf>) Jan Wielemaker and Michael Hendricks, accepted for WLPE-2013 [[BibTeX][<swipub:quasiq.bib>]]
     * [Extending the logical update view with transaction support](http://arxiv.org/abs/1301.7669) Jan Wielemaker CICLOPS-12 [[BibTeX][<swipub:transactions.bib>]]
     * [[Syntactic integration of external languages in Prolog][<swipub:multilang.pdf>]]
@@ -31,8 +31,8 @@ _|SWI-Prolog|_ is the preferred `general purpose reference'
     Tom Schrijvers, Bart Demoen, Benoit Desouter and Jan Wielemaker.
     [BibTeX](<swipub:iclp2013.bib>)
     * [The Finite Domain Constraint Solver of
-    SWI-Prolog](http://www.metalevel.at/swiclpfd.pdf) Markus Triska,
-    FLOPS-2012 [BibTeX](http://www.metalevel.at/swiclpfd.bib)
+    SWI-Prolog](https://www.metalevel.at/swiclpfd.pdf) Markus Triska,
+    FLOPS-2012 [BibTeX](https://www.metalevel.at/swiclpfd.bib)
     * [[Portability of Prolog programs: theory and case-studies][http://dx.doi.org/10.1007/978-3-642-18378-2_8]]
     Jan Wielemaker and Vitor Santos Costa. PADL-11. Updated version of
     CICLOPS-10 paper with the same title. [[BibTeX][<swipub:padl-porting.bib>]]
