@@ -33,7 +33,7 @@
 
   * *|Editing|*
     * [[Select an editor][BindEditor.txt]]
-    * [[Using SWI-Prolog with GNU-Emacs][GnuEmacs.txt]]
+    * [[Using SWI-Prolog with GNU Emacs][GnuEmacs.txt]]
     * [[Using PceEmacs][PceEmacs.txt]]
 
   * *|How to ...|*
