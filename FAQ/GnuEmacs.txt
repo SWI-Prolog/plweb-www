@@ -1,37 +1,34 @@
----+ Using SWI-Prolog with GNU-Emacs
+---+ Using SWI-Prolog with GNU Emacs
 
-The Prolog mode that comes with Emacs is not that good. A much better one is available though, at
-http://turing.ubishops.ca/home/bruda/emacs-prolog
+There is an excellent Prolog mode for GNU Emacs _and_ XEmacs. It is
+maintained by Stefan Bruda and available from
+https://bruda.ca/emacs/prolog_mode_for_emacs
 
-The mode plays nicely with, between others, SWI Prolog, and features
-syntax highlighting, auto indent, predicate menu, and full interaction
-with an inferior Prolog process. It is probably not as powerful as
-PceEmacs (though this is in my opinion open to discusion) but then I use
-Emacs night and day so I prefer it to PceEmacs.
+The mode plays nicely with SWI-Prolog and other Prolog systems. It
+features syntax highlighting, automatic indentation, a predicate menu,
+and full interaction with a Prolog process.
 
-At the time of writing the version is 0.1.41, which is attached to this
-page. However, I will not update the attachement very often, so do go to
-the Web page mentioned above for the most current version. As well, the
-guide below is a bit outdated--so it is useful, but do take a look at
-the mode's official page too.
+The Prolog mode that is included in GNU Emacs ships with regressions
+that have been
+[reported](https://debbugs.gnu.org/cgi/bugreport.cgi?bug=21526) but
+not yet resolved. Therefore, we recommend to use Stefan Bruda's
+version of the mode as described in the following.
 
----++ Installation Hints
+---++ Installation Hints for GNU Emacs
 
    1. Download the file `prolog.el` from
-   http://turing.ubishops.ca/home/bruda/emacs-prolog and save it to the
-   `site-lisp` sub-directory of Emacs, e.g.,
-   =|C:\Programme\Emacs\site-lisp|=.
+      https://bruda.ca/emacs/prolog_mode_for_emacs and save it in your
+      `load-path` so that Emacs can find it.
 
-   2. Byte-compile `prolog.el`:
-      Load `prolog.el` into Emacs and select Emacs-Lisp->Byte-compile
-      this file.
+   2. Optionally, you can _byte-compile_ `prolog.el` for better
+      performance. Load `prolog.el` into Emacs and do
+      =|M-x byte-compile-file RET|=.
 
    3. Add the following lines to =|~/.emacs|= (=|~/_emacs|= on Windows):
 
 	==
-	(setq auto-mode-alist
-	  (cons (cons "\\.pl" 'prolog-mode)
-	     auto-mode-alist))
+        (autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
+        (add-to-list 'auto-mode-alist '("\\.pl\\'" . prolog-mode))
 	==
 
       Where is *|~/_emacs|*?
@@ -42,27 +39,16 @@ the mode's official page too.
       "Files->Open.." and enter "~". Then Emacs prints the directory
       name and contents.
 
-   4. Customize the Prolog mode: Select Help->Customize->Top-level
-      Customization Group and then select group
-      Programming->Languages->Prolog. * Select the value "SWI Prolog"
-      for "Prolog System" and "Save for future sessions" * Go to "Prolog
-      Inferior" group and edit "Prolog Program Name", to insert SWI
-      Prolog's command pathname, e.g:
+   4. Customize the Prolog mode. The following page explains how to
+      enable electric indentation, syntax checking and PceEmacs-style
+      comments: https://www.metalevel.at/pceprolog/
 
-	==
-            (((getenv "EPROLOG")
-            (eval
-            (getenv "EPROLOG")))
-             (eclipse "eclipse")
-             (mercury nil)
-             (sicstus "sicstus")
-             (swi "c:/Programme/swipl/bin/swipl.exe")
-             (t "prolog"))
-	==
+--++ ediprolog: Run Prolog queries in Emacs
 
-      and "Save for future sessions".
-
-   5. (Optional:) CustomizeSyntaxHighlighting
+**ediprolog** allows you to interact with SWI-Prolog in all Emacs
+buffers. You can quickly consult buffers and regions, and run queries
+that are embedded in your source files. ediprolog is available from:
+https://github.com/triska/ediprolog
 
 ---++ Ptags: create Prolog tags for Emacs
 
