@@ -43,7 +43,7 @@ version of the mode as described in the following.
       enable electric indentation, syntax checking and PceEmacs-style
       comments: https://www.metalevel.at/pceprolog/
 
---++ ediprolog: Run Prolog queries in Emacs
+---++ ediprolog: Run Prolog queries in Emacs
 
 **ediprolog** allows you to interact with SWI-Prolog in all Emacs
 buffers. You can quickly consult buffers and regions, and run queries
