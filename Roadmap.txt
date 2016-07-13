@@ -1,38 +1,10 @@
 ---+ SWI-Prolog Roadmap
 
-September 2015 
 
-We've only just realized we should have a formal roadmap. Expect this to change significantly in the near future.
+The SWI-Prolog *Roadmap* is available from:
 
----++ Why create a roadmap?
+[**https://github.com/SWI-Prolog/roadmap**](https://github.com/SWI-Prolog/roadmap)
 
-  * It gives users a sense of where we're going
-    Commercial and academic users have some sense whether the feature they need will be implemented any time soon.
-  * It helps focus development
-    It helps core developers understand what areas are important, and helps 'cool idea' projects align with the main thrust of development. It gives us direction - we don't start projects and drift away from them.
-  * New developers have a place to start.
-    New developers wondering how they can get started know what's going on
-  * It gives a sense of accomplishment
-    We can see where we've been and what we've accomplished. We know we're not just on a never ending merry-go-round
-  * Users can see what's needed
-    Users who see that a piece of code just needs someone to write it are more likely to become developers.
-  * Making the map creates consensus
-    The discussion leading to a roadmap 
-  * Development work serves project goals
-    If Prolog programmers are ever going to be in demand, we have to do some inherently less interesting bits of coding. 
-
----++ Roadmap items
-
-  * Web based IDE
-  * Towards tabling: delimited continuations and tries data structures
-  * Sort out proper compilation of last-call optimization in the ZIP
-    VM (Bart gave me some ideas).
-  * (Voluntary, partial) typing and static analysis
-  * Web issues: HTTP 2.0, SOAP, Oauth, HTTPS (making it usable for
-    non-gods), ...
-  * Social network login plugin (now only Google)
-  * Tutorials/book
-  * Enhance annotation/discussion on website (allow commenting on
-    annotations, hide down voted comments, etc).  Could be a proper
-    library.
-  
+Please see the [**filed
+issues**](https://github.com/SWI-Prolog/roadmap/issues) for planned
+developments, and how you can help.
