@@ -56,7 +56,7 @@ Djamé Seddah pointed to the existence of ptags, a program to make
 tag-files for finding definitions in Prolog programs. This is the
 [[original
 site][http://www-2.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/lang/prolog/util/ptags/0.html]].
-We have a local copy of the c-code [[here][<ptags.tgz>]].
+We have a local copy of the c-code: [[ptags.tgz][<ptags.tgz>]]
 
 
 
