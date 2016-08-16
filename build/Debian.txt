@@ -10,7 +10,7 @@ SWI-Prolog.
 | Debian release | Wheezy(7.0)  |
 | Ubuntu release | 12.04, 14.04 |
 | Mint | 14 |
-| Raspbian (Raspberry pi) | Wheezy |
+| Raspbian (Raspberry pi) | Jessie (8.0) |
 | SWI-Prolog release | 6.6.x, 7.2.x, 7.3.x |
 | Package page | http://packages.debian.org/swi-prolog |
 | (Debian) Maintainer | Eugeniy Meshcheryakov |
@@ -86,10 +86,12 @@ Note that older Debian based distributions, including the Debian
 stable *|(Squeeze (6.0))|* ship with =|libunwind7-dev|= instead of
 =|libunwind8-dev|=.
 
-*Raspbian* does not have =libunwind=. Just leave it out. All other
-packages are available. Total build time on a Raspberry pi model 2,
-including all packages is 22 minutes. If you want to reduce resources,
-the following packages are optional:
+[Raspbian](<Raspbian.txt>) does not have =libunwind=. Just leave it out.
+All other packages are available. SWI-Prolog versions 7.3.x require
+*|gcc 4.8 or later|*, provided by Raspbian GNU/Linux 8.0 (jessie). Total
+build time on a Raspberry pi model 2, including all packages is 22
+minutes. If you want to reduce resources, the following packages are
+optional:
 
   $ openjdk-7-jdk junit :
   Without you do not have Java connectivity (JPL)
