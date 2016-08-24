@@ -95,7 +95,7 @@ SWI-Prolog 7.1.22 or later*.  Automatic update checking can be enabled
 by setting the =download= attribute of the pack to:
 
   ==
-  https://github.com/<owner>/<pack>/release/*.zip
+  https://github.com/<owner>/<pack>/releases/*.zip
   ==
 
 
