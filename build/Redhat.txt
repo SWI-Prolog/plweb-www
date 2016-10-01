@@ -61,14 +61,13 @@ JDT support was called `java-1.7.0-openjdk-devel'.
     % rpmdev-setuptree
     ==
 
-  2. Download and unpack Source RPM from below or the
-     [[Project page][http://koji.fedoraproject.org/koji/packageinfo?packageID=3471]]
+  2. Download from the [[Project page][http://koji.fedoraproject.org/koji/packageinfo?packageID=3471]]
 
     ==
-    % rpm -ihv --nomd5 http://download.fedora.redhat.com/pub/fedora/linux/development/15/source/SRPMS/pl-5.10.2-3.fc15.src.rpm
+    % rpm -ihv --nomd5 https://kojipkgs.fedoraproject.org//packages/pl/7.2.3/3.fc25/src/pl-7.2.3-3.fc25.src.rpm
     ==
 
-  3. Install development libraries needed to compile SWI-Prolog:
+  3. Install development libraries needed to compile SWI-Prolog
 
     ==
     % cd ~/rpmbuild
@@ -82,13 +81,15 @@ JDT support was called `java-1.7.0-openjdk-devel'.
     ==
     % rpmbuild -ba SPECS/pl.spec
     ==
-    or
-    ==
-    % rpmbuild -ba SPECS/swipl-5.10.2-3.spec
-    ==
 
-On RHEL 5 it may become necessary to disable SELinux temporarily to
-build the RPM because the built library libswipl.so requires text
-relocation.
+   On RHEL 5 it may become necessary to disable SELinux temporarily to
+   build the RPM because the built library libswipl.so requires text
+   relocation.
+
+  5. Install the built packages
+
+    ==
+    % sudo yum install RPMS/x86_64/pl-*.rpm
+    ==
 
 @see LinuxDistro.txt
