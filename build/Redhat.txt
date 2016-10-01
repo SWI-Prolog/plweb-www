@@ -82,8 +82,14 @@ JDT support was called `java-1.7.0-openjdk-devel'.
     % rpmbuild -ba SPECS/pl.spec
     ==
 
-On RHEL 5 it may become necessary to disable SELinux temporarily to
-build the RPM because the built library libswipl.so requires text
-relocation.
+   On RHEL 5 it may become necessary to disable SELinux temporarily to
+   build the RPM because the built library libswipl.so requires text
+   relocation.
+
+  5. Install the built packages
+
+    ==
+    % sudo yum install RPMS/x86_64/pl-*.rpm
+    ==
 
 @see LinuxDistro.txt
