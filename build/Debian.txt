@@ -10,7 +10,7 @@ Some remarks:
   - It is possible to use =iodbc= instead of =unixodbc= for ODBC
     connectivity.
   - The SWI-Prolog Java interface (JPL) works with many Java development
-    kits, not only =|openjdk-7-jdk|=.
+    kits, not only =|openjdk-8-jdk|=.
   - The package =|libarchive-dev|= is needed as of 6.1.4 for libarchive,
     which is needed by pack_install/1.
   - The package =|libossp-uuid-dev|= is needed as of 6.3.4 for
@@ -22,7 +22,7 @@ Some remarks:
 ==
 sudo apt-get install \
         build-essential autoconf curl chrpath pkg-config \
-        ncurses-dev libreadline-dev libunwind8-dev \
+        ncurses-dev libreadline-dev libunwind-dev \
         libgmp-dev \
         libssl-dev \
         unixodbc-dev \
@@ -31,12 +31,12 @@ sudo apt-get install \
         libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \
         libxpm-dev libxt-dev \
 	libdb-dev \
-        openjdk-7-jdk junit
+        openjdk-8-jdk junit
 ==
 
 Note that older Debian based distributions, including the Debian
 stable *|(Squeeze (6.0))|* ship with =|libunwind7-dev|= instead of
-=|libunwind8-dev|=.
+=|libunwind-dev|=.
 
 [Raspbian](<Raspbian.txt>) does not have =libunwind=. Just leave it out.
 All other packages are available. SWI-Prolog versions 7.3.x require
@@ -45,7 +45,7 @@ build time on a Raspberry pi model 2, including all packages is 22
 minutes. If you want to reduce resources, the following packages are
 optional:
 
-  $ openjdk-7-jdk junit :
+  $ openjdk-8-jdk junit :
   Without you do not have Java connectivity (JPL)
   $ libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev libxpm-dev libxt-dev :
   If you leave these out, add =xpce= to =DISABLE_PKGS= in =build=. Means
