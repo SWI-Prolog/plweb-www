@@ -1,23 +1,5 @@
 # Prerequisites for Debian based systems (Ubuntu, Mint, ...)
 
-## Linux distributions
-
-The table below describes the Linux distros and SWI-Prolog versions for which the
-descriptions on this page was last updated.  This page is relevant for virtually
-all Debian-derived distributions (those using `apt-get`) and many versions of
-SWI-Prolog.
-
-| Debian release | Wheezy(7.0)  |
-| Ubuntu release | 12.04, 14.04 |
-| Mint | 14 |
-| Raspbian (Raspberry pi) | Jessie (8.0) |
-| SWI-Prolog release | 6.6.x, 7.2.x, 7.3.x |
-| Package page | http://packages.debian.org/swi-prolog |
-| (Debian) Maintainer | Eugeniy Meshcheryakov |
-
-
----++ Prerequisites
-
 Use the following commands to obtain all dependencies for a full build
 from source. Note that there are no known version dependencies on any of
 these packages.  If your (debian-based) distribution is lacking any of
