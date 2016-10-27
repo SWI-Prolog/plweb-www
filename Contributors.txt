@@ -59,7 +59,7 @@ People are listed in alphabetical order.
   * [[osllogo.png;title="=Oregon State University Open Source Lab=",align="center"][http://osuosl.org/]] Oregon State University Open Source Lab Donates US server for swi-prolog.org
   * [[fastly.png;title="Fastly .com",align="center"][http://www.fastly.com/]] Fastly.com Donates content distribution network services
   * [[kyndi.png;title="Kyndi, inc.",align="center"][http://www.kyndi.com/]] Kyndi Sponsored library(yall)
-  * [[simularity.png;title="Simularity, inc.", align="center"][http://simularity.com/]] Simularity, Inc. sponsored JavaPengines and RubyPengines.
+  * [[simularity.png;title="Simularity, inc.",align="center"][http://simularity.com/]] Simularity, Inc. Sponsored JavaPengines and RubyPengines.
 
 ---++ _|Open Source|_ projects used by SWI-Prolog
 
