@@ -78,4 +78,4 @@ sudo apt-get install \
 	texlive-fonts-recommended-doc
 ==
 
-@see [Build SWI-Prolog from source](<unix.html>)
+Now tht you've installed dependencies, return to [Build SWI-Prolog from source](<unix.html>) to complete installation.
