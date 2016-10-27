@@ -120,3 +120,12 @@ If =configure= fails, try using =|bash configure|=. If =make= fails, try
 using GNU-make and gcc.
 
 If all fails, have a look at the ../Support.txt page.
+
+## Post installation (JPL)
+
+If you want to call Java from Prolog using JPL, you need to add the directory holding
+the JVM shared objects to the dynamic linker search path.  Using default installation on Ubuntu, this is achieved by adding the following to your =|~/.profile|=:
+
+```
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/server
+```
