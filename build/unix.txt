@@ -1,6 +1,9 @@
 # SWI-Prolog -- Installation on Linux, *BSD (Unix)
 
-## Installing from PPA
+## Installing from binaries
+
+The official packages are often out of date. 
+PPAs are created automatically for every release.
 
 PPAs are available for Ubuntu by following directions on the [PPA page](<PPA.txt>).
 
