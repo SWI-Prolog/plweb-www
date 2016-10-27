@@ -17,7 +17,7 @@ Download the SWI-Prolog source from
 
 ### Getting the prerequisites
 
-  - [Debian based linux (Debian, Ubuntu, Mint, ...)](<Debian.html>)
+  - [Debian based linux (Debian, Ubuntu, Mint, Raspberry Pi, ...)](<Debian.html>)
   - [Redhat based linux (Fedora, Redhat, CentOS, ...)](<Redhat.html>)
   - [SuSE](<SuSE.html>)
   - [Mageia](<Mageia.html>)
