@@ -1,58 +1,8 @@
 ---+ Accessing SWI-Prolog source via GIT
 
----++ If you need GIT
+This page is obsolete.
 
-[[GIT][<git:>]] is a fast version control system developed by Linus
-Torvalds and currently maintained by Junio C Hamano. Here is our
-[[motivation][whygit.txt]] for choosing GIT for managing the SWI-Prolog
-sources. You should use the GIT version if you want to stay
-*|up-to-date|* and/or you want to
-[[contribute][<howto/SubmitPatch.html>]] to the project. Many
-professional users opt for this route.
+SWI-Prolog sources are available on [github](https://github.com/SWI-Prolog/swipl-devel)
 
-First install [[GIT][<git:>]] for your platform if you have not already
-done so.
+Instructions for building on linux are [here](</build/unix.html>) 
 
-
----++ Getting the sources
-
-With GIT installed, you can clone the repository from one of the
-addresses below.
-
-    * https://github.com/SWI-Prolog/swipl.git
-
-The development version is kept in its own repository at
-
-    * https://github.com/SWI-Prolog/swipl-devel.git
-
-Use these commands to clone to a new directory =|./swipl-devel|=
-
-The *|./prepare|* script will fetch some required submodules.
-
-
-==
-% git clone https://github.com/SWI-Prolog/swipl-devel.git
-% cd swipl-devel
-% ./prepare
-==
-
-This script also runs on Windows using the bash-shell that comes
-with =msysGit=.
-
-
-Next, consult the file INSTALL for further instructions for installing
-SWI-Prolog from source.
-
-
-You can update to the latest version using the
-following commands from the toplevel directory:
-
-==
-% make distclean	(typically you can ignore errors)
-% git pull
-% ./prepare
-% ./build
-==
-
-@see [Depoendencies and PPAs for Ubuntu](</build/Debian.txt>)
-@see [Daily builds for Windows](</download/daily/bin>)
