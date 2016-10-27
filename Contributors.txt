@@ -39,6 +39,11 @@ People are listed in alphabetical order.
   * Willem Robert van Hage (space package: multi-dimensional indexing)
   * Wouter Beek (website, many enhancements and bug reports, discussion)
 
+---++ Package Maintainers
+  
+  * Eugeniy Meshcheryakov - Official Ubuntu package
+  * Yves Raimond - Debian PPA (with Eugeniy)
+
 ---++ Other _Contributors_
 
   * Bart Demoen (advice, notably constraint infrastructure)
