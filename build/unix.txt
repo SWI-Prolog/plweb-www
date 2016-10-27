@@ -1,15 +1,29 @@
----+ SWI-Prolog -- Installation on Unix
+# SWI-Prolog -- Installation on Linux, *BSD (Unix)
 
-Installing SWI-Prolog from the sources (Unix/Linux/MacOS X) Getting the
-prerequisites This step differs from system to system. See
-*|README.linux|* in the toplevel directory of the archive for a
-complete list of required packages. On *MacOSX* install
-[[MacPorts][<macports:>]] after which you get all dependencies and the
-latest version committed to the Macport projects using *|port install
-swi-prolog|*. After that you can easily compile from the sources or
-[[GIT version][</git.html>]].
+## Installing from PPA
 
----++ Using the build.templ script
+PPAs are available for Ubuntu by following directions on the [PPA page](<PPA.txt>).
+
+## Installing from source
+
+Installing from source is often the best option for installing on Linux and *BSD based systems. Building is not complex.
+
+### Downloading SWI-Prolog
+
+Download the SWI-Prolog source from
+
+  - [the download page](</Download.html>)
+  - [GIThub](https://github.com/SWI-Prolog/)
+
+### Getting the prerequisites
+
+  - [Debian based linux (Debian, Ubuntu, Mint, ...)](<Debian.html>)
+  - [Redhat based linux (Fedora, Redhat, CentOS, ...)](<Redhat.html>)
+  - [SuSE](<SuSE.html>)
+  - [Mageia](<Mageia.html>)
+  - [Other systems (background info)](<prerequisites.html>)
+
+### Using the build.templ script
 
 Both to facilitate frequent installs and to show some common options,
 you are invited to use the *|build.templ|* script located in the top
@@ -19,8 +33,8 @@ script is fairly independent from versions, so preserve your customised
 script for later releases.
 
 ==
-% tar zxvf pl-<version>.tar.gz
-% cd pl-<version>
+% tar zxvf swipl-<version>.tar.gz
+% cd swipl-<version>
 % cp -p build.templ build
 % <edit> build
 % ./build
@@ -28,7 +42,7 @@ script for later releases.
 
 If the above fails, follow the instructions below.
 
----++ Doing it in multiple steps
+### Doing it in multiple steps
 
 The configuration on Unix is based on GNU-Autoconf, a set of scripts
 that automatically extract system characteristics and creates the
@@ -38,8 +52,8 @@ prefers the GNU-project C-compiler gcc, but many other compilers work
 fine too.  The first step, building SWI-Prolog lite, is outlined below.
 
 ==
-% gzip -d < pl-<version>.tar.gz | tar xvfB -
-% cd pl-<version>/src
+% gzip -d < swipl-<version>.tar.gz | tar xvfB -
+% cd swipl-<version>/src
 % ./configure			# see bellow
 % make
 % [su root]			# for public installation
@@ -55,7 +69,7 @@ main distribution directory. The file README there contains additional
 information on building the packages. The basic procedure is:
 
 ==
-% cd pl-<version>/packages
+% cd swipl-<version>/packages
 % ./configure
 % make
 % [su root]			# for public installation
@@ -95,7 +109,7 @@ your computer. The most important options of confure are:
 
 After succesfull installation, the compilation directory may be removed.
 
----++ In case of trouble ...
+### In case of trouble ...
 
 The file INSTALL in the source directory contains the generic
 documentation about installing autoconf-based programs. The file
@@ -106,6 +120,3 @@ If =configure= fails, try using =|bash configure|=. If =make= fails, try
 using GNU-make and gcc.
 
 If all fails, have a look at the ../Support.txt page.
-
-@see [[Comments on various Linux distributions][LinuxDistro.txt]]
-@see [[Comments on SunOS (Solaris)][SunOS.txt]]
