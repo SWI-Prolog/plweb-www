@@ -9,10 +9,8 @@ yourself on *|non-windows platforms|* because binaries tend to be less
 portable and building is much easier.
 
   * Building
-    * [[Building on Unix/POSIX][unix.txt]]
+    * [Building on Unix/POSIX](</build/unix.html>)
     * [[Building on MacOS][macos.txt]]
     * [[Building on MS-Windows][windows.txt]]
     * [[Android][linuxonandroid.txt]]
-
-@see [[Information for Linux distributions][LinuxDistro.txt]]
 
