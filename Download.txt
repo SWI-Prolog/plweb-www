@@ -1,6 +1,6 @@
----+ SWI-Prolog downloads
+# SWI-Prolog downloads
 
----++ Available versions
+## Available versions
 
     * [[Stable release][</download/stable>]]
     Sources and executables for MS-Windows and MacOS X
@@ -12,3 +12,8 @@
     * Some popular [[old versions][</download/old?show=all>]]
     * [GIT access](git.txt), browse GIT
       [repository](https://github.com/SWI-Prolog)
+
+## Read more about
+
+    * Available SWI-Prolog [versions](<versions.txt>)
+    * Information on [Linux packages and building on Linux](<build/unix.html>)
