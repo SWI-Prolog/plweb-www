@@ -1,6 +1,6 @@
----+ SWI-Prolog on Debian and Ubuntu Linux
+# Prerequisites for Debian based systems (Ubuntu, Mint, ...)
 
----++ Linux distributions
+## Linux distributions
 
 The table below describes the Linux distros and SWI-Prolog versions for which the
 descriptions on this page was last updated.  This page is relevant for virtually
@@ -16,12 +16,7 @@ SWI-Prolog.
 | (Debian) Maintainer | Eugeniy Meshcheryakov |
 
 
----++ Status
-
-Debian Squeeze and derived distributions come with a properly packaged but old (version 5.10.4) SWI-Prolog.  We advice to compile the sources on older Debian derived distros or you need a fairly recent version.
-
-
----++ Dependencies
+---++ Prerequisites
 
 Use the following commands to obtain all dependencies for a full build
 from source. Note that there are no known version dependencies on any of
@@ -87,7 +82,7 @@ mostly if you have no other applications depending on GMP. All the other
 optional components are only loaded if you actually use them.
 
 
----+++ Dependencies to build the documentation
+### Prerequisites to build the documentation
 
 The generated documentation is included the source archives and downloaded by the =prepare= script when installing from the git source.  To rebuild the documentation, the following packages are needed.  Check =|man/README|= for
 further instructions.
