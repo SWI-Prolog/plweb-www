@@ -9,7 +9,7 @@ such as [SWISH](http://swish.swi-prolog.org) or [ClioPatria](http://cliopatria.s
     * [[Stable release][</download/stable>]]
     * [[Development release][</download/devel>]]
     * [Daily builds for Windows](</download/daily/bin>)
-    * Browse GIT [repository](https://github.com/SWI-Prolog)
+    * [GIT](whygit.txt) repository: [https://github.com/SWI-Prolog](https://github.com/SWI-Prolog)
     * Some popular [[old versions][</download/old?show=all>]]
 
 ## Read more about
