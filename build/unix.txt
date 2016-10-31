@@ -13,10 +13,25 @@ Installing from source is often the best option for installing on Linux and *BSD
 
 ### Downloading SWI-Prolog
 
-Download the SWI-Prolog source from
+Download the SWI-Prolog source
 
-  - [the download page](</Download.html>)
-  - [GIThub](https://github.com/SWI-Prolog/)
+  - As a _tar ball_ from [the download page](</Download.html>)
+  - Using GIT from [GIThub](https://github.com/SWI-Prolog/)
+
+### Preparing the source (when downloading using GIT)
+
+The _tar ball_ is self contained.  The GIT repository contains sub modules and does not
+contain generated files.  The GIT source is downloaded and prepared for building using the
+commands below:
+
+```
+git clone https://github.com/SWI-Prolog/swipl-devel.git
+cd swipl-devel
+./prepare
+```
+
+The =prepare= script should be executed after the initial download as well as after
+running =|git pull|= to update the sources.
 
 ### Getting the prerequisites
 
