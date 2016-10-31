@@ -35,6 +35,10 @@ running =|git pull|= to update the sources.
 
 ### Getting the prerequisites
 
+Building SWI-Prolog from source requires tools as well as libraries.  We maintain
+pages that describes the required dependencies by platform.  The last entry of the
+list below describes the dependencies in platform independent way.
+
   - [Debian based linux (Debian, Ubuntu, Mint, Raspberry Pi, ...)](<Debian.html>)
   - [Redhat based linux (Fedora, Redhat, CentOS, ...)](<Redhat.html>)
   - [SuSE](<SuSE.html>)
