@@ -30,8 +30,14 @@ cd swipl-devel
 ./prepare
 ```
 
-The =prepare= script should be executed after the initial download as well as after
-running =|git pull|= to update the sources.
+Similarly, the sequence to update the source using git and rebuild is
+
+```
+make distclean
+git pull
+./prepare
+./build
+```
 
 ### Getting the prerequisites
 
