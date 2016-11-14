@@ -21,7 +21,8 @@ People are listed in alphabetical order.
   * Kuniaki Mukai (implementation of =@=/2 (variant/2)
   * Leslie de Koninck (CLP(QR) port)
   * Marcus Uneson (library(optparse))
-  * Markus Triska (CLP(FD) and other (constraint) libraries)
+  * Markus Triska (CLP(FD), other (constraint) libraries and SSL
+    enhancements)
   * Matt Lilley (testing, patches, HTTP proxies, CQL, SSL enhancements)
   * Nicos Angelopoulos ([[R][http://www.r-project.org/]]-interface)
   * Paul Singleton (JPL, interface to Java)
@@ -40,7 +41,7 @@ People are listed in alphabetical order.
   * Wouter Beek (website, many enhancements and bug reports, discussion)
 
 ---++ Package Maintainers
-  
+
   * Eugeniy Meshcheryakov - Official Ubuntu package
   * Yves Raimond - Debian PPA (with Eugeniy)
 
