@@ -10,6 +10,10 @@ citing one of these papers. The [[star.gif]]-ed TPLP paper
 _|SWI-Prolog|_ is the preferred `general purpose reference'
 [[BibTeX][<swipub:tplp-swipl.bib>]].
 
+    * [Lock-free atom garbage collection for multithreaded
+    Prolog](http://dx.doi.org/10.1017/S1471068416000272) Jan Wielemaker
+    and Keri Harris
+    [BibTeX](http://dblp.uni-trier.de/rec/bib2/journals/tplp/WielemakerH16.bib)
     * [The Boolean Constraint Solver of
     SWI-Prolog](https://www.metalevel.at/swiclpb.pdf) Markus Triska,
     FLOPS-2016 [BibTeX](https://www.metalevel.at/swiclpb.bib)
