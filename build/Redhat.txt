@@ -1,9 +1,9 @@
 ---+ SWI-Prolog on Redhat (Fedora, RHEL, CentOS)
 
-| Fedora release | 23 |
+| Fedora release | 23, 24, 25 |
 | RHEL | 5 and 6 |
 | CentOS | 5 |
-| SWI-Prolog release | 7.2.3/7.3.11 |
+| SWI-Prolog release | 7.2.3/7.3.32 |
 | Package page | <http://koji.fedoraproject.org/koji/buildinfo?buildID=485155> |
 | Maintainer | Petr Pisar |
 
@@ -13,10 +13,11 @@ We have not yet evaluated this release against the guidelines.txt.
 
 ---++ Dependencies
 
-Use the following commands to obtain all dependencies for a full build from source.
+Use the following commands to obtain all dependencies for a full build
+from source.
 
 ==
-yum install \
+dnf install \
   autoconf \
   chrpath \
   libunwind \
@@ -25,7 +26,7 @@ yum install \
   java-1.8.0-openjdk-devel \
   jpackage-utils \
   libICE-devel \
-  libjpeg-devel \
+  libjpeg-turbo-devel \
   libSM-devel \
   libX11-devel \
   libXaw-devel \
@@ -46,9 +47,17 @@ yum install \
   libarchive-devel
 ==
 
-The above is tested on Fedora 23. On Fedora < 23 the library for UUID
-support was called `libossp-uuid-devel`. On Fedora < 21 the library for
-JDT support was called `java-1.7.0-openjdk-devel'.
+The above is tested on Fedora 23, 24 and 25.  On Fedora < 23 the
+following may be different:
+
+  - `dnf` was called `yum`.
+
+  - `uuid-devel` was called `libossp-uuid-devel`.
+
+  - Before `java-1.8.0-openjdk-devel` there was
+    `java-1.7.0-openjdk-devel`.
+
+  - `libjpeg-turbo-devel` was called `libjpeg-devel`.
 
 ---++ Building the RPM
 
