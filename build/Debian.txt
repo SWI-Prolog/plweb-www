@@ -17,12 +17,17 @@ Some remarks:
     library(uuid), which is needed for ClioPatria's SPARQL engine.
   - The package =|libdb-dev|= is needed as of 7.3.8 for
     library(bdb), the BerkeleyDB embedded database interface.
+  - The package =|libreadline-dev|= and =|libedit-dev|= both provide
+    command line editing for interactive usage.  None is strictly
+    needed and one of them suffices. =|libedit-dev|= is supported as of
+    7.3.34 and is intended to become the preferred command line editor.
   - =libunwind= only simplifies debugging in case of a system crash.
 
 ==
 sudo apt-get install \
         build-essential autoconf curl chrpath pkg-config \
-        ncurses-dev libreadline-dev libunwind-dev \
+        ncurses-dev libreadline-dev libedit-dev \
+	libunwind-dev \
         libgmp-dev \
         libssl-dev \
         unixodbc-dev \
