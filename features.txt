@@ -42,7 +42,7 @@ plugins for rendering Prolog data using HTML5+CSS+JavaScript. This can
 be used to render data as tables, graphs, charts, etc.
 
 SWI-Prolog provides an add-on distribution and installation mechanism
-called _packs_. A _pack_ is a directory with some minimal organizational
+called _packs_. A _pack_ is a directory with minimal organizational
 conventions and a _control_ file that describes the origin, version,
 dependencies and automatic upgrade support. Packs can be installed from
 an archive, GIT repository or URL using pack_install/1. Packs are used
@@ -182,16 +182,8 @@ links to the relevant documentation.
 
 ## Legal
 
-SWI-Prolog's license conditions are about to change. Below we give both
-the current and upcoming conditions.
-
-    * *Current* Kernel licensed under the [[LGPL][<lgpl:>]]. Prolog
-    libraries are distributed under the [[GPL][<gpl:>]] with an
-    additional statement that allows for use in proprietary
-    applications. Details can be found on the license.txt page.
-
-    * *Upcoming* SWI-Prolog will be distributed under the _Simplified
+    * SWI-Prolog is distributed under the _Simplified
     BSD license_, also known as the BSD-2 license. Some of the used
     libraries and extension packages have different license conditions.
     The licenses applicable to a running configuration can be examined
-    by running eval_license/0.  See license.txt for details.
+    by running license/0.  See license.txt for details.
