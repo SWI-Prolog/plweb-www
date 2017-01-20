@@ -1,14 +1,12 @@
----+ SWI-Prolog Versions
+# SWI-Prolog Versions
 
 SWI-Prolog is distributed as platform specific package for some popular
 platforms (currently MS-Windows and MacOS X). The source package
 provides the GNU autoconf/make suite to configure and build fully
 automatically on many platforms. It builds on a wide range of 32 and 64
 bit systems with an ANSI C compiler. The MS-Windows version is built
-using the native Microsoft compiler suite, driven by NMAKE makefiles.
-Alternatively, the Windows version can be built using
-[[MinGW][http://mingw.org/]], although this path is not very well
-tested.
+using [[MinGW][http://mingw.org/]] as a cross-compiler under Linux. See
+the file README.mingw in the toplevel directory.
 
 As of major version 5, we create stable releases with even minor version
 number (5.0.x, 5.2.x, 5.4.x, ...) and beta releases with odd minor
@@ -19,7 +17,12 @@ errors are found that affect many users. GIT access to the development
 is provided. All releases are tagged as VMajor.Minor.Patch Release
 milestones
 
-  $ 7.3.x: Current development branch.
+  $ 7.5.x: Current development branch.
+
+  $ 7.4.x: Major release.  More robust and better scalable support
+  for multi-core hardware, tabling, engines.  Many enhancements to
+  the RDF, HTTP and SSL libraries.  This is the first release licensed
+  under the _Simplified BSD_ (BSD-2) license.
 
   $ 7.2.x: Major release, providing native key-value support by means
   of _dicts_, native _strings_ using "hello world" syntax,
