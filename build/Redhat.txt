@@ -41,6 +41,7 @@ dnf install \
   openssl-devel \
   pkgconfig \
   readline-devel \
+  libedit-devel \
   unixODBC-devel \
   zlib-devel \
   uuid-devel \
@@ -50,14 +51,14 @@ dnf install \
 The above is tested on Fedora 23, 24 and 25.  On Fedora < 23 the
 following may be different:
 
-  - `dnf` was called `yum`.
+  - `dnf` was once called `yum`,
 
-  - `uuid-devel` was called `libossp-uuid-devel`.
+  - `uuid-devel` was once called `libossp-uuid-devel`,
 
-  - Before `java-1.8.0-openjdk-devel` there was
-    `java-1.7.0-openjdk-devel`.
+  - before `java-1.8.0-openjdk-devel` there was
+    `java-1.7.0-openjdk-devel`,
 
-  - `libjpeg-turbo-devel` was called `libjpeg-devel`.
+  - `libjpeg-turbo-devel` was once called `libjpeg-devel`.
 
 ---++ Building the RPM
 
