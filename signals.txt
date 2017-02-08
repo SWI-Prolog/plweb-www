@@ -1,15 +1,9 @@
 # SWI-Prolog signal handling (Unix-like platforms)
 
-SWI-Prolog requires two signals on Unix like systems (basically any
-supported platform except MS-Windows).  It processes the signals
+SWI-Prolog requires one signal on Unix like systems (basically any
+supported platform except MS-Windows).  It processes the signal
 listed below.  The signal number of these signals is fixed, but it
 would be quite trivial to allow changing these.
-
-  $ SIGUSR1 :
-  This signal is used to suspend and resume threads for operations
-  that require all other Prolog threads to be suspended.  It is also
-  used for atom garbage collection, although the threads are not
-  suspended.
 
   $ SIGUSR2 :
   This signal is used by thread_signal/2 and related functionality
@@ -26,17 +20,25 @@ flags.
 
 Finally, signal handlers may be installed using on_signal/3.
 
-## JVM issues
+## Java JVM issues
 
-JVM signal handling is described by Oracle in [this
-document](http://www.oracle.com/technetwork/java/javase/signals-139944.html).
+As of SWI-Prolog 7.4 there is no conflict between SWI-Prolog and JVM
+signal handling.
+
+### Older versions of SWI-Prolog and JVM
+
+Upto early versions of SWI-Prolog 7.3.x, SWI-Prolog processed *SIGUSR1*,
+which conflicts with Java JVM signal handling (described by Oracle in
+[this
+document](http://www.oracle.com/technetwork/java/javase/signals-139944.html))
+.
 
 It seems that JVM and SWI-Prolog can cooperate by setting the
 environment variable =_JAVA_SR_SIGNUM= to e.g. 20:
 
   ==
   _JAVA_SR_SIGNUM=20 swipl
-  ?- use_module(libraryt(jpl)).
+  ?- use_module(library(jpl)).
   ==
 
 See =man 7 signal=, the above Oracle documentation and documentation of
