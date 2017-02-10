@@ -25,5 +25,8 @@ many platforms.
   $ Debian/Ubutu :
   =|$ apt-get install libedit-dev|=
 
+  $ Red Hat/Fedora :
+  =|$ yum install libedit-devel|= or =|$ dnf install libedit-devel|=
+
 After installing the development library, [re-install the
 system](<RebuildAfterDevLib.html>)
