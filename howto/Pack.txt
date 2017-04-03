@@ -43,15 +43,15 @@ The pack may be installed using pack_install/1 as illustrated below.
 
 ---++ Make the pack available
 
-To make the pack available, it must be downloadable from a publicably
+To make the pack available, it must be downloadable from a publicly
 available HTTP server. To support package upgrading, the HTTP server
 must have enabled fetching an index of the directory. I.e., if the pack
 is located at http://www.exmmple.com/swi-prolog/pack/mypack-1.0.tgz,
 fetching http://www.exmmple.com/swi-prolog/pack/ must return an HTML
 document with links to available package files.
 
-After uploaded the package to e.g.,
-http://www.exmmple.com/swi-prolog/pack/mypack-1.0.tgz, it is made
+After uploading the package to e.g.,
+http://www.example.com/swi-prolog/pack/mypack-1.0.tgz, it is made
 available to other users simply by installing it yourself:
 
   ==
@@ -83,7 +83,7 @@ ways:
      The resulting archive can be accessed at the URL below.  Please
      use the =.zip= because the package manager does *not* understand
      the double extension =.tar.gz=.  The _tag_ must be dotted version
-     number, optionally preceeded by a =v= or =V=.
+     number, optionally preceded by a =v= or =V=.
 
      ==
      https://github.com/<owner>/<pack>/archive/<tag>.zip
@@ -99,7 +99,7 @@ by setting the =download= attribute of the pack to:
   ==
 
 
----++ Do's and Don'ts
+---++ Dos and Don'ts
 
 To make packages work smoothly, package submitters need to take care
 of some rules:
