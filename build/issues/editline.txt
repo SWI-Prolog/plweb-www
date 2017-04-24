@@ -11,7 +11,7 @@ the same functionality based on the GNU readline library. The
 library(editline) provides some advantages:
 
   - BSD license doesn't affect the licensing of SWI-Prolog
-  - Also provides editong for secondary consoles (interactor/0)
+  - Also provides editing for secondary consoles (interactor/0)
   - Can be programmed in Prolog
 
 The main disadvantage is that GNU readline is a much more powerful
@@ -22,7 +22,7 @@ editor.
 Install the development package for libedit.  This is available on
 many platforms.
 
-  $ Debian/Ubutu :
+  $ Debian/Ubuntu :
   =|$ apt-get install libedit-dev|=
 
   $ Red Hat/Fedora :
