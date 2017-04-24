@@ -36,6 +36,7 @@ sudo apt-get install \
         libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \
         libxpm-dev libxt-dev \
 	libdb-dev \
+	libpcre3-dev \
         openjdk-8-jdk junit
 ==
 
@@ -63,6 +64,8 @@ optional:
   $ libgmp-dev :
   Without, you lack unbounded integer support, rational numbers, good
   random number generators, etc.
+  $ libpcre3-dev :
+  Without, you have no regular expression support (library(pcre)).
 
 Note that including GMP support makes the memory footprint bigger, but
 mostly if you have no other applications depending on GMP. All the other

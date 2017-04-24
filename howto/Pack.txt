@@ -2,7 +2,7 @@
 
 ---++ What is a pack?
 
-A pack is an archive (.zip or .tgz) file that (minimally) contains,
+A pack is an archive (=|.zip|= or =|.tgz|=) file that (minimally) contains,
 two items:
 
   $ A subdirectory =prolog= :
