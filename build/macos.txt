@@ -31,12 +31,28 @@ Next, you must install the following Macport libraries:
 
   ==
   port install gmp jpeg libarchive libiconv libmcrypt ncurses \
-               openssl ossp-uuid pkgconfig readline zlib
+               openssl ossp-uuid pkgconfig readline zlib pcre libedit
   ==
 
 Next, you can download SWI-Prolog as a [[source
-archive][</Download.html>]] or using [[GIT][</git.html>]] and build it
-using the =build= script as follows:
+archive][</Download.html>]] or using [[GIT][</git.html>]].  If you downloaded
+using GIT you must _prepare_ the sources.  If you downloaded the source
+archive theses steps are not needed (and in fact fail).  Preparing the GIT
+source requires GNU `autoconf` from Macpors:
+
+  ==
+  port install autoconf
+  ==
+
+Next, _prepare_ by running the `prepare` script.  Omit the =|--yes|= if you
+want a non-default installation.
+
+  ==
+  ./prepare --yes
+  ==
+
+From here, the source archive and GIT alternatives are united.  You can
+build SWI-Prolog and all packages using the =build= script as follows:
 
   ==
   cp build.templ build
