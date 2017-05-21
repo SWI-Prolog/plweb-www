@@ -69,6 +69,28 @@ td.dl_file p
   margin-bottom: 0px;
 }
 
+div.checksum
+{ margin-top: 3px;
+  font-size: 90%;
+}
+
+div.checksum span.checksum
+{ margin-left: 1ex;
+  font-family: monospace;
+}
+
+span.checkum-header
+{ font-weight: bold;
+}
+
+div.machine-download
+{ margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 90%;
+  font-style: italic;
+  margin-left: 10%;
+}
+
 /* Messages */
 
 div.silent
