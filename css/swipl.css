@@ -34,17 +34,15 @@ body {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-    padding: 8px 0px;
-}
-
-#upper-header input {
-    display: inline;
-    width: 227px;
-    height: 19px;
+    padding: 0px 0px;
 }
 
 #submit-for {
     display: none !important;
+}
+
+#dyknow-container {
+    width: 99%;
 }
 
 #dyknow-container  .lbl {
@@ -67,13 +65,13 @@ body {
 { color: #f0f;
 }
 
-#search-form input {
-    display: inline;
+#search-container {
+    white-space: nowrap;
 }
 
-#search-container {
-    display: inline;
-    float:  right;
+#search-container input {
+    width: 227px;
+    height: 19px;
 }
 
 #tag-line-area {
