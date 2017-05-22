@@ -19,14 +19,10 @@ body {
     background-image: url("/icons/bluegrad.png");
     background-repeat: repeat-x;
     color:  #FFF;
-    height: 38px;
+    border: 5px;
 }
 
 #upper-header form {
-    display: inline;
-}
-
-#upper-header form div {
     display: inline;
 }
 
