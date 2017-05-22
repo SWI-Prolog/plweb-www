@@ -154,65 +154,66 @@ span.tagline {
 }
 
 .menubar {
-  /*  border: 1px solid #d47618; */
-    background-image: url("/icons/menubkgnd.png");
-    background-repeat: repeat-x;
-    height: 36px;
+    border: 2px solid #d57719;
+    background: #ef9439;
     border-radius: 3px;
-    line-height: 36px;
 }
 
-.menubar-container {
-    padding: 0;
-    border-right: 2px solid #d57719;
-    border-radius: 5px;
+ul.menubar-container {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
     text-align: center;
 }
 
-.menubar-container > li {
+ul.menubar-container > li {
+    line-height: 34px;
     text-align: left;
-    height: 36px;
-    display: inline;
+    display: inline-block;
     color: #FFF;
-    padding: 3px 18px;
+    padding: 0px 18px;
     border-left: 2px solid #d57719;
     font-size: 14pt;
     font-weight: 700;
 }
 
-.menubar-container > li:first-child {
+ul.menubar-container > li:first-child {
     border-left: 0px;
 }
 
-.menubar-container > li > a:link {
+ul.menubar-container a {
+    display: block;
+}
+
+ul.menubar-container > li > a:link {
     color: #FFF;
     text-decoration: none;
 }
-.menubar-container > li > a:visited {
+ul.menubar-container > li > a:visited {
     color: #FFF;
     text-decoration: none;
 }
-.menubar-container > li > a:hover {
+ul.menubar-container > li > a:hover {
     color: #d9d8cf;
     text-decoration: none;
 }
-.menubar-container > li > a:active {
+ul.menubar-container > li > a:active {
     color: #d57719;
     text-decoration: none;
 }
 
-.menubar-container > li > ul {
+ul.menubar-container > li > ul {
     display: none;
 }
 
-.menubar-container > li > ul.mouseovermenu {
+ul.menubar-container > li > ul.mouseovermenu {
     display: block;
     position: absolute;
     float: left;
     z-index: 10;
 }
 
-.menubar-container > li > ul.activemenu {
+ul.menubar-container > li > ul.activemenu {
     display: block;
     position: absolute;
     float: left;
@@ -220,14 +221,14 @@ span.tagline {
 }
 
 /* any dropdown box */
-.menubar-container > li ul {
+ul.menubar-container > li ul {
     background-color: #ffd8b2;
     border: 1px solid #d47618;
     padding: 0;
 }
 
 /* any dropdown box item */
-.menubar-container > li ul li {
+ul.menubar-container > li ul li {
     min-width: 199px;
     padding-left: 8px;
 }
