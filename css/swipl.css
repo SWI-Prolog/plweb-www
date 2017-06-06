@@ -85,11 +85,16 @@ body {
     height: 112px;
 }
 
+#header-line-area {
+    margin: 2ex auto;
+    width: 900px;
+}
+
+#header-line-area td {
+    vertical-align: middle;
+}
+
 #header-line-area img.owl {
-    margin-left: 104px;
-    margin-right: 47px;
-    margin-top: 30px;
-    margin-bottom: 2px;
     height: 84px;
     width: 102px;
 }
@@ -98,11 +103,17 @@ body {
     width: 200px;
 }
 
+#logo {
+    padding-right: 3ex;
+    white-space: nowrap;
+}
+
 .primary-header {
      font-family: Source Sans Pro, sans;
      font-size: 40px;
      font-weight: 700;
      color:  #333333;
+     width: 99%;
 }
 
 div.file-buttons {
@@ -118,13 +129,6 @@ div.file-buttons {
 div.file-buttons img {
     width: 32px;
     height: 32px;
-}
-
-span.primary-header {
-    vertical-align: middle;
-    position: absolute;
-    margin-top: 40px;
-    margin-left:  0;
 }
 
 .tagline {
