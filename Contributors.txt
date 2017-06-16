@@ -10,8 +10,10 @@ People are listed in alphabetical order.
 
   * Anjo Anjewierden (initial developer of XPCE, the SWI-Prolog native graphics system)
   * Anne Ogborn (website, tutorials, lots of comments)
+  * Benoit Desouter (initial version of tabling)
   * Carlo Capelli (Qt-based console)
   * Degski ([[FANN][http://leenissen.dk/]], Windows porting)
+  * Fabrizio Riguzzi (initial version of mode directed tabling)
   * Giorgos Stoilos (isub/4: fuzzy string matching)
   * Jan Wielemaker (main developer and maintainer)
   * Jan van der Steen (SSL interface)
@@ -24,9 +26,10 @@ People are listed in alphabetical order.
   * Markus Triska (CLP(FD), other (constraint) libraries and SSL
     enhancements)
   * Matt Lilley (testing, patches, HTTP proxies, CQL, SSL enhancements)
-  * Nicos Angelopoulos ([[R][http://www.r-project.org/]]-interface)
+  * Nicos Angelopoulos ([[R][http://www.r-project.org/]]-interface,
+    discussion about embedding other languages)
   * Paul Singleton (JPL, interface to Java)
-  * Paulo Moura (provided library(yall))
+  * Paulo Moura (provided library(yall), Macports maintainer)
   * Randy Sharp (fixing many typos in the documentation; ongoing work)
   * Richard O'Keefe (sort/2, libraries, extensive comments)
   * Roberto Bagnara and Abramo Bagnara (MinGW port, helped fixing many bugs)
@@ -36,7 +39,8 @@ People are listed in alphabetical order.
   * Torbjörn Lager ([Pengines](</pldoc/package/pengines.html>))
   * Ulrich Neumerkel (testing, `purification', patches)
   * Uwe Lesta (interface to C#)
-  * Vitor Santos Costa (various libraries copied from [[YAP][http://www.dcc.fc.up.pt/~vsc/Yap/]])
+  * Vitor Santos Costa (various libraries copied from
+    [[YAP][http://www.dcc.fc.up.pt/~vsc/Yap/]])
   * Willem Robert van Hage (space package: multi-dimensional indexing)
   * Wouter Beek (website, many enhancements and bug reports, discussion)
 
