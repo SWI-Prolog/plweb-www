@@ -5,24 +5,25 @@ can go for help from the community:
 
     * The [[FAQ][</FAQ/>]].
 
-    * The Mailinglist.txt and its archive, or search the internet. Tip:
-    include =SWIPL= to search the mailinglist archives.
+    * The Mailinglist.txt and its archive.  Tip: include =SWIPL= to
+    search the mailinglist archives.
 
-    * If you encountered a bug.txt, please report it using the
-    [[Bugzilla Bug Tracking System][<bugzilla:>]].
+    * If you encounter a bug.txt, please report it using [[our issue
+    tracker][https://github.com/SWI-Prolog/swipl-devel/issues]].
+    Notice that each package has a separate issues tracker, e.g., the
+    [[issue tracker of the HTTP
+    package][https://github.com/SWI-Prolog/packages-http/issues]], or
+    the [[issue tracker of the SSL
+    package][https://github.com/SWI-Prolog/packages-ssl/issues]].
 
-    * Debian Linux also has a [[bug tracking
-    system][http://bugs.debian.org/cgi-bin/pkgreport.cgi?pkg=swi-prolog]]
-    for SWI-Prolog which informs the Debian maintainer Michael Piefel.
-    Please use this for packaging or other Debian-specific
-    problems.
+    * For Debian-specific problems there is [[a Debian bug
+    tracker][http://bugs.debian.org/cgi-bin/pkgreport.cgi?pkg=swi-prolog]]
+    which informs the Debian maintainer Michael Piefel.
 
-    * There are a lot of resources such as libraries, interfaces, ports
-    and applications that are not mentioned on the SWI-Prolog website.
-    Therefore, if the above doesn't help you may wish to check
-    [[comp.lang.prolog][<news:comp.lang.prolog>]] or search the
-    internet.
+    * Join the Prolog IRC channel ##prolog on FreeNode.
 
-If you find things that can be of interest for other SWI-Prolog users,
-please e-mail them to the Mailinglist.txt.
+    * Check the Newsgroup
+    [[comp.lang.prolog][<news:comp.lang.prolog>]]
 
+    * Search for [[Prolog-tagged questions on
+    StackOverflow][https://stackoverflow.com/questions/tagged/prolog]]
