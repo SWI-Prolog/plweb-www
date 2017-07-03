@@ -17,7 +17,7 @@ Creating a pack that uses C or C++ code is [[described here][ForeignPack.txt]]
 
 ---++ Creating a pack
 
-A pack is created by creating the a directory with the name of the pack
+A pack is created by creating a directory with the name of the pack
 and filling it with the content described above. Next, create an
 archive, which is either a _|gzipped tar|_ file or a _zip_ file from the
 file that must be named <pack>-<version>.tgz or <pack>-<version>.zip,
@@ -46,8 +46,8 @@ The pack may be installed using pack_install/1 as illustrated below.
 To make the pack available, it must be downloadable from a publicly
 available HTTP server. To support package upgrading, the HTTP server
 must have enabled fetching an index of the directory. I.e., if the pack
-is located at http://www.exmmple.com/swi-prolog/pack/mypack-1.0.tgz,
-fetching http://www.exmmple.com/swi-prolog/pack/ must return an HTML
+is located at http://www.example.com/swi-prolog/pack/mypack-1.0.tgz,
+fetching http://www.example.com/swi-prolog/pack/ must return an HTML
 document with links to available package files.
 
 After uploading the package to e.g.,
