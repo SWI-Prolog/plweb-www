@@ -54,16 +54,18 @@ links to the relevant documentation.
 
 ## Engine
 
-    * *fast* compilation. E.g., loads 140,000 lines of code spread
-    over 500 source files in 2.3 seconds on an AMD 5400+ system.
+    * *fast* compilation. E.g., loads [WordNet
+    3.0](https://wordnet.princeton.edu/wordnet/download/current-version/)
+    in 14 seconds from the Prolog source or 0.4 seconds from _quick load
+    file_ format (see qcompile/1).  The WordNet source counts 821,515
+    lines.  System: Ubuntu 16.04 on Intel i7-3770, 32Gb memory.
 
     * *Robust* and *|free of memory leaks|*.  In use for several
     servers that run 24x7 (including this web service).
 
     * *Small*. The full development environment, including graphics,
-    libraries and many interface packages, requires approx. 40MB
-    hard disk. The non-graphical kernel is about 650KB, the graphics
-    library adds about 1.2MB to the image.
+    libraries and many interface packages, requires approx. 100MB
+    hard disk. The kernel is about 1.4MB (Ubuntu 16.04 .so file)
 
     * *Scales* well for large applications. *No limits* on program size,
     atom length, term arity or integer values. No performance
@@ -71,16 +73,18 @@ links to the relevant documentation.
 
     * *|Just-In-Time|* indexing of both static and dynamic code on any
     argument greatly simplifies handling multi-moded relations with
-    many clauses.
+    many clauses. As of version 7.5, _multi-argument_ JITI is supported.
+    This creates an index for the combined value of two arguments if
+    there is no selective single-argument index.
 
     * *|Unbounded integer|* and *rational* number arithmetic
     based on [[GMP library][<gmp:>]].
 
     * The goodies: *modules* (upward compatible to Quintus and SICStus),
     *|garbage-collection|* (transparent to C/C++-code, including *atom*
-    garbage collection), *|last-call|* optimisation, dynamic expansion
-    of the runtime stacks, *|ISO exception-handling|* (including C/C++
-    interface for catching and throwing exceptions).
+    and *clause* garbage collection), *|last-call|* optimisation,
+    dynamic expansion of the runtime stacks, *|ISO exception-handling|*
+    (including C/C++ interface for catching and throwing exceptions).
 
     * *|attributed variables|*, coroutining (freeze/2, when/2, dif/2),
     global variables, cyclic terms.
@@ -93,6 +97,14 @@ links to the relevant documentation.
 
     * *|[[Multi-threading][</man/threads.html>]]|* support: run multiple
     pre-emptively scheduled prolog engines on the same database.
+
+    * [*Engines*](</pldoc/man?section=engines>), also known as
+    *interactors* provide _coroutines_ that can be used for state
+    accumulation and massive concurrency for e.g., _swarm intelligence_
+    and similations.
+
+    * [*Delimited continuations*](</pldoc/man?section=delcont>) is a
+    powerful building block for new control structures.
 
     * [Tabling (SLG resolution)](<pldoc/man?section=tabling>) provides
     a more robust resolution technique for solving queries over complex
@@ -117,12 +129,21 @@ links to the relevant documentation.
     * *|Unit testing|* support through
     *|[[PlUnit][</pldoc/package/plunit.html>]]|*.
 
+    * [*SWISH*](https://swish.swi-prolog.org) provides a web-based
+    platform for developing and running Prolog code in a collaborative
+    environment.
+
 ## Compatibility
 
     * Comprehensive set of built-in predicates, covering *|Part 1 of the
     ISO standard|*, the de-facto *Edinburgh* Prolog standard and
     important parts of Quintus and SICStus Prolog. Fair
-    compatibility to Ciao, YAP and GNU-Prolog.
+    compatibility to Ciao, YAP and GNU-Prolog.  Although the aim is to
+    maintain compatibility wherever possible, SWI-Prolog deliberately
+    deviates from the ISO standard to accomodate additional
+    functionality and synchronise with modern languages.  Read
+    more in [Extensions](<pldoc/man?section=extensions> and
+    [Directions](</Directions.html>)
 
 ## Libraries
 
@@ -163,7 +184,7 @@ links to the relevant documentation.
 ## Portability
 
     * *Portable* to many platforms, including almost all *|Unix/Linux|*
-    platforms, *Windows* (Vista and later, both 32 and 64-bit versions),
+    platforms, *Windows* (7 and later, both 32 and 64-bit versions),
     *|MacOS X|* (using Xquartz for graphics) and many more. Both
     32-bit and *|64-bit|* hardware is supported. Sources are plain C99,
     configured automatically using GNU autoconf (configure, make, make
