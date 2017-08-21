@@ -17,6 +17,10 @@ _|SWI-Prolog|_ is the preferred `general purpose reference'
     * [The Boolean Constraint Solver of
     SWI-Prolog](https://www.metalevel.at/swiclpb.pdf) Markus Triska,
     FLOPS-2016 [BibTeX](https://www.metalevel.at/swiclpb.bib)
+    * [SWISH: SWI-Prolog for
+    Sharing](https://research.vu.nl/en/publications/swish-swi-prolog-for-sharing)
+    Jan Wielemaker, Torbjörn Lager and Fabrizio Riguzzi, IULP-2015,
+    [BibTeX](http://dblp.uni-trier.de/rec/bibtex/journals/corr/WielemakerLR15)
     * [Pengines: Web Logic Programming Made
     Easy](http://dx.doi.org/10.1017/S1471068414000192) Torbjörn Lager
     and Jan Wielemaker, ICLP-2014
