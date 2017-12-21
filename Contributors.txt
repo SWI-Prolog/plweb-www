@@ -36,7 +36,7 @@ People are listed in alphabetical order.
   * Samer Abdallah ([[OSC, MIDI, Random and Matlab interfaces][</contrib/SamerAbdallah/>]])
   * Sergey Tikhonov (testing multi-threading, patches)
   * Tom Schrijvers (CHR, initial constraint libraries)
-  * TorbjÃÂ¶rn Lager ([Pengines](</pldoc/package/pengines.html>))
+  * TorbjÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¶rn Lager ([Pengines](</pldoc/package/pengines.html>))
   * Ulrich Neumerkel (testing, `purification', patches)
   * Uwe Lesta (interface to C#)
   * Vitor Santos Costa (various libraries copied from
@@ -66,6 +66,8 @@ People are listed in alphabetical order.
   * [[fastly.png;title="Fastly .com",align="center"][http://www.fastly.com/]] Fastly.com Donates content distribution network services
   * [[kyndi.png;title="Kyndi, inc.",align="center"][http://www.kyndi.com/]] Kyndi Sponsored library(yall)
   * [[simularity.png;title="Simularity, inc.",align="center",width="125px"][http://simularity.com/]] Simularity, Inc. Sponsored JavaPengines and RubyPengines.
+  * [[CWI.png;title="CWI logo",align="center",width="125px"][http://www.cwi.nl/]]
+    (providing a new home)
 
 ---++ _|Open Source|_ projects used by SWI-Prolog
 
