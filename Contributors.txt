@@ -1,4 +1,4 @@
----+ Contributors to SWI-Prolog
+# Contributors to SWI-Prolog
 
 If you want to know all the people who contributed to SWI-Prolog you
 should scan the sources and ChangeLog files. Here we list the more
@@ -6,7 +6,7 @@ frequent or significant contributions. Contact Jan Wielemaker if you
 want to be put on, removed from this list or you have other suggestions.
 People are listed in alphabetical order.
 
----++ _Authors_ are people who contributed new code or (many) patches
+## _Authors_ are people who contributed new code or (many) patches
 
   * Anjo Anjewierden (initial developer of XPCE, the SWI-Prolog native graphics system)
   * Anne Ogborn (website, tutorials, lots of comments)
@@ -36,7 +36,7 @@ People are listed in alphabetical order.
   * Samer Abdallah ([[OSC, MIDI, Random and Matlab interfaces][</contrib/SamerAbdallah/>]])
   * Sergey Tikhonov (testing multi-threading, patches)
   * Tom Schrijvers (CHR, initial constraint libraries)
-  * Torbjörn Lager ([Pengines](</pldoc/package/pengines.html>))
+  * TorbjÃÂ¶rn Lager ([Pengines](</pldoc/package/pengines.html>))
   * Ulrich Neumerkel (testing, `purification', patches)
   * Uwe Lesta (interface to C#)
   * Vitor Santos Costa (various libraries copied from
@@ -44,12 +44,13 @@ People are listed in alphabetical order.
   * Willem Robert van Hage (space package: multi-dimensional indexing)
   * Wouter Beek (website, many enhancements and bug reports, discussion)
 
----++ Package Maintainers
+## Package Maintainers
 
   * Eugeniy Meshcheryakov - Official Ubuntu package
   * Yves Raimond - Debian PPA (with Eugeniy)
+  * Lev Lamberov - Debian packages
 
----++ Other _Contributors_
+## Other _Contributors_
 
   * Bart Demoen (advice, notably constraint infrastructure)
   * Bob Wielinga (finding projects to support SWI-Prolog)
