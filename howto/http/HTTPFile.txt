@@ -54,7 +54,7 @@ http_reply_file/3. The example below serves   =|/favicon.ico|=  from the
 local file =|favicon.ico|=.
 
   ==
-  :- http_handler('/favicon.ico'), http_reply_file('favicon.ico', []), []).
+  :- http_handler('/favicon.ico', http_reply_file('favicon.ico', []), []).
   ==
 
 The  predicate  http_reply_file/3  (by  default)    deals  with  caching
