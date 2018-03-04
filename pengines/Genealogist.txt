@@ -3,8 +3,8 @@
 A _genealogist_ is a person who traces or studies the descent of persons or families. Since a logic program capable of reasoning about family relations happens to be the "Hello World" of Prolog, we thought it would be appropriate to stick to this domain when building our first Pengines application. A typical example of such a program would be a file with the following content:
 
   ~~~~
-ancestor_decendant(X, Y) :- parent_child(X, Y).
-ancestor_decendant(X, Z) :- parent_child(X, Y), ancestor_decendant(Y, Z).
+ancestor_descendant(X, Y) :- parent_child(X, Y).
+ancestor_descendant(X, Z) :- parent_child(X, Y), ancestor_descendant(Y, Z).
 
 siblings(X, Y) :- parent_child(Z, X), parent_child(Z, Y), X @< Y.
 
@@ -22,15 +22,15 @@ The first thing we need to do is to make this into an SWI-Prolog _module_. We do
 
   ~~~~
 :- module(genealogist, 
-	[  ancestor_decendant/2,
+	[  ancestor_descendant/2,
            siblings/2,
 	   parent_child/2,
 	   father_child/2,
 	   mother_child/2
 	]).
 
-ancestor_decendant(X, Y) :- parent_child(X, Y).
-ancestor_decendant(X, Z) :- parent_child(X, Y), ancestor_decendant(Y, Z).
+ancestor_descendant(X, Y) :- parent_child(X, Y).
+ancestor_descendant(X, Z) :- parent_child(X, Y), ancestor_descendant(Y, Z).
 
 siblings(X, Y) :- parent_child(Z, X), parent_child(Z, Y), X @< Y.
 
@@ -69,7 +69,7 @@ At last, we may (re)start our Pengines server and test our application. We can f
 ?- use_module(library(pengines)).
 true.
 
-?- pengine_rpc('http://localhost:3030', ancestor_decendant(X, Y), [
+?- pengine_rpc('http://localhost:3030', ancestor_descendant(X, Y), [
          application(genealogist)
      ]).
 X = trude,
