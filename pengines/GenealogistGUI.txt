@@ -51,7 +51,7 @@ Here is the HTML we shall work with:
     <body>
         <h1>The Genealogist</h1>
         <h3>Query</h3>
-        <input type="text" id="query" value="ancestor_decendant(X,Y)">
+        <input type="text" id="query" value="ancestor_descendant(X,Y)">
         <button onclick="query()">Ask</button>
         <button onclick="pengine.next()">Next</button>
         <button onclick="pengine.stop()">Stop</button>
