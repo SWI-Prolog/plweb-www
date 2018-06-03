@@ -11,7 +11,7 @@ expressions.  This is likely to change over time.
 
 ## Solutions
 
-Install the development package for libpce3.  This is available on
+Install the development package for libpcre3.  This is available on
 many platforms.
 
   $ Debian/Ubuntu :
