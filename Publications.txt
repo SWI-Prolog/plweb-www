@@ -99,3 +99,10 @@ development of large-scale applications.
       within the Prolog community.
       [[OpenOffice][<swipub:ICLP12-SWI25.odp>]]
       [[PowerPoint][<swipub:ICLP12-SWI25.ppt>]]
+    * [LTC 2017, Poznań, Poland](http://ltc.amu.edu.pl/)  Invited talk and tutorials in memorial of [Alain 
+      Colmerauer](https://en.wikipedia.org/wiki/Alain_Colmerauer)
+      - [[A second life for Prolog][<swipub:LTC-2017-invited.pdf>]] (invited talk)
+      - Tutorials
+        - [[Declarative programming][<swipub:LTC-2017-tutorial-1.pdf>]]
+        - [[Algorithm = Logic + Control][<swipub:LTC-2017-tutorial-2.pdf>]]
+        - [[Prolog as unifying framework][<swipub:LTC-2017-tutorial-3.pdf>]]
