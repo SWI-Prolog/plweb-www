@@ -106,3 +106,7 @@ development of large-scale applications.
         - [[Declarative programming][<swipub:LTC-2017-tutorial-1.pdf>]]
         - [[Algorithm = Logic + Control][<swipub:LTC-2017-tutorial-2.pdf>]]
         - [[Prolog as unifying framework][<swipub:LTC-2017-tutorial-3.pdf>]]
+
+## SWI-Prolog's origin
+
+SWI-Prolog 0.0.0 was based on [[A Portable Prolog Compiler][<swipub:A_Portable_Prolog_Compiler.pdf>]] by D.L. Bowen, L.H. Byrd and W.F. Clocksin.
