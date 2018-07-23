@@ -32,6 +32,6 @@ such packages are:
   - The [TIPC](</pldoc/package/tipc.html>) networking interface.
   - The [Google protocol buffers](</pldoc/package/protobufs.html>)
     interface.
-  - The [CQL](</pldoc/doc/swi/library/cql/cql.pl>) library
+  - The [CQL](</pldoc/man?section=cql>) library
 
 Involvement of commercial users is vital to the project!
