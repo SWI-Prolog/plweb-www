@@ -32,9 +32,9 @@ two types of data properly:
 arc(A, B) :-
 	user_arc(A, B).
 arc(A, B) :-
-	predifined_arc(A, B).
+	predefined_arc(A, B).
 
-predifined_arc(a, b).
+predefined_arc(a, b).
 ...
 ==
 
