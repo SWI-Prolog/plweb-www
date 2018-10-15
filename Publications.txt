@@ -10,6 +10,10 @@ citing one of these papers. The [[star.gif]]-ed TPLP paper
 _|SWI-Prolog|_ is the preferred `general purpose reference'
 [[BibTeX][<swipub:tplp-swipl.bib>]].
 
+    * [Boolean constraints in SWI-Prolog: A comprehensive system
+    description](https://www.metalevel.at/boolean.pdf) Markus Triska,
+    Science of Computer Programming, Volume 164, 2018
+    [BibTeX](https://www.metalevel.at/boolean.bib)
     * [Lock-free atom garbage collection for multithreaded
     Prolog](http://dx.doi.org/10.1017/S1471068416000272) Jan Wielemaker
     and Keri Harris
