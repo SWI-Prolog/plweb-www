@@ -11,7 +11,7 @@ Options (FIXME: elaborate)
   $ Native (swipl-win + PceEmacs) :
   $ Using [SWI-Prolog Editor](http://lakk.bildung.hessen.de/netzwerk/faecher/informatik/swiprolog/indexe.html) (Windows only) :
   $ Using [Eclipse PDT pluggin](http://sewiki.iai.uni-bonn.de/research/pdt/) :
-  $ Using [GNU-Emacs ediprolog pluggin](http://www.logic.at/prolog/ediprolog/ediprolog.html) :
+  $ Using [GNU-Emacs ediprolog pluggin](https://www.metalevel.at/ediprolog/) :
 
 ## Customization
 
