@@ -84,6 +84,7 @@ further instructions.
 ==
 sudo apt-get install \
 	texlive-latex-extra \
+        texlive-font-utils \
 	texlive-fonts-extra \
 	texlive-fonts-extra-doc \
 	texlive-fonts-recommended \
