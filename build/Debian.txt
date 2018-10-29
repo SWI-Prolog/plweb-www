@@ -82,6 +82,9 @@ optional components are only loaded if you actually use them.
 
 ### Prerequisites to build the documentation
 
+In the *cmake* based distributions, the HTML documentation is build as part of the 
+default build procedure instead of being downloaded by `prepare`.  The dependencies below are still needed to create the PDF documentation.
+
 The generated documentation is included the source archives and downloaded by the =prepare= script when installing from the git source.  To rebuild the documentation, the following packages are needed.  Check =|man/README|= for
 further instructions.
 
@@ -95,4 +98,4 @@ sudo apt-get install \
 	texlive-fonts-recommended-doc
 ==
 
-Now tht you've installed dependencies, return to [Build SWI-Prolog from source](<unix.html>) to complete installation.
+Now that after you have installed dependencies, return to [Build SWI-Prolog from source](<unix.html>) to complete installation.
