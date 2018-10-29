@@ -22,6 +22,10 @@ Some remarks:
     needed and one of them suffices. =|libedit-dev|= is supported as of
     7.3.34 and is intended to become the preferred command line editor.
   - =libunwind= only simplifies debugging in case of a system crash.
+  - For a *cmake* based build (supported since 7.7.20), install
+    `cmake` (version 3.5 or later) and preferably `ninja` from the
+    package `ninja-build`.  `autoconf` and `curl` are not required.
+    See [CMAKE.md](https://github.com/SWI-Prolog/swipl-devel/blob/master/CMAKE.md)
 
 ==
 sudo apt-get install \
