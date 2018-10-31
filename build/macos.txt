@@ -1,8 +1,8 @@
----+ Building SWI-Prolog on MacOS (Lion and Snow Lion)
+# Building SWI-Prolog on MacOSX
 
-_Last updated: June 17, 2013, homebrew_
+_Last updated: Oct 31, 2018, homebrew_
 
----++ Using Macports
+## Using Macports
 
 Building SWI-Prolog for MacOS requires
 [[Macports][http://www.macports.org/]]. In general, the Portfiles are
@@ -60,7 +60,7 @@ build SWI-Prolog and all packages using the =build= script as follows:
   ./build
   ==
 
----++ Using Homebrew
+## Using Homebrew
 
 [Homebrew](http://mxcl.github.io/homebrew/) provides an alternative to Macports.
 The command below installs the latest _stable_ version of SWI-Prolog:
@@ -76,6 +76,39 @@ The latest git version of SWI-Prolog can be installed with this command:
   ==
 
 (contributed by Rinke Hoekstra)
+
+### Building from source using Homebrew for dependencies
+
+As of version 7.7.21 the  SWI-Prolog   sources  are fully compatible for
+building with dependencies provided by Homebrew. The dependencies can be
+installed using
+
+```
+brew install \
+     cmake \
+     ninja \
+     gmp \
+     openssl \
+     libarchive \
+     readline \
+     osspuuid \
+     libyaml \
+     unixodbc \
+     berkeleydb \
+     pcre \
+     jpeg
+```
+
+Brew does not provide `junit.jar` which is   needed to run the JPL (Java
+interface) tests. If you want to test  this get `junit.jar` as described
+in  https://github.com/junit-team/junit4/wiki/download-and-install   and
+install in `/usr/local/share/java/junit.jar`
+
+After installing all dependencies SWI-Prolog can   be build according to
+the generic instructions using [cmake](https://cmake.org/)   that can be
+found
+[here](https://github.com/SWI-Prolog/swipl-devel/blob/master/CMAKE.md)
+
 
 @see The [[Portfile][<Portfile>]]
 @see The scripts for building a binary release as distributed through
