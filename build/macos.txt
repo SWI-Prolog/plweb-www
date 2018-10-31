@@ -77,7 +77,7 @@ The latest git version of SWI-Prolog can be installed with this command:
 
 (contributed by Rinke Hoekstra)
 
-### Building from source using Homebrew for dependencies
+### Building from source using Homebrew for dependencies {#homebrew-deps}
 
 As of version 7.7.21 the  SWI-Prolog   sources  are fully compatible for
 building with dependencies provided by Homebrew. The dependencies can be
@@ -102,7 +102,7 @@ brew install \
 Brew does not provide `junit.jar` which is   needed to run the JPL (Java
 interface) tests. If you want to test  this get `junit.jar` as described
 in  https://github.com/junit-team/junit4/wiki/download-and-install   and
-install in `/usr/local/share/java/junit.jar`
+install in =|/usr/local/share/java/junit.jar|=.
 
 After installing all dependencies SWI-Prolog can   be build according to
 the generic instructions using [cmake](https://cmake.org/)   that can be
