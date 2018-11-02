@@ -91,10 +91,10 @@ brew install \
      openssl \
      libarchive \
      readline \
-     osspuuid \
+     ossp-uuid \
      libyaml \
      unixodbc \
-     berkeleydb \
+     berkeley-db \
      pcre \
      jpeg
 ```
