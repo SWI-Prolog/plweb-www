@@ -2,14 +2,17 @@
 
 ## Installing from binaries
 
-The official packages are often out of date. 
-PPAs are created automatically for every release.
-
-PPAs are available for Ubuntu by following directions on the [PPA page](<PPA.txt>).
+The official packages are often out of date. PPAs are created
+automatically for every release. PPAs are available for Ubuntu by
+following directions on the [PPA page](<PPA.txt>).
 
 ## Installing from source
 
-Installing from source is often the best option for installing on Linux and *BSD based systems. Building is not complex.
+Installing from source is often the best option for installing on Linux
+and *BSD based systems. Building is not complex. This document describes
+building *7.7.20 or later* using [cmake](https://cmake.org/). See [this
+page](<unixautotools.txt>) for building *older versions* using GNU
+autoconf and make.
 
 ### Downloading SWI-Prolog
 
@@ -20,23 +23,22 @@ Download the SWI-Prolog source
 
 ### Preparing the source (when downloading using GIT)
 
-The _tar ball_ is self contained.  The GIT repository contains sub modules and does not
-contain generated files.  The GIT source is downloaded and prepared for building using the
-commands below:
+The _tar ball_ is self contained. The GIT repository contains sub
+modules. The git repository is downloaded (cloned) using the commands
+below:
 
 ```
 git clone https://github.com/SWI-Prolog/swipl-devel.git
 cd swipl-devel
-./prepare
+git submodule update --init
 ```
 
 Similarly, the sequence to update the source using git and rebuild is
 
 ```
-make distclean
+cd swipl-devel
 git pull
-./prepare
-./build
+git submodule update --init
 ```
 
 ### Getting the prerequisites
@@ -51,108 +53,37 @@ list below describes the dependencies in platform independent way.
   - [Mageia](<Mageia.html>)
   - [Other systems (background info)](<prerequisites.html>)
 
-### Using the build.templ script
+### Building using cmake
 
-Both to facilitate frequent installs and to show some common options,
-you are invited to use the *|build.templ|* script located in the top
-directory. Copy this file to *build* and edit it according to the [EDIT]
-instructions in the script. Then simply run the script as below. This
-script is fairly independent from versions, so preserve your customised
-script for later releases.
+Using cmake the system is typically build in a subdirectory of the
+downloaded sources.  The build system does not add or modify any file
+in the source tree and (thus) multiple subdirectories can be created
+holding different configurations.  A built system can simply be removed
+by removing the build directory.  Basic instruction to build the system
+to be installed in `/usr/local` are:
 
-==
-% tar zxvf swipl-<version>.tar.gz
-% cd swipl-<version>
-% cp -p build.templ build
-% <edit> build
-% ./build
-==
+```
+cd swipl-devel
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
 
-If the above fails, follow the instructions below.
+A full description for installing a particular configuration in a
+particular location, dealing with development workflows, etc. can be
+found in the file
+[CMAKE.md](https://github.com/SWI-Prolog/swipl-devel/blob/master/CMAKE.md)
 
-### Doing it in multiple steps
-
-The configuration on Unix is based on GNU-Autoconf, a set of scripts
-that automatically extract system characteristics and creates the
-Makefile and C config header config.h. The generated Makefile only works
-with GNU-Make. The installation requires an ANSI-C compiler. Configure
-prefers the GNU-project C-compiler gcc, but many other compilers work
-fine too.  The first step, building SWI-Prolog lite, is outlined below.
-
-==
-% gzip -d < swipl-<version>.tar.gz | tar xvfB -
-% cd swipl-<version>/src
-% ./configure			# see bellow
-% make
-% [su root]			# for public installation
-% make install
-==
-
-The second step, building all tools, is only supported for machines on
-which building and loading shared libraries is supported, luckily this
-is the case on almost all modern operating systems.
-
-The packages are built and installed from the packages directory in the
-main distribution directory. The file README there contains additional
-information on building the packages. The basic procedure is:
-
-==
-% cd swipl-<version>/packages
-% ./configure
-% make
-% [su root]			# for public installation
-% make install
-==
-
-Finally, packages can be installed one-by-one. With pl installed in a
-your $PATH, simply go to the desired package directory and run the
-standard GNU/Linux installation procedure. Global configure options such
-as installation location are extracted from Prolog. Some package
-configure scripts provide additional options that specify the location
-of required libraries.
-
-==
-% ./configure
-% make
-% [sudo] make install
-==
-
-*configure* is a Bourne Shell script doing the actual configuration for
-your computer. The most important options of confure are:
-
-    $ --help :
-    Print a list of all available options. See the files INSTALL and
-    INSTALL.notes in the distribution for additional information. 
-
-    $ --prefix=prefix :
-    Set the base directory for the installation. The executables are
-    stored in prefix/bin/, the library in prefix/lib/pl-%plversion/ and
-    the include files in prefix/include. For public installation (by
-    root), /usr/local is the default. For private installation it is
-    normal to specify $HOME 
-
-    $ --exec_prefix=prefix :
-    Overrides the directory for installing the executables to
-    exec_prefix/bin/, normally used on heterogeneous networks. 
-
-After succesfull installation, the compilation directory may be removed.
-
-### In case of trouble ...
-
-The file INSTALL in the source directory contains the generic
-documentation about installing autoconf-based programs. The file
-INSTALL.notes in the same directory contains additional SWI-Prolog
-related hints.
-
-If =configure= fails, try using =|bash configure|=. If =make= fails, try
-using GNU-make and gcc.
-
-If all fails, have a look at the ../Support.txt page.
 
 ## Post installation (JPL)
 
-If you want to call Java from Prolog using JPL, you need to add the directory holding
-the JVM shared objects to the dynamic linker search path.  Using default installation on Ubuntu, this is achieved by adding the following to your =|~/.profile|=:
+If you want to call Java from Prolog using JPL, you need to add the
+directory holding the JVM shared objects to the dynamic linker search
+path. Using default installation on Ubuntu, this is achieved by adding
+the following to your =|~/.profile|=.  Check your Java configuration to
+find the exact path.
 
 ```
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/server
