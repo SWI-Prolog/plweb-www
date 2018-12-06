@@ -1,5 +1,5 @@
-SWI-Prolog on Android
-=====================
+SWI-Prolog on Android Termux
+============================
 
 As of version 7.7.23 we have now SWI-Prolog running on Android under [termux](https://termux.com/).
 With the exception of JPL it is passing all tests,  including saved states. 
