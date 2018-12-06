@@ -1,11 +1,13 @@
 # Building SWI-Prolog on Android using LinuxOnAndroid
 
-Although it is most likely possible to build SWI-Prolog on Android using the
-NDK (Native Development Kit), nobody did it.  As I like to have a copy of
-Prolog with me, also when I'm traveling light, I build it using Linux on
-Android.  Of course, this takes more space than an native Android version.
-The advantage is that you can rebuild Prolog with some patience, but without
-another computer.  This page describes the process.
+There are currently two ways for running SWI-Prolog on Android.  Using
+[Termux](https://termux.com/) we can do so without rooting the device.
+This is probably the best and the subject of [this page](</build/Termux.html>)
+
+This page describes the using [LinuxOnAndroid](http://linuxonandroid.org/),
+which provides a complete Linux userland on your Android device running in
+a _chroot_ environment alongside Android.  The installation requires
+_rooting_ your device.
 
 This procedure was tested on a Samsung GT-P5110 (Tab 2 10.1) running Android
 4.1.2.
@@ -59,4 +61,6 @@ With an external mouse and keyboard, it works quite ok.  Speed on CHAT80 is abou
 HTTP services and thus develop HTML5 apps that run entirely on your Android. I
 think this should work on any device on which you can install Linux alongside
 Android.
+
+@see Termux.md for an Android port without rooting.
 
