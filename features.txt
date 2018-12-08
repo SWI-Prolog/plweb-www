@@ -3,46 +3,71 @@
 SWI-Prolog is a versatile implementation of the Prolog language. Its
 robust multi-threading, extended data types, unbounded arithmetic and
 Unicode representation of text allow for natural representation of
-documents (e.g., XML, JSON, RDF) and exchange of data with other
-programming paradigms. Its comprehensive low-level interface to C is the
-basis for high-level interfaces to C++, Java (bundled), C#, Python, etc
-(externally available). SWI-Prolog is equipped with an extensive web
-server (HTTP) framework that can be used both for providing (REST)
-services and end-user applications based on HTML5+CSS+JavaScript.
-Pengines (Prolog engines) allow clients to run queries against a
-client-provided program on a remote server using a generic API. Such
-programs can be executed in a _sandbox_.
+documents (e.g., XML, JSON, RDF) and __exchange of data with other
+programming paradigms__. Its comprehensive low-level interface to C is
+the basis for high-level interfaces to C++, Java (bundled), C#, Python,
+etc (externally available).
 
-Equipped with rich interfaces, Prolog is an attractive language for
-realising _applications_. Its incremental compilation combined with
-generally local and backtrackable data structures (undo) allows for
-patching the program and keep testing it without restarting. Its
-relational paradigm fits well with tabular data (RDBMS), while its
-recursive strength fits well with tree and graph shaped data. Prolog can
-naturally express simple rule sets required to implement the
-_application logic_.
+Prolog's __relational paradigm__ fits well with tabular data (RDBMS),
+while __optimized support for recursive code__ fits well with tree and
+graph shaped data (RDF). Prolog can naturally express simple rule sets
+required to implement the _application logic_.
 
-_Constraints_ and _coroutining_ attach rules to (changing) data.
+__Constraints__ and _coroutining_ attach rules to (changing) data.
 Combined with backtracking, this can be used to solve many complicated
 combinatorial problems using a simple declarative specification.
 Classical examples are puzzles and planning problems.
 
-SWI-Prolog offers a variety of _development environments_, most of which
-may be combined at will. The native system provides an editor written in
-Prolog that is a close clone of Emacs. It provides _semantic_
+SWI-Prolog is equipped with an extensive __web server__ (HTTP) framework
+that can be used both for providing (REST) services and end-user
+applications based on HTML5+CSS+JavaScript. Pengines (Prolog engines)
+allow clients to run queries against a client-provided program on a
+remote server using a generic API. Such programs can be executed in a
+_sandbox_.
+
+For (web) server support SWI-Prolog provides __scalable multi
+threading__. We measured an 80 times speedup running on a 128 core power
+pc system. This feature makes SWI-Prolog attractive for CPU intensive
+server tasks where multiple clients require access to a large shared and
+possibly dynamic dataset. Note that many other high-level languages such
+as Python and Node.js only use a single core and switch between tasks
+based on blocking I/O. This approach generally provides good resource
+usage for I/O intensive services with a high number of connections but a
+task blocking on a computation delays all other clients. As SWI-Prolog's
+_global gargage collectors__ for atoms and removed dynamic clauses run
+__fully asynchronous__ in a dedicated thread, its (soft) _real time_
+behaviour is excellent.
+
+Equipped with rich interfaces, Prolog is an attractive language for
+application programming. Its __incremental compilation__ combined with
+generally local and backtrackable data structures (undo) allows for
+__patching the program without restarting__. SWI-Prolog allows for
+reloading running code from another thread safely, provided the
+signature of the running predicates is not changed. This implies it is
+allowed to add, remove and modify clauses but it is _not_ allowed to
+add, remove or reorder arguments. Still, this feature is valuable for
+__hot-fixing servers__ or __inject diagniostic code__ to a server
+without restarting.
+
+SWI-Prolog offers a variety of __development environments__, most of
+which may be combined at will. The native system provides an editor
+written in Prolog that is a close clone of Emacs. It provides _semantic_
 highlighting based on real time analysis of the code by the Prolog
 system itself. Complementary tools include a graphical debugger,
 profiler and cross-referencer. Alternatvely, there is a mode for
-GNU-Emacs and an Eclipse plugin, both of which may be combined with the
-native graphical tools. Finally, SWISH provides a web-based environment
-based on the forementioned _Pengines_ that can both be used to provide
-sandboxed access or full access after authentication. SWISH offers
-editing multiple sources using _semantic_ highlighting. SWISH can manage
-plugins for rendering Prolog data using HTML5+CSS+JavaScript. This can
-be used to render data as tables, graphs, charts, etc.
+GNU-Emacs and, Eclipse plugin called
+[PDT](https://sewiki.iai.uni-bonn.de/research/pdt/docs/start) and a VSC
+[plugin](https://marketplace.visualstudio.com/items?itemName=arthurwang.vsc-prolog),
+each of which may be combined with the native graphical tools. Finally,
+SWISH provides a web-based environment based on the forementioned
+_Pengines_ that can both be used to provide sandboxed access or full
+access after authentication. SWISH offers editing multiple sources using
+_semantic_ highlighting. SWISH can manage plugins for rendering Prolog
+data using HTML5+CSS+JavaScript. This can be used to render data as
+tables, graphs, charts, etc.
 
 SWI-Prolog provides an add-on distribution and installation mechanism
-called _packs_. A _pack_ is a directory with minimal organizational
+called __packs__. A _pack_ is a directory with minimal organizational
 conventions and a _control_ file that describes the origin, version,
 dependencies and automatic upgrade support. Packs can be installed from
 an archive, GIT repository or URL using pack_install/1. Packs are used
@@ -73,9 +98,12 @@ links to the relevant documentation.
 
     * *|Just-In-Time|* indexing of both static and dynamic code on any
     argument greatly simplifies handling multi-moded relations with
-    many clauses. As of version 7.5, _multi-argument_ JITI is supported.
-    This creates an index for the combined value of two arguments if
-    there is no selective single-argument index.
+    many clauses. As of version 7.5, __multi-argument JITI__ is
+    supported. This creates an index for the combined value of two
+    arguments if there is no selective single-argument index.  As of
+    version 7.7 we also support indexing on the arguments of compound
+    terms.  This feature notably improves the performance for handling
+    _terminals_ in grammar rules (DCGs).
 
     * *|Unbounded integer|* and *rational* number arithmetic
     based on [[GMP library][<gmp:>]].
@@ -83,14 +111,17 @@ links to the relevant documentation.
     * The goodies: *modules* (upward compatible to Quintus and SICStus),
     *|garbage-collection|* (transparent to C/C++-code, including *atom*
     and *clause* garbage collection), *|last-call|* optimisation,
-    dynamic expansion of the runtime stacks, *|ISO exception-handling|*
-    (including C/C++ interface for catching and throwing exceptions).
+    dynamic expansion of the runtime stacks, *|exception-handling|*
+    (including C/C++ interface for both catching and throwing
+    exceptions).
 
     * *|attributed variables|*, coroutining (freeze/2, when/2, dif/2),
     global variables, cyclic terms.
 
     * Flag-controlled handling of *|occurs-check|* (false/true/error)
-    see current_prolog_flag/2.
+    see current_prolog_flag/2. Efficient implementation of occurs
+    checking that only verifies that _new bindings_ do not introduce
+    cycles.
 
     * *UNICODE* character set handling internal. Ideal for web and
     international applications.
@@ -104,11 +135,12 @@ links to the relevant documentation.
     and similations.
 
     * [*Delimited continuations*](</pldoc/man?section=delcont>) is a
-    powerful building block for new control structures.
+    powerful building block for new control structures and realise
+    __aspect programming__.
 
     * [Tabling (SLG resolution)](<pldoc/man?section=tabling>) provides
     a more robust resolution technique for solving queries over complex
-    interrelated rules.
+    interrelated rules with guaranteed termination.
 
 ## Development tools
 
@@ -142,12 +174,12 @@ links to the relevant documentation.
     maintain compatibility wherever possible, SWI-Prolog deliberately
     deviates from the ISO standard to accomodate additional
     functionality and synchronise with modern languages.  Read
-    more in [Extensions](<pldoc/man?section=extensions> and
+    more in [Extensions](<pldoc/man?section=extensions>) and
     [Directions](</Directions.html>)
 
-## Libraries
+## Constraing handling
 
-    * *Constraint* Logic Programming, providing libraries for
+    * Libraries for
     *|[[CHR][</man/chr.html>]]|* (Constraint Handling
     Rules), *|[[clp(FD)][</man/clpfd.html>]]|*,
     *|[[clp(R,Q)][</man/clpqr.html>]]|* and various others.
@@ -184,11 +216,13 @@ links to the relevant documentation.
 ## Portability
 
     * *Portable* to many platforms, including almost all *|Unix/Linux|*
-    platforms, *Windows* (7 and later, both 32 and 64-bit versions),
-    *|MacOS X|* (using Xquartz for graphics) and many more. Both
-    32-bit and *|64-bit|* hardware is supported. Sources are plain C99,
-    configured automatically using GNU autoconf (configure, make, make
-    install).
+    platforms, *Windows*, *|MacOS X|* (using Xquartz for graphics)
+    __WebAssembly (WASM)__, __Android Termux__ and many more. Both
+    __32-bit__ and __64-bit__ hardware is supported. SWI-Prolog has been
+    compiled and tested on many CPUs, e.g., x86, x64, SPARC, PowerPC,
+    many ARM models. Sources are plain C99, configured automatically
+    using CMake (as of version 7.7.20). Support for cross-compilation is
+    steadily improving.
 
     * Machine-independent *|saved-states|* (save on one platform, run
     using the virtual machine of another platform).
