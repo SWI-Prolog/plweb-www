@@ -27,12 +27,18 @@ the stable versions and the repository
 [swipl-devel.git](http://github.com/SWI-Prolog/swipl-devel.git) for the
 development series.  Releases are tagged *V*_|Major.Minor.Patch|_.
 
+  $ 8.1.0: Current development series.
+
+  $ 8.0.x: Indexing on multiple arguments together, indexing inside compounds,
+  Mode-directed tabling, saved states using ZIP files, many deployment
+  enhancements. Moved build environment to [CMake](https://cmake.org) and
+  removed most of the build tool dependencies.  Builds documentation along
+  with the binary.
+
   $ 7.6.x: Major release. Multi-argument indexing, better multi-threaded
   performance, threaded global GC (atoms and clauses), mode-directed
   tabling, restored same expand and directive semantics for initial load
   and reloading files, cleaner initializatin and command line handling.
-
-  $ 7.5.x: Current development branch.
 
   $ 7.4.x: Major release.  More robust and better scalable support
   for multi-core hardware, tabling, engines.  Many enhancements to
