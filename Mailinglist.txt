@@ -14,9 +14,6 @@ amoung users. On average, traffic is 5-10 messages per day. Details:
     topic](https://swi-prolog.discourse.group/t/coming-from-google-groups/34?u=jan)
     if you want to access the forum primarily through email.
 
-  - If you have *no* Google account, you can subscribe by sending a
-    mail to
-
 ## Old mailing lists
 
   - Before moving to Discourse (Feb 4, 2018), SWI-Prolog discussion was
