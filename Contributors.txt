@@ -33,10 +33,11 @@ People are listed in alphabetical order.
   * Randy Sharp (fixing many typos in the documentation; ongoing work)
   * Richard O'Keefe (sort/2, libraries, extensive comments)
   * Roberto Bagnara and Abramo Bagnara (MinGW port, helped fixing many bugs)
+  * Sebastian Sardina (enhancements and debugging JPL)
   * Samer Abdallah ([[OSC, MIDI, Random and Matlab interfaces][</contrib/SamerAbdallah/>]])
   * Sergey Tikhonov (testing multi-threading, patches)
   * Tom Schrijvers (CHR, initial constraint libraries)
-  * TorbjÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¶rn Lager ([Pengines](</pldoc/package/pengines.html>))
+  * Torbjörn Lager ([Pengines](</pldoc/package/pengines.html>))
   * Ulrich Neumerkel (testing, `purification', patches)
   * Uwe Lesta (interface to C#)
   * Vitor Santos Costa (various libraries copied from
