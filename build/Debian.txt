@@ -7,29 +7,27 @@ these package use =|apt-cache search <name>|= to find an alternative,
 where <name> is e.g., =libunwind= (i.e., remove version and details).
 Some remarks:
 
+  - ``ninja-build`` may be dropped, building using `make`.
   - It is possible to use =iodbc= instead of =unixodbc= for ODBC
     connectivity.
   - The SWI-Prolog Java interface (JPL) works with many Java development
     kits, not only =|openjdk-8-jdk|=.
-  - The package =|libarchive-dev|= is needed as of 6.1.4 for libarchive,
+  - The package =|libarchive-dev|= is needed for library(archive),
     which is needed by pack_install/1.
-  - The package =|libossp-uuid-dev|= is needed as of 6.3.4 for
-    library(uuid), which is needed for ClioPatria's SPARQL engine.
-  - The package =|libdb-dev|= is needed as of 7.3.8 for
+  - The package =|libossp-uuid-dev|= is needed for library(uuid).
+  - The package =|libdb-dev|= is needed for
     library(bdb), the BerkeleyDB embedded database interface.
   - The package =|libreadline-dev|= and =|libedit-dev|= both provide
     command line editing for interactive usage.  None is strictly
-    needed and one of them suffices. =|libedit-dev|= is supported as of
-    7.3.34 and is intended to become the preferred command line editor.
+    needed and one of them suffices. =|libedit-dev|= is the preferred
+    command line editor.
   - =libunwind= only simplifies debugging in case of a system crash.
-  - For a *cmake* based build (supported since 7.7.20), install
-    `cmake` (version 3.5 or later) and preferably `ninja` from the
-    package `ninja-build`.  `autoconf` and `curl` are not required.
-    See [CMAKE.md](https://github.com/SWI-Prolog/swipl-devel/blob/master/CMAKE.md)
+  - `cmake` must be at least version 3.5 See
+    [CMAKE.md](https://github.com/SWI-Prolog/swipl-devel/blob/master/CMAKE.md)
 
-==
+```shell
 sudo apt-get install \
-        build-essential autoconf curl chrpath pkg-config \
+        build-essential cmake ninja-build pkg-config \
         ncurses-dev libreadline-dev libedit-dev \
 	libunwind-dev \
         libgmp-dev \
@@ -43,7 +41,7 @@ sudo apt-get install \
 	libpcre3-dev \
         libyaml-dev \
         openjdk-8-jdk junit
-==
+```
 
 Note that older Debian based distributions, including the Debian
 stable *|(Squeeze (6.0))|* ship with =|libunwind7-dev|= instead of
@@ -59,9 +57,8 @@ optional:
   $ openjdk-8-jdk junit :
   Without you do not have Java connectivity (JPL)
   $ libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev libxpm-dev libxt-dev :
-  If you leave these out, add =xpce= to =DISABLE_PKGS= in =build=. Means
-  you have no graphics, no graphical development tools and no regular
-  expression support.
+  Without these _xpce_ will not be built and the graphical IDE tools are
+  not available.
   $ unixodbc-dev :
   Without, you have no ODBC database connectivity (e.g., MySQL)
   $ libssl-dev :
@@ -72,8 +69,7 @@ optional:
   $ libpcre3-dev :
   Without, you have no regular expression support (library(pcre)).
   $ libyaml-dev :
-  Without you have no YAML support (library(yaml)).  YAML support has
-  been added to SWI-Prolog 7.7.11.
+  Without you have no YAML support (library(yaml)).
 
 Note that including GMP support makes the memory footprint bigger, but
 mostly if you have no other applications depending on GMP. All the other
@@ -82,13 +78,14 @@ optional components are only loaded if you actually use them.
 
 ### Prerequisites to build the documentation
 
-In the *cmake* based distributions, the HTML documentation is build as part of the 
-default build procedure instead of being downloaded by `prepare`.  The dependencies below are still needed to create the PDF documentation.
+The HTML documentation is built as part of the default build procedure
+and only depends on Prolog itself and some of its packages. The
+dependencies below are needed to build the PDF documentation.
+Configuring the build to include the PDF docs requires
 
-The generated documentation is included the source archives and downloaded by the =prepare= script when installing from the git source.  To rebuild the documentation, the following packages are needed.  Check =|man/README|= for
-further instructions.
+    cmake -DBUILD_PDF_DOCUMENTATION=ON ...
 
-==
+```shell
 sudo apt-get install \
 	texlive-latex-extra \
         texlive-font-utils \
@@ -96,6 +93,7 @@ sudo apt-get install \
 	texlive-fonts-extra-doc \
 	texlive-fonts-recommended \
 	texlive-fonts-recommended-doc
-==
+```
 
-Now that after you have installed dependencies, return to [Build SWI-Prolog from source](<unix.html>) to complete installation.
+Now that after you have installed dependencies, return to [Build
+SWI-Prolog from source](<unix.html>) to complete installation.
