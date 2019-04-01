@@ -110,7 +110,7 @@ mode today. For more information, see the [[FAQ][</FAQ/GnuEmacs.html>]].
   Logtalk). All native SWI-Prolog development tools (graphical tracer /
   debugger, profiler, ...) can be used within the PDT.
 
-  $ [Prolog Development Tools - ProDT](http://prodevtools.sourceforge.net/]) :
+  $ [Prolog Development Tools - ProDT](http://prodevtools.sourceforge.net/) :
   Prolog Development Tools (ProDT) is a Prolog Integrated Development
   Environment (IDE) aiming to be as rich in functionality as the Eclipse's
   java IDE, giving the developer a single environment where it can control
