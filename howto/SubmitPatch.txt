@@ -84,7 +84,7 @@ do this by switching branches, and update as usual:
   ==
   % git checkout master
   % git pull
-  % ./prepare
+  % git submodule update
   ==
 
 Now, there are some options that may apply.
