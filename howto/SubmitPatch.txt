@@ -14,6 +14,27 @@ of submitting patches using _pull requests_.
 Note that quite a few of the remarks below also apply to using GitHub, notably
 those about dealing with packages that are represented as _git submodules_.
 
+### A note about GitHub forks
+
+You cannot _fork_ on GitHub and _next_ clone.  If you try to do so, all submodules are resolved against _your_ GitHub account and thus you must clone _all_ repositories from the SWI-Prolog organization.  Much better is to _clone_ and _then_ _fork_:
+
+```
+git clone https://github.com/SWI-Prolog/swipl-devel.git
+git submodule update --init
+```
+
+Now you have a complete working source tree you can compile and modify.  If you want to create a _pull request_ against one of the git repos,  _now fork it on github if you did not already do so_, go to the top directory of the repo on your machine and run (you can also use ``https://``)
+
+```
+git remote add myfork git@github.com:me/repo.git
+```
+
+Now, after creating a _topic branch_, push it to github using
+
+```
+git push myfork mytopic:mytopic
+```
+
 
 ---++ Submit as GIT patch-sets (old, still good)
 
