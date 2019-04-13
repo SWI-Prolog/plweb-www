@@ -1,0 +1,21 @@
+# How do I contribute?
+
+## Several ways to contribute to SWI-Prolog
+
+Here are some ideas from the easiest one:
+
+    - [Report a bug](<bug.html>)
+    - Build the [community](<community.txt>), help answer questions in the forum
+    - Write or improve documentation
+    - [Submit an add-on](</howto/Pack.html>) (a SWI-Prolog "pack")
+    - [Submit a patch](<howto/SubmitPatch.html>)
+
+## How do I write or improve documentation?
+
+You can edit pages like this by making pull requests on these GitHub repositories:
+
+    - The source code for these wiki pages (static content) is in [plweb-www](https://github.com/SWI-Prolog/plweb-www)
+    - The source code for this web server is in [plweb](https://github.com/SWI-Prolog/plweb)
+
+You can preview your edits in your local machine.
+Follow the instructions in the [plweb](https://github.com/SWI-Prolog/plweb) repository.
