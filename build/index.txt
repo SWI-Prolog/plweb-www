@@ -2,6 +2,7 @@
 
 The sources are common for all platforms, but the way to build them is
 totally different for MS-Windows and all Unix/POSIX based platforms.
+
 Unless you have a serious need to, we generally *discourage* building the *Windows* version
 yourself, due to complexity. We provide [nightly builds](</download/daily/bin>) of Windows binary installers.
 On the other hand, we generally *encourage* building

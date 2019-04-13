@@ -7,7 +7,9 @@ decreasing preference.
 ---++ Using GitHub pull requests (new, preferred)
 
 As of May 1, 2014, the primary repository of SWI-Prolog is at
-[GitHub](https://github.com/SWI-Prolog).  GitHub has a
+[GitHub](https://github.com/SWI-Prolog).
+
+GitHub has a
 [good description](https://help.github.com/articles/using-pull-requests)
 of submitting patches using _pull requests_.
 

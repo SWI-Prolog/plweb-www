@@ -1,41 +1,4 @@
 # Mailing list
 
-The [forum and mailing list](https://swi-prolog.discourse.group) for
-SWI-Prolog is kindly hosted by [Discourse](https://www.discourse.org/).
-This list is used for announcements as well as questions and discussion
-amoung users. On average, traffic is 5-10 messages per day. Details:
-
-  - The forum can be viewed [here](https://swi-prolog.discourse.group)
-
-  - It provides local accounts and login with GitHub. Other _login with_
-    options will follow.
-
-  - Please read [this
-    topic](https://swi-prolog.discourse.group/t/coming-from-google-groups/34?u=jan)
-    if you want to access the forum primarily through email.
-
-## Old mailing lists
-
-  - Before moving to Discourse (Feb 4, 2018), SWI-Prolog discussion was
-    hosted as a [Google group](http://groups.google.com/group/swi-prolog).
-
-  - Before being moved to a Google group (May 1, 2014), the mailing list
-    was kindly hosted by the University of Bonn. The archives of this
-    list are still available
-    [here](<https://lists.iai.uni-bonn.de/pipermail/swi-prolog>).
-
-
-## Related mailinglists
-
-    * [[mailinglist for CHR][<chr_mail:>]]
-    * [[mailinglist for ClioPatria][http://mailman.few.vu.nl/mailman/listinfo/cliopatria-list]]
-
-## The Bugzilla bugtracking system
-
-Bugs are best reported to and tracked through the [GitHub issue tracker](https://github.com/SWI-Prolog/issues/issues)
-
-@see Prolog is discussed on
-the Usenet group [[comp.lang.prolog][<news:comp.lang.prolog>]]
-@see [stackoverflow](http://stackoverflow.com/questions/tagged/swi-prolog)
-
+This page has moved to [community.html](<community.html>).
 
