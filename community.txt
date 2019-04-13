@@ -1,5 +1,30 @@
 # Where is the community?
 
+## Getting help, asking questions, solving problems
+
+There are several places you can get help or ask questions
+about SWI-Prolog or Prolog programming in general.
+
+    - The list of [[frequently asked questions][</FAQ/>]]
+
+    - [SWI-Prolog Discourse forum](https://swi-prolog.discourse.group)
+    (most likely place to get answered in 2019)
+
+    - [SWI-Prolog non-specific user issue tracker at GitHub](https://github.com/SWI-Prolog/issues/issues)
+    (more like reporting an issue than asking a question)
+
+    - StackOverflow questions with these tags:
+    [swi-prolog](http://stackoverflow.com/questions/tagged/swi-prolog),
+    [prolog](https://stackoverflow.com/questions/tagged/prolog)
+
+    - To report bug/issue, see [bug.html](<bug.html>)
+
+    - The Prolog IRC channel ##prolog on FreeNode
+    can be accessed via [WebChat](http://webchat.freenode.net/?channels=##prolog)
+
+It usually takes about one day for a volunteer to reply to your question.
+We appreciate your patience.
+
 ## Forum and mailing list
 
 The [forum and mailing list](https://swi-prolog.discourse.group) for
@@ -16,26 +41,6 @@ amoung users. On average, traffic is 5-10 messages per day. Details:
     topic](https://swi-prolog.discourse.group/t/coming-from-google-groups/34?u=jan)
     if you want to access the forum primarily through email.
 
-## Asking questions
-
-There are several places you can ask questions
-about SWI-Prolog or Prolog programming in general.
-
-    - [SWI-Prolog Discourse forum](https://swi-prolog.discourse.group)
-    (most likely place to get answered)
-    - [SWI-Prolog non-specific user issue tracker at GitHub](https://github.com/SWI-Prolog/issues/issues)
-    (more like reporting an issue than asking a question)
-    - [StackOverflow with swi-prolog tag](http://stackoverflow.com/questions/tagged/swi-prolog)
-
-It usually takes about one day for a volunteer to reply to your question.
-We appreciate your patience.
-
-## Other places
-
-    - The IRC channel #prolog at Freenode is for general Prolog discussion.
-    You can access it via [WebChat](http://webchat.freenode.net/?channels=##prolog).
-    - Prolog is discussed on the Usenet group [[comp.lang.prolog][<news:comp.lang.prolog>]]
-
 ## Old mailing lists
 
   - Before moving to Discourse (Feb 4, 2018), SWI-Prolog discussion was
@@ -46,7 +51,15 @@ We appreciate your patience.
     list are still available
     [here](<https://lists.iai.uni-bonn.de/pipermail/swi-prolog>).
 
+Tip: include =SWIPL= to search the mailinglist archives.
+
 ## Related mailinglists
 
     * [[mailinglist for CHR][<chr_mail:>]]
     * [[mailinglist for ClioPatria][http://mailman.few.vu.nl/mailman/listinfo/cliopatria-list]]
+
+## Other places
+
+    - The newsgroup
+    [[comp.lang.prolog][<news:comp.lang.prolog>]]
+    (see also its [Google Groups archive](https://groups.google.com/forum/#!forum/comp.lang.prolog))
