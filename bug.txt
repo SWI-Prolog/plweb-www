@@ -51,10 +51,10 @@ the [[issue tracker of the SSL
 package][https://github.com/SWI-Prolog/packages-ssl/issues]].
 
 Alternatively you can add a post to the
-[forum](https://swi-prolog.discourse.group), preferably using the __bugs
-topic__.
+[forum](https://swi-prolog.discourse.group), preferably using the [bug
+tag](https://swi-prolog.discourse.group/tags/bug).
 
-Finally, for bug reports containing information you do not what to
+Finally, for bug reports containing information you do not want to
 become public, bugs can be sent by
 [E-mail](<mailto:bugs@swi-prolog.org>)
 

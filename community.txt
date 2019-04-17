@@ -8,19 +8,20 @@ about SWI-Prolog or Prolog programming in general.
     - The list of [[frequently asked questions][</FAQ/>]]
 
     - [SWI-Prolog Discourse forum](https://swi-prolog.discourse.group)
-    (most likely place to get answered in 2019)
-
-    - [SWI-Prolog non-specific user issue tracker at GitHub](https://github.com/SWI-Prolog/issues/issues)
-    (more like reporting an issue than asking a question)
+    (best place to get answered for SWI-Prolog specific questions)
 
     - StackOverflow questions with these tags:
     [swi-prolog](http://stackoverflow.com/questions/tagged/swi-prolog),
     [prolog](https://stackoverflow.com/questions/tagged/prolog)
-
-    - To report bug/issue, see [bug.html](<bug.html>)
+    (best place for issues with class room exercises that are not
+    SWI-Prolog specific)
 
     - The Prolog IRC channel ##prolog on FreeNode
     can be accessed via [WebChat](http://webchat.freenode.net/?channels=##prolog)
+
+    - [SWI-Prolog issue tracker at GitHub](https://github.com/SWI-Prolog/issues/issues)
+    (See [reporting a bug](<bug.html>) for guidelines about reporting
+     a bug)
 
 It usually takes about one day for a volunteer to reply to your question.
 We appreciate your patience.

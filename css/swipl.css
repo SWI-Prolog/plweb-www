@@ -192,6 +192,8 @@ ul.menubar-container a {
 ul.menubar-container > li > a:link {
     color: #FFF;
     text-decoration: none;
+    font-size: 14pt;
+    font-weight: 700;
 }
 ul.menubar-container > li > a:visited {
     color: #FFF;
@@ -199,7 +201,7 @@ ul.menubar-container > li > a:visited {
 }
 ul.menubar-container > li > a:hover {
     color: #d9d8cf;
-    text-decoration: none;
+    text-decoration: underline;
 }
 ul.menubar-container > li > a:active {
     color: #d57719;
