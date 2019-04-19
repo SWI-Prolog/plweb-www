@@ -31,7 +31,8 @@ Next, you must install the following Macport libraries:
 
   ==
   port install cmake gmp jpeg libarchive libiconv libmcrypt ncurses \
-               openssl ossp-uuid pkgconfig readline zlib pcre libedit
+               openssl ossp-uuid pkgconfig readline zlib pcre libedit \
+               libyaml unixODBC openjdk8 junit
   ==
 
 Next, you can download SWI-Prolog as a [[source
