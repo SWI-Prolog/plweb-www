@@ -23,17 +23,23 @@ prerequisites.  First:
 
   1. Xcode (can be installed as a free app from the appstore)
   2. Macports (download from http://www.macports.org/)
-  3. X11.  This is an OS option for Lion (10.7) and must be installed
-     from http://xquartz.macosforge.org/landing/ for Mountain Lion
-     (10.8).
+  3. X11 (download from http://xquartz.macosforge.org/landing/)
 
-Next, you must install the following Macport libraries:
+Next, you must install the following Macport libraries for a complete build.
 
   ==
   port install cmake gmp jpeg libarchive libiconv libmcrypt ncurses \
                openssl ossp-uuid pkgconfig readline zlib pcre libedit \
-               libyaml unixODBC openjdk8 junit
+               libyaml unixODBC openjdk11 junit
   ==
+
+Notes
+  
+  - If you want JPL (the Java interface) you can also install the Oracle JDK.  As
+    Oracle gets increasingly annoying about agreeing with their license and as of
+    version 10 creating an account with Oracle, we switched to OpenJDK.  Versions
+    before 9 have a bug that causes the Mac to think you have no JRE when accessing
+    Java through JNI.
 
 Next, you can download SWI-Prolog as a [[source
 archive][</Download.html>]] or using [[GIT][</git.html>]]. After installing all dependencies SWI-Prolog can   be build according to
