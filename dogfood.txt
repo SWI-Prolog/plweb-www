@@ -3,8 +3,8 @@
 This page presents a brief history of hosting and developing
 http://www.swi-prolog.org. The website runs SWI-Prolog and is basically
 `[PlDoc](</pldoc/package/pldoc.html>), the SWI-Prolog source
-documentation system on steroids'. This site replaced a classical
-[Apache](http://httpd.apache.org/) server build from static
+documentation system on steroids'. This site replaced a classic
+[Apache](http://httpd.apache.org/) server built from static
 documentation pages, a [Twiki](http://twiki.org/)-based wiki and
 [Bugzilla](http://www.bugzilla.org/). The site was re-implemented as a
 SWI-Prolog-based HTTP server that extends PlDoc for the following
@@ -35,7 +35,6 @@ reasons:
         source files, coloured source files, etc.
     - analyses, indexes and presents [packs](</pack/list>).  It
         also presents the meta-data for pack_install/1
-    - runs CGI scripts to facilitate git-web
     - runs a REST API to handle user annotations.
 
 ## Lessons learned
