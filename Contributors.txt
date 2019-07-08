@@ -13,13 +13,13 @@ People are listed in alphabetical order.
   * Benoit Desouter (initial version of tabling)
   * Carlo Capelli (Qt-based console)
   * Degski ([[FANN][http://leenissen.dk/]], Windows porting)
+  * Douglas Miles (verify_attributes/3 hook)
   * Fabrizio Riguzzi (initial version of mode directed tabling)
   * Giorgos Stoilos (isub/4: fuzzy string matching)
   * Jan Wielemaker (main developer and maintainer)
   * Jan van der Steen (SSL interface)
   * Jeff Rosenwald (TIPC interface, Google protocol buffers)
   * Keri Harris (testing, patches, MinGW port, lock free tables)
-  * Douglas Miles (verify_attributes/3 hook)
   * Kuniaki Mukai (implementation of =@=/2 (variant/2)
   * Leslie de Koninck (CLP(QR) port)
   * Marcus Uneson (library(optparse))
@@ -31,6 +31,7 @@ People are listed in alphabetical order.
   * Paul Singleton (JPL, interface to Java)
   * Paulo Moura (provided library(yall), Macports maintainer)
   * Randy Sharp (fixing many typos in the documentation; ongoing work)
+  * Raivo Laanemets (wasm port)
   * Richard O'Keefe (sort/2, libraries, extensive comments)
   * Roberto Bagnara and Abramo Bagnara (MinGW port, helped fixing many bugs)
   * Sebastian Sardina (enhancements and debugging JPL)
@@ -55,20 +56,23 @@ People are listed in alphabetical order.
 
   * Bart Demoen (advice, notably constraint infrastructure)
   * Bob Wielinga (finding projects to support SWI-Prolog)
-  * Guus Schreiber (providing a new home at the VU University, Amsterdam)
-  * [[securitease.png;title="SecuritEase",align="center"][http://www.securitease.co.nz/]] Mike Elston;
-    testing, funding of GMP, SSL and the 5.9.x stack-shifter
-  * Paulo Moura (testing, provides MacOS ports, made
-    [[Logtalk][http://logtalk.org/]] available)
-  * Steve Moyle (funding of PlUnit and PlDoc)
-  * [[Steve Reeves][http://www.pixelmagic.co.nz/]] (design of the logo)
-  * [[Jessica Chan][http://jessicachanstudios.com/]] (design of new website)
-  * [[osllogo.png;title="=Oregon State University Open Source Lab=",align="center"][http://osuosl.org/]] Oregon State University Open Source Lab Donates US server for swi-prolog.org
-  * [[fastly.png;title="Fastly .com",align="center"][http://www.fastly.com/]] Fastly.com Donates content distribution network services
-  * [[kyndi.png;title="Kyndi, inc.",align="center"][http://www.kyndi.com/]] Kyndi Sponsored library(yall)
-  * [[simularity.png;title="Simularity, inc.",align="center",width="125px"][http://simularity.com/]] Simularity, Inc. Sponsored JavaPengines and RubyPengines.
   * [[CWI.png;title="CWI logo",align="center",width="125px"][http://www.cwi.nl/]]
     (providing a new home)
+  * Guus Schreiber (providing a new home at the VU University, Amsterdam)
+  * [[fastly.png;title="Fastly .com",align="center"][http://www.fastly.com/]] Fastly.com Donates content distribution network services
+  * Ian Andrich - Infrastructure support during MOOC
+  * James NV Cash - Infrastructure support during MOOC
+  * [[Jessica Chan][http://jessicachanstudios.com/]] (design of new website)
+  * [[kyndi.png;title="Kyndi, inc.",align="center"][http://www.kyndi.com/]] Kyndi Sponsored library(yall)
+  * [[osllogo.png;title="=Oregon State University Open Source Lab=",align="center"][http://osuosl.org/]] Oregon State University Open Source Lab Donates US server for swi-prolog.org
+  * Paulo Moura (testing, provides MacOS ports, made
+    [[Logtalk][http://logtalk.org/]] available)
+  * Richard Siddall (ongoing work keeping this website up)
+  * [[securitease.png;title="SecuritEase",align="center"][http://www.securitease.co.nz/]] Mike Elston;
+    testing, funding of GMP, SSL and the 5.9.x stack-shifter
+  * [[simularity.png;title="Simularity, inc.",align="center",width="125px"][http://simularity.com/]] Simularity, Inc. Sponsored JavaPengines and RubyPengines.
+  * Steve Moyle (funding of PlUnit and PlDoc)
+  * [[Steve Reeves][http://www.pixelmagic.co.nz/]] (design of the logo)
 
 ---++ _|Open Source|_ projects used by SWI-Prolog
 
