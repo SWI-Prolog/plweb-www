@@ -180,6 +180,11 @@ links to the relevant documentation.
     a more robust resolution technique for solving queries over complex
     interrelated rules with guaranteed termination.
 
+    * Following XSB, the 8.1.x development series provide _well founded
+    semantics_ for negation as well as incremental tabling to
+    automatically update affected tabling with a changing knowledge
+    base. This provides _Datalog_ style _deductive database_ features.
+
 ### Constraint handling
 
     * Libraries for
