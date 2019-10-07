@@ -51,6 +51,7 @@ People are listed in alphabetical order.
   * Eugeniy Meshcheryakov - Official Ubuntu package
   * Yves Raimond - Debian PPA (with Eugeniy)
   * Lev Lamberov - Debian packages
+  * Galileo Sartor - Snap package specification
 
 ## Other _Contributors_
 
