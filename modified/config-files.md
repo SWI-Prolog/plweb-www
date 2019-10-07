@@ -21,3 +21,5 @@ This directory is located in one of the directories below and names
 If you use multiple versions we suggest  to create the new hierarchy and
 make symbolic links from the old locations.   Windows users will have to
 live with copies.
+
+@see https://swi-prolog.discourse.group/t/new-config-file-structure/1360/1
