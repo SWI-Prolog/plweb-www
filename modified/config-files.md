@@ -1,3 +1,5 @@
+# New config file structure
+
 Place the personal init file in a common place on all operating systems.
 This directory is located in one of the directories below and names
 `swi-prolog`
