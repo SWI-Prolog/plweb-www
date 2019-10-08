@@ -1,6 +1,6 @@
 # New config file structure
 
-Starting with SWI-Prolog  8.1.5,  the   locations  for  finding personal
+Starting with SWI-Prolog 8.1.15,  the   locations  for  finding personal
 configuration files and  storing  extensions   (packs)  has  changed  to
 statisfy the free  desktop  standards  (XDG)   and  reach  at  a  common
 structure for all platforms.
