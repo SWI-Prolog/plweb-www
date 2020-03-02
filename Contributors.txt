@@ -13,7 +13,6 @@ People are listed in alphabetical order.
   * Benoit Desouter (initial version of tabling)
   * Carlo Capelli (Qt-based console)
   * Degski ([[FANN][http://leenissen.dk/]], Windows porting)
-  * Douglas Miles (verify_attributes/3 hook)
   * Fabrizio Riguzzi (initial version of mode directed tabling)
   * Giorgos Stoilos (isub/4: fuzzy string matching)
   * Jan Wielemaker (main developer and maintainer)
@@ -59,16 +58,19 @@ People are listed in alphabetical order.
   * Bob Wielinga (finding projects to support SWI-Prolog)
   * [[CWI.png;title="CWI logo",align="center",width="125px"][http://www.cwi.nl/]]
     (providing a new home)
+  * [[DataChemist.png;title="DataChemist"][https://www.datachemist.com/]],
+    developer of [TerminusDB](https://terminusdb.com/) sponsored
+    (February 2020) the main development machine.
   * Guus Schreiber (providing a new home at the VU University, Amsterdam)
   * [[fastly.png;title="Fastly .com",align="center"][http://www.fastly.com/]] Fastly.com Donates content distribution network services
   * Ian Andrich - Infrastructure support during MOOC
   * James NV Cash - Infrastructure support during MOOC
   * [[Jessica Chan][http://jessicachanstudios.com/]] (design of new website)
-  * [[kyndi.png;title="Kyndi,
-    inc.",align="center"][http://www.kyndi.com/]] sponsors SWI-Prolog
-    development by paying part of Jan Wielemaker's salery. In particular
-    Kyndi actively supports integrating XSB tabling into SWI-Prolog.
-    Kyndi also sponsored library(yall).
+  * [[kyndi.png;title="Kyndi, inc.",align="center"][http://www.kyndi.com/]]
+    sponsors SWI-Prolog development by paying part of Jan Wielemaker's
+    position at the university of Amsterdam. In particular Kyndi
+    actively supports integrating XSB tabling into SWI-Prolog. Kyndi
+    also sponsored library(yall).
   * [[osllogo.png;title="=Oregon State University Open Source Lab=",align="center"][http://osuosl.org/]] Oregon State University Open Source Lab Donates US server for swi-prolog.org
   * Paulo Moura (testing, provides MacOS ports, made
     [[Logtalk][http://logtalk.org/]] available)
