@@ -18,6 +18,9 @@ People are listed in alphabetical order.
   * Jan Wielemaker (main developer and maintainer)
   * Jan van der Steen (SSL interface)
   * Jeff Rosenwald (TIPC interface, Google protocol buffers)
+  * Joachim Schimpf (sharing [ECLiPSe](http://eclipseclp.org/) code and
+    aligning APIs with ECLiPSe for strings, rationals and IEEE 754
+    floats.
   * Keri Harris (testing, patches, MinGW port, lock free tables)
   * Kuniaki Mukai (implementation of =@=/2 (variant/2)
   * Leslie de Koninck (CLP(QR) port)
@@ -32,6 +35,7 @@ People are listed in alphabetical order.
   * Randy Sharp (fixing many typos in the documentation; ongoing work)
   * Raivo Laanemets (wasm port)
   * Richard O'Keefe (sort/2, libraries, extensive comments)
+  * Rick Workman (IEEE 754 floats and testing)
   * Roberto Bagnara and Abramo Bagnara (MinGW port, helped fixing many bugs)
   * Sebastian Sardina (enhancements and debugging JPL)
   * Samer Abdallah ([[OSC, MIDI, Random and Matlab interfaces][</contrib/SamerAbdallah/>]])
