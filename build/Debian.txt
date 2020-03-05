@@ -40,7 +40,7 @@ sudo apt-get install \
 	libdb-dev \
 	libpcre3-dev \
         libyaml-dev \
-        openjdk-8-jdk junit
+        default-jdk junit
 ```
 
 Note that older Debian based distributions, including the Debian
@@ -54,7 +54,7 @@ build time on a Raspberry pi model 2, including all packages is 22
 minutes. If you want to reduce resources, the following packages are
 optional:
 
-  $ openjdk-8-jdk junit :
+  $ default-jdk junit :
   Without you do not have Java connectivity (JPL)
   $ libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev libxpm-dev libxt-dev :
   Without these _xpce_ will not be built and the graphical IDE tools are
@@ -75,6 +75,16 @@ Note that including GMP support makes the memory footprint bigger, but
 mostly if you have no other applications depending on GMP. All the other
 optional components are only loaded if you actually use them.
 
+### Prerequisites to build swipl-win
+
+The `swipl-win` executable provides a Qt based console for SWI-Prolog by
+Carlo Capelli. This console is used to provide the MacOS app, but can
+also be used on Linux. To include it, install the Qt development
+environment:
+
+```shell
+sudo apt install qt5-default
+```
 
 ### Prerequisites to build the documentation
 
