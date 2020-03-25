@@ -21,7 +21,7 @@ Some remarks:
     command line editing for interactive usage.  None is strictly
     needed and one of them suffices. =|libedit-dev|= is the preferred
     command line editor.
-  - ``libtcmalloc-minimal4`` provides
+  - ``libgoogle-perftools-dev`` provides
     [tcmalloc](https://github.com/google/tcmalloc), which can reduce
     memory usage a lot on some heavily multithreaded applications.
   - =libunwind= only simplifies debugging in case of a system crash.
@@ -32,7 +32,7 @@ Some remarks:
 sudo apt-get install \
         build-essential cmake ninja-build pkg-config \
         ncurses-dev libreadline-dev libedit-dev \
-	libtcmalloc-minimal4 \
+	libgoogle-perftools-dev \
 	libunwind-dev \
         libgmp-dev \
         libssl-dev \
