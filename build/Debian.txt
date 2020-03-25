@@ -11,7 +11,7 @@ Some remarks:
   - It is possible to use =iodbc= instead of =unixodbc= for ODBC
     connectivity.
   - The SWI-Prolog Java interface (JPL) works with many Java development
-    kits, not only =|openjdk-8-jdk|=.
+    kits.
   - The package =|libarchive-dev|= is needed for library(archive),
     which is needed by pack_install/1.
   - The package =|libossp-uuid-dev|= is needed for library(uuid).
@@ -21,6 +21,9 @@ Some remarks:
     command line editing for interactive usage.  None is strictly
     needed and one of them suffices. =|libedit-dev|= is the preferred
     command line editor.
+  - ``libtcmalloc-minimal4`` provides
+    [tcmalloc](https://github.com/google/tcmalloc), which can reduce
+    memory usage a lot on some heavily multithreaded applications.
   - =libunwind= only simplifies debugging in case of a system crash.
   - `cmake` must be at least version 3.5 See
     [CMAKE.md](https://github.com/SWI-Prolog/swipl-devel/blob/master/CMAKE.md)
@@ -29,6 +32,7 @@ Some remarks:
 sudo apt-get install \
         build-essential cmake ninja-build pkg-config \
         ncurses-dev libreadline-dev libedit-dev \
+	libtcmalloc-minimal4 \
 	libunwind-dev \
         libgmp-dev \
         libssl-dev \

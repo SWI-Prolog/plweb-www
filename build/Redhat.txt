@@ -23,6 +23,7 @@ dnf install \
   cmake \
   ninja-build \
   libunwind \
+  gperftools-devel \
   freetype-devel \
   gmp-devel \
   java-1.8.0-openjdk-devel \
