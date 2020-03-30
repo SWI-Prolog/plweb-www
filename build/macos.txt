@@ -30,7 +30,7 @@ Next, you must install the following Macport libraries for a complete build.
   ==
   port install cmake gmp jpeg libarchive libiconv libmcrypt ncurses \
                openssl ossp-uuid pkgconfig readline zlib pcre libedit \
-               libyaml unixODBC openjdk11 junit
+               libyaml unixODBC openjdk14 junit
   ==
 
 Notes
