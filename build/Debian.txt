@@ -1,5 +1,15 @@
 # Prerequisites for Debian based systems (Ubuntu, Mint, ...)
 
+## Using apt-get to get dependencies from the package maintainers
+
+The universal way to get dependencies for a package is below.   The disadvantage is that the distribution list of dependencies can be outdated.  
+
+    apt-get build-dep swi-prolog
+
+After building you may wish to run `?- check_installation.` in `swipl` to check that all components have been built properly.
+
+## Installing the dependencies manually
+
 Use the following commands to obtain all dependencies for a full build
 from source. Note that there are no known version dependencies on any of
 these packages.  If your (debian-based) distribution is lacking any of
@@ -7,7 +17,9 @@ these package use =|apt-cache search <name>|= to find an alternative,
 where <name> is e.g., =libunwind= (i.e., remove version and details).
 Some remarks:
 
-  - ``ninja-build`` may be dropped, building using `make`.
+  - ``ninja-build`` may be dropped, building using `make`.  Using `make`
+    is fine for a one-time build, but `ninja` is advised for developers
+    or people that regularly update using git.
   - It is possible to use =iodbc= instead of =unixodbc= for ODBC
     connectivity.
   - The SWI-Prolog Java interface (JPL) works with many Java development
