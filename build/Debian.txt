@@ -59,16 +59,8 @@ sudo apt-get install \
         default-jdk junit
 ```
 
-Note that older Debian based distributions, including the Debian
-stable *|(Squeeze (6.0))|* ship with =|libunwind7-dev|= instead of
-=|libunwind-dev|=.
-
-[Raspbian](<Raspbian.txt>) does not have =libunwind=. Just leave it out.
-All other packages are available. SWI-Prolog versions 7.3.x require
-*|gcc 4.8 or later|*, provided by Raspbian GNU/Linux 8.0 (jessie). Total
-build time on a Raspberry pi model 2, including all packages is 22
-minutes. If you want to reduce resources, the following packages are
-optional:
+[Raspbian](<Raspbian.txt>) is fully supported and can be used to build SWI-Prolog
+including all packages without issues. If you want to reduce resources, the following packages are optional:
 
   $ default-jdk junit :
   Without you do not have Java connectivity (JPL)
