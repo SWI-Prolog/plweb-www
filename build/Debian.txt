@@ -23,7 +23,8 @@ Some remarks:
   - It is possible to use =iodbc= instead of =unixodbc= for ODBC
     connectivity.
   - The SWI-Prolog Java interface (JPL) works with many Java development
-    kits.
+    kits.  `Junit4` is needed as of version 8.1.29.  Older versions require
+    `junit` (Junit 3).
   - The package =|libarchive-dev|= is needed for library(archive),
     which is needed by pack_install/1.
   - The package =|libossp-uuid-dev|= is needed for library(uuid).
@@ -56,7 +57,7 @@ sudo apt-get install \
 	libdb-dev \
 	libpcre3-dev \
         libyaml-dev \
-        default-jdk junit
+        default-jdk junit4
 ```
 
 [Raspbian](<Raspbian.txt>) is fully supported and can be used to build SWI-Prolog
