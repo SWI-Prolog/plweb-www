@@ -9,7 +9,7 @@ architecture (currently amd64).
 starting from version 8.1.28.  Currently, the latest snap is installed
 using
 
-    snap install --beta swi-prolog
+    snap install swi-prolog
 
 The `swi-prolog` snap provides two commands, the first being a console
 application and the second the Qt window version.
