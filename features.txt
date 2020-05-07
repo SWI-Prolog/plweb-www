@@ -23,7 +23,7 @@ of clauses.
 
 SWI-Prolog __unifies many extensions__ of the core language that have
 been developed in the Prolog community such as _tabling_, _constraints_,
-_global variables_, _destructive assignment_, _delimited continations_
+_global variables_, _destructive assignment_, _delimited continuations_
 and _interactors_.
 
 SWI-Prolog offers a variety of __development tools__, most of which may
@@ -67,7 +67,7 @@ as Python and Node.js only use a single core and switch between tasks
 based on blocking I/O. This approach generally provides good resource
 usage for I/O intensive services with a high number of connections but a
 task blocking on a computation delays all other clients. As SWI-Prolog's
-_global garbage collectors__ for atoms and removed dynamic clauses run
+__global garbage collectors__ for atoms and removed dynamic clauses run
 __fully asynchronous__ in a dedicated thread, its (soft) _real time_
 behaviour is excellent.
 

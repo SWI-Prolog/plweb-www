@@ -38,7 +38,7 @@ development series.  Releases are tagged *V*_|Major.Minor.Patch|_.
   $ 7.6.x: Major release. Multi-argument indexing, better multi-threaded
   performance, threaded global GC (atoms and clauses), mode-directed
   tabling, restored same expand and directive semantics for initial load
-  and reloading files, cleaner initializatin and command line handling.
+  and reloading files, cleaner initialization and command line handling.
 
   $ 7.4.x: Major release.  More robust and better scalable support
   for multi-core hardware, tabling, engines.  Many enhancements to
@@ -52,7 +52,7 @@ development series.  Releases are tagged *V*_|Major.Minor.Patch|_.
 
   $ 6.6.x: Mostly a stability release. 6.6.x comes with some
   modification, notably to processing commandline arguments. It has been
-  stabalised rather quickly because the 7.1.x branch introduces many and
+  stabilised rather quickly because the 7.1.x branch introduces many and
   partially incompatible changes.
 
   $ 6.4.x: RDF database version 3, quasi quotations, many enhancements to

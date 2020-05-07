@@ -142,7 +142,7 @@ on the same server.  What if you want the servers to communicate?
 
 # Advantages of the _LP_ framework
 
-Why would one use choose the SWI-Prolog web programming framework over
+Why would one choose the SWI-Prolog web programming framework over
 LAMP, Tomcat, Django, Ruby-on-rails, etc.?
 
   1. Avoid the [Object-relational impedance
@@ -192,7 +192,7 @@ framework. The main weakness of Prolog are algorithms that require
 destructive assignment, intensive array processing or bare-metal
 performance for e.g., processing pixels. Such requirements are rare in
 the context of web programming. If necessary, such requirements can be
-fullfilled using C/C++ plugins.
+fulfilled using C/C++ plugins.
 
 There is a weakness in scalability and robustness. Both are mostly
 related to a small user basis and thus limited testing. Notably dealing
@@ -201,7 +201,7 @@ be remedied by using a proxy server that implements state-of-the-art
 DDoS defence techniques, load regulation and load balancing. Slightly
 more fundamental is that each request is processed by a Prolog thread.
 This is also the case in Apache, but server architectures that aim at
-really high trafic such as nginx process many requests using I/O
+really high traffic such as nginx process many requests using I/O
 multiplexing.
 
 Another problem is the (un)availability of server-side plugins to access

@@ -33,7 +33,7 @@ The documentation itself appears in three formats:
     extension ``.doc``, but are in fact LaTeX files that are
     preprocessed to create automatic links to predicates and functions.
     - Markdown files, mostly ``.md``, but ``.txt`` is also used.
-    - Documenentation in the source code
+    - Documentation in the source code
       using [PlDoc](</pldoc/package/pldoc>)
 
 To preview your new documentation, build the system and use help/1:
