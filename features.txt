@@ -118,7 +118,7 @@ links to the relevant documentation.
 ### Engine
 
     * *fast* compilation. E.g., loads [WordNet
-    3.0](https://wordnet.princeton.edu/wordnet/download/current-version/)
+    3.0](https://wordnet.princeton.edu/download/current-version)
     in 14 seconds from the Prolog source or 0.4 seconds from _quick load
     file_ format (see qcompile/1).  The WordNet source counts 821,515
     lines.  System: Ubuntu 16.04 on Intel i7-3770, 32Gb memory.
