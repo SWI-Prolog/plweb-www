@@ -1,7 +1,7 @@
 ---+ How do I enlarge the stacks?
 
 Old versions of SWI-Prolog had quite limited default stack-sizes. As of
-version 5.10, there are no resources involved with unused spack-space
+version 5.10, there are no resources involved with unused stack-space
 and the limits on 32-bit platforms are by default the maximum that can
 be handled on these platforms: 128Mb. On 64-bit platforms the default is
 256Mb, which typically means you have roughly the same limit as on

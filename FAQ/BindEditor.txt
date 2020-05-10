@@ -13,12 +13,12 @@ is available) causes the internal Emacs clone to be used. Some examples:
 
 If the editor is not known to SWI-Prolog, it will open the file, but not
 locate the editor to source-locations. To tell Prolog how to open a file
-and jump to a specified line, add a clause to edit:edit_command/2 . See
+and jump to a specified line, add a clause to prolog_edit:edit_command/2 . See
 the example below. See library/edit.pl for details.
 
 ==
 :- multifile
-	edit:edit_command/2.
+	prolog_edit:edit_command/2.
 
 edit_command(myedit, '%e --line=%d "%f"').
 ==

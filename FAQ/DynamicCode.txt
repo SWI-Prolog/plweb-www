@@ -8,7 +8,7 @@ related predicate.
 
 Normally, *compiled* code results in *static* predicates. These cannot
 be modified at runtime. Knowing code is static helps the compiler. If
-you want to make _dynamic_ code, i.e., code that can be modified ar
+you want to make _dynamic_ code, i.e., code that can be modified at
 runtime, use the dynamic/1 directive. Normally you place this directive
 near the start of a file or just above the code:
 

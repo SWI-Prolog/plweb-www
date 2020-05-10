@@ -23,10 +23,10 @@ define this the location for our icons using
 
 Next, we define images we want to use as SWI-Prolog resources. See
 resource/3 in the SWI-Prolog reference manual for details. Assume we
-have print.xpm in the cions directory and we want to make an image
+have print.xpm in the icons directory and we want to make an image
 thereof. This is done using the code below. The first fact declares the
 resource print as a resource of type image whose data is in the file
-image('print.xpm'). The file argument followes the files-specification
+image('print.xpm'). The file argument follows the files-specification
 rules defined by absolute_file_name/3. The directive
 pce_image_directory/1 above adds icons to the image search path as well
 as to the XPCE search-path for images. Finally, resource(print) defines

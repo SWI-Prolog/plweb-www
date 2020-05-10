@@ -1,7 +1,7 @@
 # Site and personal initialisation files
 
 On startup, SWI-Prolog reads both site initialisation and personal
-initialisation files. Both can be controlled explicitely using
+initialisation files. Both can be controlled explicitly using
 commandline options (*|-F base|* for site, and *|-f base|* for personal
 initialisation).
 

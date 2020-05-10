@@ -1,7 +1,7 @@
 ---+ Using PceEmacs
 
-The XPCE GUI tool for Prolog comes with a build-in emacs clone written
-in Prolog. It's Prolog mode does proper indentation, full syntax
+The XPCE GUI tool for Prolog comes with a built-in emacs clone written
+in Prolog. Its Prolog mode does proper indentation, full syntax
 checking by calling the SWI-Prolog parser, warning for singleton
 variables and finding predicate definitions based on the
 source-information from the Prolog database. Syntax colouring of clause

@@ -47,7 +47,7 @@ are two situations:
   and all lookup is fully indexed. The price is that you have little
   control over the order of the clauses. If you modify file 1 and reload
   it, its clauses will now be _after_ those from file 2.  Make sure that
-  the order does not matter!  The second appraoch maintains the order of
+  the order does not matter!  The second approach maintains the order of
   answers. This approach is typically preferred if the facts from file 1
   and file 2 are conceptually different, e.g., the first defines people
   and the second organizations.

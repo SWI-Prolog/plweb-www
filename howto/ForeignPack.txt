@@ -61,7 +61,7 @@ dependencies between Prolog and the extension.  In particular:
   $ Linux :
   Linux ELF objects (*|.so|* files) resolve symbols against already
   loaded symbols, which makes the extension independent from the
-  location of SWI-Prolog and the version.  The downsite is that
+  location of SWI-Prolog and the version.  The downside is that
   Linux shared object that depend on many system features are often
   not binary compatible due to different versions of dependencies.
 
@@ -163,8 +163,8 @@ mentioned variables replace the above described value.
 ---+++ Windows MinGW builds
 
 The infrastructure assumes using [[MinGW][http://www.mingw.org]] and
-MSYS for building foreign packages on Windows. In pack_install/1 detects
-an a foreign pack on Windows, it performs the following steps to prepare
+MSYS for building foreign packages on Windows. If pack_install/1 detects
+a foreign pack on Windows, it performs the following steps to prepare
 MinGW:
 
   1. If gcc.exe and make.exe are in %PATH%, use them.

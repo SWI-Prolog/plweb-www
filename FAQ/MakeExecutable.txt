@@ -20,5 +20,5 @@ some cases:
 
     * WinExe.txt -- Make an executable of Prolog for MS-Windows
     * PceWinExe.txt -- Make an executable of an XPCE graphical
-    application for MS-WIndows
-    * UnixExe.txt -- Make exectable in Linux/Unix systems 
+    application for MS-Windows
+    * UnixExe.txt -- Make executable in Linux/Unix systems 

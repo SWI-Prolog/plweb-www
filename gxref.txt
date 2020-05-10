@@ -1,8 +1,8 @@
 ---+ SWI-Prolog XREF --- Cross-Referencing Tool
 
 The SWI-Prolog Cross-Referencer can be used to examine the currently
-loaded program, creating a hiearchical file overview with icons
-indicating which files have suspicious code, a dependecy view as shown
+loaded program, creating a hierarchical file overview with icons
+indicating which files have suspicious code, a dependency view as shown
 below and detailed info per file as shown below that. To analyse a
 program, load it into Prolog and, simply run gxref/0:
 
@@ -14,7 +14,7 @@ program, load it into Prolog and, simply run gxref/0:
 
 			[[xrefchatdep.gif]]
 
-File-dependecy view. Views can be created for the whole project, per
+File-dependency view. Views can be created for the whole project, per
 directory or selectively by adding files to the view.
 
 ---++ XREF - File info
