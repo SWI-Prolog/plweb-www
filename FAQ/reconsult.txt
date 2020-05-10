@@ -9,5 +9,5 @@ see multifile/1.
 
 @see For reloading files after editing, use make/0.
 @see For more info on sourcecode management, see [[Initialising and
-Managing a Prolog project][</man/IDE.html>]] from the SWI-Prolog
+Managing a Prolog project][</pldoc/man?section=IDE>]] from the SWI-Prolog
 reference manual.

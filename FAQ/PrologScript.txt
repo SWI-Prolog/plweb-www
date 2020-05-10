@@ -22,7 +22,7 @@ main(Argv) :-
 ==
 
 More information on using PrologScript as well as more compilation
-issues can be found in the [[Reference Manual][<man/compilation.html>]].
+issues can be found in the [[Reference Manual][</pldoc/man?section=compilation>]].
 
 ---++ Windows
 

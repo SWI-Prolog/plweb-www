@@ -8,7 +8,7 @@ are two situations:
   different predicates.  Now, there are two ways out:
 
     - Rename the predicate in one of the two files.
-    - Start using [[modules][</man/modules.html>]].
+    - Start using [[modules][</pldoc/man?section=modules>]].
 
   2. This was intended: you want different clauses of the p/1 predicate
   in different clauses.  There are again two ways out:

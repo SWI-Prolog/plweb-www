@@ -18,7 +18,7 @@ A = 3.141592653589793.
 
 Floating point numbers are not exact. If you want exact arithmetic,
 please check out SWI-Prolog's support for rational numbers in the
-[[manual][</man/arith.html>]].
+[[manual][</pldoc/man?section=arith>]].
 
 Quoting Richard O'Keefe:
 

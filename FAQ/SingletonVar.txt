@@ -33,5 +33,5 @@ better('SWI-Prolog', AnyOtherProlog?).
 
 Note: changes to the style_check/1 options are reverted at the end of
 the file the directive appears in. See also [[Syntax
-Notes][</man/syntax.html>]] in the reference manual.
+Notes][</pldoc/man?section=syntax>]] in the reference manual.
 

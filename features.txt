@@ -164,7 +164,7 @@ links to the relevant documentation.
     * *UNICODE* character set handling internal. Ideal for web and
     international applications.
 
-    * *|[[Multi-threading][</man/threads.html>]]|* support: run multiple
+    * *|[[Multi-threading][</pldoc/man?section=threads>]]|* support: run multiple
     pre-emptively scheduled prolog engines on the same database.
 
     * [*Engines*](</pldoc/man?section=engines>), also known as
@@ -188,9 +188,9 @@ links to the relevant documentation.
 ### Constraint handling
 
     * Libraries for
-    *|[[CHR][</man/chr.html>]]|* (Constraint Handling
-    Rules), *|[[clp(FD)][</man/clpfd.html>]]|*,
-    *|[[clp(R,Q)][</man/clpqr.html>]]|* and various others.
+    *|[[CHR][</pldoc/man?section=chr>]]|* (Constraint Handling
+    Rules), *|[[clp(FD)][</pldoc/man?section=clpfd>]]|*,
+    *|[[clp(R,Q)][</pldoc/man?section=clpqr>]]|* and various others.
 
 ### Connectivity
 
