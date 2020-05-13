@@ -1,7 +1,7 @@
 # Issues with library(readline)
 
 The library(readline) is based on [GNU
-readline](https://cnswww.cns.cwru.edu/php/chet/readline/rltop.html),
+readline](https://tiswww.case.edu/php/chet/readline/rltop.html),
 providing command line editing for the terminal on Unix-like systems.
 
 ## Consequences
