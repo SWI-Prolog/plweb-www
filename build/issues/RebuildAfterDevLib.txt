@@ -1,6 +1,6 @@
 # Fix incomplete installation due to missing dependencies
 
-Sometimes SWI-Prolog is lacks features or packages because the required
+Sometimes SWI-Prolog lacks features or packages because the required
 dependencies were not available while compiling the system from source.
 Installed features and packages can be checked using
 check_installation/0 (requires SWI-Prolog 7.1.10 or later). Issues found
@@ -25,7 +25,7 @@ steps.
      See =README.mingw= for downloading and installing dependencies.
 
   2. Redo the build.  If you have not much experience, the best option is simply
-     to redo the whole [build](<build/unix.html>).
+     to redo the whole [build](</build/unix.html>).
 
      ==
      % make distclean

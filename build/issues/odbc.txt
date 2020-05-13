@@ -1,7 +1,7 @@
 # Issues with library(odbc)
 
 The library(odbc) can be used to connect to relational databases, such as MySQL,
-Postgress, Microsoft SQL server, etc.
+Postgres, Microsoft SQL server, etc.
 
 ## Consequences
 
@@ -15,6 +15,6 @@ as well as the *sql.h* header.
 
 ### MacOS binary
 
-The MacOSX binary package does *not* contain library(odbc).  Maverics does probide
+The MacOSX binary package does *not* contain library(odbc).  Mavericks does provide
 iodbc.dylib, but the development system does not provide sql.h.  Please contact
 bugs@swi-prolog.org if you know a solution to this problem.

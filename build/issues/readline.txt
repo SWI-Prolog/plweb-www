@@ -22,7 +22,7 @@ more powerful editor.
 Install the development package for libreadline.  This is available on
 many platforms.
 
-  $ Debian/Ubutu :
+  $ Debian/Ubuntu :
   =|$ apt-get install libreadline-dev|=
 
 After installing the development library, [re-install the

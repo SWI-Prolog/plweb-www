@@ -11,7 +11,7 @@ You need to download the Emscripten  compiler. Follow the instruction on
 its
 [homepage](http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html).
 
-After the successful installation load the Emscripten environment into the current terminal session (asjust path):
+After the successful installation load the Emscripten environment into the current terminal session (adjust path):
 
     source ./emsdk_env.sh
 

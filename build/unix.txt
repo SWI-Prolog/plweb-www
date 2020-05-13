@@ -62,7 +62,7 @@ holding different configurations. A built system can simply be removed
 by removing the build directory. Basic instruction to build the system
 are below. The first alternative installs the system in your home
 directory and used [ninja](https://ninja-build.org/) to build the
-system. The second alternative uses classicaly `make` and installs in
+system. The second alternative uses classical `make` and installs in
 `/usr/local`. The `ctest -j 4` tests the system using 4 parallel jobs.
 Testing is encouraged but not required.
 
