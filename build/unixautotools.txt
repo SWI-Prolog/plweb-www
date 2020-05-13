@@ -1,7 +1,7 @@
 # Building on Unix using GNU autotools
 
 This page describes building SWI-Prolog from source for versions prior
-to 7.7.20. More recent versions are build using
+to 7.7.20. More recent versions are built using
 [cmake](https://cmake.org/). The process is described on [this
 page](<unix.html>).
 
@@ -106,7 +106,7 @@ of required libraries.
 ==
 
 *configure* is a Bourne Shell script doing the actual configuration for
-your computer. The most important options of confure are:
+your computer. The most important options of configure are:
 
     $ --help :
     Print a list of all available options. See the files INSTALL and
@@ -123,7 +123,7 @@ your computer. The most important options of confure are:
     Overrides the directory for installing the executables to
     exec_prefix/bin/, normally used on heterogeneous networks.
 
-After succesfull installation, the compilation directory may be removed.
+After successful installation, the compilation directory may be removed.
 
 ### In case of trouble ...
 
