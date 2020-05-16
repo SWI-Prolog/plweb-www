@@ -31,7 +31,7 @@ We appreciate your patience.
 The [forum and mailing list](https://swi-prolog.discourse.group) for
 SWI-Prolog is kindly hosted by [Discourse](https://www.discourse.org/).
 This list is used for announcements as well as questions and discussion
-amoung users. On average, traffic is 5-10 messages per day. Details:
+among users. On average, traffic is 5-10 messages per day. Details:
 
   - The forum can be viewed [here](https://swi-prolog.discourse.group)
 

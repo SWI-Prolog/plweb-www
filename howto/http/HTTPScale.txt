@@ -20,7 +20,7 @@ The concurrency model of the server is organised as follows.
 
     2. A worker that receives a connection from the accept-thread reads
     and parses the HTTP request-header.  It is given a limited time to
-    receive the header, so mallicious clients that stop after sending
+    receive the header, so malicious clients that stop after sending
     an incomplete header are disconnected.  Next, it typically calls
     http_dispatch/1 to process the request.  Without any further
     precautions, the worker processes the entire request before it
@@ -33,15 +33,15 @@ complete the request while the worker returns to the acceptor-queue.
 This can be achieved in two ways: by `hand' using http_spawn/2 or
 centralised using the option spawn(+Spec) in the option-list of
 http_handler/3. This mechanism can create threads in two ways: unbounded
-or bounded by a dynamic pool. Unbounded creation carries the risc of
+or bounded by a dynamic pool. Unbounded creation carries the risk of
 running out of resources.  Pool-bounded creation is therefore often the
 way to go.
 
 Pools are created using thread_pool_create/3. A pool has a name, maximum
 number of workers and some additional parameters.  Using multiple pools,
 we can create separate bounds for different tasks of the server, such as
-CPU intensitive tasks or tasks sending large files.  You do not want too
-many concurrent users with CPU intensitive jobs, while you may want many
+CPU intensive tasks or tasks sending large files.  You do not want too
+many concurrent users with CPU intensive jobs, while you may want many
 concurrent users that merely download large files (an operation that can
 take long if the connection is slow).  Here is a simple example with two
 pools:
@@ -68,7 +68,7 @@ following topics:
     * Show how to create a web-page where intermediate results are
       printed as they become available.
 
-If you run this demo, it is adviced to run the thread-monitor.  This can
+If you run this demo, it is advised to run the thread-monitor.  This can
 be started from the plwin.exe menu or by typing:
 
 ==

@@ -12,7 +12,7 @@ This used to be rare, but given today's good and cheap virtualization it
 becomes a real option.  The library(http/http_unix_daemon) provides the
 infrastructure, including a =|/etc/init.d|= script for Debian for starting
 a server using root privileges, opening a reserved port, registering the
-service in =|/var/run|=, talking to the Unix syslog deamon and finally
+service in =|/var/run|=, talking to the Unix syslog daemon and finally
 dropping privileges to a given user and group.
 
 ---++ Using Apache

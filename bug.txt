@@ -21,7 +21,7 @@ is just a guideline, but if any of these parts are missing it is very likely tha
 
   1. The version of SWI-Prolog you use and the operating system.
   2. A clear description on how to reproduce the issue.  Typically,
-     his consists of:
+     this consists of:
      - A _complete_ program.  Please do not send merely a fragment
        because
          1. It costs us a lot of time to complete and

@@ -20,7 +20,7 @@ on a heavily loaded server.
 ---++ Setting up VNC on Debian/Ubuntu
 
 Unfortunately, the setup requires root privileges and some Unix skills.
-Bwloe, we outline the steps for Debian and Debian derived systems (e.g.,
+Below, we outline the steps for Debian and Debian derived systems (e.g.,
 Ubuntu). This can serve as a starting point for all Unix-based systems.
 We assume TightVNC, root privileges and these steps create a user
 =wwwswi=.

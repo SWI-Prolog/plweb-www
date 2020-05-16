@@ -81,7 +81,7 @@ server(Port) :-
 
 %%	home(+Request)
 %
-%	Privides the initial page of the LOD-crawler with a form
+%	Provides the initial page of the LOD-crawler with a form
 %	to search on http://sindice.com
 
 home(_Request) :-

@@ -62,7 +62,7 @@ Now, you may ask *|"Where's the beef?"|* True, this syntax is surely
 less readable than HTML or XML. This way of producing web-pages is
 intended for _dynamic_ web-pages. Fully static pages are much better
 [[served from files][<ServeFiles.html>]]. For mixed files with large
-static parts and e.g., a dynamic table, [[PWP][PWP.txt]] is a the
+static parts and e.g., a dynamic table, [[PWP][PWP.txt]] is the
 Prolog-based answer to PHP, ASP, JSP, etc.
 
 One way to deploy the above described library(http/html_write) is to

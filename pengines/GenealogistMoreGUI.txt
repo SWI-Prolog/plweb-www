@@ -13,7 +13,7 @@ apps/
    swish\
    scratchpad\
   ~~~~
-The file =|genealogist.pl|= has not changed since part 3, so we will not say more about it here. The CSS in =|genealogist.css|= is fairly uninteresting so we keep silent abot that too. Let us begin by looking at the HTML:
+The file =|genealogist.pl|= has not changed since part 3, so we will not say more about it here. The CSS in =|genealogist.css|= is fairly uninteresting so we keep silent about that too. Let us begin by looking at the HTML:
 
   ~~~~
   <!DOCTYPE html>
