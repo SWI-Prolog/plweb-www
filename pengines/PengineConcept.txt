@@ -16,7 +16,7 @@ by what is printed on the two screens.
 Fortunately, equipped with the pengines library you don't need two
 computers or two SWI-Prolog main processes to program in this way.
 You can run pengine_create([name('A')]) and pengine_create([name('B')]) 
-in the same shell. Better yet, it doesnt
+in the same shell. Better yet, it doesn't
 even have to be you doing the programming! Instead, you can write a
 program that based on what comes back from A and/or B sends the next
 command (or whatever needs to be done) to A and/or to B.
@@ -33,7 +33,7 @@ written to be run from a CLI are extremely easy to port to Pengines.
 You basically only have to replace calls to write/1 with calls to
 pengine_output/1 and calls to read/1 with calls to pengine_input/2.
 For your users' experience it may of course mean a lot since you can
-choose to repond with JSON and use the JSON to influence the behaviour
+choose to respond with JSON and use the JSON to influence the behaviour
 of a nice GUI, rather than a behaviour in terms of what is read from
 or written to a CLI.
 

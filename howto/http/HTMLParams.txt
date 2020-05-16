@@ -1,7 +1,7 @@
 ---++ Processing HTTP-parameters
 
 In HTMLRules.txt, we used the HTML generation library to build a single
-page dynamicaly.  In this page we will introduce two new primitives:
+page dynamically.  In this page we will introduce two new primitives:
 
     1. Create a handler that processes parameters
     2. Create a URI to another handler dynamically
@@ -154,7 +154,7 @@ In this page we learned linking dynamically generated pages together and
 passing parameters. The same infrastructure can of course be used to
 generate forms as we discuss in HTMLForms.txt. We also learned how to
 deal with reusability and maintenance by properly splitting the code
-and by refering to HTTP paths by the predicate that implements them
+and by referring to HTTP paths by the predicate that implements them
 rather than the exact location of the server.
 
 ---+++ What is still missing?
@@ -162,7 +162,7 @@ rather than the exact location of the server.
 If you loaded the source and ran the demo, you might feel a bit
 disappointed: it works flawlessly, but it looks very 1980's: totally
 basic style and no fancy interaction. With the technology presented
-sofar, we can easily make it look 1990's: create reusable rules that
+so far, we can easily make it look 1990's: create reusable rules that
 create tables-in-tables(-in-frames)! In HTMLStyle.txt, we discuss how to
 do this state-of-the-art.
 

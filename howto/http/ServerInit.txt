@@ -13,7 +13,7 @@ starts a number of server threads and then presents the normal
 interactive Prolog toplevel. This is great for development and under the
 [[VNC][ServerVNC.txt]] solution, but of no use for a non-interactive
 server, because Prolog terminates if it reads an end-of-file at the
-toplevel.  We need to give the toplevel somthing to do.  The common
+toplevel.  We need to give the toplevel something to do.  The common
 solution is to use thread_get_message/1 for that because it provides
 a non-polling indefinite sleep that can be stopped by sending a message
 to the thread.  For example:

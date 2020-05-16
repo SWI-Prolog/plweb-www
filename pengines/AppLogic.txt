@@ -54,6 +54,6 @@ now?  There are several reasons and work-arounds.
   it is written properly and declare it using sandbox:safe_primitive/1.
 
   $ The API has side effects, but that it what it should do :
-  Make sure that the API corectly validates arguments and really
+  Make sure that the API correctly validates arguments and really
   cannot do anything unintended and declare it using
   sandbox:safe_primitive/1.

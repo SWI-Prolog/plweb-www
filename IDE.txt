@@ -8,7 +8,7 @@ improve the user experience for the regular Prolog programmer.
 
 ### Built-in tools
 
-The built-in tools provide a feature rich evironment for developing with
+The built-in tools provide a feature rich environment for developing with
 SWI-Prolog. The tools are built on top of the portable XPCE graphics
 system. They look outdated and the learning curve for the built-in Emacs
 clone is steep. The real-time semantic highlighting greatly reduces the
@@ -58,7 +58,7 @@ running Prolog. It provides a [CodeMirror](https://codemirror.net/)
 based editor with server-enriched semantic highlighting based on the
 same library as the above mentioned built-in editor. SWISH can display
 Prolog results as tables, charts and anything supported by HTML5 and
-JavaScript. SWISH *notebooks* provide functonality inspired by
+JavaScript. SWISH *notebooks* provide functionality inspired by
 [Jupyter/IPython notebook](https://ipython.org/).
 
 SWISH provides a smooth transition starting with conventional Prolog

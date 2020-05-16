@@ -62,7 +62,7 @@ Building follows standard CMake procedures.  The   system  can  be built
 using _Profile Guided Optimization_  (PGO),  which   makes  it  about 7%
 faster. To do so
 
-  1. Configure using cmake using the Ninja build tool (-G Ninja)
+  1. Configure cmake using the Ninja build tool (-G Ninja)
   2. Run ../script/pgo-compile.sh
   3. Run Ninja
 
