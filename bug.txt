@@ -38,7 +38,7 @@ is just a guideline, but if any of these parts are missing it is very likely tha
 
 There is [[a Debian bug
 tracker][http://bugs.debian.org/cgi-bin/pkgreport.cgi?pkg=swi-prolog]]
-which informs the Debian maintainer Michael Piefel.
+which informs the Debian maintainer.
 
 ## Where do I send my bug report
 
