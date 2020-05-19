@@ -73,7 +73,7 @@ fine*.
 The ISO standard has done a great job in synchronising and cleaning the
 syntax and core semantics of the language. However, the standardised
 core is too small to accommodate real applications, the process to
-enlarge is is too slow (while some vendors do not even want to enlarge
+enlarge is too slow (while some vendors do not even want to enlarge
 it) and there are no mechanisms that allow us to make even tiny
 incompatible changes needed to accommodate new features in a clean way.
 Especially this last restriction turns it into a practically dead
@@ -161,7 +161,7 @@ escape from the world of integers:
 
 In the long run we expect a tighter integration of rational numbers.
 This will involve integral division to be mapped to rationals and might
-involve syntactical extensions to accomodate rationals.
+involve syntactical extensions to accommodate rationals.
 
 
 ## Representing text
@@ -210,7 +210,7 @@ The ISO Prolog syntax has several flaws.
   widely accepted `\uXXXX` and `\UXXXXXXXX`.  In addition, SWI-Prolog
   supports [quasi quotations](</pldoc/man?section=quasiquotations>),
   which can support pretty looking long strings as well as safely
-  interprolate Prolog variables into source code fragments of
+  interpolate Prolog variables into source code fragments of
   external languages.
 
   $ Lack of support for commonly seen syntactical primitives :
