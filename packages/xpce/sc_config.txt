@@ -1,4 +1,4 @@
-        XPCE Screens -- Configuration Editor
+---+ XPCE Screens -- Configuration Editor
 
 				[[config.gif]]
 

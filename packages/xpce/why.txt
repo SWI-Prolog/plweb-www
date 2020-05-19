@@ -24,9 +24,9 @@ which Prolog is `the tool-to-use'. Such applications are often
 implemented in other languages and Prolog is used as an embedded engine
 to deal with these tasks.
 
-Prolog is very suitable for building graphical applications. It's
+Prolog is very suitable for building graphical applications. Its
 powerful meta-programming capabilities allow for clear and concise
-declarations of properties of- and dependencies in the application. Its
+declarations of properties and dependencies in the application. Its
 interactive development environment allows for fast prototyping while
 the application is running and its automatic data and memory management
 makes development fast and reliable.
@@ -38,7 +38,7 @@ interactive applications!
 
 ---++ Alternatives for Graphics in Prolog
 
-A couple of aproaches have been taken to arrive at graphical
+A couple of approaches have been taken to arrive at graphical
 applications that include Prolog. We will review them below.
 
     $ Embedding :
@@ -47,7 +47,7 @@ applications that include Prolog. We will review them below.
     application written in another language. The advantage of this
     approach is freedom of choice for your GUI platform. Disadvantage is
     that debugging and developing the hybrid environment is generally
-    cumbersome, and you loose many the advantages of Prolog as a GUI
+    cumbersome, and you lose many the advantages of Prolog as a GUI
     language outlined above. 
 
     $ Using a Prolog with built-in graphics :

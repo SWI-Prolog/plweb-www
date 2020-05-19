@@ -23,7 +23,7 @@ technical requirements for designing and implementing a GUI.
     Using standard controls is not always a good solution. For some
     applications, it is feasible to design graphical representations
     that render the information naturally. Using such representations
-    and conrolling the application through direct-manipulation of the
+    and controlling the application through direct-manipulation of the
     representation results in a better interface.
 
     $ Specification of interface dynamics :

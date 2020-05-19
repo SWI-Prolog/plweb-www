@@ -2,8 +2,9 @@
 
 On this page, we will give an impression on what programming and using
 XPCE looks like. This is by no means a manual. Definitions of classes
-and methods used in the examples are not provided. Creating and
-manipulation objects
+and methods used in the examples are not provided.
+
+---++ Creating and manipulating objects
 
 XPCE adds four predicates to Prolog. The predicate new/2 creates an
 object, send/2 modifies an object or performs a boolean test,

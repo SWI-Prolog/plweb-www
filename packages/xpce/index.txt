@@ -4,14 +4,14 @@
 
 XPCE is a toolkit for developing graphical applications in Prolog and
 other interactive and dynamically typed languages. XPCE follows a rather
-unique approach of for developing GUI applications, which we will try to
+unique approach to developing GUI applications, which we will try to
 summarise using the points below.
 
     $ Add object layer to Prolog :
     XPCE's kernel is a object-oriented engine that allows for the
     definition of methods in multiple languages. The built-in graphics
     are defined in C for speed as well as to define the
-    platform-independence layer. Applications, as well as some
+    platform-independent layer. Applications, as well as some
     application-oriented libraries are defined as XPCE-classes with
     their methods defined in Prolog.
 
