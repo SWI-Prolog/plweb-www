@@ -3,7 +3,8 @@
 SWI-Prolog is distributed as platform specific binary package for
 popular platforms (currently MS-Windows and MacOS X). For
 [Ubuntu](http://www.ubuntu.com) Linux we [provide a
-PPA](</build/PPA.html>)
+PPA](</build/PPA.html>).  For all Linux systems supporting snap we
+provide the snap package `swi-prolog`.
 
 The source package provides the GNU autoconf/make suite to configure and
 build fully automatically on many platforms. It builds on a wide range
@@ -11,15 +12,15 @@ of 32 and 64 bit systems with an ANSI C compiler. The MS-Windows version
 is built using [[MinGW][http://mingw.org/]] as a cross-compiler under
 Linux. See the file README.mingw in the toplevel directory.
 
-SWI-Prolog *stable* releases have an *even* minor version number (7.0.x,
-7.2.x, 7.4.x, ...) and *development* releases an *odd* minor version
-number (7.1.x, 7.3.x, ...). The development versions are released
-frequently, typically every couple of weeks). A new stable cycle is
-started when the development version has improved enough to make
-upgrading valuable for many users and large changes to the development
-versions have proven to be stable. As of 7.4.x we plan to provide
-regular stability and security fixes for the stable version and we will
-avoid incompatible changes.
+SWI-Prolog *stable* releases have an *even* minor version number
+(8.0.x, 8.2.x, 8.4.x, ...) and *development* releases an *odd* minor
+version number (8.1.x, 8.3.x, ...). The development versions are
+released frequently, typically every couple of weeks). A new stable
+cycle is started when the development version has improved enough to
+make upgrading valuable for many users and large changes to the
+development versions have proven to be stable. As of 7.4.x we plan to
+provide regular stability and security fixes for the stable version and
+we will avoid incompatible changes.
 
 All sources are available on [GitHub](http://github.com/SWI-Prolog). The
 repository [swipl.git](http://github.com/SWI-Prolog/swipl.git) is used for
@@ -27,7 +28,13 @@ the stable versions and the repository
 [swipl-devel.git](http://github.com/SWI-Prolog/swipl-devel.git) for the
 development series.  Releases are tagged *V*_|Major.Minor.Patch|_.
 
-  $ 8.1.0: Current development series.
+  $ 8.3.0: Current development series.
+
+  $ 8.2.x: Brings advanced tabling support of XSB to SWI-Prolog: Well
+  Founded Semantics, restraints, incremental tabling and shared tabling.
+  It also makes rational numbers primary citizens. Using Google's
+  tcmalloc reduces the memory footprint drastically on some
+  multi-threaded workloads.
 
   $ 8.0.x: Indexing on multiple arguments together, indexing inside compounds,
   Mode-directed tabling, saved states using ZIP files, many deployment
