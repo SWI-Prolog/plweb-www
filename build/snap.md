@@ -1,17 +1,27 @@
 # SWI-Prolog SNAP images
 
-[Snap](https://snapcraft.io) is way to distribute applications as
-self-contained images. This makes allows a snap to work on any Linux
-distribution that has `snapd` installed and runs a compatible
+[Snap](https://snapcraft.io)  is  way  to   distribute  applications  as
+self-contained images. This makes allows a  snap   to  work on any Linux
+distribution  that  has  `snapd`  installed    and   runs  a  compatible
 architecture (currently amd64).
 
-[Snaps for SWI-Prolog](https://snapcraft.io/swi-prolog) are available
-starting from version 8.1.28.  Currently, the latest snap is installed
-using
+[Snaps for SWI-Prolog](https://snapcraft.io/swi-prolog)   are  available
+starting from version 8.1.28. Snaps are   distributed  in _channels_. We
+use these channels as follows:
 
-    snap install swi-prolog
+  - __stable__ is the default and installs the latest stable release,
+    currently 8.2.x.
+  - __candidate__ and __beta__ will be used for the next stable cycle
+    (8.4.0) to prepare the final next stable
+  - __edge__ will follow the roughly biweekly releases of the
+    _development_ cycle (8.3.x).
 
-The `swi-prolog` snap provides two commands, the first being a console
+Thus, typically one would use
+
+    snap install swi-prolog		# install stable releases
+    snal install --edge swi-prolog	# install devel release
+
+The `swi-prolog` snap provides two commands,   the first being a console
 application and the second the Qt window version.
 
     swi-prolog.swipl
