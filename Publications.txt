@@ -114,3 +114,9 @@ development of large-scale applications.
 ## SWI-Prolog's origin
 
 SWI-Prolog 0.0.0 was based on [[A Portable Prolog Compiler][<swipub:A_Portable_Prolog_Compiler.pdf>]] by D.L. Bowen, L.H. Byrd and W.F. Clocksin.
+
+## Papers using SWI-Prolog
+* [Tartarus: A Multi-agent Platform for Integrating Cyber-Physical Systems and Robots](https://dl.acm.org/doi/10.1145/2783449.2783469), Tushar Semwal, Manoj Bode, Vivek Singh, Shashi Shekhar Jha, and Shivashankar B. Nair. AIR-2015. [Video](https://www.youtube.com/watch?v=VeryfhtT5Tk), [Github](https://github.com/roboticslab-cseiitg/ProjectTartarus)
+* [TARTARUS: A Multi-Agent Platform for Bridging the Gap between Cyber and Physical Systems (Demonstration)](https://dl.acm.org/doi/10.5555/2936924.2937224), Tushar Semwal, Nikhil S., Shashi Shekhar Jha, and Shivashankar B. Nair. AAMAS-2016.
+* [AgPi: Agents on Raspberry Pi](https://www.mdpi.com/2079-9292/5/4/72), Tushar Semwal, and Shivashankar B. Nair. MDPI Electronics 2016.
+* [On Ordering Multi-Robot Task Executions within a Cyber Physical System](https://arxiv.org/abs/1803.04781), Tushar Semwal, Shashi Shekhar Jha, Shivashankar B. Nair. ACM TAAS 2017.
