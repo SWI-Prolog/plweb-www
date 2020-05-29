@@ -1,7 +1,7 @@
 # SWI-Prolog SNAP images
 
-[Snap](https://snapcraft.io)  is  way  to   distribute  applications  as
-self-contained images. This makes allows a  snap   to  work on any Linux
+[Snap](https://snapcraft.io)  is a  way  to distribute  applications  as
+self-contained images.  This  allows  a  snap  to  work  on   any  Linux
 distribution  that  has  `snapd`  installed    and   runs  a  compatible
 architecture (currently amd64).
 
@@ -18,8 +18,8 @@ use these channels as follows:
 
 Thus, typically one would use
 
-    snap install swi-prolog		# install stable releases
-    snal install --edge swi-prolog	# install devel release
+    snap install swi-prolog		# install stable release
+    snap install --edge swi-prolog	# install devel release
 
 The `swi-prolog` snap provides two commands,   the first being a console
 application and the second the Qt window version.
@@ -44,15 +44,15 @@ The current snap is a _confined_ snap, which means it has only limited
 access to your computer. This keeps the snap small as it is layered on
 top of other snaps and brings some additional security, but also implies
 (for example) that you cannot run arbitrary programs from the snap and
-you cannot install [add-ons](/pack/list) that contain components written
+you cannot install [add-ons](</pack/list>) that contain components written
 in e.g., C.
 
 
 ## Font issue
 
-There is a glidge in current snap infrastructure for handling the
+There is a glitch in current snap infrastructure for handling the
 fontconfig library which is used by the xpce based IDE tools. You are a
-victim of if running `?- emacs.` results in the error below:
+victim if running `?- emacs.` results in the error below:
 
 
 ```
