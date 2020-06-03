@@ -2,9 +2,9 @@
 
 SWI-Prolog is distributed as platform specific binary package for
 popular platforms (currently MS-Windows and MacOS X). For
-[Ubuntu](http://www.ubuntu.com) Linux we [provide a
-PPA](</build/PPA.html>).  For all Linux systems supporting snap we
-provide the snap package `swi-prolog`.
+[Ubuntu](http://www.ubuntu.com) Linux we provide a
+[PPA](</build/PPA.html>).  For all Linux systems supporting snap we
+provide the snap package [`swi-prolog`](</build/snap.html>).
 
 The source package provides the GNU autoconf/make suite to configure and
 build fully automatically on many platforms. It builds on a wide range
