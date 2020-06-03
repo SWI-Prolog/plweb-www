@@ -2,9 +2,12 @@
 
 ## Installing from binaries
 
-The official packages are often out of date. PPAs are created
-automatically for every release. PPAs are available for Ubuntu by
-following directions on the [PPA page](<PPA.txt>).
+The official packages are often out of date. PPAs and snaps are
+created automatically for every release.
+
+  - [PPAs](<PPA.html>) are available for Ubuntu.
+  - [Snaps](<snap.html>) are available for Linux distributions with
+    `snapd` installed.
 
 ## Installing from source
 
