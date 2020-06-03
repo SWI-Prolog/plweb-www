@@ -6,8 +6,7 @@ distribution  that  has  `snapd`  installed    and   runs  a  compatible
 architecture (currently amd64).
 
 [Snaps for SWI-Prolog](https://snapcraft.io/swi-prolog)   are  available
-starting from version 8.1.28. Snaps are   distributed  in _channels_. We
-use these channels as follows:
+since version 8.1.28. Snaps are distributed in the following _channels_:
 
   - __stable__ is the default and installs the latest stable release,
     currently 8.2.x.
