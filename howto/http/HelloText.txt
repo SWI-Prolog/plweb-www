@@ -48,7 +48,7 @@ web-server!
 ?- server(5000).
 ==
 
----+++ Where is Apache, ISS, Tomcat, ...?
+---+++ Where is Apache, IIS, Tomcat, ...?
 
 Oops, we do not need that. The [[full
 manual][</pldoc/package/http.html>]] gives options for _redirecting_

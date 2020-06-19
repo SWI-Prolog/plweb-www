@@ -47,7 +47,7 @@ lists of terms, (4 and 5) show that & and <> should _|not be escaped|_.
 ==
 1.	span(class(product_class), 'Computers'),
 
-2.	img([width(32),heigth(32),src('/icons/computer.png')]),
+2.	img([width(32),height(32),src('/icons/computer.png')]),
 
 3.	table([ tr([ td('cell 1a'), td('cell 1b')]),
 		tr([ td('cell 2a'), td('cell 2b')])
