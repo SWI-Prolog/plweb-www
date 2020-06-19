@@ -1,7 +1,8 @@
 ---++ Hello World in HTML
 
-HTML can be written the same way as in HelloText.txt, using the
-=|Content-type: text/html|= and using format/2 to emit HTML tags.
+HTML can be written the same way as in [[Hello World][<HelloText.html>]],
+using the =|Content-type: text/html|= and using format/2 to emit HTML
+tags.
 
 However, this is a rather error-prone process. This page introduces
 library(http/html_write), which translates Prolog terms into well-formed
@@ -62,7 +63,7 @@ Now, you may ask *|"Where's the beef?"|* True, this syntax is surely
 less readable than HTML or XML. This way of producing web-pages is
 intended for _dynamic_ web-pages. Fully static pages are much better
 [[served from files][<ServeFiles.html>]]. For mixed files with large
-static parts and e.g., a dynamic table, [[PWP][PWP.txt]] is the
+static parts and e.g., a dynamic table, [[PWP][<PWP.html>]] is the
 Prolog-based answer to PHP, ASP, JSP, etc.
 
 One way to deploy the above described library(http/html_write) is to

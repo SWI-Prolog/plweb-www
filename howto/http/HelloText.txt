@@ -59,4 +59,4 @@ website][http://www.swi-prolog.org/]] is handled by SWI-Prolog,
 redirected from an Apache server.
 
 @see Source: hello_world.pl
-@see Next: Developing.txt
+@see Next: [[Development support for web-servers][<Developing.html>]]

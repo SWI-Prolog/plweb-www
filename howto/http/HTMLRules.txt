@@ -80,4 +80,4 @@ In the next example, we extend our program by making more use of rules
 and dealing with HTTP-_parameters_ (i.e., ?name=value&...)
 
 @see The source: list_modules.pl
-@see Next: HTMLParams.txt
+@see Next: [[Processing HTTP-parameters][<HTMLParams.html>]]
