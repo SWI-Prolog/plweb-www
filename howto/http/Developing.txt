@@ -50,9 +50,10 @@ deactivated using =|?- nodebug(hello).|= and print messages like this:
 ==
 
 If you forgot what predicates are called by your server, you can use
-[[firebug][http://getfirebug.com/]] to analyse the traffic.  You can
-also use debug channel http(request).  Doing this on our first server
-and loading '/hello_world' gives this output:
+[[Firefox Developer Tools][https://developer.mozilla.org/en-US/docs/Tools]]
+to analyse the traffic.  You can also use debug channel http(request).
+Doing this on our first server and loading '/hello_world' gives this
+output:
 
 ==
 ?- debug(http(request)).
