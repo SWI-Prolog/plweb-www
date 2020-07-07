@@ -56,7 +56,7 @@ SWI-Prolog [[packages][</packages/>]]
     * [[KnowRob: Knowledge processing for robots][http://www.knowrob.org/]]
     * [[plimk -- An SWI-Prolog interface to ImageMagick][http://plimk.sourceforge.net/]]
     * [[A SWI-Prolog interface to Matlab][http://www.elec.qmul.ac.uk/digitalmusic/downloads/index.html#plml]] by Samer Abdallah (Unix (Linux, MacOSX only)
-    * [[PySWIP -- a bridge between Python and SWI-Prolog][http://code.google.com/p/pyswip/]] by Yuce Tekol
+    * [[PySWIP -- a bridge between Python and SWI-Prolog][http://pyswip.org/]] by Yuce Tekol
 
   * *|(SWI-)Prolog on the web|*
 
