@@ -88,19 +88,19 @@ People are listed in alphabetical order.
 
 ---++ _|Open Source|_ projects used by SWI-Prolog
 
+  * [[CMake][https://cmake.org/]] Configuration and build management
   * [[dtoa.c][http://www.netlib.org/fp/dtoa.c]] (Float <-> text conversion by David M. Gay).
-  * [[GEOS][http://trac.osgeo.org/geos/]] (Geometry Engine, Open Source)
   * [[GMP][http://gmplib.org/]] (Unbounded and rational arithmetic)
   * [[GNU][http://www.gnu.org]] (Linux, development tools, libraries, etc.)
+  * [[LibYAML][https://github.com/yaml/libyaml]] (A C library for parsing and emitting YAML)
   * [[MacPorts][http://www.macports.org]] (Porting environment for MacOS)
-  * [[Maildrop][http://www.courier-mta.org/maildrop/]] (MIME decoding)
   * [[MurmurHash][http://murmurhash.googlepages.com/]] (string hashing)
   * [[Nullsoft][http://nsis.sourceforge.net/]] (Windows installer)
   * [[NetBSD][http://www.netbsd.org/]] (crypt implementation for Windows)
   * [[OpenSSL][http://www.openssl.org/]] (secure sockets)
+  * [[PCRE][https://www.pcre.org/]] (Perl Compatible Regular Expressions)
   * SHA routines by [[Brian Gladman][http://www.gladman.me.uk/]]
   * [[Snowball][http://snowball.tartarus.org/]] NLP stemmer library
-  * [[spatialindex][http://trac.gispython.org/spatialindex/wiki]] Multi-dimensional indexing package
   * [[UnixODBC][http://www.unixodbc.org/]] (Database connectivity on Unix)
   * [[utf8proc][http://www.public-software-group.org/utf8proc]] (unicode normalization)
   * [[X.org][http://www.x.org/]] (Graphics on Unix)
