@@ -65,7 +65,7 @@ People are listed in alphabetical order.
   * [[DataChemist.png;title="DataChemist"][https://www.datachemist.com/]],
     developer of [TerminusDB](https://terminusdb.com/) sponsored
     (February 2020) the main development machine.
-  * [Discourse](https://www.discourse.org/) (forum software and hosting)
+  * [[Discourse_logo.png;title="Discourse"][https://www.discourse.org/]] (forum software and hosting)
   * Guus Schreiber (providing a new home at the VU University, Amsterdam)
   * [[fastly.png;title="Fastly .com",align="center"][http://www.fastly.com/]] Fastly.com Donates content distribution network services
   * Ian Andrich - Infrastructure support during MOOC
