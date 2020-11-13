@@ -4,7 +4,8 @@ SWI-Prolog and XPCE concentrate on program development by offering an
 environment that is especially suitable for (rapid) prototyping and
 debugging. This is supported by the fast incremental SWI-Prolog
 compiler, the debugger that is capable of debugging compiled code and
-GNU-readline based command-line editor.
+the built-in commandline editor that supports Prolog specific
+completion.
 
 Tracing Prolog programs using a traditional 4-port debugger on a
 terminal is difficult. Large Prolog terms make the trace hard to read,
