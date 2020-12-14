@@ -1,0 +1,52 @@
+/* Examples */
+
+.ex-list {
+  overflow: hidden;
+}
+
+.ex-list h4 {
+  background-color: #16a1ca;
+  color: #fff;
+  padding: 2px 5px 0px 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.ex-header:hover {
+  text-decoration: underline;
+}
+
+.ex-header .title {
+ padding-left: 5px;
+ position: relative;
+ font-weight: bold;
+}
+
+.ex-header .author {
+ font-style: italic;
+ float:right;
+}
+
+.ex-flag {
+  position: relative;
+  top: 3px;
+  float:left;
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.ex-flag.titleref  { background-image: url("../icons/star.png"); }
+.ex-flag.query     { background-image: url("../icons/query.png"); }
+.ex-flag.called    { background-image: url("../icons/called.png"); }
+.ex-flag.reference { background-image: url("../icons/ref.png"); }
+
+.ex-content h1:first-of-type { display: none; }
+.ex-content .keyword-author  { display: none; }
+
+.ex            .ex-content { display: none; }
+.ex.ex-current .ex-content { display: block; }
+.ex.primary    .ex-content { display: block; }
