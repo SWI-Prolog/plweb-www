@@ -12,11 +12,12 @@
   font-size: 18px;
 }
 
-.ex-header:hover {
+.ex-header .title:hover {
   text-decoration: underline;
 }
 
 .ex-header .title {
+ display: inline-block;
  padding-left: 5px;
  position: relative;
  font-weight: bold;
@@ -28,9 +29,9 @@
 }
 
 .ex-flag {
+  margin-left: 5px;
   position: relative;
   top: 3px;
-  float:left;
   display: inline-block;
   width: 18px;
   height: 16px;
@@ -39,6 +40,7 @@
   background-size: 100% 100%;
 }
 
+.ex-flag.file      { background-image: url("../icons/star.png"); }
 .ex-flag.titleref  { background-image: url("../icons/star.png"); }
 .ex-flag.query     { background-image: url("../icons/query.png"); }
 .ex-flag.called    { background-image: url("../icons/called.png"); }
@@ -47,6 +49,23 @@
 .ex-content h1:first-of-type { display: none; }
 .ex-content .keyword-author  { display: none; }
 
+.ex-content h2.wiki {
+  padding-left: 3em;
+  font-size: 100%;
+  background-color: transparent;
+  color: #000;
+  font-style: italic;
+  font-weight: 600;
+}
+.ex-content h3.wiki {
+  padding-left: 3em;
+  font-size: 100%;
+  background-color: transparent;
+  color: #000;
+  font-style: italic;
+}
+
 .ex            .ex-content { display: none; }
 .ex.ex-current .ex-content { display: block; }
-.ex.primary    .ex-content { display: block; }
+.ex            .ex-header:before { content: "\25ba"; }
+.ex.ex-current .ex-header:before { content: "\25bc"; }
