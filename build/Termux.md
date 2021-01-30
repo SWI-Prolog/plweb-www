@@ -1,23 +1,17 @@
 SWI-Prolog on Android Termux
 ============================
 
-As of version 7.7.23 we have now SWI-Prolog running on Android under [termux](https://termux.com/).
-With the exception of JPL it is passing all tests,  including saved states. 
+As of version 7.7.23 we have now SWI-Prolog running on Android under
+[termux](https://termux.com/). With the exception of JPL it is passing
+all tests, including saved states.
 
-Pre-built debian packages are available. See below.
-For now only the `arm` architecture is provided.
+SWI-Prolog is available as a standard package and can be installed
+using
 
-NOTE: We are still working on the Java-Prolog interface (JPL).
+    pkg install swi-prolog
 
-How to get it
--------------
-1. Install [termux](https://termux.com/) on your android device
-2. Start termux, and paste the following in the terminal:
-```sh
-pkg install curl
-curl  https://raw.githubusercontent.com/erlanger/swipl-termux/master/install -sSf | sh
-```
-3. Now run it, typing this in the termux terminal:
+After installation you can run it ny typing this in the termux terminal:
+
 ```
 $ swipl
 Welcome to SWI-Prolog (threaded, 32 bits, version 7.7.23)
@@ -33,17 +27,12 @@ true.
 
 ```
 
-The install script downloads and installs two debian packages which are not part 
-of the termux repository:
-a) ossp-uuid ( to support library(uuid) ) and
-b) swi-prolog
-
 Building it yourself
 -----------------------
 
 SWI-Prolog for android is built with the docker file used by `termux` to build packages.
 
-The forked [termux-packages repository](https://github.com/erlanger/termux-packages/tree/swi-prolog/packages/swi-prolog) 
+The forked [termux-packages repository](https://github.com/erlanger/termux-packages/tree/swi-prolog/packages/swi-prolog)
 contains the scripts to build the SWI-Prolog `deb` files for Android termux, as well as ossp-uuid.
 
 The `run-docker` script below downloads and runs the docker container, which in turn builds
@@ -60,7 +49,7 @@ You should now have the  `.deb` files in the `debs` directory.
 
 Future
 ------
-Hopefully SWI-Prolog for Android will be officially added to the termux 
+Hopefully SWI-Prolog for Android will be officially added to the termux
 package repositories. When that is done, you can simply run
 ```
 pkg install swi-prolog
