@@ -32,13 +32,17 @@ Building it yourself
 
 SWI-Prolog for android is built with the docker file used by `termux` to build packages.
 
-The forked [termux-packages repository](https://github.com/erlanger/termux-packages/tree/swi-prolog/packages/swi-prolog)
-contains the scripts to build the SWI-Prolog `deb` files for Android termux, as well as ossp-uuid.
+The forked [termux-packages
+repository](https://github.com/erlanger/termux-packages/tree/swi-prolog/packages/swi-prolog)
+contains the scripts to build the SWI-Prolog `deb` files for Android
+termux, as well as ossp-uuid.
 
-The `run-docker` script below downloads and runs the docker container, which in turn builds
-SWI-Prolog and all its dependencies. You need docker installed and running on your build host.
+The `run-docker` script below downloads and runs the docker container,
+which in turn builds SWI-Prolog and all its dependencies. You need
+docker installed and running on your build host.
 
 To build the deb files yourself, do the following:
+
 ```sh
 git clone -b swi-prolog https://github.com/erlanger/termux-packages
 cd termux-packages
@@ -47,27 +51,15 @@ cd termux-packages
 
 You should now have the  `.deb` files in the `debs` directory.
 
-Future
-------
-Hopefully SWI-Prolog for Android will be officially added to the termux
-package repositories. When that is done, you can simply run
-```
-pkg install swi-prolog
-```
-in termux.
-
-Working Packages
-----------------
-The following packages pass all tests:
-   `clib`, `rdf`, `chr`, `http`, `pcre`, `pengines`, `protobufs`, `sgml`, `yaml`, `zlib`, `ssl`, `semweb`
-
 Unsupported packages
 ---------------------
+
 bdb, odbc, space
 
 
 Test results
 ------------
+
 All tests passing.
 
 ```
