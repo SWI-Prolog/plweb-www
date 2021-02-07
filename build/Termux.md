@@ -10,7 +10,7 @@ using
 
     pkg install swi-prolog
 
-After installation you can run it ny typing this in the termux terminal:
+After installation you can run it by typing this in the termux terminal:
 
 ```
 $ swipl
