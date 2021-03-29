@@ -68,7 +68,7 @@ thing](http://www.codinghorror.com/blog/2012/06/the-php-singularity.html).
   - library(http/html_write)        -- Our flagship for server site generated pages
   - library(http/http_pwp)	    -- Embed Prolog queries in xhtml pages
 
-Anne Ogborn has written a good tutorial on how to [[use the SWI-Prolog web framework][http://www.pathwayslms.com/swipltuts/html/index.html]].
+Anne Ogborn has written a good tutorial on how to [use the SWI-Prolog web framework](https://github.com/Anniepoo/swiplwebtut/blob/master/web.adoc)
 
 #### Supporting AJAX
 
@@ -218,7 +218,7 @@ problem for you.
 
 
 @see [Creating Web Applications in
-SWI-Prolog](http://www.pathwayslms.com/swipltuts/html/index.html) by
+SWI-Prolog](https://github.com/Anniepoo/swiplwebtut/blob/master/web.adoc) by
 Anne Ogborn.
 @see [How to create a web service
 easily?](http://www.swi-prolog.org/howto/http/).

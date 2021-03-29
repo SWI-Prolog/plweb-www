@@ -26,7 +26,7 @@ This is work in progress!   If you want to contribute or comment,
 send an e-mail to [[me][<mailto:jan@swi-prolog.org>]] or to the
 [[mailinglist][</Mailinglist.html>]].
 
-[[new.gif]] [[Here][http://www.pathwayslms.com/swipltuts/html/index.html]] is a tutorial with exercises by Anne Ogborn.
+[[new.gif]] [[Here][https://github.com/Anniepoo/swiplwebtut/blob/master/web.adoc]] is a tutorial with exercises by Anne Ogborn.
 
 
 ---++ Example code
