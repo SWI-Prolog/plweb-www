@@ -1,6 +1,6 @@
----+ Building SWI-Prolog for MS-Windows using MinGW
+# Building SWI-Prolog for MS-Windows using MinGW
 
-The [[MinGW][http://www.mingw.org]] compiler suite is a port of GCC that
+The [MinGW](http://www.mingw.org) compiler suite is a port of GCC that
 targets the Windows platform. Unlike Cygwin which comes with an
 extensive POSIX runtime emulation, MinGW targets the native Windows API
 including MSVCRT (The MSVC runtime library that provides some POSIX
@@ -12,35 +12,30 @@ bash, make, gawk and grep to allow building of applications and programs
 which depend on traditionally UNIX tools to be present. It is intended
 to supplement MinGW and the deficiencies of the cmd shell."|_.
 
-The details for building SWI-Prolog for MS-Windows under Linux are
-documented in the executable readme file =|README.mingw|= of the
-source distribution. These scripts have been developed on 64-bit
-[[Ubuntu][http://www.ubuntu.com/]] 12.04 and are currently used
-for building the binary releases on Ubuntu 16.04.
+Building SWI-Prolog for MS-Windows under Linux is supported using
+[Docker](https://github.com/SWI-Prolog/docker-swipl-build-mingw)
 
 ## Building on Windows itself
 
-According to Matthias Gondon the core system (i.e., without packages)
-can be build on Windows as follows:
+According to Matthias Gondon most of the system can be build on Windows
+as follows:
 
-  - Download mingw-get from http://www.mingw.org, run the program
-  - From the “Basic setup”, install packages =|mingw32-developer-toolkit,
-    mingw32-base, mingw32-gcc, mingw32-gfortran, mingw32-g++|=
-  - From “All packages”, select =|mingw32-gmp|=
-  - Extract current swipl sources to a folder that *does not contain spaces*
-  - =|cd swipl-devel/src|=
-  - =|autoconf|=
-  - =|autoheader|=
-  - =|./configure|=
-  - =|make|=
+  - install msys2 from msys2.org
+  - ``pacman -Syu``
+  - ``pacman -Syu``
+  - ``pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake git make mingw-w64-x86_64-libjpeg mingw-w64-x86_64-xpm-nox mingw-w64-x86_64-libyaml mingw-w64-x86_64-diffutils mingw-w64-x86_64-pcre mingw-w64-x86_64-db libdb-devel``
+  - ``ftp: download libuuid-1.6.2.tar.gz from ftp (dot) ossp (dot) org/pkg/lib/uuid/, configure --prefix=/usr/local, make, make install, ignore the error relating to strip.exe``
+  - ``git clone https://github.com/SWI-Prolog/swipl-devel.git``
+  - ``cd swipl-devel``
+  - ``git submodule update --init``
+  - ``mkdir build``
+  - ``cd build``
+  - ``cmake -DMINGW_ROOT=/mingw64 -DLIBUUID_INCLUDE_DIR=/usr/local/include -DUUID_LIBRARY=/usr/local/lib/libuuid.a -DBDB_LIBRARY=/mingw64/bin/libdb-6.0.dll -DINSTALL_DOCUMENTATION=OFF -DSWIPL_PACKAGES_X=OFF -DCMAKE_INSTALL_PREFIX:PATH=/usr/local -G "MSYS Makefiles" ..``
+  - only dot dot in the previous line, and avoid "typographic" quotation marks
+  - ``make``
+  - ``make install``
+  - ``swipl``
 
-This requires a version *after Feb 6, 2017* (GIT, releases 7.4.0-rc2 and
-7.5.1)
-
-Building the full system is probably possible using the instructions in
-the above mentioned =|README.mingw|= file. Please send comment and or
-fixes if you try this. Note that cross compiling is much faster because
-SWI-Prolog depends on an extensive =configure= script that executes slow
-on the MSYS bash implementation.
+See this [post on Discourse](https://swi-prolog.discourse.group/t/compiling-with-msys2/3936/4)
 
 @see [Daily builds](</download/daily/bin/>)
