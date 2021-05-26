@@ -16,8 +16,7 @@ about SWI-Prolog or Prolog programming in general.
     (best place for issues with class room exercises that are not
     SWI-Prolog specific)
 
-    - The Prolog IRC channel ##prolog on FreeNode
-    can be accessed via [WebChat](http://webchat.freenode.net/?channels=##prolog)
+    - The Prolog IRC channel ##prolog has moved to libera.chat (server irc.libera.chat)
 
     - [SWI-Prolog issue tracker at GitHub](https://github.com/SWI-Prolog/issues/issues)
     (See [reporting a bug](<bug.html>) for guidelines about reporting
