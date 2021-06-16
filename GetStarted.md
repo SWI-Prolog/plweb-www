@@ -8,21 +8,21 @@ are some options.
     in math and functional programming helps to some extend.  Start with a good
     introduction text.  Examples are
 
-    - [Simply Logical](http://book.simply-logical.space/)
-    - [Learn Prolog Now](http://lpn.swi-prolog.org/)
+      - [Simply Logical](http://book.simply-logical.space/)
+      - [Learn Prolog Now](http://lpn.swi-prolog.org/)
 
     Both are online text books that embed [SWISH](https://swish.swi-prolog.org).
     SWISH is an online version of SWI-Prolog.  SWISH differs from a local SWI-Prolog
     installation:
 
-    - As it runs on a shared server it enforces a __sandbox__ that doesn't allow
-      running any dangerous code and rejects code it cannot _prove_ to be safe.
-    - No state is maintained between queries.
-    - Input/output, concurrency and many other SWI-Prolog features are not or
-      only in a limited way supported.
-    - It does provide a nice web based interface that allows for rich output
-      based on HTML or high level vizualization libraries such as
-      [C3.js](https://c3js.org/)
+      - As it runs on a shared server it enforces a __sandbox__ that doesn't allow
+        running any dangerous code and rejects code it cannot _prove_ to be safe.
+      - No state is maintained between queries.
+      - Input/output, concurrency and many other SWI-Prolog features are not or
+        only in a limited way supported.
+      - It does provide a nice web based interface that allows for rich output
+	based on HTML or high level vizualization libraries such as
+        [C3.js](https://c3js.org/)
 
   - __I've made my first steps at Prolog and want to start a real project.__ Start
     with a local installation for your platform.  Familiarise yourself with the
@@ -44,6 +44,7 @@ are some options.
   - __I know some Prolog and I want to use SWI-Prolog as a (web) service__.  Start
     with a local installation for your platform and the
     [Web application tutorial](https://www.github.com/Anniepoo/swiplwebtut/blob/master/web.adoc)
+
 
 
 
