@@ -17,7 +17,7 @@ Building SWI-Prolog for MS-Windows under Linux is supported using
 
 ## Building on Windows itself
 
-According to Matthias Gondon most of the system can be build on Windows
+According to Matthias Gondan most of the system can be build on Windows
 as follows:
 
   - install msys2 from msys2.org
@@ -31,10 +31,13 @@ as follows:
   - ``mkdir build``
   - ``cd build``
   - ``cmake -DMINGW_ROOT=/mingw64 -DLIBUUID_INCLUDE_DIR=/usr/local/include -DUUID_LIBRARY=/usr/local/lib/libuuid.a -DBDB_LIBRARY=/mingw64/bin/libdb-6.0.dll -DINSTALL_DOCUMENTATION=OFF -DSWIPL_PACKAGES_X=OFF -DCMAKE_INSTALL_PREFIX:PATH=/usr/local -G "MSYS Makefiles" ..``
-  - only dot dot in the previous line, and avoid "typographic" quotation marks
   - ``make``
   - ``make install``
+  - Copy some dlls to the installation folder:
+  - ``cd /usr/local/bin``
+  - ``cp `ldd libarchive-13.dll |grep -o "/mingw64/bin/.*\\.dll"` .``
   - ``swipl``
+  - ``check_installation.``
 
 See this [post on Discourse](https://swi-prolog.discourse.group/t/compiling-with-msys2/3936/4)
 
