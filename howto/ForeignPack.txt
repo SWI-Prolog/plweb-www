@@ -133,6 +133,8 @@ and provide the following environment variables:
   $ SWISOLIB :
   Extensions must link to this library.  Normally this is =|-lswipl|=
   on (X)COFF systems (Windows, MacOS) and empty on ELF systems (Linux).
+  $ SWILIBDIR :
+  Path to the directory where the library in =|SWISOLIB|= resides.
   $ CC :
   C-compiler to use.  Taken from the CC environment or the =c_cc= Prolog
   flag.
