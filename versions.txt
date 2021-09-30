@@ -6,11 +6,11 @@ popular platforms (currently MS-Windows and MacOS X). For
 [PPA](</build/PPA.html>).  For all Linux systems supporting snap we
 provide the snap package [`swi-prolog`](</build/snap.html>).
 
-The source package provides the GNU autoconf/make suite to configure and
-build fully automatically on many platforms. It builds on a wide range
-of 32 and 64 bit systems with an ANSI C compiler. The MS-Windows version
-is built using [[MinGW][http://mingw.org/]] as a cross-compiler under
-Linux. See the file README.mingw in the toplevel directory.
+The source package is configured using [CMake](https://cmake.org/). The
+sources builds on a wide range of 32 and 64 bit systems with an ANSI C
+compiler. The MS-Windows version is built using
+[[MinGW][http://mingw.org/]] as a cross-compiler under Linux. See the
+file README.mingw in the toplevel directory.
 
 SWI-Prolog *stable* releases have an *even* minor version number
 (8.0.x, 8.2.x, 8.4.x, ...) and *development* releases an *odd* minor
@@ -28,7 +28,12 @@ the stable versions and the repository
 [swipl-devel.git](http://github.com/SWI-Prolog/swipl-devel.git) for the
 development series.  Releases are tagged *V*_|Major.Minor.Patch|_.
 
-  $ 8.3.0: Current development series.
+  $ 8.5.x: Current development series.
+
+  $ 8.4.x: Adds interfaces to [Redis](https://redis.io/) and
+  [STOMP](http://stomp.github.io/) _micro services_, isolated _transactions_
+  and additional thread synchronization, new support for deterministic coding
+  using $/0, $/1 and det/1 and _monotonic tabling_.
 
   $ 8.2.x: Brings advanced tabling support of XSB to SWI-Prolog: Well
   Founded Semantics, restraints, incremental tabling and shared tabling.
