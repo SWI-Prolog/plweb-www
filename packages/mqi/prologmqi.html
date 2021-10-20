@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>swiplserver.prologmqi API documentation</title>
+<meta name="description" content="Allows using SWI Prolog as an embedded part of an application, &#34;like a library&#34; …" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>swiplserver.prologmqi</code></h1>
+</header>
+<section id="section-intro">
+<p>Allows using SWI Prolog as an embedded part of an application, "like a library".</p>
+<p><code>swiplserver</code> enables SWI Prolog queries to be executed from within your Python application as if Python had a Prolog engine running inside of it. Queries are sent as strings like "atom(foo)" and the response is JSON.</p>
+<p><code>swiplserver</code> provides:</p>
+<ul>
+<li>The <code><a title="swiplserver.prologmqi.PrologMQI" href="#swiplserver.prologmqi.PrologMQI">PrologMQI</a></code> class that automatically manages starting and stopping a SWI Prolog instance and starts the Machine Query Interface ('MQI') using the <code>mqi_start/1</code> predicate to allow running Prolog queries.</li>
+<li>The <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> class is used to run queries on the created process. Queries are run exactly as they would be if you were interacting with the SWI Prolog "top level" (i.e. the Prolog command line).</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Install SWI Prolog (www.swi-prolog.org) and ensure that "swipl" is on the system path.</li>
+<li>Either "pip install swiplserver" or copy the "swiplserver" library (the whole directory) from the "libs" directory of your SWI Prolog installation to be a subdirectory of your Python project.</li>
+<li>Check if your SWI Prolog version includes the Machine Query Interface by launching it and typing <code>?- mqi_start([]).</code> If it can't find it, see below for how to install it.</li>
+</ol>
+<p>If your SWI Prolog doesn't yet include the Machine Query Interface:</p>
+<ol>
+<li>Download the <code>mqi.pl</code> file from the <a href="https://github.com/SWI-Prolog/packages-mqi/blob/master/mqi.pl">GitHub repository</a>.</li>
+<li>Open an operating system command prompt and go to the directory where you downloaded <code>mqi.pl</code>.</li>
+<li>Run the below command. On Windows the command prompt must be <a href="https://www.wikihow.com/Run-Command-Prompt-As-an-Administrator-on-Windows">run as an administrator</a>. On Mac or Linux, start the command with <code>sudo</code> as in <code>sudo swipl -s ...</code>.</li>
+</ol>
+<pre><code>swipl -s mqi.pl -g &quot;mqi:install_to_library('mqi.pl')&quot; -t halt
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p><code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> represents a thread in <em>Prolog</em> (it is not a Python thread!). A given <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> instance will always run queries on the same Prolog thread (i.e. it is single threaded within Prolog).</p>
+<p>To run a query and wait until all results are returned:</p>
+<pre><code>from swiplserver import PrologMQI, PrologThread
+
+with PrologMQI() as mqi:
+    with mqi.create_thread() as prolog_thread:
+        result = prolog_thread.query("atom(a)")
+        print(result)
+
+True
+</code></pre>
+<p>To run a query that returns multiple results and retrieve them as they are available:</p>
+<pre><code>from swiplserver import PrologMQI, PrologThread
+
+with PrologMQI() as mqi:
+    with mqi.create_thread() as prolog_thread:
+        prolog_thread.query_async("member(X, [first, second, third])",
+                                  find_all=False)
+        while True:
+            result = prolog_thread.query_async_result()
+            if result is None:
+                break
+            else:
+                print(result)
+first
+second
+third
+</code></pre>
+<p>Creating two <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> instances allows queries to be run on multiple threads in Prolog:</p>
+<pre><code>from swiplserver import PrologMQI, PrologThread
+
+with PrologMQI() as mqi:
+    with mqi.create_thread() as prolog_thread1:
+        with mqi.create_thread() as prolog_thread2:
+            prolog_thread1.query_async("sleep(2), writeln(first_thread(true))")
+            prolog_thread2.query_async("sleep(1), writeln(second_thread(true))")
+            thread1_answer = prolog_thread1.query_async_result()
+            thread2_answer = prolog_thread2.query_async_result()
+
+Prolog: second_thread(true)
+Prolog: first_thread(true)
+</code></pre>
+<p>Output printed in Prolog using <code>writeln/1</code> or errors output by Prolog itself are written to Python's logging facility using the <code>swiplserver</code> log and shown prefixed with "Prolog:" as above.</p>
+<p>Answers to Prolog queries that are not simply <code>True</code> or <code>False</code> are converted to JSON using the <a href="https://www.swi-prolog.org/pldoc/doc_for?object=json_to_prolog/2">json_to_prolog/2</a> predicate in Prolog. They are returned as a Python <code>dict</code> with query variables as the keys and standard JSON as the values. If there is more than one answer, it is returned as a list:</p>
+<pre><code>from swiplserver import PrologMQI, PrologThread
+
+with PrologMQI() as mqi:
+    with mqi.create_thread() as prolog_thread:
+        result = prolog_thread.query("member(X, [color(blue), color(red)])")
+        print(result)
+
+[{'X': {'functor': 'color', 'args': ['blue']}},
+ {'X': {'functor': 'color', 'args': ['red']}}]
+</code></pre>
+<p>Exceptions in Prolog code are raised using Python's native exception facilities.</p>
+<h2 id="debugging">Debugging</h2>
+<p>When using <code>swiplserver</code>, debugging the Prolog code itself can often be done by viewing traces from the Prolog native <code>writeln/1</code> or <code>debug/3</code> predicates and viewing their output in the debugger output window.
+Sometimes an issue occurs deep in an application and it would be easier to set breakpoints and view traces in Prolog itself. Running SWI Prolog manually and launching the Machine Query Interface in "Standalone mode" is designed for this scenario.</p>
+<p><code>swiplserver</code> normally launches SWI Prolog and starts the Machine Query Interface so that it can connect and run queries. To debug your code using Prolog itself, you can do this manually and connect your application to it. A typical flow for standalone mode is:</p>
+<ol>
+<li>Launch SWI Prolog and call the <code>mqi_start/1</code> predicate, specifying a port and password (documentation is <a href="https://www.swi-prolog.org/pldoc/man?predicate=mqi_start/1">here</a>). Use the <code>tdebug/0</code> predicate to set all threads to debugging mode like this: <code>tdebug, mqi_start([port(4242), password(debugnow)])</code>.</li>
+<li>Optionally run the predicate <code>debug(mqi(_)).</code> in Prolog to turn on tracing for the Machine Query Interface.</li>
+<li>Set the selected port and password when you call <code><a title="swiplserver.prologmqi.PrologMQI" href="#swiplserver.prologmqi.PrologMQI">PrologMQI</a></code>.</li>
+<li>Launch the application and go through the steps to reproduce the issue.</li>
+</ol>
+<p>(As the Machine Query Interface is multithreaded, debugging the running code requires using the multithreaded debugging features of SWI Prolog as described in the section on <a href="https://www.swi-prolog.org/pldoc/man?section=threaddebug">"Debugging Threads"</a> in the SWI Prolog documentation.)</p>
+<p>At this point, all of the multi-threaded debugging tools in SWI Prolog are available for debugging the problem. If the issue is an unhandled or unexpected exception, the exception debugging features of SWI Prolog can be used to break on the exception and examine the state of the application.
+If it is a logic error, breakpoints can be set to halt at the point where the problem appears, etc.</p>
+<p>Note that, while using a library to access Prolog will normally end and restart the process between runs of the code, running the Machine Query Interface standalone won't.
+You'll either need to relaunch between runs or build your application so that it does the initialization at startup.</p>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="swiplserver.prologmqi.create_posix_path"><code class="name flex">
+<span>def <span class="ident">create_posix_path</span></span>(<span>os_path)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Convert a file path in whatever the current OS path format is to be a posix path so Prolog can understand it.</p>
+<p>This is useful for Prolog predicates like <code>consult</code> which need a Posix path to be passed in on any platform.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.is_prolog_atom"><code class="name flex">
+<span>def <span class="ident">is_prolog_atom</span></span>(<span>json_term)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>True if json_term is Prolog JSON representing a Prolog atom.
+See <code><a title="swiplserver.prologmqi.PrologThread.query" href="#swiplserver.prologmqi.PrologThread.query">PrologThread.query()</a></code> for documentation on the Prolog JSON format.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.is_prolog_functor"><code class="name flex">
+<span>def <span class="ident">is_prolog_functor</span></span>(<span>json_term)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>True if json_term is Prolog JSON representing a Prolog functor (i.e. a term with zero or more arguments).
+See <code><a title="swiplserver.prologmqi.PrologThread.query" href="#swiplserver.prologmqi.PrologThread.query">PrologThread.query()</a></code> for documentation on the Prolog JSON format.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.is_prolog_list"><code class="name flex">
+<span>def <span class="ident">is_prolog_list</span></span>(<span>json_term)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>True if json_term is Prolog JSON representing a Prolog list.
+See <code><a title="swiplserver.prologmqi.PrologThread.query" href="#swiplserver.prologmqi.PrologThread.query">PrologThread.query()</a></code> for documentation on the Prolog JSON format.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.is_prolog_variable"><code class="name flex">
+<span>def <span class="ident">is_prolog_variable</span></span>(<span>json_term)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>True if json_term is Prolog JSON representing a Prolog variable.
+See <code><a title="swiplserver.prologmqi.PrologThread.query" href="#swiplserver.prologmqi.PrologThread.query">PrologThread.query()</a></code> for documentation on the Prolog JSON format.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.json_to_prolog"><code class="name flex">
+<span>def <span class="ident">json_to_prolog</span></span>(<span>json_term)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Convert json_term from the Prolog JSON format to a string that represents the term in the Prolog language. See <code><a title="swiplserver.prologmqi.PrologThread.query" href="#swiplserver.prologmqi.PrologThread.query">PrologThread.query()</a></code> for documentation on the Prolog JSON format.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.prolog_args"><code class="name flex">
+<span>def <span class="ident">prolog_args</span></span>(<span>json_term)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Return the arguments from json_term if json_term is in the Prolog JSON format. See <code><a title="swiplserver.prologmqi.PrologThread.query" href="#swiplserver.prologmqi.PrologThread.query">PrologThread.query()</a></code> for documentation on the Prolog JSON format.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.prolog_name"><code class="name flex">
+<span>def <span class="ident">prolog_name</span></span>(<span>json_term)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Return the atom (if json_term is an atom), variable (if a variable) or functor name of json_term.
+json_term must be in the Prolog JSON format. See <code><a title="swiplserver.prologmqi.PrologThread.query" href="#swiplserver.prologmqi.PrologThread.query">PrologThread.query()</a></code> for documentation on the Prolog JSON format.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.quote_prolog_identifier"><code class="name flex">
+<span>def <span class="ident">quote_prolog_identifier</span></span>(<span>identifier: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Surround a Prolog identifier with '' if Prolog rules require it.</p></div>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="swiplserver.prologmqi.PrologConnectionFailedError"><code class="flex name class">
+<span>class <span class="ident">PrologConnectionFailedError</span></span>
+<span>(</span><span>exception_json)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Raised when the connection used by a <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> fails. Indicates that the Machine Query Interface will no longer respond.</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></li>
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></b></code>:
+<ul class="hlist">
+<li><code><a title="swiplserver.prologmqi.PrologError.is_prolog_exception" href="#swiplserver.prologmqi.PrologError.is_prolog_exception">is_prolog_exception</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.json" href="#swiplserver.prologmqi.PrologError.json">json</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.prolog" href="#swiplserver.prologmqi.PrologError.prolog">prolog</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="swiplserver.prologmqi.PrologError"><code class="flex name class">
+<span>class <span class="ident">PrologError</span></span>
+<span>(</span><span>exception_json)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Base class used for all exceptions raised by <code>swiplserver.PrologMQI</code> except for PrologLaunchError. Used directly when an exception is thrown by Prolog code itself, otherwise the subclass exceptions are used.</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li><a title="swiplserver.prologmqi.PrologConnectionFailedError" href="#swiplserver.prologmqi.PrologConnectionFailedError">PrologConnectionFailedError</a></li>
+<li><a title="swiplserver.prologmqi.PrologNoQueryError" href="#swiplserver.prologmqi.PrologNoQueryError">PrologNoQueryError</a></li>
+<li><a title="swiplserver.prologmqi.PrologQueryCancelledError" href="#swiplserver.prologmqi.PrologQueryCancelledError">PrologQueryCancelledError</a></li>
+<li><a title="swiplserver.prologmqi.PrologQueryTimeoutError" href="#swiplserver.prologmqi.PrologQueryTimeoutError">PrologQueryTimeoutError</a></li>
+<li><a title="swiplserver.prologmqi.PrologResultNotAvailableError" href="#swiplserver.prologmqi.PrologResultNotAvailableError">PrologResultNotAvailableError</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="swiplserver.prologmqi.PrologError.is_prolog_exception"><code class="name flex">
+<span>def <span class="ident">is_prolog_exception</span></span>(<span>self, term_name)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>True if the exception thrown by Prolog code has the term name specified by term_name.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>term_name</code></strong></dt>
+<dd>The name of the Prolog term to test for.</dd>
+</dl></div>
+</dd>
+<dt id="swiplserver.prologmqi.PrologError.json"><code class="name flex">
+<span>def <span class="ident">json</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="returns">Returns</h2>
+<p>A string that represents the Prolog exception in Prolog json form. See <code><a title="swiplserver.prologmqi.PrologThread.query" href="#swiplserver.prologmqi.PrologThread.query">PrologThread.query()</a></code> for documentation on the Prolog json format.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.PrologError.prolog"><code class="name flex">
+<span>def <span class="ident">prolog</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="returns">Returns</h2>
+<p>A string that represents the Prolog exception in the Prolog native form.</p></div>
+</dd>
+</dl>
+</dd>
+<dt id="swiplserver.prologmqi.PrologLaunchError"><code class="flex name class">
+<span>class <span class="ident">PrologLaunchError</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Raised when the SWI Prolog process was unable to be launched for any reason.</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+</dd>
+<dt id="swiplserver.prologmqi.PrologMQI"><code class="flex name class">
+<span>class <span class="ident">PrologMQI</span></span>
+<span>(</span><span>launch_mqi: bool = True, port: int = None, password: str = None, unix_domain_socket: str = None, query_timeout_seconds: float = None, pending_connection_count: int = None, output_file_name: str = None, mqi_traces: str = None, prolog_path: str = None, prolog_path_args: list = None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Initialize a PrologMQI class that manages a SWI Prolog process associated with your application process. <code><a title="swiplserver.prologmqi.PrologMQI.start" href="#swiplserver.prologmqi.PrologMQI.start">PrologMQI.start()</a></code> actually launches the process if launch_mqi is True.</p>
+<p>This class is designed to allow Prolog to be used "like a normal Python library" using the Machine Query Interface of SWI Prolog. All communication is done using protocols that only work on the same machine as your application (localhost TCP/IP or Unix Domain Sockets), and the implementation is designed to make sure the process doesn't hang around even if the application is terminated unexpectedly (as with halting a debugger).</p>
+<p>All arguments are optional and the defaults are set to the recommended settings that work best on all platforms during development. In production on Unix systems, consider using unix_domain_socket to further decrease security attack surface area.</p>
+<p>For debugging scenarios, SWI Prolog can be launched manually and this class can be configured to (locally) connect to it using launch_mqi = False. This allows for inspection of the Prolog state and usage of the SWI Prolog debugging tools while your application is running. See the documentation for the Prolog <a href="https://www.swi-prolog.org/pldoc/man?predicate=mqi_start/1"><code>mqi_start/1</code></a> predicate for more information on how to run the Machine Query Interface in "Standalone Mode".</p>
+<h2 id="examples">Examples</h2>
+<p>To automatically launch a SWI Prolog process using TCP/IP localhost and an automatically chosen port and password (the default):</p>
+<pre><code>with PrologMQI() as mqi:
+    # your code here
+</code></pre>
+<p>To connect to an existing SWI Prolog process that has already started the <code>mqi_start/1</code> predicate and is using an automatically generated Unix Domain Socket (this value will be different for every launch) and a password of '8UIDSSDXLPOI':</p>
+<pre><code>with PrologMQI(launch_mqi = False,
+                  unix_domain_socket = '/tmp/swipl_udsock_15609_1/swipl_15609_2',
+                  password = '8UIDSSDXLPOI') as mqi:
+    # your code here
+</code></pre>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>launch_mqi</code></strong></dt>
+<dd>True (default) launch a SWI Prolog process on <code><a title="swiplserver.prologmqi.PrologMQI.start" href="#swiplserver.prologmqi.PrologMQI.start">PrologMQI.start()</a></code> and shut it down automatically on <code><a title="swiplserver.prologmqi.PrologMQI.stop" href="#swiplserver.prologmqi.PrologMQI.stop">PrologMQI.stop()</a></code> (or after a resource manager like the Python "with" statement exits). False connects to an existing SWI Prolog process that is running the <code>mqi_start/1</code> predicate (i.e. "Standalone Mode"). When False, <code>password</code> and one of <code>port</code> or <code>unix_domain_socket</code> must be specified to match the options provided to <code>mqi_start/1</code> in the separate SWI Prolog process.</dd>
+<dt><strong><code>port</code></strong></dt>
+<dd>
+<p>The TCP/IP localhost port to use for communication with the SWI Prolog process. Ignored if <code>unix_domain_socket</code> is not None.</p>
+<ul>
+<li>When <code>launch_mqi</code> is True, None (default) automatically picks an open port that the Machine Query Interface and this class both use.</li>
+<li>When <code>launch_mqi</code> is False, must be set to match the port specified in <code>mqi_start/1</code> of the running SWI Prolog process.</li>
+</ul>
+</dd>
+<dt><strong><code>password</code></strong></dt>
+<dd>
+<p>The password to use for connecting to the SWI Prolog process. This is to prevent malicious users from connecting to the Machine Query Interface since it can run arbitrary code.
+Allowing the MQI to generate a strong password by using None is recommended.</p>
+<ul>
+<li>When <code>launch_mqi</code> is True, None (default) automatically generates a strong password using a uuid. Other values specify the password to use.</li>
+<li>When <code>launch_mqi</code> is False, must be set to match the password specified in <code>mqi_start/1</code> of the running SWI Prolog process.</li>
+</ul>
+</dd>
+<dt><strong><code>unix_domain_socket</code></strong></dt>
+<dd>
+<p>None (default) use localhost TCP/IP for communication with the SWI Prolog process. Otherwise (only on Unix) is either a fully qualified path and filename of the Unix Domain Socket to use or an empty string (recommended). An empty string will cause a temporary directory to be created using Prolog's <code>tmp_file/2</code> and a socket file will be created within that directory following the below requirements.
+If the directory and file are unable to be created for some reason, <code><a title="swiplserver.prologmqi.PrologMQI.start" href="#swiplserver.prologmqi.PrologMQI.start">PrologMQI.start()</a></code> with raise an exception. Specifying a file to use should follow the same guidelines as the generated file:</p>
+<ul>
+<li>If the file exists when the Machine Query Interface is launched, it will be deleted.</li>
+<li>The Prolog process will attempt to create and, if Prolog exits cleanly, delete this file when the Machine Query Interface closes.
+This means the directory must have the appropriate permissions to allow the Prolog process to do so.</li>
+<li>For security reasons, the filename should not be predictable and the directory it is contained in should have permissions set so that files created are only accessible to the current user.</li>
+<li>The path must be below 92 <em>bytes</em> long (including null terminator) to be portable according to the Linux documentation.</li>
+</ul>
+</dd>
+<dt><strong><code>query_timeout_seconds</code></strong></dt>
+<dd>None (default) set the default timeout for all queries to be infinite (this can be changed on a per query basis). Other values set the default timeout in seconds.</dd>
+<dt><strong><code>pending_connection_count</code></strong></dt>
+<dd>
+<p>Set the default number of pending connections allowed on the Machine Query Interface. Since the MQI is only connected to by your application and is not a server, this value should probably never be changed unless your application is creating new <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> objects at a very high rate.</p>
+<ul>
+<li>When <code>launch_mqi</code> is True, None uses the default (5) and other values set the count.</li>
+<li>When <code>launch_mqi</code> is False, ignored.</li>
+</ul>
+</dd>
+<dt><strong><code>output_file_name</code></strong></dt>
+<dd>Provide the file name for a file to redirect all Prolog output (STDOUT and STDERR) to. Used for debugging or gathering a log of Prolog output. None outputs all Prolog output to the Python logging infrastructure using the 'swiplserver' log.
+If using multiple Machine Query Interfaces in one SWI Prolog instance, only set this on the first one.
+Each time it is set the output will be deleted and redirected.</dd>
+<dt><strong><code>mqi_traces</code></strong></dt>
+<dd>
+<p>(Only used in unusual debugging circumstances) Since these are Prolog traces, where they go is determined by <code>output_file_name</code>.</p>
+<ul>
+<li>None (the default) does not turn on mqi tracing</li>
+<li>"_" turns on all tracing output from the Prolog Machine Query Interface (i.e. runs <code>debug(mqi(_)).</code> in Prolog).</li>
+<li>"protocol" turns on only protocol level messages (which results in much less data in the trace for large queries)</li>
+<li>"query" turns on only messages about the query.</li>
+</ul>
+</dd>
+<dt><strong><code>prolog_path</code></strong></dt>
+<dd>(Only used for unusual testing situations) Set the path to where the swipl executable can be found.</dd>
+<dt><strong><code>prolog_path_args</code></strong></dt>
+<dd>(Only used for unusual testing situations) Set extra command line arguments to be sent to swipl when it is launched.</dd>
+</dl>
+<h2 id="raises">Raises</h2>
+<p>ValueError if the arguments don't make sense.
+For example: choosing Unix Domain Sockets on Windows or setting output_file with launch_mqi = False</p></div>
+<h3>Static methods</h3>
+<dl>
+<dt id="swiplserver.prologmqi.PrologMQI.unix_domain_socket_file"><code class="name flex">
+<span>def <span class="ident">unix_domain_socket_file</span></span>(<span>directory: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates a non-predictable Filename 36 bytes long suitable for using in the unix_domain_socket argument of the <code><a title="swiplserver.prologmqi.PrologMQI" href="#swiplserver.prologmqi.PrologMQI">PrologMQI</a></code> constructor. Appends it to directory.</p>
+<p>Note that Python's gettempdir() function generates paths which are often quite large on some platforms and thus (at the time of this writing) is not suitable for use as the directory. The recommendation is to create a custom directory in a suitably short path (see notes below on length) in the filesystem and use that as directory. Ensure that the permissions for this folder are set as described below.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>directory</code></strong></dt>
+<dd>
+<p>The fully qualified directory the file name will be appended to. Note that:</p>
+<ul>
+<li>The directory containing the file must grant the user running the application (and ideally only that user) the ability to create and delete files created within it.</li>
+<li>The total path (including the 36 bytes used by the file) must be below 92 <em>bytes</em> long (including null terminator) to be portable according to the Linux documentation.</li>
+</ul>
+</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>A fully qualified path to a file in directory.</p></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="swiplserver.prologmqi.PrologMQI.create_thread"><code class="name flex">
+<span>def <span class="ident">create_thread</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Create a new <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> instance for this <code><a title="swiplserver.prologmqi.PrologMQI" href="#swiplserver.prologmqi.PrologMQI">PrologMQI</a></code>.</p>
+<h2 id="examples">Examples</h2>
+<p>Using with the Python <code>with</code> statement is recommended:</p>
+<pre><code>with PrologMQI() as mqi:
+    with mqi.create_thread() as prolog_thread:
+        # Your code here
+</code></pre>
+<h2 id="returns">Returns</h2>
+<p>A <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> instance.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.PrologMQI.process_id"><code class="name flex">
+<span>def <span class="ident">process_id</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Retrieve the operating system process id of the SWI Prolog process that was launched by this class.</p>
+<h2 id="returns">Returns</h2>
+<p>None if the value of <code>launch_mqi</code> passed to <code><a title="swiplserver.prologmqi.PrologMQI" href="#swiplserver.prologmqi.PrologMQI">PrologMQI</a></code> is False or if <code><a title="swiplserver.prologmqi.PrologMQI.start" href="#swiplserver.prologmqi.PrologMQI.start">PrologMQI.start()</a></code> has not yet been called. Otherwise return the operating system process ID.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.PrologMQI.start"><code class="name flex">
+<span>def <span class="ident">start</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Start a new SWI Prolog process associated with this class using the settings from <code><a title="swiplserver.prologmqi.PrologMQI" href="#swiplserver.prologmqi.PrologMQI">PrologMQI</a></code> and start the Machine Query Interface using the <code>mqi_start</code> Prolog predicate. If <code>launch_mqi</code> is False, does nothing.</p>
+<p>To create the SWI Prolog process, 'swipl' must be on the system path. Manages the lifetime of the process it creates, ending it on <code><a title="swiplserver.prologmqi.PrologMQI.stop" href="#swiplserver.prologmqi.PrologMQI.stop">PrologMQI.stop()</a></code>.</p>
+<h2 id="raises">Raises</h2>
+<dl>
+<dt><code><a title="swiplserver.prologmqi.PrologLaunchError" href="#swiplserver.prologmqi.PrologLaunchError">PrologLaunchError</a></code></dt>
+<dd>The SWI Prolog process was unable to be launched. Often indicates that <code>swipl</code> is not in the system path.</dd>
+</dl></div>
+</dd>
+<dt id="swiplserver.prologmqi.PrologMQI.stop"><code class="name flex">
+<span>def <span class="ident">stop</span></span>(<span>self, kill=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Stop the SWI Prolog process and wait for it to exit if it has been launched by using <code>launch_mqi = True</code> on <code><a title="swiplserver.prologmqi.PrologMQI" href="#swiplserver.prologmqi.PrologMQI">PrologMQI</a></code> creation.</p>
+<p>Does nothing if <code>launch_mqi</code> is False.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>kill</code></strong></dt>
+<dd>False (default) connect to the Machine Query Interface and ask it to perform an orderly shutdown of Prolog and exit the process.
+True uses the Python subprocess.kill() command which will terminate it immediately. Note that if PrologMQI.connection_failed is set to true (due to a failure that indicates the MQI will not respond), subprocess.kill() will be used regardless of this setting.</dd>
+</dl></div>
+</dd>
+</dl>
+</dd>
+<dt id="swiplserver.prologmqi.PrologNoQueryError"><code class="flex name class">
+<span>class <span class="ident">PrologNoQueryError</span></span>
+<span>(</span><span>exception_json)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Raised by <code><a title="swiplserver.prologmqi.PrologThread.cancel_query_async" href="#swiplserver.prologmqi.PrologThread.cancel_query_async">PrologThread.cancel_query_async()</a></code> and <code><a title="swiplserver.prologmqi.PrologThread.query_async_result" href="#swiplserver.prologmqi.PrologThread.query_async_result">PrologThread.query_async_result()</a></code> if there is no query running and no results to retrieve.</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></li>
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></b></code>:
+<ul class="hlist">
+<li><code><a title="swiplserver.prologmqi.PrologError.is_prolog_exception" href="#swiplserver.prologmqi.PrologError.is_prolog_exception">is_prolog_exception</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.json" href="#swiplserver.prologmqi.PrologError.json">json</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.prolog" href="#swiplserver.prologmqi.PrologError.prolog">prolog</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="swiplserver.prologmqi.PrologQueryCancelledError"><code class="flex name class">
+<span>class <span class="ident">PrologQueryCancelledError</span></span>
+<span>(</span><span>exception_json)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Raised by <code><a title="swiplserver.prologmqi.PrologThread.query_async_result" href="#swiplserver.prologmqi.PrologThread.query_async_result">PrologThread.query_async_result()</a></code> when the query has been cancelled.</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></li>
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></b></code>:
+<ul class="hlist">
+<li><code><a title="swiplserver.prologmqi.PrologError.is_prolog_exception" href="#swiplserver.prologmqi.PrologError.is_prolog_exception">is_prolog_exception</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.json" href="#swiplserver.prologmqi.PrologError.json">json</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.prolog" href="#swiplserver.prologmqi.PrologError.prolog">prolog</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="swiplserver.prologmqi.PrologQueryTimeoutError"><code class="flex name class">
+<span>class <span class="ident">PrologQueryTimeoutError</span></span>
+<span>(</span><span>exception_json)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Raised when a Prolog query times out when calling <code><a title="swiplserver.prologmqi.PrologThread.query" href="#swiplserver.prologmqi.PrologThread.query">PrologThread.query()</a></code> or <code><a title="swiplserver.prologmqi.PrologThread.query_async" href="#swiplserver.prologmqi.PrologThread.query_async">PrologThread.query_async()</a></code> with a timeout.</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></li>
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></b></code>:
+<ul class="hlist">
+<li><code><a title="swiplserver.prologmqi.PrologError.is_prolog_exception" href="#swiplserver.prologmqi.PrologError.is_prolog_exception">is_prolog_exception</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.json" href="#swiplserver.prologmqi.PrologError.json">json</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.prolog" href="#swiplserver.prologmqi.PrologError.prolog">prolog</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="swiplserver.prologmqi.PrologResultNotAvailableError"><code class="flex name class">
+<span>class <span class="ident">PrologResultNotAvailableError</span></span>
+<span>(</span><span>exception_json)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Raised by <code><a title="swiplserver.prologmqi.PrologThread.query_async_result" href="#swiplserver.prologmqi.PrologThread.query_async_result">PrologThread.query_async_result()</a></code> when the next result to a query is not yet available.</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></li>
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></b></code>:
+<ul class="hlist">
+<li><code><a title="swiplserver.prologmqi.PrologError.is_prolog_exception" href="#swiplserver.prologmqi.PrologError.is_prolog_exception">is_prolog_exception</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.json" href="#swiplserver.prologmqi.PrologError.json">json</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.prolog" href="#swiplserver.prologmqi.PrologError.prolog">prolog</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="swiplserver.prologmqi.PrologThread"><code class="flex name class">
+<span>class <span class="ident">PrologThread</span></span>
+<span>(</span><span>prolog_mqi: <a title="swiplserver.prologmqi.PrologMQI" href="#swiplserver.prologmqi.PrologMQI">PrologMQI</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Initialize a PrologThread instance for running Prolog queries on a single, consistent thread in the Machine Query Interface managed by <code>prolog_mqi</code> (does not create a thread in Python).</p>
+<p>Each <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> class represents a single, consistent thread in <code>prolog_mqi</code> that can run queries using <code><a title="swiplserver.prologmqi.PrologThread.query" href="#swiplserver.prologmqi.PrologThread.query">PrologThread.query()</a></code> or <code><a title="swiplserver.prologmqi.PrologThread.query_async" href="#swiplserver.prologmqi.PrologThread.query_async">PrologThread.query_async()</a></code>. Queries on a single <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> will never run concurrently.</p>
+<p>However, running queries on more than one <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> instance will run concurrent Prolog queries and all the multithreading considerations that that implies.</p>
+<h2 id="usage">Usage</h2>
+<p>All of these are equivalent and automatically start SWI Prolog and the Machine Query Interface:</p>
+<p>PrologThread instances can be created and started manually:</p>
+<pre><code>mqi = PrologMQI()
+prolog_thread = PrologThread(mqi)
+prolog_thread.start()
+# Your code here
+</code></pre>
+<p>Or (recommended) started automatically using the Python <code>with</code> statement:</p>
+<pre><code>with PrologMQI() as mqi:
+    with PrologThread(mqi) as prolog_thread:
+        # Your code here
+</code></pre>
+<p>Or using the handy helper function:</p>
+<pre><code>with PrologMQI() as mqi:
+    with mqi.create_thread() as prolog_thread:
+        # Your code here
+</code></pre></div>
+<h3>Methods</h3>
+<dl>
+<dt id="swiplserver.prologmqi.PrologThread.cancel_query_async"><code class="name flex">
+<span>def <span class="ident">cancel_query_async</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Attempt to cancel a query started with <code><a title="swiplserver.prologmqi.PrologThread.query_async" href="#swiplserver.prologmqi.PrologThread.query_async">PrologThread.query_async()</a></code> in a way that allows further queries to be run on this <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> afterwards.</p>
+<p>If there is a query running, injects a Prolog <code>throw(cancel_goal)</code> into the query's thread. Does not inject Prolog <code>abort/0</code> because this would kill the thread and we want to keep the thread alive for future queries.
+This means it is a "best effort" cancel since the exception can be caught by your Prolog code. <code>cancel_query_async()</code> is guaranteed to either raise an exception (if there is no query or pending results from the last query), or safely attempt to stop the last executed query.</p>
+<p>To guaranteed that a query is cancelled, call <code><a title="swiplserver.prologmqi.PrologThread.stop" href="#swiplserver.prologmqi.PrologThread.stop">PrologThread.stop()</a></code> instead.</p>
+<p>It is not necessary to determine the outcome of <code>cancel_query_async()</code> after calling it. Further queries can be immediately run after calling <code>cancel_query_async()</code>. They will be run after the current query stops for whatever reason.</p>
+<p>If you do need to determine the outcome or determine when the query stops, call <code>PrologThread.query_async_result(wait_timeout_seconds = 0)</code>. Using <code>wait_timeout_seconds = 0</code> is recommended since the query might have caught the exception or still be running.
+Calling <code><a title="swiplserver.prologmqi.PrologThread.query_async_result" href="#swiplserver.prologmqi.PrologThread.query_async_result">PrologThread.query_async_result()</a></code> will return the "natural" result of the goal's execution. The "natural" result depends on the particulars of what the code actually did. The return value could be one of:</p>
+<ul>
+<li>Raise <code><a title="swiplserver.prologmqi.PrologQueryCancelledError" href="#swiplserver.prologmqi.PrologQueryCancelledError">PrologQueryCancelledError</a></code> if the goal was running and did not catch the exception. I.e. the goal was successfully cancelled.</li>
+<li>Raise <code><a title="swiplserver.prologmqi.PrologQueryTimeoutError" href="#swiplserver.prologmqi.PrologQueryTimeoutError">PrologQueryTimeoutError</a></code> if the query timed out before getting cancelled.</li>
+<li>Raise <code><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></code> (i.e. an arbitrary exception) if query hits another exception before it has a chance to be cancelled.</li>
+<li>A valid answer if the query finished before being cancelled.</li>
+</ul>
+<p>Note that you will need to continue calling <code><a title="swiplserver.prologmqi.PrologThread.query_async_result" href="#swiplserver.prologmqi.PrologThread.query_async_result">PrologThread.query_async_result()</a></code> until you receive <code>None</code> or an exception to be sure the query is finished (see documentation for <code><a title="swiplserver.prologmqi.PrologThread.query_async_result" href="#swiplserver.prologmqi.PrologThread.query_async_result">PrologThread.query_async_result()</a></code>).</p>
+<h2 id="raises">Raises</h2>
+<p><code><a title="swiplserver.prologmqi.PrologNoQueryError" href="#swiplserver.prologmqi.PrologNoQueryError">PrologNoQueryError</a></code> if there was no query running and no results that haven't been retrieved yet from the last query.</p>
+<p><code><a title="swiplserver.prologmqi.PrologConnectionFailedError" href="#swiplserver.prologmqi.PrologConnectionFailedError">PrologConnectionFailedError</a></code> if the query thread has unexpectedly exited. The MQI will no longer be listening after this exception.</p>
+<h2 id="returns">Returns</h2>
+<p><code>True</code>. Note that this does not mean the query was successfully cancelled (see notes above).</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.PrologThread.halt_server"><code class="name flex">
+<span>def <span class="ident">halt_server</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Perform an orderly shutdown of the Machine Query Interface and end the Prolog process.</p>
+<p>This is called automatically by <code><a title="swiplserver.prologmqi.PrologMQI.stop" href="#swiplserver.prologmqi.PrologMQI.stop">PrologMQI.stop()</a></code> and when a <code><a title="swiplserver.prologmqi.PrologMQI" href="#swiplserver.prologmqi.PrologMQI">PrologMQI</a></code> instance is used in a Python <code>with</code> statement.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.PrologThread.query"><code class="name flex">
+<span>def <span class="ident">query</span></span>(<span>self, value: str, query_timeout_seconds: float = None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Run a Prolog query and wait to return all results (as if run using Prolog <code>findall/3</code>) or optionally time out.</p>
+<p>Calls <code><a title="swiplserver.prologmqi.PrologMQI.start" href="#swiplserver.prologmqi.PrologMQI.start">PrologMQI.start()</a></code> and <code><a title="swiplserver.prologmqi.PrologThread.start" href="#swiplserver.prologmqi.PrologThread.start">PrologThread.start()</a></code> if either is not already started.</p>
+<p>The query is run on the same Prolog thread every time, emulating the Prolog top level. There is no way to cancel the goal using this method, so using a timeout is recommended. To run a cancellable goal, use <code><a title="swiplserver.prologmqi.PrologThread.query_async" href="#swiplserver.prologmqi.PrologThread.query_async">PrologThread.query_async()</a></code>.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>value</code></strong></dt>
+<dd>A Prolog query to execute as a string, just like you would run on the Prolog top level. e.g. <code>"member(X, [1, 2]), X = 2"</code>.</dd>
+<dt><strong><code>query_timeout_seconds</code></strong></dt>
+<dd><code>None</code> uses the query_timeout_seconds set in the prolog_mqi object passed to <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code>.</dd>
+</dl>
+<h2 id="raises">Raises</h2>
+<p><code><a title="swiplserver.prologmqi.PrologQueryTimeoutError" href="#swiplserver.prologmqi.PrologQueryTimeoutError">PrologQueryTimeoutError</a></code> if the query timed out.</p>
+<p><code><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></code> for all other exceptions that occurred when running the query in Prolog.</p>
+<p><code><a title="swiplserver.prologmqi.PrologConnectionFailedError" href="#swiplserver.prologmqi.PrologConnectionFailedError">PrologConnectionFailedError</a></code> if the query thread has unexpectedly exited. The MQI will no longer be listening after this exception.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>False</code></dt>
+<dd>The query failed.</dd>
+<dt><code>True</code></dt>
+<dd>The query succeeded once with no free variables.</dd>
+<dt><code>list</code></dt>
+<dd>
+<p>The query succeeded once with free variables or more than once with no free variables. There will be an item in the list for every answer. Each item will be:</p>
+<ul>
+<li><code>True</code> if there were no free variables</li>
+<li>A <code>dict</code> if there were free variables. Each key will be the name of a variable, each value will be the JSON representing the term it was unified with.</li>
+</ul>
+</dd>
+</dl></div>
+</dd>
+<dt id="swiplserver.prologmqi.PrologThread.query_async"><code class="name flex">
+<span>def <span class="ident">query_async</span></span>(<span>self, value: str, find_all: bool = True, query_timeout_seconds: float = None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Start a Prolog query and return immediately unless a previous query is still running. In that case, wait until the previous query finishes before returning.</p>
+<p>Calls <code><a title="swiplserver.prologmqi.PrologMQI.start" href="#swiplserver.prologmqi.PrologMQI.start">PrologMQI.start()</a></code> and <code><a title="swiplserver.prologmqi.PrologThread.start" href="#swiplserver.prologmqi.PrologThread.start">PrologThread.start()</a></code> if either is not already started.</p>
+<p>Answers are retrieved using <code><a title="swiplserver.prologmqi.PrologThread.query_async_result" href="#swiplserver.prologmqi.PrologThread.query_async_result">PrologThread.query_async_result()</a></code>. The query can be cancelled by calling <code><a title="swiplserver.prologmqi.PrologThread.cancel_query_async" href="#swiplserver.prologmqi.PrologThread.cancel_query_async">PrologThread.cancel_query_async()</a></code>. The query is run on the same Prolog thread every time, emulating the Prolog top level.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>value</code></strong></dt>
+<dd>A Prolog query to execute as a string, just like you would run on the Prolog top level. e.g. <code>"member(X, [1, 2]), X = 2"</code>.</dd>
+<dt><strong><code>find_all</code></strong></dt>
+<dd><code>True</code> (default) will run the query using Prolog's <code>findall/3</code> to return all answers with one call to <code><a title="swiplserver.prologmqi.PrologThread.query_async_result" href="#swiplserver.prologmqi.PrologThread.query_async_result">PrologThread.query_async_result()</a></code>. <code>False</code> will return one answer per <code><a title="swiplserver.prologmqi.PrologThread.query_async_result" href="#swiplserver.prologmqi.PrologThread.query_async_result">PrologThread.query_async_result()</a></code> call.</dd>
+<dt><strong><code>query_timeout_seconds</code></strong></dt>
+<dd><code>None</code> uses the <code>query_timeout_seconds</code> set in the <code>prolog_mqi</code> object passed to <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code>.</dd>
+</dl>
+<h2 id="raises">Raises</h2>
+<p><code><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></code> if an exception occurs in Prolog when parsing the goal.</p>
+<p><code><a title="swiplserver.prologmqi.PrologConnectionFailedError" href="#swiplserver.prologmqi.PrologConnectionFailedError">PrologConnectionFailedError</a></code> if the query thread has unexpectedly exited. The MQI will no longer be listening after this exception.</p>
+<p>Any exception that happens when running the query is raised when calling <code><a title="swiplserver.prologmqi.PrologThread.query_async_result" href="#swiplserver.prologmqi.PrologThread.query_async_result">PrologThread.query_async_result()</a></code></p>
+<h2 id="returns">Returns</h2>
+<p><code>True</code></p></div>
+</dd>
+<dt id="swiplserver.prologmqi.PrologThread.query_async_result"><code class="name flex">
+<span>def <span class="ident">query_async_result</span></span>(<span>self, wait_timeout_seconds: float = None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get results from a query that was run using <code><a title="swiplserver.prologmqi.PrologThread.query_async" href="#swiplserver.prologmqi.PrologThread.query_async">PrologThread.query_async()</a></code>.</p>
+<p>Used to get results for all cases: if the query terminates normally, is cancelled by <code><a title="swiplserver.prologmqi.PrologThread.cancel_query_async" href="#swiplserver.prologmqi.PrologThread.cancel_query_async">PrologThread.cancel_query_async()</a></code>, or times out. Each call to <code>query_async_result()</code> returns one result and either <code>None</code> or raises an exception when there are no more results.
+Any raised exception except for <code><a title="swiplserver.prologmqi.PrologResultNotAvailableError" href="#swiplserver.prologmqi.PrologResultNotAvailableError">PrologResultNotAvailableError</a></code> indicates there are no more results. If <code><a title="swiplserver.prologmqi.PrologThread.query_async" href="#swiplserver.prologmqi.PrologThread.query_async">PrologThread.query_async()</a></code> was run with <code>find_all == False</code>, multiple <code>query_async_result()</code> calls may be required before receiving the final None or raised exception.</p>
+<h2 id="examples">Examples</h2>
+<ul>
+<li>If the query succeeds with N answers: <code>query_async_result()</code> calls 1 to N will receive each answer, in order, and <code>query_async_result()</code> call N+1 will return <code>None</code>.</li>
+<li>If the query fails (i.e. has no answers): <code>query_async_result()</code> call 1 will return False and <code>query_async_result()</code> <code> call 2 will return </code>None`.</li>
+<li>If the query times out after one answer, <code>query_async_result()</code> call 1 will return the first answer and <code>query_async_result()</code> call 2 will raise <code><a title="swiplserver.prologmqi.PrologQueryTimeoutError" href="#swiplserver.prologmqi.PrologQueryTimeoutError">PrologQueryTimeoutError</a></code>.</li>
+<li>If the query is cancelled after it had a chance to get 3 answers: <code>query_async_result()</code> calls 1 to 3 will receive each answer, in order, and <code>query_async_result()</code> call 4 will raise <code><a title="swiplserver.prologmqi.PrologQueryCancelledError" href="#swiplserver.prologmqi.PrologQueryCancelledError">PrologQueryCancelledError</a></code>.</li>
+<li>If the query throws an exception before returning any results, <code>query_async_result()</code> call 1 will raise <code><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></code>.</li>
+</ul>
+<p>Note that, after calling <code><a title="swiplserver.prologmqi.PrologThread.cancel_query_async" href="#swiplserver.prologmqi.PrologThread.cancel_query_async">PrologThread.cancel_query_async()</a></code>, calling <code>query_async_result()</code> will return the "natural" result of the goal's execution. See documentation for <code><a title="swiplserver.prologmqi.PrologThread.cancel_query_async" href="#swiplserver.prologmqi.PrologThread.cancel_query_async">PrologThread.cancel_query_async()</a></code> for more information.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>wait_timeout_seconds</code></strong></dt>
+<dd>Wait <code>wait_timeout_seconds</code> seconds for a result, or forever if <code>None</code>. If the wait timeout is exceeded before a result is available, raises <code><a title="swiplserver.prologmqi.PrologResultNotAvailableError" href="#swiplserver.prologmqi.PrologResultNotAvailableError">PrologResultNotAvailableError</a></code>.</dd>
+</dl>
+<h2 id="raises">Raises</h2>
+<p><code><a title="swiplserver.prologmqi.PrologNoQueryError" href="#swiplserver.prologmqi.PrologNoQueryError">PrologNoQueryError</a></code> if there is no query in progress.</p>
+<p><code><a title="swiplserver.prologmqi.PrologResultNotAvailableError" href="#swiplserver.prologmqi.PrologResultNotAvailableError">PrologResultNotAvailableError</a></code> if there is a running query and no results were available in <code>wait_timeout_seconds</code>.</p>
+<p><code><a title="swiplserver.prologmqi.PrologQueryCancelledError" href="#swiplserver.prologmqi.PrologQueryCancelledError">PrologQueryCancelledError</a></code> if the next answer was the exception caused by <code><a title="swiplserver.prologmqi.PrologThread.cancel_query_async" href="#swiplserver.prologmqi.PrologThread.cancel_query_async">PrologThread.cancel_query_async()</a></code>. Indicates no more answers.</p>
+<p><code><a title="swiplserver.prologmqi.PrologQueryTimeoutError" href="#swiplserver.prologmqi.PrologQueryTimeoutError">PrologQueryTimeoutError</a></code> if the query timed out generating the next answer (possibly in a race condition before getting cancelled).
+Indicates no more answers.</p>
+<p><code><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></code> if the next answer is an arbitrary exception thrown when the query was generating the next answer. This can happen after <code><a title="swiplserver.prologmqi.PrologThread.cancel_query_async" href="#swiplserver.prologmqi.PrologThread.cancel_query_async">PrologThread.cancel_query_async()</a></code> is called if the exception for cancelling the query is caught or the code hits another exception first.
+Indicates no more answers.</p>
+<p><code><a title="swiplserver.prologmqi.PrologConnectionFailedError" href="#swiplserver.prologmqi.PrologConnectionFailedError">PrologConnectionFailedError</a></code> if the query thread unexpectedly exited. The MQI will no longer be listening after this exception.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>False</code></dt>
+<dd>The query failed.</dd>
+<dt><code>True</code></dt>
+<dd>The next answer is success with no free variables.</dd>
+<dt><code>list</code></dt>
+<dd>
+<p>The query succeeded once with free variables or more than once with no free variables. There will be an item in the list for every answer. Each item will be:</p>
+<ul>
+<li><code>True</code> if there were no free variables</li>
+<li>A <code>dict</code> if there were free variables. Each key will be the name of a variable, each value will be the JSON representing the term it was unified with.</li>
+</ul>
+</dd>
+</dl></div>
+</dd>
+<dt id="swiplserver.prologmqi.PrologThread.start"><code class="name flex">
+<span>def <span class="ident">start</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Connect to the <code>prolog_mqi</code> specified in <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code> and start a new thread in it. Launch SWI Prolog and start the Machine Query Interface using the <code>mqi/1</code> predicate if <code>launch_mqi</code> is <code>True</code> on that object. Does not start a Python thread.</p>
+<p>Does nothing if the thread is already started.</p>
+<h2 id="raises">Raises</h2>
+<p><code><a title="swiplserver.prologmqi.PrologLaunchError" href="#swiplserver.prologmqi.PrologLaunchError">PrologLaunchError</a></code> if <code>launch_mqi</code> is <code>False</code> and the password does not match the server.</p>
+<p>Various socket errors if the server is not running or responding.</p></div>
+</dd>
+<dt id="swiplserver.prologmqi.PrologThread.stop"><code class="name flex">
+<span>def <span class="ident">stop</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Do an orderly stop of the thread running in the Prolog process associated with this object and close the connection to the <code>prolog_mqi</code> specified in <code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code>.</p>
+<p>If an asynchronous query is running on that thread, it is halted using Prolog's <code>abort</code>.</p></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="swiplserver.prologmqi.create_posix_path" href="#swiplserver.prologmqi.create_posix_path">create_posix_path</a></code></li>
+<li><code><a title="swiplserver.prologmqi.is_prolog_atom" href="#swiplserver.prologmqi.is_prolog_atom">is_prolog_atom</a></code></li>
+<li><code><a title="swiplserver.prologmqi.is_prolog_functor" href="#swiplserver.prologmqi.is_prolog_functor">is_prolog_functor</a></code></li>
+<li><code><a title="swiplserver.prologmqi.is_prolog_list" href="#swiplserver.prologmqi.is_prolog_list">is_prolog_list</a></code></li>
+<li><code><a title="swiplserver.prologmqi.is_prolog_variable" href="#swiplserver.prologmqi.is_prolog_variable">is_prolog_variable</a></code></li>
+<li><code><a title="swiplserver.prologmqi.json_to_prolog" href="#swiplserver.prologmqi.json_to_prolog">json_to_prolog</a></code></li>
+<li><code><a title="swiplserver.prologmqi.prolog_args" href="#swiplserver.prologmqi.prolog_args">prolog_args</a></code></li>
+<li><code><a title="swiplserver.prologmqi.prolog_name" href="#swiplserver.prologmqi.prolog_name">prolog_name</a></code></li>
+<li><code><a title="swiplserver.prologmqi.quote_prolog_identifier" href="#swiplserver.prologmqi.quote_prolog_identifier">quote_prolog_identifier</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="swiplserver.prologmqi.PrologConnectionFailedError" href="#swiplserver.prologmqi.PrologConnectionFailedError">PrologConnectionFailedError</a></code></h4>
+</li>
+<li>
+<h4><code><a title="swiplserver.prologmqi.PrologError" href="#swiplserver.prologmqi.PrologError">PrologError</a></code></h4>
+<ul class="">
+<li><code><a title="swiplserver.prologmqi.PrologError.is_prolog_exception" href="#swiplserver.prologmqi.PrologError.is_prolog_exception">is_prolog_exception</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.json" href="#swiplserver.prologmqi.PrologError.json">json</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologError.prolog" href="#swiplserver.prologmqi.PrologError.prolog">prolog</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="swiplserver.prologmqi.PrologLaunchError" href="#swiplserver.prologmqi.PrologLaunchError">PrologLaunchError</a></code></h4>
+</li>
+<li>
+<h4><code><a title="swiplserver.prologmqi.PrologMQI" href="#swiplserver.prologmqi.PrologMQI">PrologMQI</a></code></h4>
+<ul class="">
+<li><code><a title="swiplserver.prologmqi.PrologMQI.create_thread" href="#swiplserver.prologmqi.PrologMQI.create_thread">create_thread</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologMQI.process_id" href="#swiplserver.prologmqi.PrologMQI.process_id">process_id</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologMQI.start" href="#swiplserver.prologmqi.PrologMQI.start">start</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologMQI.stop" href="#swiplserver.prologmqi.PrologMQI.stop">stop</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologMQI.unix_domain_socket_file" href="#swiplserver.prologmqi.PrologMQI.unix_domain_socket_file">unix_domain_socket_file</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="swiplserver.prologmqi.PrologNoQueryError" href="#swiplserver.prologmqi.PrologNoQueryError">PrologNoQueryError</a></code></h4>
+</li>
+<li>
+<h4><code><a title="swiplserver.prologmqi.PrologQueryCancelledError" href="#swiplserver.prologmqi.PrologQueryCancelledError">PrologQueryCancelledError</a></code></h4>
+</li>
+<li>
+<h4><code><a title="swiplserver.prologmqi.PrologQueryTimeoutError" href="#swiplserver.prologmqi.PrologQueryTimeoutError">PrologQueryTimeoutError</a></code></h4>
+</li>
+<li>
+<h4><code><a title="swiplserver.prologmqi.PrologResultNotAvailableError" href="#swiplserver.prologmqi.PrologResultNotAvailableError">PrologResultNotAvailableError</a></code></h4>
+</li>
+<li>
+<h4><code><a title="swiplserver.prologmqi.PrologThread" href="#swiplserver.prologmqi.PrologThread">PrologThread</a></code></h4>
+<ul class="two-column">
+<li><code><a title="swiplserver.prologmqi.PrologThread.cancel_query_async" href="#swiplserver.prologmqi.PrologThread.cancel_query_async">cancel_query_async</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologThread.halt_server" href="#swiplserver.prologmqi.PrologThread.halt_server">halt_server</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologThread.query" href="#swiplserver.prologmqi.PrologThread.query">query</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologThread.query_async" href="#swiplserver.prologmqi.PrologThread.query_async">query_async</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologThread.query_async_result" href="#swiplserver.prologmqi.PrologThread.query_async_result">query_async_result</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologThread.start" href="#swiplserver.prologmqi.PrologThread.start">start</a></code></li>
+<li><code><a title="swiplserver.prologmqi.PrologThread.stop" href="#swiplserver.prologmqi.PrologThread.stop">stop</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>
