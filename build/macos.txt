@@ -30,7 +30,7 @@ Next, you must install the following Macport libraries for a complete build.
   ==
   port install cmake ninja gmp jpeg libarchive libiconv libmcrypt ncurses \
                openssl ossp-uuid pkgconfig readline zlib pcre libedit \
-               fontconfig gperftools libyaml unixODBC openjdk14 junit hamcrest-core
+               fontconfig gperftools libyaml unixODBC openjdk17 junit hamcrest-core
   ==
 
 Notes
