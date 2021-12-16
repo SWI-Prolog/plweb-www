@@ -2,7 +2,7 @@
 
 ## Using apt-get to get dependencies from the package maintainers
 
-The universal way to get dependencies for a package is below.   The disadvantage is that the distribution list of dependencies can be outdated.  
+The universal way to get dependencies for a package is below.   The disadvantage is that the distribution list of dependencies can be outdated.
 
     apt-get build-dep swi-prolog
 
@@ -93,6 +93,14 @@ environment:
 
 ```shell
 sudo apt install qt5-default
+```
+
+The ``qt5-default`` package is dropped from Ubuntu 21.04 and has never
+existed on some other Debian based distributions.  In that case, use
+the command below.
+
+```shell
+sudo apt-get install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 ```
 
 ### Prerequisites to build the documentation
