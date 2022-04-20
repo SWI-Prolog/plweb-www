@@ -14,22 +14,23 @@ data on a graph as arc/2 facts, this looks as follows.
 :- dynamic arc/2.
 
 load_arcs(File) :-
-	retractall(arc(_,_)),
-	open(File, read, Stream),
-	call_cleanup(load_arcs(Stream),
-		     close(Stream)).
+        retractall(arc(_,_)),
+        setup_call_cleanup(
+            open(File, read, Stream),
+            load_arcs_from_stream(Stream),
+            close(Stream)).
 
-load_arcs(Stream) :-
-	read(Stream, T0),
-	load_arcs(T0, Stream).
+load_arcs_from_stream(Stream) :-
+        read(Stream, T0),
+        load_arcs(T0, Stream).
 
 load_arcs(end_of_file, _) :- !.
 load_arcs(arc(From, To), Stream) :- !,
-	assert(arc(From, To)),
-	read(Stream, T2),
- 	load_arcs(T2, Stream).
-load_arcs(Term, Stream) :-
-	type_error(arc, Term).
+        assert(arc(From, To)),
+        read(Stream, T2),
+        load_arcs(T2, Stream).
+load_arcs(Term, _Stream) :-
+        type_error(arc, Term).
 ==
 
 Of course you should adapt this code to your case. This code properly
