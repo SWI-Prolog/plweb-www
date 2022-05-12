@@ -2,7 +2,7 @@
 
 ## Using apt-get to get dependencies from the package maintainers
 
-The universal way to get dependencies for a package is below.   The disadvantage is that the distribution list of dependencies can be outdated.  
+The universal way to get dependencies for a package is below.   The disadvantage is that the distribution list of dependencies can be outdated.
 
     apt-get build-dep swi-prolog
 
@@ -12,15 +12,14 @@ After building you may wish to run `?- check_installation.` in `swipl` to check 
 
 Use the following commands to obtain all dependencies for a full build
 from source. Note that there are no known version dependencies on any of
-these packages.  If your (debian-based) distribution is lacking any of
-these package use =|apt-cache search <name>|= to find an alternative,
-where <name> is e.g., =libunwind= (i.e., remove version and details).
-Some remarks:
+these packages. If your (debian-based) distribution is lacking any of
+these package use ``apt search <name>`` to find an alternative, where
+<name> is e.g., `jdk` (i.e., remove version and details). Some remarks:
 
   - ``ninja-build`` may be dropped, building using `make`.  Using `make`
     is fine for a one-time build, but `ninja` is advised for developers
     or people that regularly update using git.
-  - It is possible to use =iodbc= instead of =unixodbc= for ODBC
+  - It is possible to use `iodbc` instead of `unixodbc` for ODBC
     connectivity.
   - The SWI-Prolog Java interface (JPL) works with many Java development
     kits.  `Junit4` is needed as of version 8.1.29.  Older versions require
@@ -37,7 +36,8 @@ Some remarks:
   - ``libgoogle-perftools-dev`` provides
     [tcmalloc](https://github.com/google/tcmalloc), which can reduce
     memory usage a lot on some heavily multithreaded applications.
-  - =libunwind= only simplifies debugging in case of a system crash.
+  - `libpcre2-dev` is required for library(pcre).  SWI-Prolog versions before
+    8.5.9 require `libpcre3-dev` (which is older than `libpcre2-dev` ...)
   - `cmake` must be at least version 3.5 See
     [CMAKE.md](https://github.com/SWI-Prolog/swipl-devel/blob/master/CMAKE.md)
 
@@ -46,7 +46,6 @@ sudo apt-get install \
         build-essential cmake ninja-build pkg-config \
         ncurses-dev libreadline-dev libedit-dev \
 	libgoogle-perftools-dev \
-	libunwind-dev \
         libgmp-dev \
         libssl-dev \
         unixodbc-dev \
@@ -55,7 +54,7 @@ sudo apt-get install \
         libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \
         libxpm-dev libxt-dev \
 	libdb-dev \
-	libpcre3-dev \
+	libpcre2-dev \
         libyaml-dev \
         default-jdk junit4
 ```
@@ -75,14 +74,14 @@ including all packages without issues. If you want to reduce resources, the foll
   $ libgmp-dev :
   Without, you lack unbounded integer support, rational numbers, good
   random number generators, etc.
-  $ libpcre3-dev :
+  $ libpcre2-dev :
   Without, you have no regular expression support (library(pcre)).
   $ libyaml-dev :
   Without you have no YAML support (library(yaml)).
 
 Note that including GMP support makes the memory footprint bigger, but
 mostly if you have no other applications depending on GMP. All the other
-optional components are only loaded if you actually use them.
+optional components are only loaded when you use them.
 
 ### Prerequisites to build swipl-win
 
@@ -93,6 +92,14 @@ environment:
 
 ```shell
 sudo apt install qt5-default
+```
+
+The ``qt5-default`` package is dropped from Ubuntu 21.04 and has never
+existed on some other Debian based distributions.  In that case, use
+the command below.
+
+```shell
+sudo apt-get install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 ```
 
 ### Prerequisites to build the documentation

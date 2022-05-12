@@ -44,19 +44,29 @@ additional requirements are loaded into a particular version.
   ?- license.
   ```
 
-The core can be configured to exclude all known GPL and LGPL components
-using one of these options. Excluding `lgpl` also excludes `gpl` and
-thus produces a core system that only contains code distributed under
-a permissive license.
+### GMP
 
+The only non-BSD component in the __core   system__  is the __LGPL__ GNU
+library [GMP](https://gmplib.org/) which provides   unbounded  integers,
+rational numbers and good  random  numbers   to  SWI-Prolog.  GMP can be
+disabled using
 
-  ```
-  ./configure --without-gpl
-  ```
+    cmake -DUSE_GMP=OFF [more options]
 
-or
+Note that LGPL components do not  affect   the  license of SWI-Prolog or
+applications running on  top  of  them.   However,  end  users  of  your
+application must be able to replace  the   LGPL  component. See the LGPL
+license for details.
 
-  ```
-  ./configure --without-lgpl
-  ```
+### Libreadline
 
+From the standard packages, only   `library(readline)` is realised using
+the                           __GPL__                            library
+[libreadline](https://tiswww.case.edu/php/chet/readline/rltop.html).
+This library provides command line  editing   on  POSIX  systems (MacOS,
+Linux, etc.). Since the migration to  BSD,   the  default line editor is
+based on the BSD [editline (libedit)](https://www.thrysoee.dk/editline/)
+library. End user applications generally do   not  require a commandline
+editor and are thus normally not affected. Unlike the GMP library above,
+the commandline editors are loaded explictly   at  runtime and therefore
+the system does not need to be recompiled to remove these components.

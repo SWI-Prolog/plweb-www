@@ -58,5 +58,21 @@ tag-files for finding definitions in Prolog programs. This is the
 site][http://www-2.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/lang/prolog/util/ptags/0.html]].
 We have a local copy of the c-code: [[ptags.tgz][<ptags.tgz>]]
 
+---++ Debug Adapter Protocol (DAP) server for SWI-Prolog
+
+**DAP** is a
+[[protocol][https://microsoft.github.io/debug-adapter-protocol]] that
+specifies a standard of communication between IDEs and programming
+language runtime systems for achieving interactive graphical debugging
+features. A Debug Adapter Protocol _server_ is a program that _adapts_
+the native debugger of a programming language to expose the standard
+interface defined by the DAP specification, allowing any IDE that
+implements a DAP _client_ to operate the debugger with minimal
+language-specific knowledge.  For SWI-Prolog, a DAP server is
+available via the [[`debug_adapter`
+pack][https://www.swi-prolog.org/pack/list?p=debug_adapter]].  To
+enable DAP debugging in GNU Emacs, follow the instructions from:
+https://emacs-lsp.github.io/dap-mode/page/configuration/#swi-prolog
+
 
 

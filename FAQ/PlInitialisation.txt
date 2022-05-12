@@ -20,7 +20,7 @@ The personal initialisation file depends on version and OS:
     The file is called `init.pl` and resides in a directory
     `swi-prolog` below the the [XDG](https://wiki.archlinux.org/index.php/XDG_Base_Directory) config home.  On Unix the
     default XDG config home is ``~/.config``.  On Windows it
-    is the directory provided by win_folder/2 on `local_appdata`.
+    is the directory provided by win_folder/2 on `appdata`.
 
     These files are available using the file_search_path/2 alias
     `user_app_config` as well as the deprecated aliases

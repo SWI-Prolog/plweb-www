@@ -29,12 +29,12 @@ Next, you must install the following Macport libraries for a complete build.
 
   ==
   port install cmake ninja gmp jpeg libarchive libiconv libmcrypt ncurses \
-               openssl ossp-uuid pkgconfig readline zlib pcre libedit \
-               fontconfig gperftools libyaml unixODBC openjdk14 junit hamcrest-core
+               openssl ossp-uuid pkgconfig readline zlib pcre db62 libedit \
+               fontconfig libyaml unixODBC openjdk17 junit hamcrest-core
   ==
 
 Notes
-  
+
   - If you want JPL (the Java interface) you can also install the Oracle JDK.  As
     Oracle gets increasingly annoying about agreeing with their license and as of
     version 10 creating an account with Oracle, we switched to OpenJDK.  Versions
@@ -97,12 +97,6 @@ found
 [here](https://github.com/SWI-Prolog/swipl-devel/blob/master/CMAKE.md)
 
 
-@see The [[Portfile][<Portfile>]]
-@see The scripts for building a binary release as distributed through
-     our download pages are available in a git repository.  Use
-
-     ==
-     git clone git://www.swi-prolog.org/home/pl/git/misc/macos-build.git
-     ==
+@see The [Portfile](https://github.com/macports/macports-ports/blob/master/lang/swi-prolog-devel/Portfile)
 
 
