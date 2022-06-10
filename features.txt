@@ -9,7 +9,7 @@ is mostly driven by the needs for __application development__. This is
 facilitated by a rich interface to other IT components by supporting
 many document types and (network) protocols as well as a comprehensive
 low-level interface to C that is the basis for high-level interfaces to
-C++, Java (bundled), C#, Python, etc (externally available). Data type
+C++, Java (bundled), C#, Python, Rust, etc. (externally available). Data type
 extensions such as [dicts](</pldoc/man?section=bidicts>) and
 [strings](</pldoc/man?section=strings>) as well as full support for
 Unicode and unbounded integers simplify smooth exchange of data with
@@ -31,13 +31,13 @@ be combined at will. The native system provides an editor written in
 Prolog that is a close clone of Emacs. It provides _semantic_
 highlighting based on real time analysis of the code by the Prolog
 system itself. Complementary tools include a graphical debugger,
-profiler and cross-referencer. Alternatively, there is a mode for
-GNU-Emacs and, Eclipse plugin called
+profiler, coverage analysis and cross-referencer. Alternatively, there
+is a mode for GNU-Emacs and, Eclipse plugin called
 [PDT](https://sewiki.iai.uni-bonn.de/research/pdt/docs/start) and a VSC
 [plugin](https://marketplace.visualstudio.com/items?itemName=arthurwang.vsc-prolog),
 each of which may be combined with the native graphical tools. Finally,
 a _computational notebook_ and web based IDE is provided by
-[SWISH](https://swish.swi-prolog.org).  SWISH is a versatile tool that
+[SWISH](https://swish.swi-prolog.org). SWISH is a versatile tool that
 can be configured and extended to suit many different scenarios.
 
 SWI-Prolog provides an add-on distribution and installation mechanism
@@ -119,16 +119,16 @@ links to the relevant documentation.
 
     * *fast* compilation. E.g., loads [WordNet
     3.0](https://wordnet.princeton.edu/download/current-version)
-    in 14 seconds from the Prolog source or 0.4 seconds from _quick load
+    in 7 seconds from the Prolog source or 0.25 seconds from _quick load
     file_ format (see qcompile/1).  The WordNet source counts 821,515
-    lines.  System: Ubuntu 16.04 on Intel i7-3770, 32Gb memory.
+    lines.  System: Ubuntu 22.04 on AMD 3950X, 64Gb memory.
 
     * *Robust* and *|free of memory leaks|*.  In use for several
     servers that run 24x7 (including this web service).
 
     * *Small*. The full development environment, including graphics,
-    libraries and many interface packages, requires approximately 100MB
-    hard disk. The kernel is about 1.4MB (Ubuntu 16.04 .so file)
+    libraries and many interface packages, requires approximately 70MB
+    hard disk. The kernel is about 1.6MB (Ubuntu 22.04 .so file)
 
     * *Scales* well for large applications. *No limits* on program size,
     atom length, term arity or integer values. No performance
@@ -199,13 +199,20 @@ links to the relevant documentation.
     HTML, exchange of JSON or XML, authentication, sessions, and
     much more.  Both client and server supports HTTPS.
 
+    * Interfaces to [Redis](https://redis.io/), [STOMP](https://stomp.github.io/)
+    and [ROS2](https://design.ros2.org/articles/why_ros2.html) provide
+    seemless integration in _micro services_ frameworks.  ROS2 is used
+    for robotics services.  SWI-Prolog's ROS2 binding is several times
+    faster than the Python binding while it is capable of handling
+    multiple requests concurrently.
+
     * Flexible and fast interface to the *|C-|* and *|C++-language|*.
     The interface allows for calling both ways, handling of
     non-determinism both ways and *embedding* of the SWI-Prolog kernel
     in C/C++ projects.
 
     * Interfaces to high level languages such as
-    Java using [JPL](</packages/jpl/>), Python and C# are available.
+    Java using [JPL](</packages/jpl/>), Python, Rust  and C# are available.
 
     * Database connectivity is provided by the
     *|[[ODBC][</pldoc/package/odbc.html>]]|* interface.
@@ -232,6 +239,10 @@ links to the relevant documentation.
 
     * Execution *|profiler.txt|* (time and call statistics) for all
     major platforms (Windows, Linux, MacOSX).
+
+    * Coverage analysis using show_coverage/2 may be used to get
+    line-by-line annotated versions of which parts of your source
+    are used how many times.
 
     * *|[[Cross-Referencer][gxref.txt]]|*. gxref/0 provides a graphical
     front-end for the extensible Prolog cross-referencer (xref).
@@ -267,17 +278,18 @@ links to the relevant documentation.
     __WebAssembly (WASM)__, __Android Termux__ and many more. Both
     __32-bit__ and __64-bit__ hardware is supported. SWI-Prolog has been
     compiled and tested on many CPUs, e.g., x86, x64, SPARC, PowerPC,
-    many ARM models. Sources are plain C99, configured automatically
-    using CMake (as of version 7.7.20). Support for cross-compilation is
+    many ARM models including Apple's M1. Sources are plain C11,
+    configured using CMake. Support for cross-compilation is
     steadily improving.
 
     * Machine-independent *|saved-states|* (save on one platform, run
     using the virtual machine of another platform).
 
     * Regular *|binary distributions|* for Windows (32/64 bits) and
-    MacOS X (64 bits)) and PPAs for
+    MacOS X (64 bits)), PPAs for
     [Ubuntu](http://www.ubuntu.com) ([stable](https://launchpad.net/~swi-prolog/+archive/stable)
-    and [development](https://launchpad.net/~swi-prolog/+archive/devel))
+    as well as [development](https://launchpad.net/~swi-prolog/+archive/devel)),
+    [SNAP](https://snapcraft.io/swi-prolog) and [Docker](https://hub.docker.com/_/swipl/)
 
     * Regular distribution of the *full source* packages. The sources are
     also accessible through [[GIT][</git.html>]].
