@@ -12,7 +12,7 @@ are some options.
       - [Learn Prolog Now](http://lpn.swi-prolog.org/)
 
     Both are online text books that embed [SWISH](https://swish.swi-prolog.org).
-    SWISH is an online version of SWI-Prolog.  SWISH differs from a local SWI-Prolog
+    SWISH is an __online version__ of SWI-Prolog.  SWISH differs from a local SWI-Prolog
     installation:
 
       - As it runs on a shared server it enforces a __sandbox__ that doesn't allow
@@ -32,7 +32,7 @@ are some options.
     their position to the built-in editor PceEmacs or the editor of your choice.
 
     SWI-Prolog comes with a lot of [features](https://www.swi-prolog.org/features.html)
-    that may be useful useful to your project.  Also consider the
+    that may be useful to your project.  Also consider the
     [add-ons](https://www.swi-prolog.org/pack/list).
 
   - __I know some Prolog and I want to use SWI-Prolog for data analysis__.  Here
@@ -45,6 +45,11 @@ are some options.
     with a local installation for your platform and the
     [Web application tutorial](https://www.github.com/Anniepoo/swiplwebtut/blob/master/web.adoc)
 
+  - __I consider using and deploying SWI-Prolog in a commercial project__.  You are
+    probably wondering about the support status, how to connect the Prolog component
+    to the other components of your company, where to find people, etc.  You may send
+    an email to [[SWI-Prolog Solutions b.v.][<mailto:info@swi-prolog.com>]] for information
+    or an appointment for a telco.
 
 
 
