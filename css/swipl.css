@@ -358,7 +358,7 @@ ul.menubar-container > li ul li {
     margin-left: auto;
     margin-right: auto;
     width: 960px;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
 }
 
 #cta-container  td {
@@ -377,6 +377,14 @@ ul.menubar-container > li ul li {
 
 #cta-container a:hover
 { text-decoration: underline;
+}
+
+#cta-github
+{ margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 960px;
+  margin-bottom: 20px;
 }
 
 #enhanced-search-container {
