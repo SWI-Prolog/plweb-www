@@ -15,30 +15,16 @@ to supplement MinGW and the deficiencies of the cmd shell."|_.
 Building SWI-Prolog for MS-Windows under Linux is supported using
 [Docker](https://github.com/SWI-Prolog/docker-swipl-build-mingw)
 
-## Building on Windows itself
-
-According to Matthias Gondan most of the system can be build on Windows
-as follows:
-
-  - install msys2 from msys2.org
-  - ``pacman -Syu``
-  - ``pacman -Syu``
-  - ``pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake git make mingw-w64-x86_64-libjpeg mingw-w64-x86_64-xpm-nox mingw-w64-x86_64-libyaml mingw-w64-x86_64-diffutils mingw-w64-x86_64-pcre mingw-w64-x86_64-db libdb-devel``
-  - ``ftp: download libuuid-1.6.2.tar.gz from ftp (dot) ossp (dot) org/pkg/lib/uuid/, configure --prefix=/usr/local, make, make install, ignore the error relating to strip.exe``
-  - ``git clone https://github.com/SWI-Prolog/swipl-devel.git``
-  - ``cd swipl-devel``
-  - ``git submodule update --init``
-  - ``mkdir build``
-  - ``cd build``
-  - ``cmake -DMINGW_ROOT=/mingw64 -DLIBUUID_INCLUDE_DIR=/usr/local/include -DUUID_LIBRARY=/usr/local/lib/libuuid.a -DBDB_LIBRARY=/mingw64/bin/libdb-6.0.dll -DINSTALL_DOCUMENTATION=OFF -DSWIPL_PACKAGES_X=OFF -DCMAKE_INSTALL_PREFIX:PATH=/usr/local -G "MSYS Makefiles" ..``
-  - ``make``
-  - ``make install``
-  - Copy some dlls to the installation folder:
-  - ``cd /usr/local/bin``
-  - ``cp `ldd libarchive-13.dll |grep -o "/mingw64/bin/.*\\.dll"` .``
-  - ``swipl``
-  - ``check_installation.``
-
-See this [post on Discourse](https://swi-prolog.discourse.group/t/compiling-with-msys2/3936/4)
-
 @see [Daily builds](</download/daily/bin/>)
+
+## Running SWI-Prolog on MSYS2
+
+A port of swi-prolog is available on MSYS2 and can be installed using
+pacman:
+
+  - install [MSYS2](https://www.msys2.org)
+  - ``pacman -Syu``
+  - ``pacman -Syu``
+  - ``pacman -S mingw-w64-x86_64-swi-prolog``
+  - ``swipl``
+  - ``?- check_installation.``
