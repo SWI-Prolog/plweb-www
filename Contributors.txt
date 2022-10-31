@@ -55,6 +55,7 @@ People are listed in alphabetical order.
   * Yves Raimond - Debian PPA (with Eugeniy)
   * Lev Lamberov - Debian packages
   * Galileo Sartor - Snap package specification
+  * Matthias Gondan - MSYS2 package
 
 ## Other _Contributors_
 
