@@ -12,7 +12,7 @@ People are listed in alphabetical order.
   * Anne Ogborn (website, tutorials, lots of comments)
   * Benoit Desouter (initial version of tabling)
   * Carlo Capelli (Qt-based console)
-  * Danniele Church (Refactoring C-core; allow VM as set of functions)
+  * Danielle Church (Refactoring C-core; allow VM as set of functions)
   * Degski ([[FANN][http://leenissen.dk/]], Windows porting)
   * Fabrizio Riguzzi (initial version of mode directed tabling)
   * Giorgos Stoilos (isub/4: fuzzy string matching)
