@@ -33,7 +33,7 @@ People are listed in alphabetical order.
     discussion about embedding other languages)
   * Paul Singleton (JPL, interface to Java)
   * Paulo Moura (provided library(yall), Macports maintainer)
-  * Peter Ludemann (pcre, archive, C++ interface enhancements and a lot of testig)
+  * Peter Ludemann (pcre, archive, C++ interface enhancements and a lot of testing)
   * Randy Sharp (fixing many typos in the documentation; ongoing work)
   * Raivo Laanemets (wasm port)
   * Richard O'Keefe (sort/2, libraries, extensive comments)
