@@ -21,8 +21,11 @@ context menu on predicates and goals make it easy to navigate your code.
   quoted entities, comments, goals (classified as
   built-in, imported, local, dynamic and undefined), predicates
   (classified as local, public and unreferenced), and file references
-  (classified as existend/non-existend). PceEmacs is started using
+  (classified as existent/non-existent). PceEmacs is started using
   the predicates emacs/0, edit/0 or edit/1.
+
+  Similar functionality is now provided for GNU-Emacs using the
+  [sweep](https://eshelyaron.com/sweep.html).  See below
 
   * The [[graphical tracer][gtrace.txt]] provides source-level
   debugging, using three views: your source, variable bindings, and
@@ -99,8 +102,11 @@ Please let us know if you know other plugins.
 ### Using GNU-Emacs
 
 Unfortunately, standard GNU-Emacs Prolog mode is very weak, especially at
-handling proper Prolog indentation. The good news is that there is a better
-mode today. For more information, see the [[FAQ][</FAQ/GnuEmacs.html>]].
+handling proper Prolog indentation. The good news is that there is good
+Emacs Prolog mode available as [sweep](https://eshelyaron.com/sweep.html).
+This mode is similar to the built-in PceEmacs.  The mode replies on embedding
+SWI-Prolog as an Emacs module.  The required _foreign library_ is bundled
+with the binary distributions of Prolog.  Requires SWI-Prolog 8.5.20 or later.
 
 ### Eclipse based
 
