@@ -22,13 +22,23 @@ development versions have proven to be stable. As of 7.4.x we plan to
 provide regular stability and security fixes for the stable version and
 we will avoid incompatible changes.
 
+Note that the version numbers do __not follow semantic versioning
+rules__.  The major, minor version and development release patch
+version merely consolidate development cycles.  Only the stable patch
+level is practically guaranteed to maintain backward compatibility.
+
 All sources are available on [GitHub](http://github.com/SWI-Prolog). The
 repository [swipl.git](http://github.com/SWI-Prolog/swipl.git) is used for
 the stable versions and the repository
 [swipl-devel.git](http://github.com/SWI-Prolog/swipl-devel.git) for the
 development series.  Releases are tagged *V*_|Major.Minor.Patch|_.
 
-  $ 8.5.x: Current development series.
+  $ 9.1.x.x: Current development series.
+
+  $ 9.0.x: Adds support for WASM [WebAssembly](https://webassembly.org/).
+  Adds [sweep](https://eshelyaron.com/sweep.html), a new GNU-Emacs
+  package with _semantic highlighting_.  Adds a new comprehensive and
+  type-safe C++ interface with `SWI-cpp2.h`.
 
   $ 8.4.x: Adds interfaces to [Redis](https://redis.io/) and
   [STOMP](http://stomp.github.io/) _micro services_, isolated _transactions_
