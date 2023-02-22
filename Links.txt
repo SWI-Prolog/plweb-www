@@ -36,6 +36,7 @@ SWI-Prolog [[packages][</packages/>]]
     * [[More Prolog Reading material from the FAQ][</FAQ/PrologReading.html>]]
     * [[Some Coding Guidelines for Prolog][http://arxiv.org/abs/0911.2899]] started by Michael A. Covington; now `et al.'.
     * [[An Introduction to Language Processing with Perl and Prolog][http://www.cs.lth.se/home/Pierre_Nugues/ilppp/sample.html]] by Pierre Nugues
+    * [[Prolog By Example][https://prologbyexample.blogspot.com]] by Tariq Rashid
 
   * *|General Prolog libraries|*
 
