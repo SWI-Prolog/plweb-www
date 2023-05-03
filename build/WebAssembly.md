@@ -32,8 +32,8 @@ tool.  This is not necessary, but speeds up the build considerably.
 
 The build process assumes
 
-  - A directory `~/wasm` for the Emscripten tools and dependencies
-  - Emscripten installed in `~/wasm/emsdk`.  We installed from the
+  - A directory ``~/wasm`` for the Emscripten tools and dependencies
+  - Emscripten installed in ``~/wasm/emsdk``.  We installed from the
     git at https://github.com/emscripten-core/emsdk.git.  That
 	allows to switch versions easily.
   - SWI-Prolog sources, typically [from git](https://github.com/SWI-Prolog/swipl-devel)
@@ -43,9 +43,9 @@ The build process assumes
 
 We need several  dependencies.  [zlib](https://zlib.net/) is required,
 the others  are optional.  We  install the dependencies  with _prefix_
-`~/wasm` We assume running the commands from `~/wasm`.  We also assume
-you  setup the  environment  from Emscripten  as  described above,  so
-`emcc` is in our `$PATH`.
+``~/wasm`` We  assume running the  commands from ``~/wasm``.   We also
+assume you setup  the environment from Emscripten  as described above,
+so `emcc` is in our `$PATH`.
 
 ### Installing zlib
 
