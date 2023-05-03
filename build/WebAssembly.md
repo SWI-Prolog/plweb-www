@@ -56,7 +56,7 @@ This is __mandatory__
     cd zlib-1.2.13
     emconfigure ./configure --static --prefix=$HOME/wasm
     emmake make
-	emmake make install
+    emmake make install
 
 ### Installing pcre
 
@@ -64,11 +64,11 @@ The  [pcre](https://www.pcre.org/)   library  adds   _Perl  Compatible
 Regular Expressions_ to the WASM version.  This is __optional__.
 
     git clone https://github.com/PCRE2Project/pcre2
-	cd pcre2
-	git checkout pcre2-10.42
-	emcmake cmake -DCMAKE_INSTALL_PREFIX=$HOME/wasm -DPCRE2GREP_SUPPORT_JIT=OFF -G Ninja ..
-	ninja
-	ninja install
+    cd pcre2
+    git checkout pcre2-10.42
+    emcmake cmake -DCMAKE_INSTALL_PREFIX=$HOME/wasm -DPCRE2GREP_SUPPORT_JIT=OFF -G Ninja ..
+    ninja
+    ninja install
 
 ### Installing GMPlib
 
@@ -85,11 +85,11 @@ is smaller and causes all code  to be covered by _permissive_ licenses
 (MIT, BSD, Apache).   This is __optional__
 
     wget https://gmplib.org/download/gmp/gmp-6.1.2.tar.lz
-	tar xf gmp-6.1.2.tar.lz
-	cd gmp-6.1.2
-	emconfigure ./configure --disable-assembly --prefix=${HOME}/wasm
-	make -j
-	make install
+    tar xf gmp-6.1.2.tar.lz
+    cd gmp-6.1.2
+    emconfigure ./configure --disable-assembly --prefix=${HOME}/wasm
+    make -j
+    make install
 
 
 ### Sources
@@ -106,7 +106,7 @@ Go to  where you downloaded  the `swipl-devel` source tree.   Create a
 build directory:
 
     mkdir build.wasm
-	cd build.wasm
+    cd build.wasm
 
 Now, create a script `configure` with this content (adjust as required):
 
@@ -118,21 +118,21 @@ TOOLCHAIN=$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake
 
 cmake -DCMAKE_TOOLCHAIN_FILE=$TOOLCHAIN \
       -DCMAKE_BUILD_TYPE=Release \
-	  -DCMAKE_FIND_ROOT_PATH=$HOME/wasm \
-	  -DINSTALL_DOCUMENTATION=OFF \
-	  -G Ninja ..
+      -DCMAKE_FIND_ROOT_PATH=$HOME/wasm \
+      -DINSTALL_DOCUMENTATION=OFF \
+      -G Ninja ..
 ```
 
 Now configure and build the system using these commands
 
     bash configure
-	ninja
+    ninja
 
 Optionally you may test the system  by running the command below.  The
 `-j 8` are the number of tests run in paralel.  Choosing the number of
 cores of your system is a good start.
 
-	ctest -j 8
+    ctest -j 8
 
 
 ## Run the system
