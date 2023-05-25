@@ -42,7 +42,7 @@ _|SWI-Prolog|_ is the preferred `general purpose reference'
     * [Delimited Continuations for Prolog](<swipub:iclp2013.pdf>)
     Tom Schrijvers, Bart Demoen, Benoit Desouter and Jan Wielemaker.
     [BibTeX](<swipub:iclp2013.bib>)
-    * [Porting and refactoring Prolog programs: the {PROSYN} case study](swipub:prosyn.pdf)
+    * [Porting and refactoring Prolog programs: the PROSYN case study](<swipub:prosyn.pdf>)
     Edison Mera and Jan Wielemaker, ICLP-2023. [BibTeX](<swipub:prosyn.bib>)
     * [The Finite Domain Constraint Solver of
     SWI-Prolog](https://www.metalevel.at/swiclpfd.pdf) Markus Triska,
