@@ -42,6 +42,8 @@ _|SWI-Prolog|_ is the preferred `general purpose reference'
     * [Delimited Continuations for Prolog](<swipub:iclp2013.pdf>)
     Tom Schrijvers, Bart Demoen, Benoit Desouter and Jan Wielemaker.
     [BibTeX](<swipub:iclp2013.bib>)
+    * [Porting and refactoring Prolog programs: the {PROSYN} case study](swipub:prosyn.pdf)
+    Edison Mera and Jan Wielemaker, ICLP-2023. [BibTeX](<swipub:prosyn.bib>)
     * [The Finite Domain Constraint Solver of
     SWI-Prolog](https://www.metalevel.at/swiclpfd.pdf) Markus Triska,
     FLOPS-2012 [BibTeX](https://www.metalevel.at/swiclpfd.bib)
@@ -103,7 +105,7 @@ development of large-scale applications.
       within the Prolog community.
       [[OpenOffice][<swipub:ICLP12-SWI25.odp>]]
       [[PowerPoint][<swipub:ICLP12-SWI25.ppt>]]
-    * [LTC 2017, Poznań, Poland](http://ltc.amu.edu.pl/)  Invited talk and tutorials in memorial of [Alain 
+    * [LTC 2017, Poznań, Poland](http://ltc.amu.edu.pl/)  Invited talk and tutorials in memorial of [Alain
       Colmerauer](https://en.wikipedia.org/wiki/Alain_Colmerauer)
       - [[A second life for Prolog][<swipub:LTC-2017-invited.pdf>]] (invited talk)
       - Tutorials
