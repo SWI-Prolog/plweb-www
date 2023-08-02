@@ -56,6 +56,7 @@ sudo apt-get install \
 	libdb-dev \
 	libpcre2-dev \
         libyaml-dev \
+		libpython3-dev \
         default-jdk junit4
 ```
 
@@ -78,6 +79,9 @@ including all packages without issues. If you want to reduce resources, the foll
   Without, you have no regular expression support (library(pcre)).
   $ libyaml-dev :
   Without you have no YAML support (library(yaml)).
+  $ libpython3-dev :
+  Without you have no library(janus), providing access to an embedded
+  Python interpreter.
 
 Note that including GMP support makes the memory footprint bigger, but
 mostly if you have no other applications depending on GMP. All the other
