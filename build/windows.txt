@@ -1,5 +1,5 @@
 ---+ Building SWI-Prolog on MS-Windows
 
-SWI-Prolog for MS-Windows is compiled using [MinGW](http://www.mingw.org/).  To be precise, they are generated using the MinGW cross-compiler on a Linux system.
+SWI-Prolog for MS-Windows is compiled using [MinGW](https://www.mingw-w64.org/).  To be precise, they are generated using the MinGW cross-compiler on a Linux system.
 
 There are also swi-prolog packages for [MSYS2](https://www.msys2.org/).
