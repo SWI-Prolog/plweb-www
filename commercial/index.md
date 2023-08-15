@@ -155,11 +155,15 @@ Turtle, RDF/XML).  Contact us if you need support for another
 protocol.
 
 Alternatively, SWI-Prolog can be embedded in a program written in some
-other language.  We provide this feature for a large range of
-languages, e.g., C, C++, Java, Rust, JavaScript and Python.  This is
-often easier to achieve.  Languages without preemptive multi-threading
-support such as JavaScript and Python do pose challenges when dealing
-with threaded applications.
+other language or use components written in another language.  We
+provide these features for a large range of languages, e.g., C, C++,
+Java, Rust, JavaScript and Python.  C, C++ and Rust allow for fast
+interfaces that support preemptive multi-threading.  Notably Python
+provides easy access from Prolog to many libraries and APIs.  Notably
+scalability when using Prolog threads may be limited.  Still, Python
+provides an excellent entry point to many resources while a better
+scalable interface may be realized after evaluation with a Python
+based prototype.
 
 ### Q: What are the deployment options?
 

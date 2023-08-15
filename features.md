@@ -211,8 +211,13 @@ links to the relevant documentation.
     non-determinism both ways and *embedding* of the SWI-Prolog kernel
     in C/C++ projects.
 
-    * Interfaces to high level languages such as
-    Java using [JPL](</packages/jpl/>), Python, Rust  and C# are available.
+	* Bundled interface to Java named [JPL](</packages/jpl/>)
+
+	* Bundled interface to Python named [Janus](</packages/janus>).
+	Janus allows for embedding Python into Prolog as well as Prolog
+	into Python.  Janus is also available for [XSB](https://xsb.com/xsb-prolog/).
+
+    * Externally available interfaces to Rust, C# and more.
 
     * Database connectivity is provided by the
     *|[[ODBC][</pldoc/package/odbc.html>]]|* interface.
