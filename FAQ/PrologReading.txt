@@ -8,13 +8,13 @@ this topic after seeing this message on comp.lang.prolog:
     take a look at these links:
 
     * http://kti.mff.cuni.cz/~bartak/prolog/ - Roman Barták
-    * http://www.csupomona.edu/~jrfisher/www/prolog_tutorial/contents.html - J R Fischer
+    * https://skolemmachines.org/ThePrologTutorial/ - J R Fischer
     * http://www.amzi.com/AdventureInProlog/ - Dennis Merritt and Amzi! inc.
     * http://www.compapp.dcu.ie/~alex/LOGIC/start.html - James Power and Alex Monaghan
     * http://www.arch.su.edu.au/~jose/prolog/tutorial.html - José Damski
     * http://cs.wwc.edu/~cs_dept/KU/PR/Prolog.html - Anthony Aaby
     * http://www.dcs.qmw.ac.uk/~mmh/AINotes/ - Matthew Muntbach
-    * http://www.dcs.kcl.ac.uk/teaching/units/cs2lap/notes.html - Dov Gabbay and Ulle Endriss 
+    * http://www.dcs.kcl.ac.uk/teaching/units/cs2lap/notes.html - Dov Gabbay and Ulle Endriss
 
 Here are some links, if they are helpful, help yourself.
 
