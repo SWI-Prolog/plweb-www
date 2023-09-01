@@ -3,11 +3,11 @@
 There  are three  ways to  build SWI-Prolog  from source  for Windows.
 Here are some notes regarding the different approaches:
 
-  - __Compiler__.  MinGW (GCC) produces 20-30% faster binaries.  The
-    resulting library can be used with MinGW as well as MSVC.  Debugging
-	can be tricky because the GNU `gdb` debugger does not understand the
-	MSVC debugging information and Microsoft debugger does not understand
-	the GCC debugging information.
+  - __Compiler__.  MinGW (GCC) produces 20-30% faster binaries than
+    MSVC.  The resulting library can be used with MinGW as well as
+    MSVC.  Debugging can be tricky because the GNU `gdb` debugger does
+    not understand the MSVC debugging information and Microsoft
+    debugger does not understand the GCC debugging information.
 
   - __Cross compiling__  Windows is notoriously slow in starting programs
     and the compilation starts _many_ programs.   CMake does not support
@@ -25,21 +25,20 @@ While building  for Windows has improved  a lot with the  migration to
 CMake  for SWI-Prolog  and much  improved dependency  handling, it  is
 still a tedious  process that provides little benefits  over using the
 binary     installers     that      can     be     downloaded     from
-https://www.swi-prolog.org/Download.html.
+https://www.swi-prolog.org/Download.html
 
 
 ## Cross-compiling
 
-We provide a [Docker
-image](https://github.com/SWI-Prolog/docker-swipl-build-mingw) that is
-based on Fedora Linux and builds SWI-Prolog using the MinGW cross
+We provide a [Docker file](https://github.com/SWI-Prolog/docker-swipl-build-mingw)
+that is based on Fedora Linux and builds SWI-Prolog using the MinGW cross
 compilers and Wine emulation to run the Prolog steps.  This should
 work on any machine capable of running Docker.
 
 The Docker image uses a host filesystem directory to access the source
 tree and create the result.
 
-See the `Makefile`of the repo for using it.
+See the `Makefile` of the repo for using it.
 
 This is used to build the binary releases for Windows as well as
 the [daily builds](https://www.swi-prolog.org/download/daily/bin/).
@@ -54,21 +53,20 @@ dependencies from MSYS2.
 
 ## Using Microsoft Visual C++ (MSVC)
 
-This is  a recent addition and  does not yet cover  all packages.  The
-process  is  based  MSVC and  the  [vcpkg](https://vcpkg.io/)  package
-manager.
+This  is  a recent  addition.   The  process  is  based MSVC  and  the
+[vcpkg](https://vcpkg.io/) package manager.
 
 ### Preparation
 
-__Install Microsoft Visual C++__.  You need the command line tools and
+*|Install Microsoft Visual C++|*.  You need the command line tools and
 optionally  Visual Studio.   The  the supplied  shortcuts  to start  a
 `cmd.exe` or PowerShell prompt setup for running the MSVC command line
 tools.
 
 __Install `vcpkg`__ if you do not have it.  The vcpkg site suggests to
 install the  package manager into a  folder close to the  device root,
-suggesting  `src\vcpkg` or  `dev\vcpkg`.   We use  the  latter in  our
-examples.
+suggesting ``c:\src\vcpkg`` or ``c:\dev\vcpkg``.  We use the latter in
+our examples.
 
 ```
 c:
@@ -80,8 +78,8 @@ cd vcpkg
 ```
 
 __Install the dependencies__  we need.  Run these  commands inside the
-`c:\dev\vcpkg` directory.  The  ``--triplet x64-windows`` flag demands
-for  the  64  bit  versions  of  the  dependencies.   The  `zlib`  and
+``c:\dev\vcpkg``  directory.    The  ``--triplet   x64-windows``  flag
+demands for the  64 bit versions of the dependencies.   The `zlib` and
 `pthreads` dependencies are obligatory.  The others are to support the
 packages.
 
@@ -100,8 +98,7 @@ Prolog packages such as `CHR`, `clpqr`, etc. should also work.
 ```
 mkdir build
 cd build
-cmake -DCMAKE_TOOLCHAIN_FILE=/dev/vcpkg/scripts/buildsystems/vcpkg.cmake \
-      -DSWIPL_PACKAGE_LIST=clib;plunit;pcre;PDT;protobufs;sweep;table;utf8proc;yaml;swipy  ..
+cmake -DCMAKE_TOOLCHAIN_FILE=/dev/vcpkg/scripts/buildsystems/vcpkg.cmake ..
 ```
 
 __Build the system__
@@ -113,3 +110,12 @@ file that opens Visual Studio.
 ```
 cmake --build . --config Release
 ```
+
+__Status__
+
+The Microsoft Visual  C++ port is experimental.  The  above builds the
+core  system and  all packages  except for  ``JPL`` and  ``bdb``.  The
+tests  pass  except  for  a spurious  failure  in  `swipl:basics`  and
+consistent failure on the RDF database.
+
+Packaging has not been tested.
