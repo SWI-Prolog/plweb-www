@@ -91,9 +91,8 @@ packages.
 __Configure the system__
 
 Go to the  checked out SWI-Prolog sources and run  the commands below.
-Adjust the tool chain script  if you installed `vcpkg` elsewhere.  The
-command  below explicitly  lists  the packages  that  work.  All  pure
-Prolog packages such as `CHR`, `clpqr`, etc. should also work.
+Adjust the tool chain script  if you installed `vcpkg` elsewhere.
+
 
 ```
 mkdir build
