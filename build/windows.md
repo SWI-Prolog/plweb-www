@@ -114,7 +114,6 @@ __Status__
 
 The Microsoft Visual  C++ port is experimental.  The  above builds the
 core  system and  all packages  except for  ``JPL`` and  ``bdb``.  The
-tests  pass  except  for  a spurious  failure  in  `swipl:basics`  and
-consistent failure on the RDF database.
+tests  pass  except  for  a spurious  failure  in  `swipl:basics`.
 
 Packaging has not been tested.
