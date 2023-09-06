@@ -228,15 +228,21 @@ specific, invalid, HTML content.
 ### Q: How portable is SWI-Prolog?
 
 SWI-Prolog is written in C, following the C11 standard.  It may be
-compiled using gcc or clang.  It does not use any assembly code.  It
-does use gcc and clang _built-in functions_, notably for lock-free
-thread synchronization using the _atomic_ built-ins and for fast but
-safe arithmetic using the overflow checking arithmetic built-ins.
+compiled using gcc, clang or Microsoft Visual C++ (MSVC).  It does not
+use any assembly code.  It does use gcc and clang _built-in
+functions_, notably for lock-free thread synchronization using the
+_atomic_ built-ins and for fast overflow-aware arithmetic.  On MSVC it
+uses the _intrinsics_ functions where applicable.
 
-It can also be compiled using the Microsoft MSVC but, lacking some
-extensions, this version is considerably slower.  It supports both 32
-and 64 bit architectures on a wide range of CPUs.  All CPUs supported
-by [Debian
+The build is configured and controlled using
+[CMake](https://cmake.org/).  This facilitates automatic configuration
+for a wide range of platforms as well as using multiple build backends
+such as Unix `make`, `ninja` or Microsoft Visual C++ project files.
+CMake also facilitates embedding a SWI-Prolog in larger projects, where
+needed using a project specific configuration.
+
+SWI-Prolog supports both 32 and 64 bit architectures on a wide range
+of CPUs.  All CPUs supported by [Debian
 Linux](https://www.debian.org/releases/stable/i386/ch02s01.en.html)
 are supported. Low level OS access is provided for POSIX based systems
 (Linux, *BSD (including MacOS) and Windows.  Finally, there is a
@@ -247,18 +253,33 @@ package](https://www.npmjs.com/package/swipl-wasm).
 Practically all features are transparently supported on all supported
 platforms.  For all platforms SWI-Prolog comes with small extensions
 to access functionality that is platform specific and cannot be
-generalized such as accessing the browser DOM from the WASM version.
+generalized.  Examples are accessing the Windows registry in the
+Windows port or accessing the browser DOM in the WASM version.
+
+### Q: What dependencies does SWI-Prolog have?
+
+The __core__ depends on [zlib](https://zlib.net/) and optionally on
+[GMP](https://gmplib.org/).  Without GMP it provides the same
+functionality (unbounded integers, rational numbers and good random
+numbers) based on an included port of
+[LibBF](https://bellard.org/libbf/)
+
+The __extension packages__ come in three tastes.  Part of the packages
+are pure Prolog, part use C11 code without dependencies and notably
+the _interface_ packages such as for ODBC, OpenSSL, Java and Python
+depend on the development environment of these systems.  All these
+extensions are _optional_ though.
 
 
 ### Q: Licenses, open source ...
 
 #### Q: What are the license conditions for SWI-Prolog?
 
-SWI-Prolog is distributed under the permissive BSD-2 license.
-All software that is part of the standard distribution is either
-covered by this license, concerns external code covered by one
-of the other permissive licenses (BSD-3, MIT, Apache-2) or is
-optional.  Optional components covered by GNU licenses are
+SWI-Prolog is distributed under the permissive BSD-2 license.  All
+software that is part of the standard distribution is either covered
+by this license, concerns external code covered by one of the other
+permissive licenses (BSD-3, MIT, Apache-2) or is optional.  Optional
+components covered by GNU licenses are
 
  - The GPL licensed [readline](https://tiswww.case.edu/php/chet/readline/rltop.html)
    Command line editor.  This interface may be loaded on demand
