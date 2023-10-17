@@ -59,34 +59,23 @@ list below describes the dependencies in platform independent way.
 ### Building using cmake
 
 Using cmake the system is typically build in a subdirectory of the
-downloaded sources. The build system does not add or modify any file in
-the source tree and (thus) multiple subdirectories can be created
-holding different configurations. A built system can simply be removed
-by removing the build directory. Basic instruction to build the system
-are below. The first alternative installs the system in your home
-directory and used [ninja](https://ninja-build.org/) to build the
-system. The second alternative uses classical `make` and installs in
-`/usr/local`. The `ctest -j 4` tests the system using 4 parallel jobs.
-Testing is encouraged but not required.
+downloaded sources. The build system does not add or modify any file
+in the source tree and (thus) multiple subdirectories can be created
+holding different configurations. A built system can be removed by
+removing the build directory. The example below installs the system in
+your home directory and used [ninja](https://ninja-build.org/) to
+build the system.  We recommend building using GCC for best
+performance.
+
 
 ```
 cd swipl-devel
 mkdir build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX=$HOME -G Ninja ..
+cmake -DCMAKE_INSTALL_PREFIX=$HOME -DCMAKE_BUILD_TYPE=PGO -G Ninja ..
 ninja
-ctest -j 4
+ctest -j $(nproc) --output-on-failure
 ninja install
-```
-
-```
-cd swipl-devel
-mkdir build
-cd build
-cmake -DCMAKE_INSTALL_PREFIX=/usr/local ..
-make
-ctest -j 4
-sudo make install
 ```
 
 SWI-Prolog can be used without installing by running `src/swipl`
