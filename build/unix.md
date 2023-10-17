@@ -12,10 +12,7 @@ created automatically for every release.
 ## Installing from source
 
 Installing from source is often the best option for installing on Linux
-and *BSD based systems. Building is not complex. This document describes
-building *7.7.20 or later* using [cmake](https://cmake.org/). See [this
-page](<unixautotools.txt>) for building *older versions* using GNU
-autoconf and make.
+and *BSD based systems. Building is not complex.
 
 ### Downloading SWI-Prolog
 
@@ -23,6 +20,9 @@ Download the SWI-Prolog source
 
   - As a _tar ball_ from [the download page](</Download.html>)
   - Using GIT from [GIThub](https://github.com/SWI-Prolog/)
+
+We recommend using GIT as it makes updates much faster and you can
+upgrade as well as downgrade easily at any time to any version.
 
 ### Preparing the source (when downloading using GIT)
 
@@ -88,6 +88,10 @@ make
 ctest -j 4
 sudo make install
 ```
+
+SWI-Prolog can be used without installing by running `src/swipl`
+from below the `build` directory.  You may create a symbolic link from
+your personal _bin_ directory to `src/swipl` in the build directory.
 
 A full description for installing a particular configuration in a
 particular location, dealing with development workflows, etc. can be
