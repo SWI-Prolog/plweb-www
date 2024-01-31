@@ -33,7 +33,12 @@ the stable versions and the repository
 [swipl-devel.git](http://github.com/SWI-Prolog/swipl-devel.git) for the
 development series.  Releases are tagged *V*_|Major.Minor.Patch|_.
 
-  $ 9.1.x.x: Current development series.
+  $ 9.3.x: Current development series.
+
+  $ 9.2.x: Adds a Python interface (Janus), new C++ interface, improved
+  tooling (profiling, coverage analysis, unit testing and installing
+  add-ons) and command line apps.  Sources are now strict C11 and the
+  full system can be build using Micorsoft VS2022.
 
   $ 9.0.x: Adds support for WASM [WebAssembly](https://webassembly.org/).
   Adds [sweep](https://eshelyaron.com/sweep.html), a new GNU-Emacs
