@@ -15,7 +15,7 @@ only necessary if your application requires it.
 When building from  source, the library requires  the Python embedding
 libraries.  On Debian Linux systems these are provided by
 
-   sudo  apt-get install python3 libpython3-dev
+    sudo  apt-get install python3 libpython3-dev
 
 On MacOS  and Windows the libraries  and header files are  provided as
 part of the Python installer.
