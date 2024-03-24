@@ -110,6 +110,20 @@ file that opens Visual Studio.
 cmake --build . --config Release
 ```
 
+__Test the system__
+
+
+The system  may be  tested using  `ctest` using  the ``-C``  option to
+specify the configuration.  The  ``-j 4`` below specifies concurrency.
+Typically one  should use the  number of cores  as most tests  are CPU
+bound.  The ``--output-on-failure`` option writes the Prolog output to
+the terminal in case a test fails.
+
+
+```
+ctest -j 4 --output-on-failure -C Release
+```
+
 __Status__
 
 The Microsoft Visual  C++ port is experimental.  The  above builds the
