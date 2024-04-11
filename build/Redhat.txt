@@ -20,6 +20,7 @@ from source.
 
 ```
 dnf install \
+  gcc gcc-c++ \
   cmake \
   ninja-build \
   libunwind \
@@ -45,11 +46,13 @@ dnf install \
   pkgconfig \
   readline-devel \
   libedit-devel \
+  libdb-devel \
   unixODBC-devel \
   zlib-devel \
   uuid-devel \
   libarchive-devel \
-  libyaml-devel
+  libyaml-devel \
+  python3-devel
 ```
 
 The above is tested on Fedora 23, 24 and 25.  On Fedora < 23 the
