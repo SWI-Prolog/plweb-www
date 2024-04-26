@@ -1,5 +1,5 @@
 SWI-Prolog on Android Termux
-============================
+==================================
 
 As of version 7.7.23 we have now SWI-Prolog running on Android under
 [termux](https://termux.com/). With the exception of JPL it is passing
@@ -28,7 +28,12 @@ true.
 ```
 
 Building it yourself
------------------------
+--------------------
+
+There are two routes for building the Termux package.  One is to use a Docker container
+and the other is to compile it directly inside Termux.
+
+### Building using Docker
 
 SWI-Prolog for android is built with the docker file used by `termux` to build packages.
 
@@ -52,9 +57,24 @@ cd termux-packages
 You should now have the  `.deb` files in the `debs` directory.
 
 Unsupported packages
----------------------
+--------------------
 
 bdb, odbc, space
+
+
+### Building inside Termux
+
+Prepare
+
+    pkg install clang
+	pkg install libandroid-execinfo libarchive libcrypt libgmp libyaml ncurses openssl ossp-uuid readline zlib pcre2
+
+Now download SWI-Prolog, go into the root directory of the distribution and build using
+
+    mkdir build
+	cd build
+	cmake .. -G Ninja -DPOSIX_SHELL=${PREFIX}/bin/sh  -DSWIPL_TMP_DIR=${PREFIX}/tmp -DSYSTEM_CACERT_FILENAME=${PREFIX}/etc/tls/cert.pem
+	ninja
 
 
 Test results
