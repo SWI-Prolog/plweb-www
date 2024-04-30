@@ -45,14 +45,14 @@ defined by the user to print complex terms in a more friendly way.
 ## Changing default?
 
 Add a set_prolog_flag/2 directive in your prolog personal initialisation
-file (see PlInitialisation.txt) to change the default the above mentioned
+file (see PlInitialisation.md) to change the default the above mentioned
 prolog flags.  E.g. to disable abbreviation, use:
 
 ```
 ?- set_prolog_flag(answer_write_options,
 		   [ quoted(true),
-			 portray(true),
-			 spacing(next_argument)
+		     portray(true),
+		     spacing(next_argument)
 		   ]).
 ```
 
