@@ -14,6 +14,6 @@ application.
 The plwin.exe console has a menu holding the copy and paste operations
 as well as access to many other common operations. 
 
-@see MakeLog.txt on how to make a transcript of the terminal session.
+@see MakeLog.md on how to make a transcript of the terminal session.
 
 

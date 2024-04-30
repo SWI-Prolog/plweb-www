@@ -14,7 +14,7 @@ prompt results in:
   ?- ?- prove(X).
   ERROR: Undefined procedure: (?-)/1
   ERROR:   ?- is the Prolog prompt
-  ERROR:   See FAQ at http://www.swi-prolog.org/FAQ/ToplevelMode.txt
+  ERROR:   See FAQ at http://www.swi-prolog.org/FAQ/ToplevelMode.md
   ==
 
 Terms that you enter at the *toplevel* are processes as _queries_, while terms
@@ -34,7 +34,7 @@ arguments.
   ?- carnivore(X) :- animal(X), eats_meat(X).
   ERROR: Undefined procedure: (:-)/2
   ERROR:   Rules must be loaded from a file
-  ERROR:   See FAQ at http://www.swi-prolog.org/FAQ/ToplevelMode.txt
+  ERROR:   See FAQ at http://www.swi-prolog.org/FAQ/ToplevelMode.md
   ==
 
 Isn't this stupid?  Well, no.  Suppose we have a term =|eats_meat(rataplan)|=.
@@ -66,7 +66,7 @@ true.
 ==
 
 The second way is by using assert/1.  Note that these two mechanisms do not
-mix for the same predicate.  See DynamicCode.txt.
+mix for the same predicate.  See DynamicCode.md.
 
 ==
 ?- assert((carnivore(X) :- animal(X), eats_meat(X))).
@@ -76,7 +76,7 @@ We advice to use an editor to make a file with rules and load this using
 the command below.  Prolog files use the extension =|.pl|=, which you do
 not have to specify for loading the file.  You may use any other extension,
 but this requires you to add the extension and quotes to turn this into
-valid Prolog syntax.  For example: =|?- ['myfile.txt'].|=.
+valid Prolog syntax.  For example: =|?- ['myfile.md'].|=.
 
 ==
 ?- [myfile].

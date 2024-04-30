@@ -21,14 +21,14 @@ dynamic:
 
 abolish/1 forgets everything Prolog knows about the predicate, including
 the fact that was dynamic. All clauses should be removed using
-retractall/1.  See also DynamicCode.txt.
+retractall/1.  See also DynamicCode.md.
 
 ---++ You enter your program at the prompt
 
 SWI-Prolog (in fact almost any Prolog system) interprets terms typed to
 the ?- prompt as queries and wants to prove (i.e., run) them. The
 preferred way is to use an editor to create a file and load this into Prolog
-by putting it between square brackets (see also LoadProgram.txt).
+by putting it between square brackets (see also LoadProgram.md).
 
 ==
 ?- [myfile].

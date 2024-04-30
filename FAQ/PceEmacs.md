@@ -11,6 +11,6 @@ Both syntax checking and singleton warnings are generated for the clause
 in which the caret appears after every keystroke.  Global analysis of the
 file is done after a shot idle time or after typing *|C-l|* (control+L).
 
-@see	BindEditor.txt for selecting PceEmacs as default editor.
-@see	../PceEmacs.txt for screenshot
-@see	../gxref.txt for a graphical cross-referencer
+@see	BindEditor.md for selecting PceEmacs as default editor.
+@see	../PceEmacs.md for screenshot
+@see	../gxref.md for a graphical cross-referencer

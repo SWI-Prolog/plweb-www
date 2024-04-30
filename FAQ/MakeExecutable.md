@@ -1,7 +1,7 @@
 ---+ How do I make an executable?
 
 For local use you generally do not want to make an executable. Simply
-create a script as described in PrologScript.txt is easier and starts
+create a script as described in PrologScript.md is easier and starts
 only a little slower in most cases. Sometimes you do want to make a true
 executable. Some cases are:
 
@@ -18,7 +18,7 @@ using qsave_program/2 as described in the SWI-Prolog reference manual.
 Unfortunately things start to get platform specific quickly. Here are
 some cases:
 
-    * WinExe.txt -- Make an executable of Prolog for MS-Windows
-    * PceWinExe.txt -- Make an executable of an XPCE graphical
+    * WinExe.md -- Make an executable of Prolog for MS-Windows
+    * PceWinExe.md -- Make an executable of an XPCE graphical
     application for MS-Windows
-    * UnixExe.txt -- Make executable in Linux/Unix systems 
+    * UnixExe.md -- Make executable in Linux/Unix systems 

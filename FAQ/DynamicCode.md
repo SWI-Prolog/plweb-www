@@ -54,4 +54,4 @@ use retractall/1, e.g.:
 	retractall(arc(,)),
 ==
 
-See also ReadDynamicFromFile.txt
+See also ReadDynamicFromFile.md

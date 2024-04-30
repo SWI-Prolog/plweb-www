@@ -32,5 +32,5 @@ profile. Confirm this and edit the result.
 On systems using XPCE you can achieve the same from the SWI-Prolog help
 window opened with the =|?- help.|= command.
 
-For non-windows users, see PlInitialisation.txt for how Prolog locates
+For non-windows users, see PlInitialisation.md for how Prolog locates
 its customisation files.

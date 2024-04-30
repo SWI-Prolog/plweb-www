@@ -150,7 +150,7 @@ LAMP, Tomcat, Django, Ruby-on-rails, etc.?
      This applies notably when accessing RDMS or RDF storage systems,
      but also dynamic Prolog predicates are way more easily queried than
      data stored in imperative languages. See also the [ClioPatria
-     whitepaper](http://cliopatria.swi-prolog.org/help/whitepaper.txt).
+     whitepaper](http://cliopatria.swi-prolog.org/help/whitepaper.md).
      The library(pengines) provides any application with a clean
      modular API that is more elegant than SQL or SPARQL in a few lines
      of code.

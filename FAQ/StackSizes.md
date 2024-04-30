@@ -10,7 +10,7 @@ be handled on these platforms: 128Mb. On 64-bit platforms the default is
 ---++ But, my program is too big. What now?
 
 Prune choicepoints. Deterministic programs use way less memory on all
-the stacks. Use the SWI-Prolog [[source-level debugger][../gtrace.txt]]
+the stacks. Use the SWI-Prolog [[source-level debugger][../gtrace.md]]
 to find choicepoints.
 
 ---++ But I really have a lot of choicepoints and data

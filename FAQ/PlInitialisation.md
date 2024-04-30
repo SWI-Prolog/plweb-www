@@ -42,7 +42,7 @@ also available from the PceEmacs menu _|Edit/Prolog preferences|_.
 
 The *|-s file|* command line option is often used on Unix systems to
 load and start applications using a single command. This option can also
-be used to create PrologScript.txt files. Recent versions interpret a
+be used to create PrologScript.md files. Recent versions interpret a
 ``*.pl`` file on the command line as a source file. When used in a
 terminal, a session is typically started as
 

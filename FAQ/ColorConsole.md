@@ -17,4 +17,4 @@ can be controlled in two ways
 
 
 
-@see PlInitialisation.txt for editing your personal init file.
+@see PlInitialisation.md for editing your personal init file.

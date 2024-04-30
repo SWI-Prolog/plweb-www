@@ -16,4 +16,4 @@ defines you want emacs mode, regardless of the platform.
 key_binding.style: emacs 
 ==
 
-@see PceFonts.txt for more info on changing XPCE defaults.
+@see PceFonts.md for more info on changing XPCE defaults.
