@@ -1,4 +1,4 @@
----+ The SWI-Prolog FAQ
+# The SWI-Prolog FAQ
 
   * *|Getting started|*
     * [[Getting started quickly (from the manual)][</pldoc/man?section=quickstart>]]
@@ -62,4 +62,3 @@
 
   * *|Learn more about Prolog|*
     * [[Books and Web Material on Prolog][PrologReading.md]]
-
