@@ -1,6 +1,6 @@
 ---++ Processing HTTP-parameters
 
-In HTMLRules.txt, we used the HTML generation library to build a single
+In HTMLRules.md, we used the HTML generation library to build a single
 page dynamically.  In this page we will introduce two new primitives:
 
     1. Create a handler that processes parameters
@@ -8,7 +8,7 @@ page dynamically.  In this page we will introduce two new primitives:
 
 ---+++ Creating links to another handler with parameters
 
-First, the overall skeleton.  This is very much like the HTMLRules.txt
+First, the overall skeleton.  This is very much like the HTMLRules.md
 example, but we introduce new rules for making a link to a module and
 including the file-name of a module.  Introducing such tiny rules and
 managing a pool greatly boosts reusability in and maintainability of
@@ -152,7 +152,7 @@ we do introduce some reusability principles:
 
 In this page we learned linking dynamically generated pages together and
 passing parameters. The same infrastructure can of course be used to
-generate forms as we discuss in HTMLForms.txt. We also learned how to
+generate forms as we discuss in HTMLForms.md. We also learned how to
 deal with reusability and maintenance by properly splitting the code
 and by referring to HTTP paths by the predicate that implements them
 rather than the exact location of the server.
@@ -163,8 +163,8 @@ If you loaded the source and ran the demo, you might feel a bit
 disappointed: it works flawlessly, but it looks very 1980's: totally
 basic style and no fancy interaction. With the technology presented
 so far, we can easily make it look 1990's: create reusable rules that
-create tables-in-tables(-in-frames)! In HTMLStyle.txt, we discuss how to
+create tables-in-tables(-in-frames)! In HTMLStyle.md, we discuss how to
 do this state-of-the-art.
 
 @see The source: modules.pl
-@see Next: HTMLStyle.txt
+@see Next: HTMLStyle.md

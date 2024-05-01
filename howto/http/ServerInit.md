@@ -1,6 +1,6 @@
 ---+ Running the server under init or daemontools
 
-Next to [[VNC][ServerVNC.txt]], another option for deploying servers as
+Next to [[VNC][ServerVNC.md]], another option for deploying servers as
 continuously running processes is to use the Unix started scripts. One
 option here is to use init, and the other is to use e.g.,
 [[daemontools][http://cr.yp.to/daemontools.html]].  At this moment we
@@ -11,7 +11,7 @@ will not give a complete scenario here.
 When starting SWI-Prolog's multi-threaded HTTP server, the main thread
 starts a number of server threads and then presents the normal
 interactive Prolog toplevel. This is great for development and under the
-[[VNC][ServerVNC.txt]] solution, but of no use for a non-interactive
+[[VNC][ServerVNC.md]] solution, but of no use for a non-interactive
 server, because Prolog terminates if it reads an end-of-file at the
 toplevel.  We need to give the toplevel something to do.  The common
 solution is to use thread_get_message/1 for that because it provides

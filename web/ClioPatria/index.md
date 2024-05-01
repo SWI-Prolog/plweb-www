@@ -12,8 +12,8 @@ infrastructure. The web-server contains a SPARQL endpoint, user
 management and web-based tools to help the developer analysing the
 loaded RDF.
 
-    * Overview.txt of ClioPatria
-    * [[Rationale][whitepaper.txt]] behind ClioPatria
-    * QueryLanguages.txt supported
-    * Install.txt or restart.txt ClioPatria
-    * Download.txt ClioPatria
+    * Overview.md of ClioPatria
+    * [[Rationale][whitepaper.md]] behind ClioPatria
+    * QueryLanguages.md supported
+    * Install.md or restart.md ClioPatria
+    * Download.md ClioPatria

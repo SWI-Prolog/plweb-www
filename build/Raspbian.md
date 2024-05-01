@@ -1,7 +1,7 @@
 # Building SWI-Prolog for the Raspberry Pi
 
 Building SWI-Prolog for the [Raspberry Pi](https://www.raspberrypi.org/)
-using [Raspbian](https://www.raspbian.org/) follows the [Debian](<Debian.txt>)
+using [Raspbian](https://www.raspbian.org/) follows the [Debian](<Debian.md>)
 installation instructions.  There are some specific issues:
 
   - `libunwind` is not available for Raspbian. You can simply ignore

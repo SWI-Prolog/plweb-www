@@ -11,7 +11,7 @@ steps.
   1. Find and install the library for your OS.
 
      $ Linux :
-     Check out info on [your distribution](</build/LinuxDistro.txt>) or
+     Check out info on [your distribution](</build/LinuxDistro.md>) or
      use the package manager to find and install the library.  Make sure
      to install the *development version* of the library. On Debian/apt
      based systems, development versions typically have the suffix

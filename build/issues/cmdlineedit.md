@@ -8,7 +8,7 @@ Command line editing allows reusing editing commands using the keyboard arrows.
 
   $ Linux :
   Make sure the development version of =libreadline= is installed.  See
-  [here](</build/issues/RebuildAfterDevLib.txt>)
+  [here](</build/issues/RebuildAfterDevLib.md>)
 
   $ MacOS :
   As Linux, but be aware that the =build= script sets the environment to

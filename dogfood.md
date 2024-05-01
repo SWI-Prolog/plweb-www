@@ -67,4 +67,4 @@ Wielemaker for everything that looks out-of-place, ugly or both. [Wouter
 Beek](http://wouterbeek.com/) implemented the news and new annotation
 facility.
 
-@see [Can I replace a LAMP stack with SWI-Prolog?](</FAQ/PrologLAMP.txt>)
+@see [Can I replace a LAMP stack with SWI-Prolog?](</FAQ/PrologLAMP.md>)

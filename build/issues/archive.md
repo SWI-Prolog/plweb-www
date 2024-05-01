@@ -12,4 +12,4 @@ data, zip archives, tar archives, etc).  It is internally used by
   - For binary installations, contact the packager and point to this page.
   - For source installations, make sure that the development libraries for
     [libarchive](http://www.libarchive.org/) are installed and
-    [re-build](<RebuildAfterDevLib.txt>).
+    [re-build](<RebuildAfterDevLib.md>).

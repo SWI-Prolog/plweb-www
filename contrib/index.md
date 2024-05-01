@@ -7,21 +7,21 @@ These are interfaces to other programming environments that are not
 externally managed projects.
 
     * [[Python Interface (pyswip)][http://code.google.com/p/pyswip/]]
-    * [[C# Interface][CSharp.txt]]
-    * [[A 2-way interface to .NET/Mono][NetMono.txt]]
-    * [[C++ Interfaces][CPP.txt]]
+    * [[C# Interface][CSharp.md]]
+    * [[A 2-way interface to .NET/Mono][NetMono.md]]
+    * [[C++ Interfaces][CPP.md]]
     * [[C/C++ wrapper generator (pwig)][http://pwig.sourceforge.net/]]
 
 ---++ Multi-media interfaces
 
-    * [[OpenGL Interface][OpenGL.txt]]
-    * [[Open Sound Control (OSC)][SamerAbdallah/index.txt]]
-    * [[MIDI interface (MacOS X)][SamerAbdallah/index.txt]]
+    * [[OpenGL Interface][OpenGL.md]]
+    * [[Open Sound Control (OSC)][SamerAbdallah/index.md]]
+    * [[MIDI interface (MacOS X)][SamerAbdallah/index.md]]
 
 ---++ Mathematical libraries and interfaces
 
-    * [[Advanced random number library][SamerAbdallah/index.txt]]
-    * [[Matlab interface][SamerAbdallah/index.txt]]
+    * [[Advanced random number library][SamerAbdallah/index.md]]
+    * [[Matlab interface][SamerAbdallah/index.md]]
 
 ---++ Miscellaneous
 

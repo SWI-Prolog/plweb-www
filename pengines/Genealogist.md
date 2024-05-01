@@ -88,4 +88,4 @@ false.
 
 ?- 
   ~~~~
-In [Part 2 of this tutorial](http://www.swi-prolog.org/pengines/GenealogistGUI.txt) we are going to add a simple web-based GUI to our application.
+In [Part 2 of this tutorial](http://www.swi-prolog.org/pengines/GenealogistGUI.md) we are going to add a simple web-based GUI to our application.

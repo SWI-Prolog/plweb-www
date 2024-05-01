@@ -166,6 +166,6 @@ We assume TightVNC, root privileges and these steps create a user
 	==
 
 @see [[Example startup script used in Debian Squeeze][<vnc-ecdemo>]]
-@see ServerInetd.txt for using the inet superdaemon
+@see ServerInetd.md for using the inet superdaemon
 @see You probably want your server to appear on port 80,
 [[here][Access80.txt]] is how.

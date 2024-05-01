@@ -99,5 +99,5 @@ Here are some significant features of the interface and its implementation:
 Doc root will be findable from
 http://code.google.com/p/opensim4opencog/wiki/SwiCLI
 
-@see    CSharp.txt
+@see    CSharp.md
 @author    Douglas Miles

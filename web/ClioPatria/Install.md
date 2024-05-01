@@ -13,7 +13,7 @@ Running ClioPatria as an application requires a few steps:
     Windows by double-clicking setup.pl.
 
     2. Optionally, pull in configuration files according to
-    conf.d/README.txt.  This can also be done later.
+    conf.d/README.md.  This can also be done later.
 
     3. Start run.pl as =|./run.pl|= on Unix or double-clicking run.pl
     on Windows and direct your browser to the indicated address (default

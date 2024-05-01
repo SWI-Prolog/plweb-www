@@ -131,5 +131,5 @@ protect sensitive files on the system.
 @see	Older versions may download http_files.pl from
 	http://www.swi-prolog.org/git/packages/http.git/blob/HEAD:/http_files.pl
 
-@see	PWP.txt describes _|Prolog Well-formed Pages|_, a form of dynamic
+@see	PWP.md describes _|Prolog Well-formed Pages|_, a form of dynamic
 	HTML service.

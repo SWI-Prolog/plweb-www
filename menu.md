@@ -1,5 +1,5 @@
-  * [[Home][index.txt]]
-  * *|Download.txt|*
+  * [[Home][index.md]]
+  * *|Download.md|*
   * [[Browse GIT][</git>]]
   * [[Contrib][</contrib/>]]
   * [[Packs][</pack/list>]]
@@ -8,18 +8,18 @@
   * *|[[FAQ][</FAQ/>]]|*
   * *|[[Manual][</pldoc/index.html>]]|*
   * [[Tags][</list-tags>]]
-  * Mailinglist.txt
-  * Support.txt
-  * Links.txt
-  * Contact.txt
+  * Mailinglist.md
+  * Support.md
+  * Links.md
+  * Contact.md
 --
-  * [Development tools](IDE.txt)
-  * [PlDoc Documentation](PlDoc.txt)
-  * Graphics.txt
-  * [[(Semantic) Web][web/index.txt]]
+  * [Development tools](IDE.md)
+  * [PlDoc Documentation](PlDoc.md)
+  * Graphics.md
+  * [[(Semantic) Web][web/index.md]]
 --
-  * Publications.txt
-  * Contributors.txt
-  * [[License][license.txt]]
+  * Publications.md
+  * Contributors.md
+  * [[License][license.md]]
 --
   * [[Wiki (edit)][</wiki/>]]

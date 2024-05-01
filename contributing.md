@@ -5,7 +5,7 @@
 Here are some ideas from the easiest one:
 
     - [Report a bug](<bug.html>)
-    - Build the [community](<community.txt>), help answer questions in the forum
+    - Build the [community](<community.md>), help answer questions in the forum
     - Write or improve documentation
     - [Submit an add-on](</howto/Pack.html>) (a SWI-Prolog "pack")
     - [Submit a patch](<howto/SubmitPatch.html>)

@@ -135,7 +135,7 @@ related hints.
 If =configure= fails, try using =|bash configure|=. If =make= fails, try
 using GNU-make and gcc.
 
-If all fails, have a look at the ../Support.txt page.
+If all fails, have a look at the ../Support.md page.
 
 ## Post installation (JPL)
 

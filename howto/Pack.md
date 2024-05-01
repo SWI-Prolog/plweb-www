@@ -11,9 +11,9 @@ two items:
   =|.pl|=.
 
   $ A file =|pack.pl|= :
-  This file provides [[meta-data][PackInfo.txt]] for the pack.
+  This file provides [[meta-data][PackInfo.md]] for the pack.
 
-Creating a pack that uses C or C++ code is [[described here][ForeignPack.txt]]
+Creating a pack that uses C or C++ code is [[described here][ForeignPack.md]]
 
 ---++ Creating a pack
 
@@ -121,9 +121,9 @@ of some rules:
     Uploading a new file with the same name/version is interpreted as a
     possible security breach by the pack system.
 
-@see PackInfo.txt for a description of =|pack.pl|=
-@see ForeignPack.txt for creating packs with C or C++ code
+@see PackInfo.md for a description of =|pack.pl|=
+@see ForeignPack.md for creating packs with C or C++ code
 @see [[list of submitted packages][</pack/list>]]
 @see library(prolog_pack) for predicates to query, install and remove packs
-@see [[Status and TODO][PackTodo.txt]]
+@see [[Status and TODO][PackTodo.md]]
 @see http://rlaanemets.com/post/show/prolog-pack-development-experience for some experience and best practices

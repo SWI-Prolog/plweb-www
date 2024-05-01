@@ -42,7 +42,7 @@ is as follows:
 I have used the same procedure in Ruby using POPEN and it appears very
 stable.
 
-@see also CSharp.txt
+@see also CSharp.md
 @see [[LogicService_20060623.zip][<LogicService_20060623.zip>]]
 @see [[PackageProlog.rb][<PackageProlog.rb>]]
 @author Daniel Sullivan

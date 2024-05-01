@@ -15,7 +15,7 @@ clone is steep. The real-time semantic highlighting greatly reduces the
 number of bugs you need to fix after writing your program and the
 context menu on predicates and goals make it easy to navigate your code.
 
-  * PceEmacs.txt is a GNU-Emacs clone in XPCE/Prolog, providing
+  * PceEmacs.md is a GNU-Emacs clone in XPCE/Prolog, providing
   Prolog syntax highlighting based on parsing and
   cross-referencing the editor buffer. Colouring highlights variables,
   quoted entities, comments, goals (classified as
@@ -27,20 +27,20 @@ context menu on predicates and goals make it easy to navigate your code.
   Similar functionality is now provided for GNU-Emacs using the
   [sweep](https://eshelyaron.com/sweep.html).  See below
 
-  * The [[graphical tracer][gtrace.txt]] provides source-level
+  * The [[graphical tracer][gtrace.md]] provides source-level
   debugging, using three views: your source, variable bindings, and
   the stack. The stack view includes choicepoints and visualises
   the effect of executing the cut!
 
-  * The [[Execution Profiler][profile.txt]] provides a graphical
+  * The [[Execution Profiler][profile.md]] provides a graphical
   overview of call and time statistics.
 
-  * The [[Cross Referencer][gxref.txt]] analyzes dependencies in
+  * The [[Cross Referencer][gxref.md]] analyzes dependencies in
   the loaded program and points out undefined and unused code. It
   can also generate module headers and import directives based on
   the analysis.
 
-  * The [[Prolog Navigator][navigator.txt]] provides an
+  * The [[Prolog Navigator][navigator.md]] provides an
   explorer-like view on a directory holding Prolog source files.
   Sources files can be expanded in the tree to show predicates,
   exports, XPCE classes and methods. Can be used to edit entities

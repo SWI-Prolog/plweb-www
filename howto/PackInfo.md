@@ -65,4 +65,4 @@ Here is a simple example
   author('Jan Wielemaker', 'J.Wielemaker@vu.nl').
   ==
 
-@see Pack.txt
+@see Pack.md

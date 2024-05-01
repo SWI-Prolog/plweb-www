@@ -15,4 +15,4 @@ We provide an infrequently updated binary below.
     * [[SwiPlCs_1.1.60301.0.zip][<SwiPlCs_1.1.60301.0.zip>]]
 
 @author Uwe Lesta
-@see DotNetInterface.txt from Daniel Sullivan
+@see DotNetInterface.md from Daniel Sullivan

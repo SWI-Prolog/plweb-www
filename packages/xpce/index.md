@@ -45,10 +45,10 @@ summarise using the points below.
 
 ---++ Links about motivation and impressions
 
-    * [[Why using XPCE for graphics in Prolog?][why.txt]]
-    * [[Why no GUI-Builder?][noguibuilder.txt]]
-    * [[Some code fragments to get an impression][examples.txt]]
-    * [[Some screen dumps of applications][screens.txt]]
+    * [[Why using XPCE for graphics in Prolog?][why.md]]
+    * [[Why no GUI-Builder?][noguibuilder.md]]
+    * [[Some code fragments to get an impression][examples.md]]
+    * [[Some screen dumps of applications][screens.md]]
     * [[The design of the XPCE/Prolog interface][<pub:wlpe-02.pdf>]]
     (Publication in Workshop on Logic Programming Environments, 2002)
 

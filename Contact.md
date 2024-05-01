@@ -3,10 +3,10 @@
 Please do *|NOT use these addresses for "How do I ... in Prolog"|*. Use
 the [forum](</forum>), [Usenet](<news:comp.lang.prolog>), 
 [stackoverflow](http://stackoverflow.com/questions/tagged/swi-prolog), the
-Links.txt or [Google](http://www.google.com) to find answers.
+Links.md or [Google](http://www.google.com) to find answers.
 
 The General enquiries E-mail is intended for issues such as
-[[licensing][license.txt]], cooperation opportunities, comments,
+[[licensing][license.md]], cooperation opportunities, comments,
 suggestions, etc.
 
     * E-mail [[General enquiries][<mailto:info@swi-prolog.org>]]

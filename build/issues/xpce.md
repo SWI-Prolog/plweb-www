@@ -24,7 +24,7 @@ Prolog, but you need it for:
 
   $ Sources on Unix systems :
   Often the jpeg or Xpm development libraries are missing.  See
-  [here](<RebuildAfterDevLib.txt>).
+  [here](<RebuildAfterDevLib.md>).
 
   $ MacOS :
   On the Mac, the latest version of XQuartz is generally required.

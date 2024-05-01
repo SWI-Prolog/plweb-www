@@ -201,7 +201,7 @@ ClioPatria.
 
     $ RDF storage :
     The main-memory store is a natural extension to Prolog.  It
-    is [[memory-efficient][memusage.txt]].  The RDF store provides:
+    is [[memory-efficient][memusage.md]].  The RDF store provides:
 
 	* Reliable file-based persistency
 	* Load and unload of data-sources

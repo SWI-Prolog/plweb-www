@@ -8,7 +8,7 @@ using lamps and lenses. Optica is a large application, covering the
 modeling of `ideal-' and `real-lenses' various light-sources,
 measurement tools for distances and angles, a graphical
 `scenario-editor', annotation tools, logging facilities and an
-`[[hypothesis scratchpad][sc_hypoth.txt]]'.
+`[[hypothesis scratchpad][sc_hypoth.md]]'.
 
 The development took 2 person-months. The application source is 13,500
 lines defining 107 classes and 660 methods. The installed application

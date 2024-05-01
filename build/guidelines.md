@@ -54,7 +54,7 @@ following division:
 
 The package `swi-prolog` depends on `swi-prolog-nox` and `swi-prolog-x`,
 providing  a  good  default  system  that    does   not  introduce  many
-dependencies on a standard workstation environment. See also Debian.txt.
+dependencies on a standard workstation environment. See also Debian.md.
 
 ## Building
 

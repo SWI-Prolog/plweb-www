@@ -11,8 +11,8 @@ portable and building is much easier.
 
   * Building
     * [Building on Unix/POSIX](</build/unix.html>)
-    * [[Building on MacOS][macos.txt]]
+    * [[Building on MacOS][macos.md]]
     * [[Building on MS-Windows][windows.md]]
-    * [[Android][linuxonandroid.txt]]
+    * [[Android][linuxonandroid.md]]
     * [[WASM (WebAssembly)][WebAssembly.md]]
 

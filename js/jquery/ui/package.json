@@ -6,7 +6,7 @@
 	"homepage": "http://jqueryui.com",
 	"author": {
 		"name": "jQuery Foundation and other contributors",
-		"url": "https://github.com/jquery/jquery-ui/blob/1.13.2/AUTHORS.txt"
+		"url": "https://github.com/jquery/jquery-ui/blob/1.13.2/AUTHORS.md"
 	},
 	"main": "ui/widget.js",
 	"maintainers": [

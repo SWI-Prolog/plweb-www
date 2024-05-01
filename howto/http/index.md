@@ -4,23 +4,23 @@ Creating web services with SWI-Prolog is a breeze. This how-to is
 intended as your first bluffer's guide.  All examples come with
 fully operational source code.
 
-    * [[Hello World][HelloText.txt]]
-    * [[Development support for web servers][Developing.txt]]
-    * [[Hello World in HTML][HelloHTML.txt]]
-    * [[Rule definition facilities (html//1 rules)][HTMLRules.txt]]
-    * [[Processing HTTP parameters][HTMLParams.txt]]
-    * [[How do I upload a file, preserving the filename?][FileUpload.txt]]
-    * [[Adding style (CSS and simple JavaScript) to your pages][HTMLStyle.txt]]
-    * [[Serving plain files][HTTPFile.txt]]
-    * [[Making your web server scalable][HTTPScale.txt]]
+    * [[Hello World][HelloText.md]]
+    * [[Development support for web servers][Developing.md]]
+    * [[Hello World in HTML][HelloHTML.md]]
+    * [[Rule definition facilities (html//1 rules)][HTMLRules.md]]
+    * [[Processing HTTP parameters][HTMLParams.md]]
+    * [[How do I upload a file, preserving the filename?][FileUpload.md]]
+    * [[Adding style (CSS and simple JavaScript) to your pages][HTMLStyle.md]]
+    * [[Serving plain files][HTTPFile.md]]
+    * [[Making your web server scalable][HTTPScale.md]]
 
 Deploying Prolog-based web servers
 
     * [[Making the server accessible at port 80][Access80.txt]]
-    * [[Running the server under VNC][ServerVNC.txt]]
-    * [[Running the server from Unix (x)inetd][ServerInetd.txt]]
-    * [[Running the server from Unix init][ServerInit.txt]]
-    * [[Running the server from Linux upstart][UpStart.txt]]
+    * [[Running the server under VNC][ServerVNC.md]]
+    * [[Running the server from Unix (x)inetd][ServerInetd.md]]
+    * [[Running the server from Unix init][ServerInit.md]]
+    * [[Running the server from Linux upstart][UpStart.md]]
 
 This is work in progress!   If you want to contribute or comment,
 send an e-mail to [[me][<mailto:jan@swi-prolog.org>]] or to the

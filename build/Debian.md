@@ -60,7 +60,7 @@ sudo apt-get install \
         default-jdk junit4
 ```
 
-[Raspbian](<Raspbian.txt>) is fully supported and can be used to build SWI-Prolog
+[Raspbian](<Raspbian.md>) is fully supported and can be used to build SWI-Prolog
 including all packages without issues. If you want to reduce resources, the following packages are optional:
 
   $ default-jdk junit :

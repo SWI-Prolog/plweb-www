@@ -106,7 +106,7 @@ added by providing additional plugins for library(build/tools).
 
   - dependencies
     - conan
-      If a file `conanfile.txt` or `conanfile.py` is found in the
+      If a file `conanfile.md` or `conanfile.py` is found in the
       toplevel directory, create a directory `build` and run
 
 	  conan install -b missing ..
@@ -116,7 +116,7 @@ added by providing additional plugins for library(build/tools).
       conan's `virtualenv`.
   - configure
     - cmake
-      If a file `CMakeLists.txt` is present create a subdirectory `build`
+      If a file `CMakeLists.md` is present create a subdirectory `build`
       and run
 
           cmake -DSWILP=.. -DCMAKE_INSTALL_PREFIX=... ..

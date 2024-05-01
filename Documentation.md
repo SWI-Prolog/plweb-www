@@ -4,7 +4,7 @@ The SWI-Prolog is maintained as a mixture of LaTeX files and PlDoc
 documentation in the source-code.  The documentation can be accessed
 in various formats.
 
-    * The [[download][Download.txt]] pages provide links to download
+    * The [[download][Download.md]] pages provide links to download
     the documentation in HTML and PDF format.
 
     * This server provides an

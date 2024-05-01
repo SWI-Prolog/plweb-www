@@ -13,5 +13,5 @@ such as [SWISH](http://swish.swi-prolog.org) or [ClioPatria](http://cliopatria.s
 
 ## Read more about
 
-    * Available SWI-Prolog [versions](<versions.txt>)
+    * Available SWI-Prolog [versions](<versions.md>)
     * Information on [Linux packages and building on Linux](<build/unix.html>)

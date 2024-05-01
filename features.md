@@ -242,14 +242,14 @@ links to the relevant documentation.
     * [[Source-level debugger][<gtrace.html>]] on all platforms that
     supports graphics through XPCE (Windows, Unix/Linux, MacOSX).
 
-    * Execution *|profiler.txt|* (time and call statistics) for all
+    * Execution *|profiler.md|* (time and call statistics) for all
     major platforms (Windows, Linux, MacOSX).
 
     * Coverage analysis using show_coverage/2 may be used to get
     line-by-line annotated versions of which parts of your source
     are used how many times.
 
-    * *|[[Cross-Referencer][gxref.txt]]|*. gxref/0 provides a graphical
+    * *|[[Cross-Referencer][gxref.md]]|*. gxref/0 provides a graphical
     front-end for the extensible Prolog cross-referencer (xref).
 
     * *|Literate programming|* support through
@@ -305,4 +305,4 @@ links to the relevant documentation.
     BSD license_, also known as the BSD-2 license. Some of the used
     libraries and extension packages have different license conditions.
     The licenses applicable to a running configuration can be examined
-    by running license/0.  See license.txt for details.
+    by running license/0.  See license.md for details.

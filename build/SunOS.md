@@ -1,6 +1,6 @@
 # Building SWI-Prolog on SunOS/SPARC (Solaris)
 
-These are additional remarks to [the general build instructions](unix.txt) for SunOS. Test environment:
+These are additional remarks to [the general build instructions](unix.md) for SunOS. Test environment:
 
   | SWI-Prolog version | V6.3.18-26-ge58219b |
   | OS                 | SunOS 5.11 sparc    |

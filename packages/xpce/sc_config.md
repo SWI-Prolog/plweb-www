@@ -4,6 +4,6 @@
 
 This screendump shows the configuration editor provided by the XPCE
 libraries in action while viewing the arrows available in
-[[PceDraw][sc_draw.txt]].
+[[PceDraw][sc_draw.md]].
 
 Part of XPCE libraries 

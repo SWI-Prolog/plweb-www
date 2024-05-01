@@ -89,7 +89,7 @@ for i in 0 ... 100
     CallProlog("assert(person(fname(dan" + i.to_s + "),lname(sull" + i.to_s + ")))")
 end
 
-f = File.open("/Users/daniel/Desktop/Temp/results.txt","w")
+f = File.open("/Users/daniel/Desktop/Temp/results.md","w")
 
 f.puts QueryProlog("X,Y","person(X,Y)")
 

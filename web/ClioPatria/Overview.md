@@ -12,7 +12,7 @@ the following:
     support for SeRQL and the Sesame (www.openrdf.org) HTTP protocol.
 
     $ Reasoning libraries :
-    Called entailment modules.  See entailment/README.txt
+    Called entailment modules.  See entailment/README.md
 
     $ User administration :
     Create users, provide OpenID services, use external OpenID

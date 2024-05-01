@@ -73,4 +73,4 @@ You can build an RPM package  from   the  sources, for example to deploy
 locally using the CMake CPack tool. See  `CMAKE.md` in the top directory
 of the sources.
 
-@see LinuxDistro.txt
+@see LinuxDistro.md

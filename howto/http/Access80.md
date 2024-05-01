@@ -70,4 +70,4 @@ can proxy this hierarchy using this rule in an Apache config file:
     ProxyPass /myserver/ http://localhost:3040/myserver/ retry=0
     ==
 
-@see [Can I replace a LAMP stack with SWI-Prolog?](</FAQ/PrologLAMP.txt>)
+@see [Can I replace a LAMP stack with SWI-Prolog?](</FAQ/PrologLAMP.md>)
