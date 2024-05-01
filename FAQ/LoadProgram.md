@@ -30,7 +30,7 @@ program resides and run the following commands.
 Alternatively, you may wish to use
 
 ==
-% swipl -s load.pl
+% swipl load.pl
 <banner>
 ?-
 ==
@@ -39,3 +39,5 @@ On *Windows*, the =|.pl|= extension is associated with =|swipl-win.exe|= and mos
 comfortable way is to *|double-click|* the =|.pl|= file you want to load in the
 explorer. This will start SWI-Prolog, which changes directory to the
 directory holding the file and then loads the clicked file.
+
+@see RunProgram.md for running a program

@@ -2,38 +2,26 @@
 
 If you want to use a SWI-Prolog program as a stand-alone ``.exe``, you can
 do this using qsave_program/2 or using the commandline. The command
-below creates ``myapp.exe`` from ``load.pl`` and makes the program start at
-main/0
+below creates ``myapp.exe`` from ``load.pl``.   The preferred way to
+start the program is by using the initialization/2 _directive_ as
+also described in RunProgram.md.
 
 ```
-swipl.exe -o myapp.exe -c load.pl --goal=main
+swipl.exe -o myapp.exe -c load.pl
 ```
 
-To run, ``myapp.exe`` requires ``.dll`` files from the installation's
-``bin`` directory. The required ``.dll`` files are listed below. Note that
-the details may depend on the version and installation. Notably
-``libdwarf.dll`` may not be present and the others may have a different
-version.
-
-  - ``libgcc_s_seh-1.dll``
-  - ``libgmp-10.dll``
-  - ``libswipl.dll``
-  - ``libwinpthread-1.dll``
-  - ``zlib1.dll``
-
-Your application may depend on additional ``.dll`` files loaded through
-use_foreign_library/1. You can find these with current_foreign_library/2.
-
-Recent versions provide win_process_modules/1 which returns a list of
-all DLLs loaded into the process. This includes an up-to-date version
-fror your installation of the list above, the DLLs used by the loaded
-extensions and the standard Windows DLLs. You can now copy all DLL files
-reported by win_process_modules/1 that are part of the SWI-Prolog
-distribution. The Prolog flag `home` provides access to the root of the
-distribution hierarchy.
+To run, ``myapp.exe`` requires ``.dll`` files from the SWI-Prolog's
+``bin`` directory.  To find these, the Windows version provides
+win_process_modules/1.  This predicate returns a list of all DLLs
+loaded into the process. This includes the DLLs needed to run
+SWI-Prolog, the DLLs used by the loaded extensions and the standard
+Windows DLLs. You can now copy all DLL files reported by
+win_process_modules/1 that are part of the SWI-Prolog
+distribution. The Prolog flag `home` provides access to the root of
+the distribution hierarchy.
 
 The required ``.dll`` files must be installed in the same directory as
-the executable or in a directory available through ``%PATH%``.
+the executable.
 
 @see In many cases, it is way easier to start an application [from the
-Prolog source](<PrologScript.html>).
+Prolog source](<RunProgram.html>).

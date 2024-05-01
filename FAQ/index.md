@@ -40,6 +40,7 @@
     * [[Make a log of the session?][MakeLog.md]]
     * [[Read Prolog case data from a file?][ReadDynamicFromFile.md]]
     * [[Can I make an executable?][MakeExecutable.md]]
+    * [Create a `swipl` command line extension (_app_)](App.md)
 
   * *|Using SWI-Prolog for web services|*
     * [Can I replace a LAMP stack with SWI-Prolog](PrologLAMP.md)
