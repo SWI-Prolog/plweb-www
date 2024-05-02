@@ -18,10 +18,8 @@
     * [[Warning: Clauses of (-)/2 are not together in the source-file][MinusInHead.md]]
     * [[Warning: (file:line) Redefined static procedure: name/arity][Multifile.md]]
     * [[Warning: (file:line) Singleton variables: List][SingletonVar.md]]
-    * [[ERROR: (file:line): Undefined procedure: pce_begin_class/2][NoXPCE.md]]
     * [[ERROR: I/O error in write on stream XXX (Encoding cannot represent character)][CharEncoding.md]]
     * [[FATAL ERROR: Could not find system resources][FindResources.md]]
-    * [[Library not loaded: /usr/X11/lib/libX11.6.dylib][MacOSX11.md]]
 
   * *|Customising SWI-Prolog|*
     * [[Site and personal initialisation][PlInitialisation.md]]
@@ -39,8 +37,9 @@
   * *|How to ...|*
     * [[Make a log of the session?][MakeLog.md]]
     * [[Read Prolog case data from a file?][ReadDynamicFromFile.md]]
-    * [[Can I make an executable?][MakeExecutable.md]]
+    * [[Create an executable from my Prolog source?][MakeExecutable.md]]
     * [Create a `swipl` command line extension (_app_)](App.md)
+    * [Deal with modules](Modules.md)
 
   * *|Using SWI-Prolog for web services|*
     * [Can I replace a LAMP stack with SWI-Prolog](PrologLAMP.md)
@@ -53,7 +52,6 @@
     * [[Where are SWI-Prolog.h, libswipl.{lib,dll,a,so}?][LibAndInclude.md]]
     * [[Is there a true C++ binding?][CppBinding.md]]
     * [[Where do I find examples mixing C and Prolog?][CExamples.md]]
-    * [[Can I compile my whole project inc. kernel to C?][CompileToC.md]]
 
   * *|Using SWI-Prolog with Java|*
     * [[Is there a Java interface to Prolog?][Java.md]]
