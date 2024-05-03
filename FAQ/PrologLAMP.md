@@ -37,19 +37,18 @@ replace.
 
 The core web services are provided by the following libraries
 
-  - library(http/thread_httpd)      -- Accept HTTP requests
+  - library(http/http_server)       -- Accept HTTP requests
   - library(http/http_authenticate) -- Basic HTTP authentication
   - library(http/http_openid)       -- OpenID based authentication
   - library(http/http_session)      -- Session management
   - library(http/http_ssl_plugin)   -- Provide SSL functionality (HTTPS)
   - library(http/http_cors)         -- CORS management
-  - library(http/http_dispatch)	    -- Bind HTTP locations to actions
-  - library(http/http_files)	    -- Serve plain files from the OS
+  - library(http/http_files)		-- Serve plain files from the OS
   - library(http/http_parameters)   -- Read GET and POST form data
 
 For development purposes, there are the following support libraries
 
-  - library(http/http_log)	    -- Log traffic
+  - library(http/http_log)			-- Log traffic
   - library(http/http_error)        -- Present Prolog errors in the browser
 
 ### Replacing PHP
@@ -66,17 +65,19 @@ good
 thing](http://www.codinghorror.com/blog/2012/06/the-php-singularity.html).
 
   - library(http/html_write)        -- Our flagship for server site generated pages
-  - library(http/http_pwp)	    -- Embed Prolog queries in xhtml pages
+  - library(http/http_pwp)			-- Embed Prolog queries in xhtml pages
 
-Anne Ogborn has written a good tutorial on how to [use the SWI-Prolog web framework](https://github.com/Anniepoo/swiplwebtut/blob/master/web.adoc)
+Anne Ogborn has written a good tutorial on how to [use the SWI-Prolog
+web
+framework](https://github.com/Anniepoo/swiplwebtut/blob/master/web.adoc)
 
 #### Supporting AJAX
 
 AJAX programming, i.e., initiating HTTP requests from JavaScript to
 update pages locally without reloading the whole page, is supported by:
 
-  - library(http/http_json)	    -- Read/write JSON documents
-  - library(pengines)	            -- Use Prolog as a query language [[new.gif]]
+  - library(http/http_json)		-- Read/write JSON documents
+  - library(pengines)			-- Use Prolog as a query language
 
 ## Replacing MySQL
 
@@ -88,27 +89,27 @@ There are several replacements for MySQL, depending on
 
 The alternatives are
 
-  1. *Using the session (Prolog) database* This database associates
+  1. __Using the session (Prolog) database__ This database associates
      Prolog terms with the current session.  This is generally suitable
      for keeping track of the status of the dialogue with the user.
      Restarting the server loses the data.
-  2. *Using the dynamic Prolog database*
+  2. __Using the dynamic Prolog database__
      Any Prolog programmer should know this.  Data stored in dynamic
      predicates is accessible across sessions.  The data can be
      highly dynamic and fast, but is lost on a server restart.
-  3. *library(persistency) adds persistence to the Prolog database*
+  3. __library(persistency) adds persistence to the Prolog database__
      Extends the dynamic database with wrappers to manipulate
      the dynamic predicates.  These wrappers manage a _journal_,
      which is restored after a server restart.  There is no overhead
      for read access.  The overhead for write access can be controlled
      by selecting the journal flushing regime.
-  4. *library(semweb/rdf_db) provides (optionally persistent) RDF storage*
+  4. __library(semweb/rdf_db) provides (optionally persistent) RDF storage__
      Using the RDF store is similar to using the dynamic database or
      library(persistency), but enforces the use of the widely
      recognised RDF data model.  For example, you can make
      your data accessible through [SPARQL](http://www.w3.org/TR/sparql11-query/)
      using [ClioPatria](http://cliopatria.www.swi-prolog/)
-  5. *library(odbc) provides a connection to RDMS systems*
+  5. __library(odbc) provides a connection to RDMS systems__
      This is straightforward and avoids the famous [Object-relational
      impedance mismatch](http://en.wikipedia.org/wiki/Object-relational_impedance_mismatch)
 
@@ -136,8 +137,9 @@ over multiple Prolog servers.  SWI-Prolog's session management is ready
 to deal with the Apache server load balancing facility to keep sessions
 on the same server.  What if you want the servers to communicate?
 
-  - Use library(odbc) to share a common database
-  - Use [TIPC](</pldoc/package/tipc.html>) to realise a cluster
+  - Use library(redis) to share a common database.  Th Redis interface
+    can also be used as a plugin for library(http_session) to get
+	persistent and shared session state.
   - Use library(pengines) to distribute queries
 
 # Advantages of the _LP_ framework
@@ -205,10 +207,8 @@ really high traffic such as nginx process many requests using I/O
 multiplexing.
 
 Another problem is the (un)availability of server-side plugins to access
-external APIs.  Some of this can be remedied by using JavaScript based
-replacement technology on the client.  In other cases, our only counter
-is to implement these plugins and share them, for example as an
-[add-on](http://www.swi-prolog.org/pack/list).
+external APIs.  The Python [Janus](<pkg:janus>) interface can solve most
+of these problems.
 
 Our final problem is the lack of masses of Prolog programmers one can
 easily hire. Running critical Prolog applications is possible if you
@@ -220,5 +220,4 @@ problem for you.
 @see [Creating Web Applications in
 SWI-Prolog](https://github.com/Anniepoo/swiplwebtut/blob/master/web.adoc) by
 Anne Ogborn.
-@see [How to create a web service
-easily?](http://www.swi-prolog.org/howto/http/).
+@see [How to create a web service easily?](</howto/http/>).

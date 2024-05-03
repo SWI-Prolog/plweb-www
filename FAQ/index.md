@@ -42,11 +42,11 @@
     - [Deal with modules](Modules.md)
 
   - __Using SWI-Prolog for web services__
-    - [Can I replace a LAMP stack with SWI-Prolog](PrologLAMP.md)
+    - [Implementation a REST API](REST.md)
+    - [Can I replace a LAMP stack with SWI-Prolog?](PrologLAMP.md)
 
   - __Using SWI-Prolog on MS-Windows__
     - [Cut/copy/paste from the plwin.exe console](WinCopy.md)
-    - [Visual C runtime issues](VCRuntime.md)
 
   - __Using SWI-Prolog with C/C++__
     - [Where are SWI-Prolog.h, libswipl.{lib,dll,a,so}?](LibAndInclude.md)
@@ -56,9 +56,7 @@
   - __Other language interfaces__
     - [JPL: the interface to Java](Java.md)
     - [SWI-Prolog Python interfaces](Python.md)
-
-  - __About datatypes__
-    - [Representation and printing of floating point numbers](floats.md)
+    - [SWI-Prolog Rust interface](https://github.com/terminusdb-labs/swipl-rs)
 
   - __Learn more about Prolog__
     - [Books and Web Material on Prolog](PrologReading.md)
