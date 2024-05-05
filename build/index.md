@@ -1,18 +1,14 @@
----+ Build SWI-Prolog from source
+# Build SWI-Prolog from source
 
-The sources are common for all platforms, but the way to build them is
-totally different for MS-Windows and all Unix/POSIX based platforms.
+The sources are common for all platforms.  Building them requires
+CMake, a C11 compliant C compiler and the dependencies.  The core
+system has a hard requirement on [zlib](https://zlib.net/).  All other
+dependencies are optional.
 
-Unless you have a serious need to, we generally *discourage* building the *Windows* version
-yourself, due to complexity. We provide [nightly builds](</download/daily/bin>) of Windows binary installers.
-On the other hand, we generally *encourage* building
-yourself on *|non-windows platforms|* because binaries tend to be less
-portable and building is much easier.
+## Build instruction by platform
 
-  * Building
-    * [Building on Unix/POSIX](</build/unix.html>)
-    * [[Building on MacOS][macos.md]]
-    * [[Building on MS-Windows][windows.md]]
-    * [[Android][linuxonandroid.md]]
-    * [[WASM (WebAssembly)][WebAssembly.md]]
-
+ - [Linux and other Unix-based systems](</build/unix.html>)
+ - [MacOS](macos.md)
+ - [MS-Windows](windows.md)
+ - [Android](linuxonandroid.md)
+ - [WASM (WebAssembly)](WebAssembly.md)
