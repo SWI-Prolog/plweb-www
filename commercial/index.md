@@ -358,7 +358,7 @@ reimplementing them if they do not exist on the target platform.
 
 ## What does SWI-Prolog Solutions b.v. offer?
 
-### O: Access whether SWI-Prolog is suitable for your problem
+### O: Assess whether SWI-Prolog is suitable for your problem
 
 Can SWI-Prolog  solve your problem?  How  can it do so?   What are the
 risks involved?  Does it scale?  How do we interface with our existing
