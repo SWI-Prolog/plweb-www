@@ -1,17 +1,15 @@
 # SWI-Prolog on Redhat (Fedora, RHEL, CentOS)
 
-| Fedora release | 23, 24, 25, 28 |
-| RHEL | 5 and 6 |
-| CentOS | 5 |
-| SWI-Prolog release | 8.0.x and 8.1.x |
+| Fedora release | 39, 40 |
+| SWI-Prolog release | 9.2.x, 9.3.x |
 | Package page | <http://koji.fedoraproject.org/koji/buildinfo?buildID=485155> |
 | Maintainer | Petr Pisar |
 
-## Status
+As of May 2024, Fedora (currently version 40) is the main development
+platform for SWI-Prolog.  This used to be Ubuntu.  Ubuntu is still well
+maintained as it is used by the CI on Github as well as for running the
+web services of SWI-Prolog.
 
-This page was written for SWI-Prolog pre-dating the migration to
-the CMake configure and build infrastructure. The page has been updated,
-but the details have not been tested. Please report issues.
 
 ## Dependencies
 
@@ -55,17 +53,24 @@ dnf install \
   python3-devel
 ```
 
-The above is tested on Fedora 23, 24 and 25.  On Fedora < 23 the
-following may be different:
+### Building the PDF documentation
 
-  - `dnf` was once called `yum`,
+To build the PDF documentation you need LaTeX and several helpers.  The
+following set of dependencies was established on Fedora 40 for SWI-Prolog
+9.3.6
 
-  - `uuid-devel` was once called `libossp-uuid-devel`,
+```
+sudo dnf install \
+	texlive-latex \
+	texlive-a4wide \
+	texlive-tabulary \
+	texlive-dvips \
+	texlive-bibtex \
+	texlive-makeindex \
+	texlive-metafont \
+	texlive-ec
+```
 
-  - before `java-1.8.0-openjdk-devel` there was
-    `java-1.7.0-openjdk-devel`,
-
-  - `libjpeg-turbo-devel` was once called `libjpeg-devel`.
 
 ## Building the RPM
 
