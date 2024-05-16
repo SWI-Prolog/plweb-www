@@ -2,8 +2,13 @@
 
 | Fedora release | 39, 40 |
 | SWI-Prolog release | 9.2.x, 9.3.x |
-| Package page | <http://koji.fedoraproject.org/koji/buildinfo?buildID=485155> |
-| Maintainer | Petr Pisar |
+| Package page | https://packages.fedoraproject.org/pkgs/pl/pl/ |
+| Packager | Fedora Project |
+
+The [Fedora project](https://fedoraproject.org/) is tracking the
+SWI-Prolog stable versions as package `pl`.  This page describes
+installing the dependencies for SWI-Prolog that are needed for
+[building from source](<unix.md>).
 
 As of May 2024, Fedora (currently version 40) is the main development
 platform for SWI-Prolog.  This used to be Ubuntu.  Ubuntu is still well
@@ -21,12 +26,12 @@ dnf install \
   gcc gcc-c++ \
   cmake \
   ninja-build \
-  libunwind \
   gperftools-devel \
   freetype-devel \
   gmp-devel \
   java-17-openjdk-devel \
   jpackage-utils \
+  junit \
   libICE-devel \
   libjpeg-turbo-devel \
   libSM-devel \
@@ -53,6 +58,17 @@ dnf install \
   python3-devel
 ```
 
+For debugging Janus (the Python interface) using
+``-DCMAKE_BUILD_TYPE=Debug`` it is advised to install the debug
+version of the Python embedding library called
+``libpython<version>d.so``.  On Fedora, the debug library is installed
+using
+
+```
+sudo dnf install python3-debug
+```
+
+
 ### Building the PDF documentation
 
 To build the PDF documentation you need LaTeX and several helpers.  The
@@ -77,5 +93,3 @@ sudo dnf install \
 You can build an RPM package  from   the  sources, for example to deploy
 locally using the CMake CPack tool. See  `CMAKE.md` in the top directory
 of the sources.
-
-@see LinuxDistro.md
