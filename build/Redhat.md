@@ -29,7 +29,8 @@ dnf install \
   gperftools-devel \
   freetype-devel \
   gmp-devel \
-  java-17-openjdk-devel \
+  java-latest-openjdk-devel \
+  javapackages-bootstrap \
   jpackage-utils \
   junit \
   libICE-devel \
