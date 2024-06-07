@@ -27,7 +27,7 @@ as a (network) service.  Docker images come in three flavours:
   $ Official Docker library images :
   Thanks to Dave Curylo, SWI-Prolog has been accepted as provider for
   official Docker library images.  The images are based on [Debian
-  Bullseye](https://wiki.debian.org/DebianBullseye) and releases for
+  Bookworm](https://wiki.debian.org/DebianBookworm) and releases for
   both stable and development releases of SWI-Prolog.  See
   [the official repository](https://hub.docker.com/_/swipl/)
   for details.
