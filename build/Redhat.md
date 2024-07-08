@@ -59,6 +59,16 @@ dnf install \
   python3-devel
 ```
 
+### Adding the Qt console
+
+The Qt GUI application `swipl-win` can  be   added  by installing the Qt
+dependencies:
+
+```
+sudo dnf install qt6-devel qt6-qtbase-devel
+```
+
+
 For debugging Janus (the Python interface) using
 ``-DCMAKE_BUILD_TYPE=Debug`` it is advised to install the debug
 version of the Python embedding library called
@@ -68,7 +78,6 @@ using
 ```
 sudo dnf install python3-debug
 ```
-
 
 ### Building the PDF documentation
 
