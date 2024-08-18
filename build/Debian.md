@@ -51,7 +51,7 @@ sudo apt-get install \
         unixodbc-dev \
         zlib1g-dev libarchive-dev \
 	libossp-uuid-dev \
-        libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \
+        libxext-dev libice-dev libjpeg-dev libxrandr-dev libxinerama-dev libxft-dev \
         libxpm-dev libxt-dev \
 	libdb-dev \
 	libpcre2-dev \

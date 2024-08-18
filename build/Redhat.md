@@ -40,6 +40,7 @@ dnf install \
   libXaw-devel \
   libXext-devel \
   libXft-devel \
+  libXrandr-devel \
   libXinerama-devel \
   libXmu-devel \
   libXpm-devel \
