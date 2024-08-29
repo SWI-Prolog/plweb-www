@@ -26,7 +26,9 @@ these package use ``apt search <name>`` to find an alternative, where
     `junit` (Junit 3).
   - The package =|libarchive-dev|= is needed for library(archive),
     which is needed by pack_install/1.
-  - The package =|libossp-uuid-dev|= is needed for library(uuid).
+  - The package =|libossp-uuid-dev|= is needed for library(uuid). Without
+    UUID support falls back to a slower and less versatile pure Prolog
+	implementation.
   - The package =|libdb-dev|= is needed for
     library(bdb), the BerkeleyDB embedded database interface.
   - The package =|libreadline-dev|= and =|libedit-dev|= both provide
@@ -73,8 +75,11 @@ including all packages without issues. If you want to reduce resources, the foll
   $ libssl-dev :
   Without, you have no SSL (and HTTPS) support.
   $ libgmp-dev :
-  Without, you lack unbounded integer support, rational numbers, good
-  random number generators, etc.
+  Without, support for big integers, rational numbers and good random
+  numbers falls back to the bundled _modified_ LibBF implementation.  This
+  is smaller but slower.  If you have other applications using libgmp this
+  is the best choice for performance and space.  If SWI-Prolog is the only
+  application using libgmp dropping the dependency could be a good choice.
   $ libpcre2-dev :
   Without, you have no regular expression support (library(pcre)).
   $ libyaml-dev :
@@ -84,10 +89,6 @@ including all packages without issues. If you want to reduce resources, the foll
   Python interpreter, neither teh MQI package to access SWI-Prolog using
   network communication from Python.
 
-Note that including GMP support makes the memory footprint bigger, but
-mostly if you have no other applications depending on GMP. All the other
-optional components are only loaded when you use them.
-
 ### Prerequisites to build swipl-win
 
 The `swipl-win` executable provides a Qt based console for SWI-Prolog by
@@ -96,15 +97,21 @@ also be used on Linux. To include it, install the Qt development
 environment:
 
 ```shell
-sudo apt install qt5-default
+apt-get install qt6-base-dev
 ```
 
-The ``qt5-default`` package is dropped from Ubuntu 21.04 and has never
-existed on some other Debian based distributions.  In that case, use
-the command below.
+Unfortunately the packaging of Qt changes frequently.  Try to find
+base Qt packages, preferably from Qt6 (Qt5 still works) until `cmake`
+stops complaining about missing Qt dependencies.  Note that you do not
+have to clean the build after adding a Qt package.  Below are a few
+alternatives that used to work on older Ubuntu versions.
 
 ```shell
 sudo apt-get install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+```
+
+```shell
+sudo apt install qt5-default
 ```
 
 ### Prerequisites to build the documentation
