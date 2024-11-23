@@ -1,13 +1,45 @@
----+ SWI-Prolog on OpenSuSE
+# SWI-Prolog on OpenSuSE
 
-| SuSE Release | 11.4 |
-| SWI-Prolog release | 5.10.2 |
-| Package page | <https://build.opensuse.org/package/show?package=swipl&project=openSUSE%3A11.4> |
+| SuSE Release | openSUSE Tumbleweed |
+| SWI-Prolog release | 9.3.15 |
+| Package page | https://software.opensuse.org/package/swipl |
 
----++ Status
 
-Looks like the package is in a bad state and almost orphaned
+## Dependencies
 
----++ Dependencies
-
-@see [[swipl.spec on this page][<https://build.opensuse.org/package/files?package=swipl&project=openSUSE%3A11.4>]]
+```
+zypper install gcc gcc-c++ \
+  cmake \
+  ninja \
+  gperftools-devel \
+  freetype-devel \
+  gmp-devel \
+  java-23-openjdk-devel \
+  jpackage-utils \
+  junit \
+  libICE-devel \
+  libjpeg8-devel \
+  libSM-devel \
+  libX11-devel \
+  libXaw-devel \
+  libXext-devel \
+  libXft-devel \
+  libXrandr-devel \
+  libXinerama-devel \
+  libXmu-devel \
+  libXpm-devel \
+  libXrender-devel \
+  libXt-devel \
+  ncurses-devel \
+  openssl-devel \
+  pkgconfig \
+  readline-devel \
+  libedit-devel \
+  libdb-4_8-devel \
+  unixODBC-devel \
+  zlib-devel \
+  uuid-devel \
+  libarchive-devel \
+  libyaml-devel \
+  python3-devel
+```
