@@ -222,3 +222,35 @@ div.edit-profile
   font-style: italic;
   text-align:right;
 }
+
+div.pack-admin {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2ex;
+    padding: 1ex;
+    background-color: #ff9f9c;
+    border: 1px solid #888;
+}
+
+div.delete-pack {
+    margin-bottom: 5px;
+}
+
+form.delete-pack button {
+    float: right;
+    background-color: red;
+}
+
+form.pack-set-url-pattern button {
+    float: right;
+}
+
+form.pack-set-url-pattern input.url-pattern {
+    width: 50%;
+}
+
+a.delete-hash {
+    margin-left: 1ex;
+    text-decoration: none;
+    background-color: #ff9f9c;
+}
