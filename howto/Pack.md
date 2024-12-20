@@ -2,8 +2,12 @@
 
 ## What is a pack?
 
-A pack is an archive (``.zip`` or ``.tgz`` file that (minimally) contains,
-two items:
+A pack is a community contributed extension.  Packs provide additional
+Prolog libraries, often including _foreign_ (C,C++) libraries.  A pack
+can be installed system-wide, user-wide or as part of a specific
+application.  SWI-Prolog searches for packs in sub-directories of
+directories in the _file search path_ (see file_search_path/2) `pack`.
+Each pack is a directory that (minimally) contains, two items:
 
   - A subdirectory ``prolog`` <br>
   If the pack is installed, this directory is added to the Prolog
@@ -13,15 +17,65 @@ two items:
   - A file ``pack.pl`` <br>
   This file provides [meta-data](PackInfo.md) for the pack.
 
-Creating a pack that uses C or C++ code is [described here](ForeignPack.md)
+Packs that use _foreign_ code (C,C++) is [described
+here](ForeignPack.md).
+
+## How do I install a pack?
+
+After finding a suitable pack, usually from SWI-Prolog web site
+[listed here](http://localhost:3040/pack/list), it may be installed
+from the command line using the `pack` _app_:
+
+    swipl pack install <pack>
+
+The `pack` _app_ provides many commands for managing packs.  Use
+the command below for help
+
+    swipl pack --help
+
+A few common commands are:
+
+    - ``swipl pack search <pattern>`` <br>
+	  Find published packs by name.
+    - ``swipl pack install <from>`` <br>
+	  Install a pack from its name, URL, archive file or directory.
+    - ``swipl pack remove <pack>`` <br>
+	  Remove a pack.
+    - ``swipl pack list --installed`` <br>
+      List installed packages and their update status.
+    - ``swipl pack info <pack>`` <br>
+	  List details on a specific pack.
+
+All these commands are also available as Prolog predicates from the
+library(prolog_pack).  See for example pack_install/1,2
 
 ## Creating a pack
 
 A pack is created by creating a directory with the name of the pack
-and filling it with the content described above. Next, create an
-archive, which is either a _|gzipped tar|_ file or a _zip_ file from the
-file that must be named <pack>-<version>.tgz or <pack>-<version>.zip,
-where version is a list of digits, separated by dots (.).  For example:
+and filling it with the content described above.  For local testing,
+the pack can be installed from the directory using the command below.
+On systems that support it, this creates a _symbolic link_.  On other
+systems the directory is copied to one of the directories where packs
+are searched.  After that, possible foreign extensions are built and
+the pack is made available.
+
+    swipl pack install .
+
+## Publishing a pack
+
+A pack can be published in two ways: as a link to a GIT repository or
+by creating an _archive_ file.  We recommend using a __GIT
+repository__ on e.g., [github](https://github.com) or
+[gitlab](https://about.gitlab.com).  Using a git repository provides a
+stable download location as well as easy tracking of changes and
+releasing versions.  ``swipl pack install`` can be asked to install at
+a specific _tag_ or _commit hash_, providing precise version control
+to the user.
+
+When using an __archive file__, this file is either a
+_|gzipped tar|_ file or a _zip_ file that must be named
+<pack>-<version>.tgz or <pack>-<version>.zip, where version is a list
+of digits, separated by dots (.).  For example:
 
     % tar zcvf mypack-1.0.tgz mypack
 
@@ -29,58 +83,50 @@ or
 
     % zip -r mypack-1.0.zip mypack
 
-## Test the pack
+For _downloading from their registered name_, the pack must be hosted
+on a public web server.  To support package upgrading, the HTTP server
+must have enabled fetching an index of the directory. I.e., if the
+pack is located at
+https://www.example.com/swi-prolog/pack/mypack-1.0.tgz, fetching
+https://www.example.com/swi-prolog/pack/ must return an HTML document
+with links to available package files.   Although not yet enforced,
+we strongly advice to use __https__ for security.
 
-The pack may be installed using pack_install/1 as illustrated below.
+### Registering the pack
 
-    ?- pack_install('mypack-1.0.tgz').
+Once the pack is available from a public location, it may registered with
+the [package list](https://www.swi-prolog.org/pack/list) using
 
+    swipl pack publish <url>
 
-## Make the pack available
+This will
 
-To make the pack available, it must be downloadable from a publicly
-available HTTP server. To support package upgrading, the HTTP server
-must have enabled fetching an index of the directory. I.e., if the pack
-is located at http://www.example.com/swi-prolog/pack/mypack-1.0.tgz,
-fetching http://www.example.com/swi-prolog/pack/ must return an HTML
-document with links to available package files.
+  1. Download the pack to a temporary directory
+  2. Build and test it (if needed)
+  3. Establish the _meta data_
+  4. Register the pack.
 
-After uploading the package to e.g.,
-http://www.example.com/swi-prolog/pack/mypack-1.0.tgz, it is made
-available to other users simply by installing it yourself:
+### Updating a pack
 
-    ?- pack_install('http://www.example.com/swi-prolog/pack/mypack-1.0.tgz').
+To update a pack
 
-After this, other people can install your package simply using
+  1. Update the version in the ``pack.pl`` meta data
+  2. For a __git repository__
+     - Commit the final changes
+     - Tag the repository using V<version> (see ``git tag``).  It is strongly recommended to _sign_ the version tag.
+     - Push the result (including the tag)
+     - Use ``swipl pack publish <url>``
+  3. For a __file__
+     - Create a new archive following the naming conventions above (<pack>-<version>.tgz or <pack>-<version>.zip)
+     - Upload it to the same directory as the previous version
+     - Use ``swipl pack publish <url>``
 
-    ?- pack_install(mypack).
+#### Moving a pack
 
-### Using GitHub
-
-Packages can be downloaded from [GitHub](http://github.com) in two
-ways:
-
-  1. Using the GIT protocol.  In this case, the URL looks like below.
-     Be sure to add the ``.git`` extension.  This is not needed for
-     GIT, but it tells the SWI-Prolog package manager that this is
-     a git repository rather than a file.
-
-         https://github.com/<owner>/<pack>.git
-
-  2. Using [GitHub](http://github.com) _releases_.  These are created
-     by adding and pushing a _release tag_ or using the GitHub website.
-     The resulting archive can be accessed at the URL below.  Please
-     use the =.zip= because the package manager does *not* understand
-     the double extension =.tar.gz=.  The _tag_ must be dotted version
-     number, optionally preceded by a =v= or =V=.
-
-         https://github.com/<owner>/<pack>/archive/<tag>.zip
-
-The advantage of using GitHub releases is that you decide when a new
-version is ready for public use.  Automatic update checking can be
-enabled by setting the =download= attribute of the pack to:
-
-    https://github.com/<owner>/<pack>/releases/*.zip
+Once registered, packs cannot be moved to a different location.  This
+implies that if you have exclusive control of the git repository or
+directory holding the archives, nobody can hijack your pack.  If there
+is a need to move the pack anyway, contact the site administrator.
 
 
 ## Dos and Don'ts
@@ -92,9 +138,9 @@ of some rules:
     conflict.  Check https://www.swi-prolog.org/pack/list to verify
     there is no name conflict.
 
-  - All files in the =prolog= directory *must* be Prolog *module* files.
+  - All files in the `prolog` directory __must__ be Prolog __module__ files.
     Use names for the module files that are not likely to conflict with
-    others.
+    others.  For example, __do not use `util`__ as file or module name.
 
   - Use consistent version numbers (e.g. 0.1, 0.2 ..., 1.0).  Versions
     are compared by turning the version id into a list of integers that
