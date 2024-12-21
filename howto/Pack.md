@@ -4,10 +4,11 @@
 
 A pack is a community contributed extension.  Packs provide additional
 Prolog libraries, often including _foreign_ (C,C++) libraries.  A pack
-can be installed system-wide, user-wide or as part of a specific
-application.  SWI-Prolog searches for packs in sub-directories of
-directories in the _file search path_ (see file_search_path/2) `pack`.
-Each pack is a directory that (minimally) contains, two items:
+can be installed system-wide, user-wide or as part of a [specific
+application](ApplicationPack.md).  SWI-Prolog searches for packs in
+sub-directories of directories in the _file search path_ (see
+file_search_path/2) `pack`.  Each pack is a directory that (minimally)
+contains, two items:
 
   - A subdirectory ``prolog`` <br>
   If the pack is installed, this directory is added to the Prolog
