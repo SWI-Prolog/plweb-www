@@ -1,6 +1,6 @@
 # SWI-Prolog on Redhat (Fedora, RHEL, CentOS)
 
-| Fedora release | 39, 40 |
+| Fedora release | 39, 40, 41 |
 | SWI-Prolog release | 9.2.x, 9.3.x |
 | Package page | https://packages.fedoraproject.org/pkgs/pl/pl/ |
 | Packager | Fedora Project |
@@ -46,6 +46,7 @@ dnf install \
   libXpm-devel \
   libXrender-devel \
   libXt-devel \
+  rgb \
   ncurses-devel \
   openssl-devel \
   pkgconfig \
