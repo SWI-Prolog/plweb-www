@@ -1,6 +1,6 @@
 # SWI-Prolog on Redhat (Fedora, RHEL, CentOS)
 
-| Fedora release | 39, 40, 41 |
+| Fedora release | 39, 40, 41, 42 |
 | SWI-Prolog release | 9.2.x, 9.3.x |
 | Package page | https://packages.fedoraproject.org/pkgs/pl/pl/ |
 | Packager | Fedora Project |
@@ -19,7 +19,10 @@ web services of SWI-Prolog.
 ## Dependencies
 
 Use the following commands to obtain all dependencies for a full build
-from source.
+from source.   As the dependencies for the GUI changed as of version
+9.3.26, we split the dependencies in two
+
+### Non-GUI dependencies
 
 ```
 dnf install \
@@ -33,20 +36,6 @@ dnf install \
   javapackages-bootstrap \
   jpackage-utils \
   junit \
-  libICE-devel \
-  libjpeg-turbo-devel \
-  libSM-devel \
-  libX11-devel \
-  libXaw-devel \
-  libXext-devel \
-  libXft-devel \
-  libXrandr-devel \
-  libXinerama-devel \
-  libXmu-devel \
-  libXpm-devel \
-  libXrender-devel \
-  libXt-devel \
-  rgb \
   ncurses-devel \
   openssl-devel \
   pkgconfig \
@@ -60,6 +49,38 @@ dnf install \
   libyaml-devel \
   python3-devel
 ```
+
+### GUI dependencies
+
+For SWI-Prolog __9.3.26 or later__, the GUI dependencies are below.
+SDL3 is part of Fedora 42.  For older versions you have to build SDL3
+and SDL3_image from source.  See [Porting to linux distros without SDL3](https://github.com/SWI-Prolog/packages-xpce/wiki/Building-XPCE-for-SDL3-and-Cairo#porting-to-linux-distros-without-sdl3)
+
+```
+dnf install \
+  dnf install SDL3-devel SDL3_image-devel cairo-devel pango-devel
+```
+
+Up to SWI-Prolog __9.3.25__, the GUI dependencies are
+
+```
+dnf install \
+  libICE-devel \
+  libjpeg-turbo-devel \
+  libSM-devel \
+  libX11-devel \
+  libXaw-devel \
+  libXext-devel \
+  libXft-devel \
+  libXrandr-devel \
+  libXinerama-devel \
+  libXmu-devel \
+  libXpm-devel \
+  libXrender-devel \
+  libXt-devel \
+  rgb
+```
+
 
 ### Adding the Qt console
 
