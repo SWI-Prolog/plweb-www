@@ -24,16 +24,16 @@ these package use ``apt search <name>`` to find an alternative, where
   - The SWI-Prolog Java interface (JPL) works with many Java development
     kits.  `Junit4` is needed as of version 8.1.29.  Older versions require
     `junit` (Junit 3).
-  - The package =|libarchive-dev|= is needed for library(archive),
+  - The package ``libarchive-dev`` is needed for library(archive),
     which is needed by pack_install/1.
-  - The package =|libossp-uuid-dev|= is needed for library(uuid). Without
+  - The package ``libossp-uuid-dev`` is needed for library(uuid). Without
     UUID support falls back to a slower and less versatile pure Prolog
 	implementation.
-  - The package =|libdb-dev|= is needed for
+  - The package ``libdb-dev`` is needed for
     library(bdb), the BerkeleyDB embedded database interface.
-  - The package =|libreadline-dev|= and =|libedit-dev|= both provide
+  - The package ``libreadline-dev`` and ``libedit-dev`` both provide
     command line editing for interactive usage.  None is strictly
-    needed and one of them suffices. =|libedit-dev|= is the preferred
+    needed and one of them suffices. ``libedit-dev`` is the preferred
     command line editor.
   - ``libgoogle-perftools-dev`` provides
     [tcmalloc](https://github.com/google/tcmalloc), which can reduce
@@ -43,24 +43,50 @@ these package use ``apt search <name>`` to find an alternative, where
   - `cmake` must be at least version 3.5 See
     [CMAKE.md](https://github.com/SWI-Prolog/swipl-devel/blob/master/CMAKE.md)
 
+### Non-GUI dependencies
+
 ```shell
 sudo apt-get install \
-        build-essential cmake ninja-build pkg-config \
-        ncurses-dev libreadline-dev libedit-dev \
+    build-essential cmake ninja-build pkg-config \
+    ncurses-dev libedit-dev \
 	libgoogle-perftools-dev \
-        libgmp-dev \
-        libssl-dev \
-        unixodbc-dev \
-        zlib1g-dev libarchive-dev \
+    libgmp-dev \
+    libssl-dev \
+    unixodbc-dev \
+    zlib1g-dev libarchive-dev \
 	libossp-uuid-dev \
-        libxext-dev libice-dev libjpeg-dev libxrandr-dev libxinerama-dev libxft-dev \
-        libxpm-dev libxt-dev \
 	libdb-dev \
 	libpcre2-dev \
-        libyaml-dev \
+    libyaml-dev \
 	python3 libpython3-dev \
-        default-jdk junit4
+    default-jdk junit4
 ```
+
+### GUI dependencies
+
+There are two versions of the GUI dependencies.  The __stable__ version for xpce uses X11, while the
+__devel__ version uses SDL3+Cairo+Pango.
+
+For 9.3.26 or later, use the dependencies below.  If your system does
+not (yet) have SDL3, see [Porting to linux distros without
+SDL3](https://github.com/SWI-Prolog/packages-xpce/wiki/Building-XPCE-for-SDL3-and-Cairo#porting-to-linux-distros-without-sdl3)
+for building these dependencies from source
+
+```shell
+sudo apt-get install \
+    libcairo2-dev libpango1.0-dev libsdl3-dev libsdl3-image-dev
+```
+
+For 9.3.25 or older, use
+
+```shell
+sudo apt-get install \
+    libxext-dev libice-dev libjpeg-dev libxrandr-dev libxinerama-dev libxft-dev \
+    libxpm-dev libxt-dev \
+```
+
+
+### Further remarks
 
 [Raspbian](<Raspbian.md>) is fully supported and can be used to build SWI-Prolog
 including all packages without issues. If you want to reduce resources, the following packages are optional:
@@ -89,7 +115,9 @@ including all packages without issues. If you want to reduce resources, the foll
   Python interpreter, neither teh MQI package to access SWI-Prolog using
   network communication from Python.
 
-### Prerequisites to build swipl-win
+### Prerequisites to build swipl-win (stable and pre-9.3.26)
+
+> As of SWI-Prolog 9.3.26, `swipl-win` is based on xpce rather than Qt
 
 The `swipl-win` executable provides a Qt based console for SWI-Prolog by
 Carlo Capelli. This console is used to provide the MacOS app, but can
