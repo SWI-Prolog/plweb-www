@@ -82,7 +82,7 @@ dnf install \
 ```
 
 
-### Adding the Qt console
+### Adding the Qt console (versions older than 9.3.26)
 
 The Qt GUI application `swipl-win` can  be   added  by installing the Qt
 dependencies:
