@@ -1,5 +1,8 @@
 # SWI-Prolog SNAP images
 
+> As of SWI-Prolog 9.3.26, SWI-Prolog moved to [Flatpak](flatpak.html)
+> No new snap images will be provided.
+
 [Snap](https://snapcraft.io)  is a  way  to distribute  applications  as
 self-contained images.  This  allows  a  snap  to  work  on   any  Linux
 distribution  that  has  `snapd`  installed    and   runs  a  compatible

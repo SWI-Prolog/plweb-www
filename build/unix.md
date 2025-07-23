@@ -2,12 +2,11 @@
 
 ## Installing from binaries
 
-The official packages are often out of date. PPAs and snaps are
-created automatically for every release.
+The official packages are often out of date. PPAs and flatpak are
+created for every release.
 
   - [PPAs](<PPA.html>) are available for Ubuntu.
-  - [Snaps](<snap.html>) are available for Linux distributions with
-    `snapd` installed.
+  - [Flatpak](<flatpak.html>) are available for most Linux distributions
 
 ## Installing from source
 
