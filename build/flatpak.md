@@ -1,8 +1,10 @@
 # SWI-Prolog flatpak images
 
+[[flatpak.png;align="left",width="48px"][https://flathub.org/apps/org.swi_prolog.swipl]]
+
 As of SWI-Prolog 9.3.26, portable SWI-Prolog packages are distributed
 as [flatpak](https://flatpak.org/) images.  This replaces the
-[Snap](snap.html) packages distributed for older versions.
+[Snap](<snap.html>) packages distributed for older versions.
 
 The SWI-Prolog flatpak page is
 [here](https://flathub.org/apps/org.swi_prolog.swipl)
