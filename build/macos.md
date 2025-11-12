@@ -86,9 +86,9 @@ brew install swi-prolog --HEAD
 
 ### Building from source using Homebrew for dependencies {#homebrew-deps}
 
-As of version 7.7.21 the  SWI-Prolog   sources  are fully compatible for
-building with dependencies provided by Homebrew. The dependencies can be
-installed using
+Below are the  dependencies for a complete  installation of SWI-Prolog
+using Homebrew  dependencies.  This  is updated for  SWI-Prolog 9.3.20
+and later, i.e., the versions that use SDL3 for graphics.
 
 ```
 brew install \
@@ -97,12 +97,15 @@ brew install \
      gmp \
      openssl \
      libarchive \
-     readline \
      ossp-uuid \
      libyaml \
      unixodbc \
      berkeley-db \
      pcre \
+     SDL3 \
+     SDL3_image \
+     cairo \
+     pango \
      jpeg
 ```
 
