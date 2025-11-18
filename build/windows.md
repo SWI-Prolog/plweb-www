@@ -3,7 +3,7 @@
 There  are three  ways to  build SWI-Prolog  from source  for Windows.
 Here are some notes regarding the different approaches:
 
-  - __Compiler__.  MinGW (GCC) produces 20-30% faster binaries than
+  - __Compiler__.  MinGW (GCC) produces about 2 times faster binaries than
     MSVC.  The resulting library can be used with MinGW as well as
     MSVC.  Debugging can be tricky because the GNU `gdb` debugger does
     not understand the MSVC debugging information and Microsoft
@@ -11,21 +11,23 @@ Here are some notes regarding the different approaches:
 
   - __Cross compiling__  Windows is notoriously slow in starting programs
     and the compilation starts _many_ programs.   CMake does not support
-	symbolic links on Windows, which implies that we need to do a lot of
-	copying to establish the target file structure.  Cross compiling
-	using Linux is __much faster__.
+    symbolic links on Windows, which implies that we need to do a lot of
+    copying to establish the target file structure.  Cross compiling
+    using Linux is __much faster__.
 
   - __Dependencies__  Getting the dependencies is fairly well handled in
     all three scenarios.  They are built into the Docker image when using
-	docker based cross compilation.   For MSYS2, the dependencies are
-	produced by the MSYS packages and for Microsoft Visual C++ we use
-	vcpkg.
+    docker based cross compilation.   For MSYS2, the dependencies are
+    produced by the MSYS packages and for Microsoft Visual C++ we use
+    vcpkg.
 
-While building  for Windows has improved  a lot with the  migration to
-CMake  for SWI-Prolog  and much  improved dependency  handling, it  is
-still a tedious  process that provides little benefits  over using the
-binary     installers     that      can     be     downloaded     from
-https://www.swi-prolog.org/Download.html
+While building for Windows has improved a lot with the migration to
+CMake for SWI-Prolog and much improved dependency handling, it is still
+a tedious process that provides little benefits over using the binary
+installers that can be downloaded from
+https://www.swi-prolog.org/Download.html. Note that SWI-Prolog is also
+provided as an [MSYS2 base
+package](https://packages.msys2.org/base/mingw-w64-swi-prolog)
 
 
 ## Cross-compiling
@@ -53,8 +55,16 @@ dependencies from MSYS2.
 
 ## Using Microsoft Visual C++ (MSVC)
 
-This  is  a recent  addition.   The  process  is  based MSVC  and  the
-[vcpkg](https://vcpkg.io/) package manager.
+This  is  a  recent  addition.  The  process   is  based  MSVC  and  the
+[vcpkg](https://vcpkg.io/) package manager. The main reason for building
+SWI-Prolog using MSVC is for debugging   using Visual Studio, notably if
+you  embed  SWI-Prolog  in  MSVC  code  or  add  MSVC  compiled  foreign
+extensions. Otherwise, the resulting binary is about 2 times slower than
+the one produced by gcc (MinGW)  while   the  build time is much longer.
+Using Windows 11 on AMD3950X under VirtualBox,  given 64Gb memory and 16
+cores to the virtual machine, the cmake configure time is 6 minutes, the
+build time is 12 minutes and package  time   2  minutes. As opposed to 4
+minutes for all three steps using the Docker based build.
 
 ### Preparation
 
@@ -77,15 +87,21 @@ cd vcpkg
 .\bootstrap-vcpkg.bat
 ```
 
-__Install the dependencies__  we need.  Run these  commands inside the
-``c:\dev\vcpkg``  directory.    The  ``--triplet   x64-windows``  flag
-demands for the  64 bit versions of the dependencies.   The `zlib` and
-`pthreads` dependencies are obligatory.  The others are to support the
-packages.
+__Install the dependencies__ we need.  Run   these  commands  inside the
+``c:\dev\vcpkg`` directory. The ``--triplet   x64-windows`` flag demands
+for the 64 bit versions of the   dependencies. The `zlib` and `pthreads`
+dependencies  are  obligatory.  `libyaml`    and   `libarchive`  support
+library(yaml)  and  library(archive).  `sdl3    sdl3-image  pango  cairo
+pkgconf`  support  building  XPCE.    The  ``sdl3-image[core,png,jpeg]``
+installs loading the core image  file  types   as  well  as  support for
+``PNG`` and ``JPEG`` images. ``PNG`` is required   as that is the format
+used for all bundled images.
 
 ```
 .\vcpkg install --triplet x64-windows zlib pthreads
-.\vcpkg install --triplet x64-windows pcre2 libjpeg-turbo libyaml libarchive
+.\vcpkg install --triplet x64-windows libyaml libarchive
+.\vcpkg install --triplet x64-windows sdl3 pango cairo pkgconf
+.\vcpkg install --triplet x64-windows sdl3-image[core,png,jpeg]
 ```
 
 __Configure the system__
@@ -124,10 +140,18 @@ the terminal in case a test fails.
 ctest -j 4 --output-on-failure -C Release
 ```
 
+__Package the system__
+
+A Windows NSIS installer can be created using
+
+```
+cpack -C Release
+```
+
 __Status__
 
 The Microsoft Visual  C++ port is experimental.  The  above builds the
 core  system and  all packages  except for  ``JPL`` and  ``bdb``.  The
 tests  pass  except  for  a spurious  failure  in  `swipl:basics`.
 
-Packaging has not been tested.
+
