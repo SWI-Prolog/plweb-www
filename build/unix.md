@@ -30,9 +30,8 @@ modules. The git repository is downloaded (cloned) using the commands
 below:
 
 ```
-git clone https://github.com/SWI-Prolog/swipl-devel.git
+git clone --recurse-submodules https://github.com/SWI-Prolog/swipl-devel.git
 cd swipl-devel
-git submodule update --init
 ```
 
 Similarly, the sequence to update the source using git and rebuild is
@@ -40,7 +39,7 @@ Similarly, the sequence to update the source using git and rebuild is
 ```
 cd swipl-devel
 git pull
-git submodule update --init
+git submodule update --init --recursive
 ```
 
 ### Getting the prerequisites
@@ -87,12 +86,23 @@ found in the file
 [CMAKE.md](https://github.com/SWI-Prolog/swipl-devel/blob/master/CMAKE.md)
 
 
-## Post installation (JPL)
+## Post installation
+
+### Desktop integration files
+
+When   using   a   freedesktop.org   compatible   system   (most   Linux
+distributions), desktop integration can be   installed using the command
+below. This registers  `swipl`  and   `swipl-win`  as  applications  and
+creates the Prolog MIME type.
+
+   swipl sys desktop
+
+### Post installation for JPL
 
 If you want to call Java from Prolog using JPL, you need to add the
 directory holding the JVM shared objects to the dynamic linker search
 path. Using default installation on Ubuntu, this is achieved by adding
-the following to your =|~/.profile|=.  Check your Java configuration to
+the following to your ``~/.profile``.  Check your Java configuration to
 find the exact path.
 
 ```
