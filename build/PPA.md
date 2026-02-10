@@ -8,8 +8,8 @@ the official Debian packaging structure and corresponding SWI-Prolog
 release. This PPA version can be installed using the commands below in
 Ubuntu linux.  The ``.deb`` package may run on some closely related
 Linux distributions.  Otherwise either use the (often outdated) package
-from our distribution, [compile from source](</build/>) or using the [SNAP](<snap.html>)
-version.
+from our distribution, [compile from source](</build/>) or using the
+Flatpak [[flatpak.png;width="16px"][https://flathub.org/apps/org.swi_prolog.swipl]] images.
 
 These PPAs are updated with every new release. Thanks to Yves Raimond
 for setting up the PPA snd Eugeniy Meshcheryakov for creating the Debian
