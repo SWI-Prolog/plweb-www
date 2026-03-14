@@ -51,6 +51,7 @@ list below describes the dependencies in platform independent way.
   - [Debian based linux (Debian, Ubuntu, Mint, Raspberry Pi, ...)](<Debian.html>)
   - [Redhat based linux (Fedora, Redhat, CentOS, ...)](<Redhat.html>)
   - [SuSE](<SuSE.html>)
+  - [Arch Linux](<ArchLinux.html>)
   - [Mageia](<Mageia.html>)
   - [Other systems (background info)](<prerequisites.html>)
 
