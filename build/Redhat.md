@@ -1,7 +1,7 @@
 # SWI-Prolog on Redhat (Fedora, RHEL, CentOS)
 
-| Fedora release | 39, 40, 41, 42 |
-| SWI-Prolog release | 9.2.x, 9.3.x |
+| Fedora release | 39, 40, 41, 42, 43 |
+| SWI-Prolog release | 9.2.x, 9.3.x, 10.0.x, 10.1.x |
 | Package page | https://packages.fedoraproject.org/pkgs/pl/pl/ |
 | Packager | Fedora Project |
 
@@ -10,7 +10,7 @@ SWI-Prolog stable versions as package `pl`.  This page describes
 installing the dependencies for SWI-Prolog that are needed for
 [building from source](<unix.md>).
 
-As of May 2024, Fedora (currently version 40) is the main development
+As of May 2024, Fedora (currently version 43) is the main development
 platform for SWI-Prolog.  This used to be Ubuntu.  Ubuntu is still well
 maintained as it is used by the CI on Github as well as for running the
 web services of SWI-Prolog.
