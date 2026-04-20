@@ -31,16 +31,12 @@ these package use ``apt search <name>`` to find an alternative, where
 	implementation.
   - The package ``libdb-dev`` is needed for
     library(bdb), the BerkeleyDB embedded database interface.
-  - The package ``libreadline-dev`` and ``libedit-dev`` both provide
-    command line editing for interactive usage.  None is strictly
-    needed and one of them suffices. ``libedit-dev`` is the preferred
-    command line editor.
   - ``libgoogle-perftools-dev`` provides
     [tcmalloc](https://github.com/google/tcmalloc), which can reduce
     memory usage a lot on some heavily multithreaded applications.
-  - `libpcre2-dev` is required for library(pcre).  SWI-Prolog versions before
-    8.5.9 require `libpcre3-dev` (which is older than `libpcre2-dev` ...)
-  - `cmake` must be at least version 3.5 See
+  - `libpcre2-dev` is required for library(pcre).
+  - `libutf8proc-dev` is required by library(unicode)
+  - `cmake` must be at least version 3.10 See
     [CMAKE.md](https://github.com/SWI-Prolog/swipl-devel/blob/master/CMAKE.md)
 
 ### Non-GUI dependencies
@@ -58,6 +54,7 @@ sudo apt-get install \
 	libdb-dev \
 	libpcre2-dev \
     libyaml-dev \
+	libutf8proc-dev \
 	python3 libpython3-dev \
     default-jdk junit4
 ```
@@ -115,7 +112,7 @@ including all packages without issues. If you want to reduce resources, the foll
   Python interpreter, neither teh MQI package to access SWI-Prolog using
   network communication from Python.
 
-### Prerequisites to build swipl-win (stable and pre-9.3.26)
+### Prerequisites to build swipl-win (pre-10.0.0 and pre-9.3.26)
 
 > As of SWI-Prolog 9.3.26, `swipl-win` is based on xpce rather than Qt
 

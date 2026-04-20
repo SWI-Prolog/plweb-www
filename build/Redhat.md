@@ -29,8 +29,8 @@ dnf install \
   gcc gcc-c++ \
   cmake \
   ninja-build \
+  pkgconfig \
   gperftools-devel \
-  freetype-devel \
   gmp-devel \
   java-latest-openjdk-devel \
   javapackages-bootstrap \
@@ -38,15 +38,13 @@ dnf install \
   junit \
   ncurses-devel \
   openssl-devel \
-  pkgconfig \
-  readline-devel \
-  libedit-devel \
   libdb-devel \
   unixODBC-devel \
   zlib-devel \
   uuid-devel \
   libarchive-devel \
   libyaml-devel \
+  utf8proc-devel \
   python3-devel
 ```
 
