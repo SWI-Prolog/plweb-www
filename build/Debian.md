@@ -61,11 +61,12 @@ sudo apt-get install \
 
 ### GUI dependencies
 
-There are two versions of the GUI dependencies.  The __stable__ version for xpce uses X11, while the
-__devel__ version uses SDL3+Cairo+Pango.
+There are two versions of the GUI dependencies.  Old versions for xpce uses X11, while the
+recent version uses SDL3+Cairo+Pango.
 
-For 9.3.26 or later, use the dependencies below.  If your system does
-not (yet) have SDL3, see [Porting to linux distros without
+For 9.3.26 or later (devel) and 10.0.0 or later (stable), use the
+dependencies below. If your system does not (yet) have SDL3, see
+[Porting to linux distros without
 SDL3](https://github.com/SWI-Prolog/packages-xpce/wiki/Building-XPCE-for-SDL3-and-Cairo#porting-to-linux-distros-without-sdl3)
 for building these dependencies from source
 
