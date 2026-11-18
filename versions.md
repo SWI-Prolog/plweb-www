@@ -3,17 +3,17 @@
 SWI-Prolog is distributed as platform specific binary package for
 popular platforms (currently MS-Windows and MacOS X). For
 [Ubuntu](http://www.ubuntu.com) Linux we provide a
-[PPA](</build/PPA.html>).  For all Linux systems supporting snap we
-provide the snap package [`swi-prolog`](</build/snap.html>).
+[PPA](</build/PPA.html>).  For all Linux systems supporting flatpak we
+provide a [flatpak](</build/flatpak.html>) package.
 
 The source package is configured using [CMake](https://cmake.org/). The
-sources builds on a wide range of 32 and 64 bit systems with an ANSI C
-compiler. The MS-Windows version is built using
-[[MinGW][http://mingw.org/]] as a cross-compiler under Linux. See the
-file README.mingw in the toplevel directory.
+sources builds on a wide range of 32 and 64 bit systems with a C compiler
+that supports C11 or C23. The MS-Windows version is built using
+[[MinGW][http://mingw.org/]] as a cross-compiler under Linux using
+a [Docker image](https://github.com/SWI-Prolog/docker-swipl-build-mingw).
 
-SWI-Prolog *stable* releases have an *even* minor version number
-(8.0.x, 8.2.x, 8.4.x, ...) and *development* releases an *odd* minor
+SWI-Prolog __stable__ releases have an __even__ minor version number
+(8.0.x, 8.2.x, 8.4.x, ...) and __development__ releases an *odd* minor
 version number (8.1.x, 8.3.x, ...). The development versions are
 released frequently, typically every couple of weeks). A new stable
 cycle is started when the development version has improved enough to
@@ -33,12 +33,34 @@ the stable versions and the repository
 [swipl-devel.git](http://github.com/SWI-Prolog/swipl-devel.git) for the
 development series.  Releases are tagged *V*_|Major.Minor.Patch|_.
 
-  $ 9.3.x: Current development series.
+  $ 11.1.x: Current development series.
+
+  $ 11.0.x: Generational stack garbage collection and garbage
+  collection of runtime created procedures, modules and functors.  A
+  faster virtual machine using tail-calling VMI functions.  Thread-local
+  blobs, thread classes and safer handling of untrusted input (strict
+  UTF-8 decoding, safer external records).  Unicode 17 support and
+  display-width aware output.  Many IDE enhancements: a modern look
+  and feel, combine tools in a single windows using tabs and tiled
+  panes, much improved profiler that includes memory profiling.
+  Improved terminal support with clickable
+  hyperlinks, semantic prompt marks and better TAB completion.  Native
+  installers for Windows on ARM64 and signed macOS packages.
+
+  $ 10.0.x: Closely compatible with 9.2, providing many changes "under the
+  hood".  The 32-bit data model is removed.  XPCE is now based on SDL3,
+  Cairo and Pango, providing native MacOS and Wayland support, and
+  _Epilog_ replaces the old GUI consoles.  Uniform command line editing
+  using libedit on all platforms.  Mature WASM version supporting engines
+  and a debugger.  Libraries are distributed precompiled as `.qlf`
+  files.  JSON support has moved to a new `json` package that also
+  provides JSON Schema and JSON RPC.  Linux snap packages are replaced by
+  [flatpak](</build/flatpak.html>).
 
   $ 9.2.x: Adds a Python interface (Janus), new C++ interface, improved
   tooling (profiling, coverage analysis, unit testing and installing
   add-ons) and command line apps.  Sources are now strict C11 and the
-  full system can be build using Micorsoft VS2022.
+  full system can be build using Microsoft VS2022.
 
   $ 9.0.x: Adds support for WASM [WebAssembly](https://webassembly.org/).
   Adds [sweep](https://eshelyaron.com/sweep.html), a new GNU-Emacs
